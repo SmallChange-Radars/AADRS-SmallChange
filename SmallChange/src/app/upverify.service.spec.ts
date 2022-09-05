@@ -15,10 +15,10 @@ describe('UpverifyService', () => {
   });
 
   it('should return true with correct credntials', inject([UpverifyService], fakeAsync((service: UpverifyService) => {
-    expect(service.verifyUSER("a000007@fmr.com","ItsASecret101")).toBeTrue;
+    expect(service.verifyUSER("a000007@fmr.com","ItsASecret101")).toBe(true);
   })));
 
-  it('should return False with incorrect credntials', inject([UpverifyService], fakeAsync((service: UpverifyService) => {
-    expect(service.verifyUSER("a000007@fmr.com","ItsASecet101")).toBeTrue;
+  it('should return false with incorrect credntials', inject([UpverifyService], fakeAsync((service: UpverifyService) => {
+    expect(service.verifyUSER("a000007@fmr.com","ItsASecet101")).toBe(false);
   })));
 });
