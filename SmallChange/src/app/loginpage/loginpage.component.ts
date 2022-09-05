@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Login } from '../shared/models/login';
+import { UpverifyService } from '../upverify.service';
 
 @Component({
   selector: 'app-loginpage',
@@ -7,17 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginpageComponent implements OnInit {
 
-  constructor() { }
+  public login:Login=new Login("","");
+
+  constructor(private service:UpverifyService) { }
 
   ngOnInit(): void {
   }
 
-  invalidUsername() {
-
-  }
-
-  invalidPassword() {
-    
+  verifyCredentials(){
+    this.service.verifyUSER
   }
 
 }
