@@ -1,0 +1,109 @@
+.main {
+    max-width: 62.5em;
+    padding: 4em 1em 4em 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.btn {
+  background-color: #568200 !important;
+  border-color: #568200 !important;
+}  
+
+
+  .loginform {
+    max-width: 20rem;
+    margin: 0 auto 0 auto;
+    padding: 2rem 3rem 2rem 3rem;
+    border: #ccc solid 1px;
+    border-radius: 5px;
+    font-family: 'Fidelity Sans', Arial, sans-serif;
+  }
+  
+  .loginformgroup {
+    margin-bottom: 1.5rem;
+  }
+  
+  .formgroup:last-child {
+    margin-bottom: 0;
+  }
+  
+  .formlabel {
+    font-family: 'Fidelity Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+    display: block;
+    margin-bottom: 0.25rem;  
+  }
+  
+  .errormessage {
+    font-family: 'Fidelity Sans', Arial, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    // display: none;
+    // min-height: 0.5rem;
+    color: #DC1616;  
+    text-align: center;
+  }
+  
+  .textbox {
+    width: 100%;
+    box-sizing: border-box;
+    padding:  0.25rem 1rem 0.25rem 1rem;
+    font-size: 18px;
+    display: block;
+    line-height: 1.5em;
+  }
+  
+  .invalidinputfield {
+    border-color: #DC1616;
+  }
+  
+  .loginbutton {
+    width: 100%;
+    box-sizing: border-box;
+    border-width: 0px;
+    border-radius: 5px;
+    padding:  .5rem 1rem 1rem 1rem;
+    font-family: 'Fidelity Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: #568200;
+    display: block;
+    line-height: 1em;
+    text-align: center;
+  }
+  
+  .link {
+    font-family: 'Fidelity Sans', Arial, sans-serif;
+    color: #024A7A;
+    display: block;
+    text-align: center;
+  }
+  
+  .link:visited {
+    color: Purple;
+  }
+  
+  .link:hover {
+    outline: #ccc dotted 1px;
+  }
+  
+  #footerBar {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    max-width: 62.5em;
+    display: block;
+    background-color: transparent;
+  }
+  
+  #footerText {
+    box-sizing: content-box;
+    font-family: 'Fidelity Sans', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #000;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
