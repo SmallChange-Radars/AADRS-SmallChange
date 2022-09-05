@@ -2,9 +2,9 @@
     <div class="loginform">
         <form class="formgroup" (ngSubmit)="verifyCredentials()">
             <label for="email">Email</label>
-            <input class="form-control" type="email" id="email" [(ngModel)]="login.username">
+            <input class="form-control" type="email" id="email" [(ngModel)]="login.username" name="username">
             <label for="password">Password</label>
-            <input class="form-control" type="password" id="password" [(ngModel)]="login.password">
+            <input class="form-control" type="password" id="password" [(ngModel)]="login.password" name="password">
             <div class="text-center my-3">
                 <button class="btn btn-primary w-100">Log in</button>
             </div>

@@ -17,7 +17,8 @@ export class LoginpageComponent implements OnInit {
   }
 
   verifyCredentials(){
-    this.service.verifyUSER
+    console.log(this.service.verifyUSER(this.login.username,this.login.password));
+    this.login=new Login("","");
   }
 
 }
