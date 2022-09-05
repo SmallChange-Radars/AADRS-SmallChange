@@ -1,15 +1,21 @@
 import { Injectable } from '@angular/core';
+import { Client } from './shared/models/client';
+import { ClientIdentification } from './shared/models/client-identification';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UpverifyService {
 
-  private username: String="a000007@fmr.com";
+  private username: String="aadrs@gmail.com";
   private password: String="ItsASecret101";
 
-  verifyUSER(username:String,password:String): Boolean {
-    return this.username===username && this.password===password;
+
+  private id:ClientIdentification=new ClientIdentification("SSN","!@_NM");
+  private client: Client=new Client("1234","aadrs@gmail.com","01/01/1990","USA","123456",[this.id],false);
+
+  verifyUSER(username:String,password:String) {
+    return this.username===username && this.password===password?this.client:false;
   }
 
   constructor() { }

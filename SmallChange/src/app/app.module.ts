@@ -20,7 +20,8 @@ import { PortfolioTableComponent } from './portfolio-table/portfolio-table.compo
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    CoreModule
+    CoreModule,
+    LoginpageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
