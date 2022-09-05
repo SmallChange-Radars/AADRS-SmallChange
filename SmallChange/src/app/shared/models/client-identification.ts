@@ -2,10 +2,10 @@ export class ClientIdentification {
     type: string;
     value: string;
 
-    constructor(public t: string, public v: string)
+    constructor(type: string,  value: string)
     {
-        this.type=t;
-        this.value=v;
+        this.type=type;
+        this.value=value;
 
     }
 
