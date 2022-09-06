@@ -1,0 +1,38 @@
+<div class="container mt-4">
+    <div class="card">
+        <h3 class="card-header">Investment Preferences</h3>
+        <div class="card-body">
+            <form>
+                <div class="mb-3">
+                    <label for="investmentPurpose">Investment Purpose:</label>
+                    <input type="text" class="form-control" id="investmentPurpose" name="investmentPurpose" placeholder="Purpose of Investment" [(ngModel)] = "investmentPreferences.investmentPurpose" required>
+                </div>
+                <div class="mb-3">
+                    <label for="riskTolerance">Risk Tolerance:</label>
+                    <select class="form-select" id="riskTolerance" [(ngModel)] = "investmentPreferences.riskTolerance" name="riskTolerance" required>
+                        <option *ngFor = "let rTolerance of rTolerances; let i = index" value="{{i+1}}">{{rTolerance.name}}</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="incomeCategory">Income Category:</label>
+                    <select class="form-select" id="incomeCategory" [(ngModel)] = "investmentPreferences.incomeCategory" name="incomeCategory" required>
+                        <option *ngFor = "let iCategory of iCategories; let i = index" value="{{i+1}}">{{iCategory.name}}</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="investmentLength">Investment Length:</label>
+                    <select class="form-select" id="investmentLength" [(ngModel)] = "investmentPreferences.investmentLength" name = "investmentLength" required>
+                        <option *ngFor = "let iLength of iLengths; let i = index" value="{{i+1}}">{{iLength.name}}</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary" (click)="submit()">Submit</button>
+                <div class="mb-3" *ngIf = "formError">
+                    Kindly fill all the form fields!
+                </div>
+                <div class = "mb-3" *ngIf = "formError===false">
+                    Your Investment Preferences have been updated!
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
