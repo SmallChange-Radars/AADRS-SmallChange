@@ -1,21 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-// import { LoginpageComponent } from './loginpage/loginpage.component';
-// import { LoginpageComponent } from './loginpage/loginpage.component';
-// import { LoginpageModule } from './loginpage/loginpage.module';
 import { LoginpageModule } from './loginpage/loginpage.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CoreModule } from './core/core.module';
 import { PortfolioPageComponent } from './portfolio/portfolio-page/portfolio-page.component';
 import { PortfolioTableComponent } from './portfolio/portfolio-table/portfolio-table.component';
 
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { RegisterFormComponent } from './register-form/register-form.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { PreferencesModule } from './preferences/preferences.module';
+import { CoreModule } from './core/core.module';
+
 @NgModule({
   declarations: [
-    AppComponent,
-    // LoginpageComponent,
+    AppComponent,    
+    LandingPageComponent,
+    RegisterFormComponent,
     PortfolioPageComponent,
     PortfolioTableComponent
   ],
@@ -23,10 +26,13 @@ import { PortfolioTableComponent } from './portfolio/portfolio-table/portfolio-t
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    CoreModule,
-    LoginpageModule
+    ReactiveFormsModule,
+    FormsModule,
+    PreferencesModule,
+    LoginpageModule,
+    CoreModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

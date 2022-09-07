@@ -1,0 +1,70 @@
+<div class="register-form">
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="border border-light p-5">
+
+        <p class="h4 text-center mb-4">Sign up</p>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="FirstName" class="form-control mb-4" placeholder="First name">
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="LastName" class="form-control mb-4" placeholder="Last name">
+
+        <label for="email" class="req control-label">E-mail:<span style="color:red">*</span></label>
+        <input type="email" formControlName="email" id="Email" class="form-control mb-4" placeholder="Email">
+
+        <div *ngIf="email?.touched || email?.dirty">
+            <div *ngIf="email?.hasError('required') || email?.hasError('email')">
+                <div id="errorText">Enter valid email</div>
+            </div>
+        </div>
+
+        <label for="password">Password:<span style="color:red">*</span></label>
+        <input type="password" formControlName="password" id="Password" class="form-control mb-4"
+            placeholder="Password">
+
+        <div *ngIf="password?.touched || password?.dirty">
+            <div *ngIf="password?.hasError('required') || password?.hasError('pattern') ">
+                <div id="errorText">{{ passwordErrorTextmsg }}</div>
+            </div>
+        </div>
+
+        <label for="country">Country:<span style="color:red">*</span></label>
+        <input type="text" formControlName="country" id="Country" class="form-control mb-4" placeholder="Country">
+
+        <div *ngIf="country?.touched || country?.dirty">
+            <div *ngIf="country?.hasError('required')">
+                <div id="errorText">This field required</div>
+            </div>
+        </div>
+
+        <label for="pincode">Pincode:<span style="color:red">*</span></label>
+        <input type="number" formControlName="pincode" id="pincode" class="form-control mb-4" placeholder="Pincode">
+
+        <div *ngIf="pincode?.touched || pincode?.dirty">
+            <div *ngIf="pincode?.hasError('required')">
+                <div id="errorText">This field required</div>
+            </div>
+        </div>
+
+        <label for="identification">Identification:<span style="color:red">*</span></label>
+        <input type="text" formControlName="identification" id="Identification" class="form-control mb-4"
+            placeholder="Identification">
+
+        <div *ngIf="identification?.touched || identification?.dirty">
+            <div *ngIf="identification?.hasError('required')">
+                <div id="errorText">This field required</div>
+            </div>
+        </div>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" formControlName="dob" id="Dob" class="form-control mb-4">
+
+        <label for="riskAppetite">Investment Risk Appetite:</label>
+        <input type="text" formControlName="riskAppetite" id="defaultRegisterFormRiskAppetite" class="form-control mb-4"
+            placeholder="Risk Appetite">
+
+        <div class="text-center">
+            <button class="btn btn-info btn-block" type="submit">Sign in</button>
+        </div>
+    </form>
+</div>
