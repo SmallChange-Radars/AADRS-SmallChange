@@ -1,13 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { PortfolioService } from '../portfolio.service';
-import { ClientPortfolio } from '../shared/models/client-portfolio';
+import { PortfolioService } from '../../portfolio.service';
+import { ClientPortfolio } from '../../shared/models/client-portfolio';
 
 @Component({
-  selector: 'app-portfolio',
-  templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+  selector: 'app-portfolio-page',
+  templateUrl: './portfolio-page.component.html',
+  styleUrls: ['./portfolio-page.component.scss']
 })
-export class PortfolioComponent implements OnInit {
+export class PortfolioPageComponent implements OnInit {
 
   // cp: ClientPortfolio[] = [
   //   {name: 'AAPL', price: 158.91, value: 85493.58}, 
