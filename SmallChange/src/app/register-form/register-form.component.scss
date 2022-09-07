@@ -1,0 +1,19 @@
+.register-form {
+    margin: 10px auto;
+    max-width: 35rem;
+    font-family: Arial, sans-serif;
+    border: solid 2px #ccc;
+}
+
+.req .control-label:after {
+    content: "*";
+    color: red;
+}
+
+#errorText {
+    color: red;
+    font-family: 'Fidelity Sans', Arial, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+}
