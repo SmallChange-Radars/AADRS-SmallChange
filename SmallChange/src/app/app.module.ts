@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginpageModule } from './loginpage/loginpage.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CoreModule } from './core/core.module';
 import { PortfolioPageComponent } from './portfolio/portfolio-page/portfolio-page.component';
 import { PortfolioTableComponent } from './portfolio/portfolio-table/portfolio-table.component';
 
