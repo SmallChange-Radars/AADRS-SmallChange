@@ -1,6 +1,6 @@
 import { fakeAsync, inject, TestBed } from '@angular/core/testing';
-import { Client } from './shared/models/client';
-import { ClientIdentification } from './shared/models/client-identification';
+import { Client } from '../models/client';
+import { ClientIdentification } from '../models/client-identification';
 
 import { UpverifyService } from './upverify.service';
 

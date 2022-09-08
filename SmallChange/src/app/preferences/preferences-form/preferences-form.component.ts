@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CupreferencesService } from 'src/app/cupreferences.service';
+import { CupreferencesService } from 'src/app/shared/services/cupreferences.service';
 import { InvestmentPreferences } from 'src/app/shared/models/investment-preferences';
 
 @Component({

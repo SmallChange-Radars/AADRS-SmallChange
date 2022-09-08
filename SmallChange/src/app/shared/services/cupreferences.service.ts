@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { InvestmentPreferences } from './shared/models/investment-preferences';
+import { InvestmentPreferences } from '../models/investment-preferences';
 
 @Injectable({
   providedIn: 'root',

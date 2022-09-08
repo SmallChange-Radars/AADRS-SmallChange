@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { PortfolioService } from '../../portfolio.service';
+import { PortfolioService } from 'src/app/shared/services/portfolio.service';
 import { ClientPortfolio } from '../../shared/models/client-portfolio';
 
 @Component({
