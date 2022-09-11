@@ -3,6 +3,8 @@ export class ClientPortfolio {
         public name: string,
         public qty: number,
         public price: number,
-        public value: number
+        public value: number,
+        public prof: number,
+        public percent: number
     ) {}
 }

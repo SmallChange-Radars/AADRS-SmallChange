@@ -1,1 +1,14 @@
-<app-portfolio-table [cp]="cp"></app-portfolio-table>
+<div class="row my-3">
+    <app-summary class="col-4" [totalPortfolio]="totalPortfolio"></app-summary>
+    <div class="col container border py-3">
+        <h4 class="text-center">Allocation</h4>
+        <div class="d-flex justify-content-center">
+            <canvas baseChart [labels]="doughnutChartLabels" [datasets]="doughnutChartDatasets"
+                [options]="doughnutChartOptions" [legend]="true" [type]="'doughnut'">
+            </canvas>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <app-portfolio-table class="pe-0" [cp]="cp"></app-portfolio-table>
+</div>
