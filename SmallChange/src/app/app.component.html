@@ -17,11 +17,12 @@
                 </div>
             </header>
         </span>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{ 'show': navbarOpen }">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" routerLinkActive="active"
@@ -36,6 +37,19 @@
                         [routerLinkActiveOptions]="{exact: true}" routerLink="/trade">Trade</a>
                 </li>
             </ul>
+            <div ngbDropdown class="d-inline-block">
+                <button type="button" class="btn" id="dropdownBasic1" ngbDropdownToggle>
+                    Account Icon
+                </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-menu dropdown-menu-end">
+                    <button ngbDropdownItem>
+                        <a class="nav-link" routerLink="/Preferences">Preferences</a>
+                    </button>
+                    <button ngbDropdownItem>
+                        <a class="nav-link" routerLink="/">Log Out</a>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </nav>
