@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ColumnApi, GridApi, GridReadyEvent } from 'ag-grid-community';
 import { ClientPortfolio } from '../../shared/models/client-portfolio';
 
-let sum1=0;
 
 @Component({
   selector: 'app-portfolio-table',
@@ -10,30 +10,73 @@ let sum1=0;
 })
 
 export class PortfolioTableComponent implements OnInit {
-  sum1: any =0;
-  @Input() cp: ClientPortfolio[] = [];  
+  sum: any = 0;
+  c: any
+  @Input() cp: ClientPortfolio[] = [];
+  private gridApi!: GridApi<ClientPortfolio>;
+  private gridColumnApi!: ColumnApi;
   
-  sum = this.cp.reduce<number>((accumulator, obj) => {
-    return accumulator + obj.value;
-  }, 0);
+  sizeToFit() {
+    this.gridApi.sizeColumnsToFit();
+  }
   
-  // present on top
-  // profit and loss
-  // pagination
-  // price value - right aligned
-  // sum1: number=0;
-  // sum1 = this.cp.forEach((obj) => {
-  //   sum1+=obj.value;
-  // })
-  
+
+  toUSD(params: any) {
+    var inrFormat = new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 2
+    });
+    return inrFormat.format(params.value);
+  }
+
+  toPercentage(params: any) {
+    var inrFormat = new Intl.NumberFormat('en-US', {
+      style: 'percent',
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    });
+    return inrFormat.format(params.value / 100);
+  }
+
+  posOrNeg(params: any) {
+    if (params.node.data.prof >= 0) {
+      return { color: 'green', textAlign: 'right' };
+    } else {
+      // console.log(params.node);
+      return { color: 'red', textAlign: 'right' };
+
+    }
+  }
+
+  defaultColDef = { suppressSizeToFit: false, resizeable: true, sortable: true}
+
+
+  columnDefs = [
+    { headerName: 'Name', field: 'name'},
+    { headerName: 'Shares', field: 'qty'},
+    { headerName: 'Price', field: 'price', headerClass: 'ag-right-aligned-header', cellRenderer: this.toUSD, cellStyle: { textAlign: 'right' } },
+    { headerName: 'Value', field: 'value', headerClass: 'ag-right-aligned-header', cellRenderer: this.toUSD, cellStyle: { textAlign: 'right' } },
+    { headerName: 'Gains', field: 'prof', headerClass: 'ag-right-aligned-header', cellRenderer: this.toUSD, cellStyle: this.posOrNeg },
+    { headerName: 'Returns', field: 'percent', headerClass: 'ag-right-aligned-header', cellRenderer: this.toPercentage, cellStyle: this.posOrNeg }
+  ];
+
+  rowData: ClientPortfolio[] = [];
+
   constructor() { }
 
+  onGridReady(params: GridReadyEvent<ClientPortfolio>) {
+    this.gridApi = params.api;
+    this.gridColumnApi = params.columnApi;
+    this.rowData = this.cp;
+    this.sizeToFit();
+  }
+
   ngOnInit(): void {
-    this.sum1 = this.cp.forEach((obj) => {
-      sum1+=obj.value;
-    })
-    console.log(sum1);
-  } 
-  
+    // this.rowData = this.cp;
+    // this.gridApi.sizeColumnsToFit();
+    // this.sizeToFit();
+  }
+
 
 }
