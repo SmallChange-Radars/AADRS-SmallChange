@@ -6,7 +6,6 @@ import { CoreModule } from './core/core.module';
 import { AgGridModule } from 'ag-grid-angular';
 import { NgChartsModule } from 'ng2-charts';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
@@ -16,14 +15,14 @@ import { LoginpageModule } from './loginpage/loginpage.module';
 import { PreferencesModule } from './preferences/preferences.module';
 import { NavTabComponent } from './nav-tab/nav-tab.component';
 import { PortfolioModule } from './portfolio/portfolio.module';
+import { TradeModule } from './trade/trade.module';
 
 @NgModule({
   declarations: [
-    AppComponent,    
+    AppComponent,
     LandingPageComponent,
     RegisterFormComponent,
-    NavTabComponent
-
+    NavTabComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +35,8 @@ import { PortfolioModule } from './portfolio/portfolio.module';
     LoginpageModule,
     CoreModule,
     AgGridModule,
-    NgChartsModule
+    NgChartsModule,
+    TradeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
