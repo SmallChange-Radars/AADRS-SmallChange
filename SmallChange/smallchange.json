@@ -1626,7 +1626,7 @@
     ],
     "stockList": [
         {
-            "Symbol": "MMM",
+            "id": "MMM",
             "Name": "3M Company",
             "Sector": "Industrials",
             "Price": [
@@ -1751,7 +1751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MMM"
         },
         {
-            "Symbol": "AOS",
+            "id": "AOS",
             "Name": "A.O. Smith Corp",
             "Sector": "Industrials",
             "Price": [
@@ -1876,7 +1876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AOS"
         },
         {
-            "Symbol": "ABT",
+            "id": "ABT",
             "Name": "Abbott Laboratories",
             "Sector": "Health Care",
             "Price": [
@@ -2001,7 +2001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ABT"
         },
         {
-            "Symbol": "ABBV",
+            "id": "ABBV",
             "Name": "AbbVie Inc.",
             "Sector": "Health Care",
             "Price": [
@@ -2126,7 +2126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ABBV"
         },
         {
-            "Symbol": "ACN",
+            "id": "ACN",
             "Name": "Accenture plc",
             "Sector": "Information Technology",
             "Price": [
@@ -2251,7 +2251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ACN"
         },
         {
-            "Symbol": "ATVI",
+            "id": "ATVI",
             "Name": "Activision Blizzard",
             "Sector": "Information Technology",
             "Price": [
@@ -2376,7 +2376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ATVI"
         },
         {
-            "Symbol": "AYI",
+            "id": "AYI",
             "Name": "Acuity Brands Inc",
             "Sector": "Industrials",
             "Price": [
@@ -2501,7 +2501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AYI"
         },
         {
-            "Symbol": "ADBE",
+            "id": "ADBE",
             "Name": "Adobe Systems Inc",
             "Sector": "Information Technology",
             "Price": [
@@ -2626,7 +2626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ADBE"
         },
         {
-            "Symbol": "AAP",
+            "id": "AAP",
             "Name": "Advance Auto Parts",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -2751,7 +2751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AAP"
         },
         {
-            "Symbol": "AMD",
+            "id": "AMD",
             "Name": "Advanced Micro Devices Inc",
             "Sector": "Information Technology",
             "Price": [
@@ -2876,7 +2876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AMD"
         },
         {
-            "Symbol": "AES",
+            "id": "AES",
             "Name": "AES Corp",
             "Sector": "Utilities",
             "Price": [
@@ -3001,7 +3001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AES"
         },
         {
-            "Symbol": "AET",
+            "id": "AET",
             "Name": "Aetna Inc",
             "Sector": "Health Care",
             "Price": [
@@ -3126,7 +3126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AET"
         },
         {
-            "Symbol": "AMG",
+            "id": "AMG",
             "Name": "Affiliated Managers Group Inc",
             "Sector": "Financials",
             "Price": [
@@ -3251,7 +3251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AMG"
         },
         {
-            "Symbol": "AFL",
+            "id": "AFL",
             "Name": "AFLAC Inc",
             "Sector": "Financials",
             "Price": [
@@ -3376,7 +3376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AFL"
         },
         {
-            "Symbol": "A",
+            "id": "A",
             "Name": "Agilent Technologies Inc",
             "Sector": "Health Care",
             "Price": [
@@ -3501,7 +3501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=A"
         },
         {
-            "Symbol": "APD",
+            "id": "APD",
             "Name": "Air Products & Chemicals Inc",
             "Sector": "Materials",
             "Price": [
@@ -3626,7 +3626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=APD"
         },
         {
-            "Symbol": "AKAM",
+            "id": "AKAM",
             "Name": "Akamai Technologies Inc",
             "Sector": "Information Technology",
             "Price": [
@@ -3751,7 +3751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AKAM"
         },
         {
-            "Symbol": "ALK",
+            "id": "ALK",
             "Name": "Alaska Air Group Inc",
             "Sector": "Industrials",
             "Price": [
@@ -3876,7 +3876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ALK"
         },
         {
-            "Symbol": "ALB",
+            "id": "ALB",
             "Name": "Albemarle Corp",
             "Sector": "Materials",
             "Price": [
@@ -4001,7 +4001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ALB"
         },
         {
-            "Symbol": "ARE",
+            "id": "ARE",
             "Name": "Alexandria Real Estate Equities Inc",
             "Sector": "Real Estate",
             "Price": [
@@ -4126,7 +4126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ARE"
         },
         {
-            "Symbol": "ALXN",
+            "id": "ALXN",
             "Name": "Alexion Pharmaceuticals",
             "Sector": "Health Care",
             "Price": [
@@ -4251,7 +4251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ALXN"
         },
         {
-            "Symbol": "ALGN",
+            "id": "ALGN",
             "Name": "Align Technology",
             "Sector": "Health Care",
             "Price": [
@@ -4376,7 +4376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ALGN"
         },
         {
-            "Symbol": "ALLE",
+            "id": "ALLE",
             "Name": "Allegion",
             "Sector": "Industrials",
             "Price": [
@@ -4501,7 +4501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ALLE"
         },
         {
-            "Symbol": "AGN",
+            "id": "AGN",
             "Name": "Allergan, Plc",
             "Sector": "Health Care",
             "Price": [
@@ -4626,7 +4626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AGN"
         },
         {
-            "Symbol": "ADS",
+            "id": "ADS",
             "Name": "Alliance Data Systems",
             "Sector": "Information Technology",
             "Price": [
@@ -4751,7 +4751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ADS"
         },
         {
-            "Symbol": "LNT",
+            "id": "LNT",
             "Name": "Alliant Energy Corp",
             "Sector": "Utilities",
             "Price": [
@@ -4876,7 +4876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=LNT"
         },
         {
-            "Symbol": "ALL",
+            "id": "ALL",
             "Name": "Allstate Corp",
             "Sector": "Financials",
             "Price": [
@@ -5001,7 +5001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ALL"
         },
         {
-            "Symbol": "GOOGL",
+            "id": "GOOGL",
             "Name": "Alphabet Inc Class A",
             "Sector": "Information Technology",
             "Price": [
@@ -5126,7 +5126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GOOGL"
         },
         {
-            "Symbol": "GOOG",
+            "id": "GOOG",
             "Name": "Alphabet Inc Class C",
             "Sector": "Information Technology",
             "Price": [
@@ -5251,7 +5251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GOOG"
         },
         {
-            "Symbol": "MO",
+            "id": "MO",
             "Name": "Altria Group Inc",
             "Sector": "Consumer Staples",
             "Price": [
@@ -5376,7 +5376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MO"
         },
         {
-            "Symbol": "AMZN",
+            "id": "AMZN",
             "Name": "Amazon.com Inc",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -5501,7 +5501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AMZN"
         },
         {
-            "Symbol": "AEE",
+            "id": "AEE",
             "Name": "Ameren Corp",
             "Sector": "Utilities",
             "Price": [
@@ -5626,7 +5626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AEE"
         },
         {
-            "Symbol": "AAL",
+            "id": "AAL",
             "Name": "American Airlines Group",
             "Sector": "Industrials",
             "Price": [
@@ -5751,7 +5751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AAL"
         },
         {
-            "Symbol": "AEP",
+            "id": "AEP",
             "Name": "American Electric Power",
             "Sector": "Utilities",
             "Price": [
@@ -5876,7 +5876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AEP"
         },
         {
-            "Symbol": "AXP",
+            "id": "AXP",
             "Name": "American Express Co",
             "Sector": "Financials",
             "Price": [
@@ -6001,7 +6001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AXP"
         },
         {
-            "Symbol": "AIG",
+            "id": "AIG",
             "Name": "American International Group, Inc.",
             "Sector": "Financials",
             "Price": [
@@ -6126,7 +6126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AIG"
         },
         {
-            "Symbol": "AMT",
+            "id": "AMT",
             "Name": "American Tower Corp A",
             "Sector": "Real Estate",
             "Price": [
@@ -6251,7 +6251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AMT"
         },
         {
-            "Symbol": "AWK",
+            "id": "AWK",
             "Name": "American Water Works Company Inc",
             "Sector": "Utilities",
             "Price": [
@@ -6376,7 +6376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AWK"
         },
         {
-            "Symbol": "AMP",
+            "id": "AMP",
             "Name": "Ameriprise Financial",
             "Sector": "Financials",
             "Price": [
@@ -6501,7 +6501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AMP"
         },
         {
-            "Symbol": "ABC",
+            "id": "ABC",
             "Name": "AmerisourceBergen Corp",
             "Sector": "Health Care",
             "Price": [
@@ -6626,7 +6626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ABC"
         },
         {
-            "Symbol": "AME",
+            "id": "AME",
             "Name": "AMETEK Inc",
             "Sector": "Industrials",
             "Price": [
@@ -6751,7 +6751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AME"
         },
         {
-            "Symbol": "AMGN",
+            "id": "AMGN",
             "Name": "Amgen Inc",
             "Sector": "Health Care",
             "Price": [
@@ -6876,7 +6876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AMGN"
         },
         {
-            "Symbol": "APH",
+            "id": "APH",
             "Name": "Amphenol Corp",
             "Sector": "Information Technology",
             "Price": [
@@ -7001,7 +7001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=APH"
         },
         {
-            "Symbol": "APC",
+            "id": "APC",
             "Name": "Anadarko Petroleum Corp",
             "Sector": "Energy",
             "Price": [
@@ -7126,7 +7126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=APC"
         },
         {
-            "Symbol": "ADI",
+            "id": "ADI",
             "Name": "Analog Devices, Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -7251,7 +7251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ADI"
         },
         {
-            "Symbol": "ANDV",
+            "id": "ANDV",
             "Name": "Andeavor",
             "Sector": "Energy",
             "Price": [
@@ -7376,7 +7376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ANDV"
         },
         {
-            "Symbol": "ANSS",
+            "id": "ANSS",
             "Name": "ANSYS",
             "Sector": "Information Technology",
             "Price": [
@@ -7501,7 +7501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ANSS"
         },
         {
-            "Symbol": "ANTM",
+            "id": "ANTM",
             "Name": "Anthem Inc.",
             "Sector": "Health Care",
             "Price": [
@@ -7626,7 +7626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ANTM"
         },
         {
-            "Symbol": "AON",
+            "id": "AON",
             "Name": "Aon plc",
             "Sector": "Financials",
             "Price": [
@@ -7751,7 +7751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AON"
         },
         {
-            "Symbol": "APA",
+            "id": "APA",
             "Name": "Apache Corporation",
             "Sector": "Energy",
             "Price": [
@@ -7876,7 +7876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=APA"
         },
         {
-            "Symbol": "AIV",
+            "id": "AIV",
             "Name": "Apartment Investment & Management",
             "Sector": "Real Estate",
             "Price": [
@@ -8001,7 +8001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AIV"
         },
         {
-            "Symbol": "AAPL",
+            "id": "AAPL",
             "Name": "Apple Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -8126,7 +8126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AAPL"
         },
         {
-            "Symbol": "AMAT",
+            "id": "AMAT",
             "Name": "Applied Materials Inc",
             "Sector": "Information Technology",
             "Price": [
@@ -8251,7 +8251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AMAT"
         },
         {
-            "Symbol": "APTV",
+            "id": "APTV",
             "Name": "Aptiv Plc",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -8376,7 +8376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=APTV"
         },
         {
-            "Symbol": "ADM",
+            "id": "ADM",
             "Name": "Archer-Daniels-Midland Co",
             "Sector": "Consumer Staples",
             "Price": [
@@ -8501,7 +8501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ADM"
         },
         {
-            "Symbol": "ARNC",
+            "id": "ARNC",
             "Name": "Arconic Inc",
             "Sector": "Industrials",
             "Price": [
@@ -8626,7 +8626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ARNC"
         },
         {
-            "Symbol": "AJG",
+            "id": "AJG",
             "Name": "Arthur J. Gallagher & Co.",
             "Sector": "Financials",
             "Price": [
@@ -8751,7 +8751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AJG"
         },
         {
-            "Symbol": "AIZ",
+            "id": "AIZ",
             "Name": "Assurant Inc",
             "Sector": "Financials",
             "Price": [
@@ -8876,7 +8876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AIZ"
         },
         {
-            "Symbol": "T",
+            "id": "T",
             "Name": "AT&T Inc",
             "Sector": "Telecommunication Services",
             "Price": [
@@ -9001,7 +9001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=T"
         },
         {
-            "Symbol": "ADSK",
+            "id": "ADSK",
             "Name": "Autodesk Inc",
             "Sector": "Information Technology",
             "Price": [
@@ -9126,7 +9126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ADSK"
         },
         {
-            "Symbol": "ADP",
+            "id": "ADP",
             "Name": "Automatic Data Processing",
             "Sector": "Information Technology",
             "Price": [
@@ -9251,7 +9251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ADP"
         },
         {
-            "Symbol": "AZO",
+            "id": "AZO",
             "Name": "AutoZone Inc",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -9376,7 +9376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AZO"
         },
         {
-            "Symbol": "AVB",
+            "id": "AVB",
             "Name": "AvalonBay Communities, Inc.",
             "Sector": "Real Estate",
             "Price": [
@@ -9501,7 +9501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AVB"
         },
         {
-            "Symbol": "AVY",
+            "id": "AVY",
             "Name": "Avery Dennison Corp",
             "Sector": "Materials",
             "Price": [
@@ -9626,7 +9626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AVY"
         },
         {
-            "Symbol": "BHGE",
+            "id": "BHGE",
             "Name": "Baker Hughes, a GE Company",
             "Sector": "Energy",
             "Price": [
@@ -9751,7 +9751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BHGE"
         },
         {
-            "Symbol": "BLL",
+            "id": "BLL",
             "Name": "Ball Corp",
             "Sector": "Materials",
             "Price": [
@@ -9876,7 +9876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BLL"
         },
         {
-            "Symbol": "BAC",
+            "id": "BAC",
             "Name": "Bank of America Corp",
             "Sector": "Financials",
             "Price": [
@@ -10001,7 +10001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BAC"
         },
         {
-            "Symbol": "BAX",
+            "id": "BAX",
             "Name": "Baxter International Inc.",
             "Sector": "Health Care",
             "Price": [
@@ -10126,7 +10126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BAX"
         },
         {
-            "Symbol": "BBT",
+            "id": "BBT",
             "Name": "BB&T Corporation",
             "Sector": "Financials",
             "Price": [
@@ -10251,7 +10251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BBT"
         },
         {
-            "Symbol": "BDX",
+            "id": "BDX",
             "Name": "Becton Dickinson",
             "Sector": "Health Care",
             "Price": [
@@ -10376,7 +10376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BDX"
         },
         {
-            "Symbol": "BRK.B",
+            "id": "BRK.B",
             "Name": "Berkshire Hathaway",
             "Sector": "Financials",
             "Price": [
@@ -10501,7 +10501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BRK.B"
         },
         {
-            "Symbol": "BBY",
+            "id": "BBY",
             "Name": "Best Buy Co. Inc.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -10626,7 +10626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BBY"
         },
         {
-            "Symbol": "BIIB",
+            "id": "BIIB",
             "Name": "Biogen Inc.",
             "Sector": "Health Care",
             "Price": [
@@ -10751,7 +10751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BIIB"
         },
         {
-            "Symbol": "BLK",
+            "id": "BLK",
             "Name": "BlackRock",
             "Sector": "Financials",
             "Price": [
@@ -10876,7 +10876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BLK"
         },
         {
-            "Symbol": "HRB",
+            "id": "HRB",
             "Name": "Block H&R",
             "Sector": "Financials",
             "Price": [
@@ -11001,7 +11001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HRB"
         },
         {
-            "Symbol": "BA",
+            "id": "BA",
             "Name": "Boeing Company",
             "Sector": "Industrials",
             "Price": [
@@ -11126,7 +11126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BA"
         },
         {
-            "Symbol": "BWA",
+            "id": "BWA",
             "Name": "BorgWarner",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -11251,7 +11251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BWA"
         },
         {
-            "Symbol": "BXP",
+            "id": "BXP",
             "Name": "Boston Properties",
             "Sector": "Real Estate",
             "Price": [
@@ -11376,7 +11376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BXP"
         },
         {
-            "Symbol": "BSX",
+            "id": "BSX",
             "Name": "Boston Scientific",
             "Sector": "Health Care",
             "Price": [
@@ -11501,7 +11501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BSX"
         },
         {
-            "Symbol": "BHF",
+            "id": "BHF",
             "Name": "Brighthouse Financial Inc",
             "Sector": "Financials",
             "Price": [
@@ -11626,7 +11626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BHF"
         },
         {
-            "Symbol": "BMY",
+            "id": "BMY",
             "Name": "Bristol-Myers Squibb",
             "Sector": "Health Care",
             "Price": [
@@ -11751,7 +11751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BMY"
         },
         {
-            "Symbol": "AVGO",
+            "id": "AVGO",
             "Name": "Broadcom",
             "Sector": "Information Technology",
             "Price": [
@@ -11876,7 +11876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=AVGO"
         },
         {
-            "Symbol": "BF.B",
+            "id": "BF.B",
             "Name": "Brown-Forman Corp.",
             "Sector": "Consumer Staples",
             "Price": [
@@ -12001,7 +12001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BF.B"
         },
         {
-            "Symbol": "CHRW",
+            "id": "CHRW",
             "Name": "C. H. Robinson Worldwide",
             "Sector": "Industrials",
             "Price": [
@@ -12126,7 +12126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CHRW"
         },
         {
-            "Symbol": "CA",
+            "id": "CA",
             "Name": "CA, Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -12251,7 +12251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CA"
         },
         {
-            "Symbol": "COG",
+            "id": "COG",
             "Name": "Cabot Oil & Gas",
             "Sector": "Energy",
             "Price": [
@@ -12376,7 +12376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=COG"
         },
         {
-            "Symbol": "CDNS",
+            "id": "CDNS",
             "Name": "Cadence Design Systems",
             "Sector": "Information Technology",
             "Price": [
@@ -12501,7 +12501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CDNS"
         },
         {
-            "Symbol": "CPB",
+            "id": "CPB",
             "Name": "Campbell Soup",
             "Sector": "Consumer Staples",
             "Price": [
@@ -12626,7 +12626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CPB"
         },
         {
-            "Symbol": "COF",
+            "id": "COF",
             "Name": "Capital One Financial",
             "Sector": "Financials",
             "Price": [
@@ -12751,7 +12751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=COF"
         },
         {
-            "Symbol": "CAH",
+            "id": "CAH",
             "Name": "Cardinal Health Inc.",
             "Sector": "Health Care",
             "Price": [
@@ -12876,7 +12876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CAH"
         },
         {
-            "Symbol": "KMX",
+            "id": "KMX",
             "Name": "Carmax Inc",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -13001,7 +13001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=KMX"
         },
         {
-            "Symbol": "CCL",
+            "id": "CCL",
             "Name": "Carnival Corp.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -13126,7 +13126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CCL"
         },
         {
-            "Symbol": "CAT",
+            "id": "CAT",
             "Name": "Caterpillar Inc.",
             "Sector": "Industrials",
             "Price": [
@@ -13251,7 +13251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CAT"
         },
         {
-            "Symbol": "CBOE",
+            "id": "CBOE",
             "Name": "CBOE Holdings",
             "Sector": "Financials",
             "Price": [
@@ -13376,7 +13376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CBOE"
         },
         {
-            "Symbol": "CBG",
+            "id": "CBG",
             "Name": "CBRE Group",
             "Sector": "Real Estate",
             "Price": [
@@ -13501,7 +13501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CBG"
         },
         {
-            "Symbol": "CBS",
+            "id": "CBS",
             "Name": "CBS Corp.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -13626,7 +13626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CBS"
         },
         {
-            "Symbol": "CELG",
+            "id": "CELG",
             "Name": "Celgene Corp.",
             "Sector": "Health Care",
             "Price": [
@@ -13751,7 +13751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CELG"
         },
         {
-            "Symbol": "CNC",
+            "id": "CNC",
             "Name": "Centene Corporation",
             "Sector": "Health Care",
             "Price": [
@@ -13876,7 +13876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CNC"
         },
         {
-            "Symbol": "CNP",
+            "id": "CNP",
             "Name": "CenterPoint Energy",
             "Sector": "Utilities",
             "Price": [
@@ -14001,7 +14001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CNP"
         },
         {
-            "Symbol": "CTL",
+            "id": "CTL",
             "Name": "CenturyLink Inc",
             "Sector": "Telecommunication Services",
             "Price": [
@@ -14126,7 +14126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CTL"
         },
         {
-            "Symbol": "CERN",
+            "id": "CERN",
             "Name": "Cerner",
             "Sector": "Health Care",
             "Price": [
@@ -14251,7 +14251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CERN"
         },
         {
-            "Symbol": "CF",
+            "id": "CF",
             "Name": "CF Industries Holdings Inc",
             "Sector": "Materials",
             "Price": [
@@ -14376,7 +14376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CF"
         },
         {
-            "Symbol": "SCHW",
+            "id": "SCHW",
             "Name": "Charles Schwab Corporation",
             "Sector": "Financials",
             "Price": [
@@ -14501,7 +14501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SCHW"
         },
         {
-            "Symbol": "CHTR",
+            "id": "CHTR",
             "Name": "Charter Communications",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -14626,7 +14626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CHTR"
         },
         {
-            "Symbol": "CHK",
+            "id": "CHK",
             "Name": "Chesapeake Energy",
             "Sector": "Energy",
             "Price": [
@@ -14751,7 +14751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CHK"
         },
         {
-            "Symbol": "CVX",
+            "id": "CVX",
             "Name": "Chevron Corp.",
             "Sector": "Energy",
             "Price": [
@@ -14876,7 +14876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CVX"
         },
         {
-            "Symbol": "CMG",
+            "id": "CMG",
             "Name": "Chipotle Mexican Grill",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -15001,7 +15001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CMG"
         },
         {
-            "Symbol": "CB",
+            "id": "CB",
             "Name": "Chubb Limited",
             "Sector": "Financials",
             "Price": [
@@ -15126,7 +15126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CB"
         },
         {
-            "Symbol": "CHD",
+            "id": "CHD",
             "Name": "Church & Dwight",
             "Sector": "Consumer Staples",
             "Price": [
@@ -15251,7 +15251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CHD"
         },
         {
-            "Symbol": "CI",
+            "id": "CI",
             "Name": "CIGNA Corp.",
             "Sector": "Health Care",
             "Price": [
@@ -15376,7 +15376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CI"
         },
         {
-            "Symbol": "XEC",
+            "id": "XEC",
             "Name": "Cimarex Energy",
             "Sector": "Energy",
             "Price": [
@@ -15501,7 +15501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=XEC"
         },
         {
-            "Symbol": "CINF",
+            "id": "CINF",
             "Name": "Cincinnati Financial",
             "Sector": "Financials",
             "Price": [
@@ -15626,7 +15626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CINF"
         },
         {
-            "Symbol": "CTAS",
+            "id": "CTAS",
             "Name": "Cintas Corporation",
             "Sector": "Industrials",
             "Price": [
@@ -15751,7 +15751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CTAS"
         },
         {
-            "Symbol": "CSCO",
+            "id": "CSCO",
             "Name": "Cisco Systems",
             "Sector": "Information Technology",
             "Price": [
@@ -15876,7 +15876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CSCO"
         },
         {
-            "Symbol": "C",
+            "id": "C",
             "Name": "Citigroup Inc.",
             "Sector": "Financials",
             "Price": [
@@ -16001,7 +16001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=C"
         },
         {
-            "Symbol": "CFG",
+            "id": "CFG",
             "Name": "Citizens Financial Group",
             "Sector": "Financials",
             "Price": [
@@ -16126,7 +16126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CFG"
         },
         {
-            "Symbol": "CTXS",
+            "id": "CTXS",
             "Name": "Citrix Systems",
             "Sector": "Information Technology",
             "Price": [
@@ -16251,7 +16251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CTXS"
         },
         {
-            "Symbol": "CME",
+            "id": "CME",
             "Name": "CME Group Inc.",
             "Sector": "Financials",
             "Price": [
@@ -16376,7 +16376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CME"
         },
         {
-            "Symbol": "CMS",
+            "id": "CMS",
             "Name": "CMS Energy",
             "Sector": "Utilities",
             "Price": [
@@ -16501,7 +16501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CMS"
         },
         {
-            "Symbol": "KO",
+            "id": "KO",
             "Name": "Coca-Cola Company (The)",
             "Sector": "Consumer Staples",
             "Price": [
@@ -16626,7 +16626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=KO"
         },
         {
-            "Symbol": "CTSH",
+            "id": "CTSH",
             "Name": "Cognizant Technology Solutions",
             "Sector": "Information Technology",
             "Price": [
@@ -16751,7 +16751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CTSH"
         },
         {
-            "Symbol": "CL",
+            "id": "CL",
             "Name": "Colgate-Palmolive",
             "Sector": "Consumer Staples",
             "Price": [
@@ -16876,7 +16876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CL"
         },
         {
-            "Symbol": "CMCSA",
+            "id": "CMCSA",
             "Name": "Comcast Corp.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -17001,7 +17001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CMCSA"
         },
         {
-            "Symbol": "CMA",
+            "id": "CMA",
             "Name": "Comerica Inc.",
             "Sector": "Financials",
             "Price": [
@@ -17126,7 +17126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CMA"
         },
         {
-            "Symbol": "CAG",
+            "id": "CAG",
             "Name": "Conagra Brands",
             "Sector": "Consumer Staples",
             "Price": [
@@ -17251,7 +17251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CAG"
         },
         {
-            "Symbol": "CXO",
+            "id": "CXO",
             "Name": "Concho Resources",
             "Sector": "Energy",
             "Price": [
@@ -17376,7 +17376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CXO"
         },
         {
-            "Symbol": "COP",
+            "id": "COP",
             "Name": "ConocoPhillips",
             "Sector": "Energy",
             "Price": [
@@ -17501,7 +17501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=COP"
         },
         {
-            "Symbol": "ED",
+            "id": "ED",
             "Name": "Consolidated Edison",
             "Sector": "Utilities",
             "Price": [
@@ -17626,7 +17626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ED"
         },
         {
-            "Symbol": "STZ",
+            "id": "STZ",
             "Name": "Constellation Brands",
             "Sector": "Consumer Staples",
             "Price": [
@@ -17751,7 +17751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=STZ"
         },
         {
-            "Symbol": "GLW",
+            "id": "GLW",
             "Name": "Corning Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -17876,7 +17876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GLW"
         },
         {
-            "Symbol": "COST",
+            "id": "COST",
             "Name": "Costco Wholesale Corp.",
             "Sector": "Consumer Staples",
             "Price": [
@@ -18001,7 +18001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=COST"
         },
         {
-            "Symbol": "COTY",
+            "id": "COTY",
             "Name": "Coty, Inc",
             "Sector": "Consumer Staples",
             "Price": [
@@ -18126,7 +18126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=COTY"
         },
         {
-            "Symbol": "CCI",
+            "id": "CCI",
             "Name": "Crown Castle International Corp.",
             "Sector": "Real Estate",
             "Price": [
@@ -18251,7 +18251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CCI"
         },
         {
-            "Symbol": "CSRA",
+            "id": "CSRA",
             "Name": "CSRA Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -18376,7 +18376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CSRA"
         },
         {
-            "Symbol": "CSX",
+            "id": "CSX",
             "Name": "CSX Corp.",
             "Sector": "Industrials",
             "Price": [
@@ -18501,7 +18501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CSX"
         },
         {
-            "Symbol": "CMI",
+            "id": "CMI",
             "Name": "Cummins Inc.",
             "Sector": "Industrials",
             "Price": [
@@ -18626,7 +18626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CMI"
         },
         {
-            "Symbol": "CVS",
+            "id": "CVS",
             "Name": "CVS Health",
             "Sector": "Consumer Staples",
             "Price": [
@@ -18751,7 +18751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CVS"
         },
         {
-            "Symbol": "DHI",
+            "id": "DHI",
             "Name": "D. R. Horton",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -18876,7 +18876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DHI"
         },
         {
-            "Symbol": "DHR",
+            "id": "DHR",
             "Name": "Danaher Corp.",
             "Sector": "Health Care",
             "Price": [
@@ -19001,7 +19001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DHR"
         },
         {
-            "Symbol": "DRI",
+            "id": "DRI",
             "Name": "Darden Restaurants",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -19126,7 +19126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DRI"
         },
         {
-            "Symbol": "DVA",
+            "id": "DVA",
             "Name": "DaVita Inc.",
             "Sector": "Health Care",
             "Price": [
@@ -19251,7 +19251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DVA"
         },
         {
-            "Symbol": "DE",
+            "id": "DE",
             "Name": "Deere & Co.",
             "Sector": "Industrials",
             "Price": [
@@ -19376,7 +19376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DE"
         },
         {
-            "Symbol": "DAL",
+            "id": "DAL",
             "Name": "Delta Air Lines Inc.",
             "Sector": "Industrials",
             "Price": [
@@ -19501,7 +19501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DAL"
         },
         {
-            "Symbol": "XRAY",
+            "id": "XRAY",
             "Name": "Dentsply Sirona",
             "Sector": "Health Care",
             "Price": [
@@ -19626,7 +19626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=XRAY"
         },
         {
-            "Symbol": "DVN",
+            "id": "DVN",
             "Name": "Devon Energy Corp.",
             "Sector": "Energy",
             "Price": [
@@ -19751,7 +19751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DVN"
         },
         {
-            "Symbol": "DLR",
+            "id": "DLR",
             "Name": "Digital Realty Trust Inc",
             "Sector": "Real Estate",
             "Price": [
@@ -19876,7 +19876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DLR"
         },
         {
-            "Symbol": "DFS",
+            "id": "DFS",
             "Name": "Discover Financial Services",
             "Sector": "Financials",
             "Price": [
@@ -20001,7 +20001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DFS"
         },
         {
-            "Symbol": "DISCA",
+            "id": "DISCA",
             "Name": "Discovery Communications-A",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -20126,7 +20126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DISCA"
         },
         {
-            "Symbol": "DISCK",
+            "id": "DISCK",
             "Name": "Discovery Communications-C",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -20251,7 +20251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DISCK"
         },
         {
-            "Symbol": "DISH",
+            "id": "DISH",
             "Name": "Dish Network",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -20376,7 +20376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DISH"
         },
         {
-            "Symbol": "DG",
+            "id": "DG",
             "Name": "Dollar General",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -20501,7 +20501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DG"
         },
         {
-            "Symbol": "DLTR",
+            "id": "DLTR",
             "Name": "Dollar Tree",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -20626,7 +20626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DLTR"
         },
         {
-            "Symbol": "D",
+            "id": "D",
             "Name": "Dominion Energy",
             "Sector": "Utilities",
             "Price": [
@@ -20751,7 +20751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=D"
         },
         {
-            "Symbol": "DOV",
+            "id": "DOV",
             "Name": "Dover Corp.",
             "Sector": "Industrials",
             "Price": [
@@ -20876,7 +20876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DOV"
         },
         {
-            "Symbol": "DWDP",
+            "id": "DWDP",
             "Name": "DowDuPont",
             "Sector": "Materials",
             "Price": [
@@ -21001,7 +21001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DWDP"
         },
         {
-            "Symbol": "DPS",
+            "id": "DPS",
             "Name": "Dr Pepper Snapple Group",
             "Sector": "Consumer Staples",
             "Price": [
@@ -21126,7 +21126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DPS"
         },
         {
-            "Symbol": "DTE",
+            "id": "DTE",
             "Name": "DTE Energy Co.",
             "Sector": "Utilities",
             "Price": [
@@ -21251,7 +21251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DTE"
         },
         {
-            "Symbol": "DUK",
+            "id": "DUK",
             "Name": "Duke Energy",
             "Sector": "Utilities",
             "Price": [
@@ -21376,7 +21376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DUK"
         },
         {
-            "Symbol": "DRE",
+            "id": "DRE",
             "Name": "Duke Realty Corp",
             "Sector": "Real Estate",
             "Price": [
@@ -21501,7 +21501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DRE"
         },
         {
-            "Symbol": "DXC",
+            "id": "DXC",
             "Name": "DXC Technology",
             "Sector": "Information Technology",
             "Price": [
@@ -21626,7 +21626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DXC"
         },
         {
-            "Symbol": "ETFC",
+            "id": "ETFC",
             "Name": "E*Trade",
             "Sector": "Financials",
             "Price": [
@@ -21751,7 +21751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ETFC"
         },
         {
-            "Symbol": "EMN",
+            "id": "EMN",
             "Name": "Eastman Chemical",
             "Sector": "Materials",
             "Price": [
@@ -21876,7 +21876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=EMN"
         },
         {
-            "Symbol": "ETN",
+            "id": "ETN",
             "Name": "Eaton Corporation",
             "Sector": "Industrials",
             "Price": [
@@ -22001,7 +22001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ETN"
         },
         {
-            "Symbol": "EBAY",
+            "id": "EBAY",
             "Name": "eBay Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -22126,7 +22126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=EBAY"
         },
         {
-            "Symbol": "ECL",
+            "id": "ECL",
             "Name": "Ecolab Inc.",
             "Sector": "Materials",
             "Price": [
@@ -22251,8 +22251,8 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ECL"
         },
         {
-            "Symbol": "EIX",
-            "Name": "Edison Ints'l",
+            "id": "EIX",
+            "Name": "Edison Int'l",
             "Sector": "Utilities",
             "Price": [
                 58.354543,
@@ -22376,7 +22376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=EIX"
         },
         {
-            "Symbol": "EW",
+            "id": "EW",
             "Name": "Edwards Lifesciences",
             "Sector": "Health Care",
             "Price": [
@@ -22501,7 +22501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=EW"
         },
         {
-            "Symbol": "EA",
+            "id": "EA",
             "Name": "Electronic Arts",
             "Sector": "Information Technology",
             "Price": [
@@ -22626,7 +22626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=EA"
         },
         {
-            "Symbol": "EMR",
+            "id": "EMR",
             "Name": "Emerson Electric Company",
             "Sector": "Industrials",
             "Price": [
@@ -22751,7 +22751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=EMR"
         },
         {
-            "Symbol": "ETR",
+            "id": "ETR",
             "Name": "Entergy Corp.",
             "Sector": "Utilities",
             "Price": [
@@ -22876,7 +22876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ETR"
         },
         {
-            "Symbol": "EVHC",
+            "id": "EVHC",
             "Name": "Envision Healthcare",
             "Sector": "Health Care",
             "Price": [
@@ -23001,7 +23001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=EVHC"
         },
         {
-            "Symbol": "EOG",
+            "id": "EOG",
             "Name": "EOG Resources",
             "Sector": "Energy",
             "Price": [
@@ -23126,7 +23126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=EOG"
         },
         {
-            "Symbol": "EQT",
+            "id": "EQT",
             "Name": "EQT Corporation",
             "Sector": "Energy",
             "Price": [
@@ -23251,7 +23251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=EQT"
         },
         {
-            "Symbol": "EFX",
+            "id": "EFX",
             "Name": "Equifax Inc.",
             "Sector": "Industrials",
             "Price": [
@@ -23376,7 +23376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=EFX"
         },
         {
-            "Symbol": "EQIX",
+            "id": "EQIX",
             "Name": "Equinix",
             "Sector": "Real Estate",
             "Price": [
@@ -23501,7 +23501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=EQIX"
         },
         {
-            "Symbol": "EQR",
+            "id": "EQR",
             "Name": "Equity Residential",
             "Sector": "Real Estate",
             "Price": [
@@ -23626,7 +23626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=EQR"
         },
         {
-            "Symbol": "ESS",
+            "id": "ESS",
             "Name": "Essex Property Trust, Inc.",
             "Sector": "Real Estate",
             "Price": [
@@ -23751,7 +23751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ESS"
         },
         {
-            "Symbol": "EL",
+            "id": "EL",
             "Name": "Estee Lauder Cos.",
             "Sector": "Consumer Staples",
             "Price": [
@@ -23876,7 +23876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=EL"
         },
         {
-            "Symbol": "RE",
+            "id": "RE",
             "Name": "Everest Re Group Ltd.",
             "Sector": "Financials",
             "Price": [
@@ -24001,7 +24001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=RE"
         },
         {
-            "Symbol": "ES",
+            "id": "ES",
             "Name": "Eversource Energy",
             "Sector": "Utilities",
             "Price": [
@@ -24126,7 +24126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ES"
         },
         {
-            "Symbol": "EXC",
+            "id": "EXC",
             "Name": "Exelon Corp.",
             "Sector": "Utilities",
             "Price": [
@@ -24251,7 +24251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=EXC"
         },
         {
-            "Symbol": "EXPE",
+            "id": "EXPE",
             "Name": "Expedia Inc.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -24376,7 +24376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=EXPE"
         },
         {
-            "Symbol": "EXPD",
+            "id": "EXPD",
             "Name": "Expeditors International",
             "Sector": "Industrials",
             "Price": [
@@ -24501,7 +24501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=EXPD"
         },
         {
-            "Symbol": "ESRX",
+            "id": "ESRX",
             "Name": "Express Scripts",
             "Sector": "Health Care",
             "Price": [
@@ -24626,7 +24626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ESRX"
         },
         {
-            "Symbol": "EXR",
+            "id": "EXR",
             "Name": "Extra Space Storage",
             "Sector": "Real Estate",
             "Price": [
@@ -24751,7 +24751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=EXR"
         },
         {
-            "Symbol": "XOM",
+            "id": "XOM",
             "Name": "Exxon Mobil Corp.",
             "Sector": "Energy",
             "Price": [
@@ -24876,7 +24876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=XOM"
         },
         {
-            "Symbol": "FFIV",
+            "id": "FFIV",
             "Name": "F5 Networks",
             "Sector": "Information Technology",
             "Price": [
@@ -25001,7 +25001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FFIV"
         },
         {
-            "Symbol": "FB",
+            "id": "FB",
             "Name": "Facebook, Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -25126,7 +25126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FB"
         },
         {
-            "Symbol": "FAST",
+            "id": "FAST",
             "Name": "Fastenal Co",
             "Sector": "Industrials",
             "Price": [
@@ -25251,7 +25251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FAST"
         },
         {
-            "Symbol": "FRT",
+            "id": "FRT",
             "Name": "Federal Realty Investment Trust",
             "Sector": "Real Estate",
             "Price": [
@@ -25376,7 +25376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FRT"
         },
         {
-            "Symbol": "FDX",
+            "id": "FDX",
             "Name": "FedEx Corporation",
             "Sector": "Industrials",
             "Price": [
@@ -25501,7 +25501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FDX"
         },
         {
-            "Symbol": "FIS",
+            "id": "FIS",
             "Name": "Fidelity National Information Services",
             "Sector": "Information Technology",
             "Price": [
@@ -25626,7 +25626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FIS"
         },
         {
-            "Symbol": "FITB",
+            "id": "FITB",
             "Name": "Fifth Third Bancorp",
             "Sector": "Financials",
             "Price": [
@@ -25751,7 +25751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FITB"
         },
         {
-            "Symbol": "FE",
+            "id": "FE",
             "Name": "FirstEnergy Corp",
             "Sector": "Utilities",
             "Price": [
@@ -25876,7 +25876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FE"
         },
         {
-            "Symbol": "FISV",
+            "id": "FISV",
             "Name": "Fiserv Inc",
             "Sector": "Information Technology",
             "Price": [
@@ -26001,7 +26001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FISV"
         },
         {
-            "Symbol": "FLIR",
+            "id": "FLIR",
             "Name": "FLIR Systems",
             "Sector": "Information Technology",
             "Price": [
@@ -26126,7 +26126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FLIR"
         },
         {
-            "Symbol": "FLS",
+            "id": "FLS",
             "Name": "Flowserve Corporation",
             "Sector": "Industrials",
             "Price": [
@@ -26251,7 +26251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FLS"
         },
         {
-            "Symbol": "FLR",
+            "id": "FLR",
             "Name": "Fluor Corp.",
             "Sector": "Industrials",
             "Price": [
@@ -26376,7 +26376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FLR"
         },
         {
-            "Symbol": "FMC",
+            "id": "FMC",
             "Name": "FMC Corporation",
             "Sector": "Materials",
             "Price": [
@@ -26501,7 +26501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FMC"
         },
         {
-            "Symbol": "FL",
+            "id": "FL",
             "Name": "Foot Locker Inc",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -26626,7 +26626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FL"
         },
         {
-            "Symbol": "F",
+            "id": "F",
             "Name": "Ford Motor",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -26751,7 +26751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=F"
         },
         {
-            "Symbol": "FTV",
+            "id": "FTV",
             "Name": "Fortive Corp",
             "Sector": "Industrials",
             "Price": [
@@ -26876,7 +26876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FTV"
         },
         {
-            "Symbol": "FBHS",
+            "id": "FBHS",
             "Name": "Fortune Brands Home & Security",
             "Sector": "Industrials",
             "Price": [
@@ -27001,7 +27001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FBHS"
         },
         {
-            "Symbol": "BEN",
+            "id": "BEN",
             "Name": "Franklin Resources",
             "Sector": "Financials",
             "Price": [
@@ -27126,7 +27126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BEN"
         },
         {
-            "Symbol": "FCX",
+            "id": "FCX",
             "Name": "Freeport-McMoRan Inc.",
             "Sector": "Materials",
             "Price": [
@@ -27251,7 +27251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FCX"
         },
         {
-            "Symbol": "GPS",
+            "id": "GPS",
             "Name": "Gap Inc.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -27376,7 +27376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GPS"
         },
         {
-            "Symbol": "GRMN",
+            "id": "GRMN",
             "Name": "Garmin Ltd.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -27501,7 +27501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GRMN"
         },
         {
-            "Symbol": "IT",
+            "id": "IT",
             "Name": "Gartner Inc",
             "Sector": "Information Technology",
             "Price": [
@@ -27626,7 +27626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=IT"
         },
         {
-            "Symbol": "GD",
+            "id": "GD",
             "Name": "General Dynamics",
             "Sector": "Industrials",
             "Price": [
@@ -27751,7 +27751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GD"
         },
         {
-            "Symbol": "GE",
+            "id": "GE",
             "Name": "General Electric",
             "Sector": "Industrials",
             "Price": [
@@ -27876,7 +27876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GE"
         },
         {
-            "Symbol": "GGP",
+            "id": "GGP",
             "Name": "General Growth Properties Inc.",
             "Sector": "Real Estate",
             "Price": [
@@ -28001,7 +28001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GGP"
         },
         {
-            "Symbol": "GIS",
+            "id": "GIS",
             "Name": "General Mills",
             "Sector": "Consumer Staples",
             "Price": [
@@ -28126,7 +28126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GIS"
         },
         {
-            "Symbol": "GM",
+            "id": "GM",
             "Name": "General Motors",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -28251,7 +28251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GM"
         },
         {
-            "Symbol": "GPC",
+            "id": "GPC",
             "Name": "Genuine Parts",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -28376,7 +28376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GPC"
         },
         {
-            "Symbol": "GILD",
+            "id": "GILD",
             "Name": "Gilead Sciences",
             "Sector": "Health Care",
             "Price": [
@@ -28501,7 +28501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GILD"
         },
         {
-            "Symbol": "GPN",
+            "id": "GPN",
             "Name": "Global Payments Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -28626,7 +28626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GPN"
         },
         {
-            "Symbol": "GS",
+            "id": "GS",
             "Name": "Goldman Sachs Group",
             "Sector": "Financials",
             "Price": [
@@ -28751,7 +28751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GS"
         },
         {
-            "Symbol": "GT",
+            "id": "GT",
             "Name": "Goodyear Tire & Rubber",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -28876,7 +28876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GT"
         },
         {
-            "Symbol": "GWW",
+            "id": "GWW",
             "Name": "Grainger (W.W.) Inc.",
             "Sector": "Industrials",
             "Price": [
@@ -29001,7 +29001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=GWW"
         },
         {
-            "Symbol": "HAL",
+            "id": "HAL",
             "Name": "Halliburton Co.",
             "Sector": "Energy",
             "Price": [
@@ -29126,7 +29126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HAL"
         },
         {
-            "Symbol": "HBI",
+            "id": "HBI",
             "Name": "Hanesbrands Inc",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -29251,7 +29251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HBI"
         },
         {
-            "Symbol": "HOG",
+            "id": "HOG",
             "Name": "Harley-Davidson",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -29376,7 +29376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HOG"
         },
         {
-            "Symbol": "HRS",
+            "id": "HRS",
             "Name": "Harris Corporation",
             "Sector": "Information Technology",
             "Price": [
@@ -29501,7 +29501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HRS"
         },
         {
-            "Symbol": "HIG",
+            "id": "HIG",
             "Name": "Hartford Financial Svc.Gp.",
             "Sector": "Financials",
             "Price": [
@@ -29626,7 +29626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HIG"
         },
         {
-            "Symbol": "HAS",
+            "id": "HAS",
             "Name": "Hasbro Inc.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -29751,7 +29751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HAS"
         },
         {
-            "Symbol": "HCA",
+            "id": "HCA",
             "Name": "HCA Holdings",
             "Sector": "Health Care",
             "Price": [
@@ -29876,7 +29876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HCA"
         },
         {
-            "Symbol": "HCP",
+            "id": "HCP",
             "Name": "HCP Inc.",
             "Sector": "Real Estate",
             "Price": [
@@ -30001,7 +30001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HCP"
         },
         {
-            "Symbol": "HP",
+            "id": "HP",
             "Name": "Helmerich & Payne",
             "Sector": "Energy",
             "Price": [
@@ -30126,7 +30126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HP"
         },
         {
-            "Symbol": "HSIC",
+            "id": "HSIC",
             "Name": "Henry Schein",
             "Sector": "Health Care",
             "Price": [
@@ -30251,7 +30251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HSIC"
         },
         {
-            "Symbol": "HES",
+            "id": "HES",
             "Name": "Hess Corporation",
             "Sector": "Energy",
             "Price": [
@@ -30376,7 +30376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HES"
         },
         {
-            "Symbol": "HPE",
+            "id": "HPE",
             "Name": "Hewlett Packard Enterprise",
             "Sector": "Information Technology",
             "Price": [
@@ -30501,7 +30501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HPE"
         },
         {
-            "Symbol": "HLT",
+            "id": "HLT",
             "Name": "Hilton Worldwide Holdings Inc",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -30626,7 +30626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HLT"
         },
         {
-            "Symbol": "HOLX",
+            "id": "HOLX",
             "Name": "Hologic",
             "Sector": "Health Care",
             "Price": [
@@ -30751,7 +30751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HOLX"
         },
         {
-            "Symbol": "HD",
+            "id": "HD",
             "Name": "Home Depot",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -30876,7 +30876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HD"
         },
         {
-            "Symbol": "HON",
+            "id": "HON",
             "Name": "Honeywell Int'l Inc.",
             "Sector": "Industrials",
             "Price": [
@@ -31001,7 +31001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HON"
         },
         {
-            "Symbol": "HRL",
+            "id": "HRL",
             "Name": "Hormel Foods Corp.",
             "Sector": "Consumer Staples",
             "Price": [
@@ -31126,7 +31126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HRL"
         },
         {
-            "Symbol": "HST",
+            "id": "HST",
             "Name": "Host Hotels & Resorts",
             "Sector": "Real Estate",
             "Price": [
@@ -31251,7 +31251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HST"
         },
         {
-            "Symbol": "HPQ",
+            "id": "HPQ",
             "Name": "HP Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -31376,7 +31376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HPQ"
         },
         {
-            "Symbol": "HUM",
+            "id": "HUM",
             "Name": "Humana Inc.",
             "Sector": "Health Care",
             "Price": [
@@ -31501,7 +31501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HUM"
         },
         {
-            "Symbol": "HBAN",
+            "id": "HBAN",
             "Name": "Huntington Bancshares",
             "Sector": "Financials",
             "Price": [
@@ -31626,7 +31626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HBAN"
         },
         {
-            "Symbol": "HII",
+            "id": "HII",
             "Name": "Huntington Ingalls Industries",
             "Sector": "Industrials",
             "Price": [
@@ -31751,7 +31751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HII"
         },
         {
-            "Symbol": "IDXX",
+            "id": "IDXX",
             "Name": "IDEXX Laboratories",
             "Sector": "Health Care",
             "Price": [
@@ -31876,7 +31876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=IDXX"
         },
         {
-            "Symbol": "INFO",
+            "id": "INFO",
             "Name": "IHS Markit Ltd.",
             "Sector": "Industrials",
             "Price": [
@@ -32001,7 +32001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=INFO"
         },
         {
-            "Symbol": "ITW",
+            "id": "ITW",
             "Name": "Illinois Tool Works",
             "Sector": "Industrials",
             "Price": [
@@ -32126,7 +32126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ITW"
         },
         {
-            "Symbol": "ILMN",
+            "id": "ILMN",
             "Name": "Illumina Inc",
             "Sector": "Health Care",
             "Price": [
@@ -32251,7 +32251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ILMN"
         },
         {
-            "Symbol": "INCY",
+            "id": "INCY",
             "Name": "Incyte",
             "Sector": "Health Care",
             "Price": [
@@ -32376,7 +32376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=INCY"
         },
         {
-            "Symbol": "IR",
+            "id": "IR",
             "Name": "Ingersoll-Rand PLC",
             "Sector": "Industrials",
             "Price": [
@@ -32501,7 +32501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=IR"
         },
         {
-            "Symbol": "INTC",
+            "id": "INTC",
             "Name": "Intel Corp.",
             "Sector": "Information Technology",
             "Price": [
@@ -32626,7 +32626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=INTC"
         },
         {
-            "Symbol": "ICE",
+            "id": "ICE",
             "Name": "Intercontinental Exchange",
             "Sector": "Financials",
             "Price": [
@@ -32751,7 +32751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ICE"
         },
         {
-            "Symbol": "IBM",
+            "id": "IBM",
             "Name": "International Business Machines",
             "Sector": "Information Technology",
             "Price": [
@@ -32876,7 +32876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=IBM"
         },
         {
-            "Symbol": "IP",
+            "id": "IP",
             "Name": "International Paper",
             "Sector": "Materials",
             "Price": [
@@ -33001,7 +33001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=IP"
         },
         {
-            "Symbol": "IPG",
+            "id": "IPG",
             "Name": "Interpublic Group",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -33126,7 +33126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=IPG"
         },
         {
-            "Symbol": "IFF",
+            "id": "IFF",
             "Name": "Intl Flavors & Fragrances",
             "Sector": "Materials",
             "Price": [
@@ -33251,7 +33251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=IFF"
         },
         {
-            "Symbol": "INTU",
+            "id": "INTU",
             "Name": "Intuit Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -33376,7 +33376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=INTU"
         },
         {
-            "Symbol": "ISRG",
+            "id": "ISRG",
             "Name": "Intuitive Surgical Inc.",
             "Sector": "Health Care",
             "Price": [
@@ -33501,7 +33501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ISRG"
         },
         {
-            "Symbol": "IVZ",
+            "id": "IVZ",
             "Name": "Invesco Ltd.",
             "Sector": "Financials",
             "Price": [
@@ -33626,7 +33626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=IVZ"
         },
         {
-            "Symbol": "IQV",
+            "id": "IQV",
             "Name": "IQVIA Holdings Inc.",
             "Sector": "Health Care",
             "Price": [
@@ -33751,7 +33751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=IQV"
         },
         {
-            "Symbol": "IRM",
+            "id": "IRM",
             "Name": "Iron Mountain Incorporated",
             "Sector": "Real Estate",
             "Price": [
@@ -33876,7 +33876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=IRM"
         },
         {
-            "Symbol": "JBHT",
+            "id": "JBHT",
             "Name": "J. B. Hunt Transport Services",
             "Sector": "Industrials",
             "Price": [
@@ -34001,7 +34001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=JBHT"
         },
         {
-            "Symbol": "JEC",
+            "id": "JEC",
             "Name": "Jacobs Engineering Group",
             "Sector": "Industrials",
             "Price": [
@@ -34126,7 +34126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=JEC"
         },
         {
-            "Symbol": "SJM",
+            "id": "SJM",
             "Name": "JM Smucker",
             "Sector": "Consumer Staples",
             "Price": [
@@ -34251,7 +34251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SJM"
         },
         {
-            "Symbol": "JNJ",
+            "id": "JNJ",
             "Name": "Johnson & Johnson",
             "Sector": "Health Care",
             "Price": [
@@ -34376,7 +34376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=JNJ"
         },
         {
-            "Symbol": "JCI",
+            "id": "JCI",
             "Name": "Johnson Controls International",
             "Sector": "Industrials",
             "Price": [
@@ -34501,7 +34501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=JCI"
         },
         {
-            "Symbol": "JPM",
+            "id": "JPM",
             "Name": "JPMorgan Chase & Co.",
             "Sector": "Financials",
             "Price": [
@@ -34626,7 +34626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=JPM"
         },
         {
-            "Symbol": "JNPR",
+            "id": "JNPR",
             "Name": "Juniper Networks",
             "Sector": "Information Technology",
             "Price": [
@@ -34751,7 +34751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=JNPR"
         },
         {
-            "Symbol": "KSU",
+            "id": "KSU",
             "Name": "Kansas City Southern",
             "Sector": "Industrials",
             "Price": [
@@ -34876,7 +34876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=KSU"
         },
         {
-            "Symbol": "K",
+            "id": "K",
             "Name": "Kellogg Co.",
             "Sector": "Consumer Staples",
             "Price": [
@@ -35001,7 +35001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=K"
         },
         {
-            "Symbol": "KEY",
+            "id": "KEY",
             "Name": "KeyCorp",
             "Sector": "Financials",
             "Price": [
@@ -35126,7 +35126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=KEY"
         },
         {
-            "Symbol": "KMB",
+            "id": "KMB",
             "Name": "Kimberly-Clark",
             "Sector": "Consumer Staples",
             "Price": [
@@ -35251,7 +35251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=KMB"
         },
         {
-            "Symbol": "KIM",
+            "id": "KIM",
             "Name": "Kimco Realty",
             "Sector": "Real Estate",
             "Price": [
@@ -35376,7 +35376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=KIM"
         },
         {
-            "Symbol": "KMI",
+            "id": "KMI",
             "Name": "Kinder Morgan",
             "Sector": "Energy",
             "Price": [
@@ -35501,7 +35501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=KMI"
         },
         {
-            "Symbol": "KLAC",
+            "id": "KLAC",
             "Name": "KLA-Tencor Corp.",
             "Sector": "Information Technology",
             "Price": [
@@ -35626,7 +35626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=KLAC"
         },
         {
-            "Symbol": "KSS",
+            "id": "KSS",
             "Name": "Kohl's Corp.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -35751,7 +35751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=KSS"
         },
         {
-            "Symbol": "KHC",
+            "id": "KHC",
             "Name": "Kraft Heinz Co",
             "Sector": "Consumer Staples",
             "Price": [
@@ -35876,7 +35876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=KHC"
         },
         {
-            "Symbol": "KR",
+            "id": "KR",
             "Name": "Kroger Co.",
             "Sector": "Consumer Staples",
             "Price": [
@@ -36001,7 +36001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=KR"
         },
         {
-            "Symbol": "LB",
+            "id": "LB",
             "Name": "L Brands Inc.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -36126,7 +36126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=LB"
         },
         {
-            "Symbol": "LLL",
+            "id": "LLL",
             "Name": "L-3 Communications Holdings",
             "Sector": "Industrials",
             "Price": [
@@ -36251,7 +36251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=LLL"
         },
         {
-            "Symbol": "LH",
+            "id": "LH",
             "Name": "Laboratory Corp. of America Holding",
             "Sector": "Health Care",
             "Price": [
@@ -36376,7 +36376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=LH"
         },
         {
-            "Symbol": "LRCX",
+            "id": "LRCX",
             "Name": "Lam Research",
             "Sector": "Information Technology",
             "Price": [
@@ -36501,7 +36501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=LRCX"
         },
         {
-            "Symbol": "LEG",
+            "id": "LEG",
             "Name": "Leggett & Platt",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -36626,7 +36626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=LEG"
         },
         {
-            "Symbol": "LEN",
+            "id": "LEN",
             "Name": "Lennar Corp.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -36751,7 +36751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=LEN"
         },
         {
-            "Symbol": "LUK",
+            "id": "LUK",
             "Name": "Leucadia National Corp.",
             "Sector": "Financials",
             "Price": [
@@ -36876,7 +36876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=LUK"
         },
         {
-            "Symbol": "LLY",
+            "id": "LLY",
             "Name": "Lilly (Eli) & Co.",
             "Sector": "Health Care",
             "Price": [
@@ -37001,7 +37001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=LLY"
         },
         {
-            "Symbol": "LNC",
+            "id": "LNC",
             "Name": "Lincoln National",
             "Sector": "Financials",
             "Price": [
@@ -37126,7 +37126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=LNC"
         },
         {
-            "Symbol": "LKQ",
+            "id": "LKQ",
             "Name": "LKQ Corporation",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -37251,7 +37251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=LKQ"
         },
         {
-            "Symbol": "LMT",
+            "id": "LMT",
             "Name": "Lockheed Martin Corp.",
             "Sector": "Industrials",
             "Price": [
@@ -37376,7 +37376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=LMT"
         },
         {
-            "Symbol": "L",
+            "id": "L",
             "Name": "Loews Corp.",
             "Sector": "Financials",
             "Price": [
@@ -37501,7 +37501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=L"
         },
         {
-            "Symbol": "LOW",
+            "id": "LOW",
             "Name": "Lowe's Cos.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -37626,7 +37626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=LOW"
         },
         {
-            "Symbol": "LYB",
+            "id": "LYB",
             "Name": "LyondellBasell",
             "Sector": "Materials",
             "Price": [
@@ -37751,7 +37751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=LYB"
         },
         {
-            "Symbol": "MTB",
+            "id": "MTB",
             "Name": "M&T Bank Corp.",
             "Sector": "Financials",
             "Price": [
@@ -37876,7 +37876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MTB"
         },
         {
-            "Symbol": "MAC",
+            "id": "MAC",
             "Name": "Macerich",
             "Sector": "Real Estate",
             "Price": [
@@ -38001,7 +38001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MAC"
         },
         {
-            "Symbol": "M",
+            "id": "M",
             "Name": "Macy's Inc.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -38126,7 +38126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=M"
         },
         {
-            "Symbol": "MRO",
+            "id": "MRO",
             "Name": "Marathon Oil Corp.",
             "Sector": "Energy",
             "Price": [
@@ -38251,7 +38251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MRO"
         },
         {
-            "Symbol": "MPC",
+            "id": "MPC",
             "Name": "Marathon Petroleum",
             "Sector": "Energy",
             "Price": [
@@ -38376,7 +38376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MPC"
         },
         {
-            "Symbol": "MAR",
+            "id": "MAR",
             "Name": "Marriott Int'l.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -38501,7 +38501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MAR"
         },
         {
-            "Symbol": "MMC",
+            "id": "MMC",
             "Name": "Marsh & McLennan",
             "Sector": "Financials",
             "Price": [
@@ -38626,7 +38626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MMC"
         },
         {
-            "Symbol": "MLM",
+            "id": "MLM",
             "Name": "Martin Marietta Materials",
             "Sector": "Materials",
             "Price": [
@@ -38751,7 +38751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MLM"
         },
         {
-            "Symbol": "MAS",
+            "id": "MAS",
             "Name": "Masco Corp.",
             "Sector": "Industrials",
             "Price": [
@@ -38876,7 +38876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MAS"
         },
         {
-            "Symbol": "MA",
+            "id": "MA",
             "Name": "Mastercard Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -39001,7 +39001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MA"
         },
         {
-            "Symbol": "MAT",
+            "id": "MAT",
             "Name": "Mattel Inc.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -39126,7 +39126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MAT"
         },
         {
-            "Symbol": "MKC",
+            "id": "MKC",
             "Name": "McCormick & Co.",
             "Sector": "Consumer Staples",
             "Price": [
@@ -39251,7 +39251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MKC"
         },
         {
-            "Symbol": "MCD",
+            "id": "MCD",
             "Name": "McDonald's Corp.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -39376,7 +39376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MCD"
         },
         {
-            "Symbol": "MCK",
+            "id": "MCK",
             "Name": "McKesson Corp.",
             "Sector": "Health Care",
             "Price": [
@@ -39501,7 +39501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MCK"
         },
         {
-            "Symbol": "MDT",
+            "id": "MDT",
             "Name": "Medtronic plc",
             "Sector": "Health Care",
             "Price": [
@@ -39626,7 +39626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MDT"
         },
         {
-            "Symbol": "MRK",
+            "id": "MRK",
             "Name": "Merck & Co.",
             "Sector": "Health Care",
             "Price": [
@@ -39751,7 +39751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MRK"
         },
         {
-            "Symbol": "MET",
+            "id": "MET",
             "Name": "MetLife Inc.",
             "Sector": "Financials",
             "Price": [
@@ -39876,7 +39876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MET"
         },
         {
-            "Symbol": "MTD",
+            "id": "MTD",
             "Name": "Mettler Toledo",
             "Sector": "Health Care",
             "Price": [
@@ -40001,7 +40001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MTD"
         },
         {
-            "Symbol": "MGM",
+            "id": "MGM",
             "Name": "MGM Resorts International",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -40126,7 +40126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MGM"
         },
         {
-            "Symbol": "KORS",
+            "id": "KORS",
             "Name": "Michael Kors Holdings",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -40251,7 +40251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=KORS"
         },
         {
-            "Symbol": "MCHP",
+            "id": "MCHP",
             "Name": "Microchip Technology",
             "Sector": "Information Technology",
             "Price": [
@@ -40376,7 +40376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MCHP"
         },
         {
-            "Symbol": "MU",
+            "id": "MU",
             "Name": "Micron Technology",
             "Sector": "Information Technology",
             "Price": [
@@ -40501,7 +40501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MU"
         },
         {
-            "Symbol": "MSFT",
+            "id": "MSFT",
             "Name": "Microsoft Corp.",
             "Sector": "Information Technology",
             "Price": [
@@ -40626,7 +40626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MSFT"
         },
         {
-            "Symbol": "MAA",
+            "id": "MAA",
             "Name": "Mid-America Apartments",
             "Sector": "Real Estate",
             "Price": [
@@ -40751,7 +40751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MAA"
         },
         {
-            "Symbol": "MHK",
+            "id": "MHK",
             "Name": "Mohawk Industries",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -40876,7 +40876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MHK"
         },
         {
-            "Symbol": "TAP",
+            "id": "TAP",
             "Name": "Molson Coors Brewing Company",
             "Sector": "Consumer Staples",
             "Price": [
@@ -41001,7 +41001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=TAP"
         },
         {
-            "Symbol": "MDLZ",
+            "id": "MDLZ",
             "Name": "Mondelez International",
             "Sector": "Consumer Staples",
             "Price": [
@@ -41126,7 +41126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MDLZ"
         },
         {
-            "Symbol": "MON",
+            "id": "MON",
             "Name": "Monsanto Co.",
             "Sector": "Materials",
             "Price": [
@@ -41251,7 +41251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MON"
         },
         {
-            "Symbol": "MNST",
+            "id": "MNST",
             "Name": "Monster Beverage",
             "Sector": "Consumer Staples",
             "Price": [
@@ -41376,7 +41376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MNST"
         },
         {
-            "Symbol": "MCO",
+            "id": "MCO",
             "Name": "Moody's Corp",
             "Sector": "Financials",
             "Price": [
@@ -41501,7 +41501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MCO"
         },
         {
-            "Symbol": "MS",
+            "id": "MS",
             "Name": "Morgan Stanley",
             "Sector": "Financials",
             "Price": [
@@ -41626,7 +41626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MS"
         },
         {
-            "Symbol": "MSI",
+            "id": "MSI",
             "Name": "Motorola Solutions Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -41751,7 +41751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MSI"
         },
         {
-            "Symbol": "MYL",
+            "id": "MYL",
             "Name": "Mylan N.V.",
             "Sector": "Health Care",
             "Price": [
@@ -41876,7 +41876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MYL"
         },
         {
-            "Symbol": "NDAQ",
+            "id": "NDAQ",
             "Name": "Nasdaq, Inc.",
             "Sector": "Financials",
             "Price": [
@@ -42001,7 +42001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NDAQ"
         },
         {
-            "Symbol": "NOV",
+            "id": "NOV",
             "Name": "National Oilwell Varco Inc.",
             "Sector": "Energy",
             "Price": [
@@ -42126,7 +42126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NOV"
         },
         {
-            "Symbol": "NAVI",
+            "id": "NAVI",
             "Name": "Navient",
             "Sector": "Financials",
             "Price": [
@@ -42251,7 +42251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NAVI"
         },
         {
-            "Symbol": "NTAP",
+            "id": "NTAP",
             "Name": "NetApp",
             "Sector": "Information Technology",
             "Price": [
@@ -42376,7 +42376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NTAP"
         },
         {
-            "Symbol": "NFLX",
+            "id": "NFLX",
             "Name": "Netflix Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -42501,7 +42501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NFLX"
         },
         {
-            "Symbol": "NWL",
+            "id": "NWL",
             "Name": "Newell Brands",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -42626,7 +42626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NWL"
         },
         {
-            "Symbol": "NFX",
+            "id": "NFX",
             "Name": "Newfield Exploration Co",
             "Sector": "Energy",
             "Price": [
@@ -42751,7 +42751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NFX"
         },
         {
-            "Symbol": "NEM",
+            "id": "NEM",
             "Name": "Newmont Mining Corporation",
             "Sector": "Materials",
             "Price": [
@@ -42876,7 +42876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NEM"
         },
         {
-            "Symbol": "NWSA",
+            "id": "NWSA",
             "Name": "News Corp. Class A",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -43001,7 +43001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NWSA"
         },
         {
-            "Symbol": "NWS",
+            "id": "NWS",
             "Name": "News Corp. Class B",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -43126,7 +43126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NWS"
         },
         {
-            "Symbol": "NEE",
+            "id": "NEE",
             "Name": "NextEra Energy",
             "Sector": "Utilities",
             "Price": [
@@ -43251,7 +43251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NEE"
         },
         {
-            "Symbol": "NLSN",
+            "id": "NLSN",
             "Name": "Nielsen Holdings",
             "Sector": "Industrials",
             "Price": [
@@ -43376,7 +43376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NLSN"
         },
         {
-            "Symbol": "NKE",
+            "id": "NKE",
             "Name": "Nike",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -43501,7 +43501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NKE"
         },
         {
-            "Symbol": "NI",
+            "id": "NI",
             "Name": "NiSource Inc.",
             "Sector": "Utilities",
             "Price": [
@@ -43626,7 +43626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NI"
         },
         {
-            "Symbol": "NBL",
+            "id": "NBL",
             "Name": "Noble Energy Inc",
             "Sector": "Energy",
             "Price": [
@@ -43751,7 +43751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NBL"
         },
         {
-            "Symbol": "JWN",
+            "id": "JWN",
             "Name": "Nordstrom",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -43876,7 +43876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=JWN"
         },
         {
-            "Symbol": "NSC",
+            "id": "NSC",
             "Name": "Norfolk Southern Corp.",
             "Sector": "Industrials",
             "Price": [
@@ -44001,7 +44001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NSC"
         },
         {
-            "Symbol": "NTRS",
+            "id": "NTRS",
             "Name": "Northern Trust Corp.",
             "Sector": "Financials",
             "Price": [
@@ -44126,7 +44126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NTRS"
         },
         {
-            "Symbol": "NOC",
+            "id": "NOC",
             "Name": "Northrop Grumman Corp.",
             "Sector": "Industrials",
             "Price": [
@@ -44251,7 +44251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NOC"
         },
         {
-            "Symbol": "NCLH",
+            "id": "NCLH",
             "Name": "Norwegian Cruise Line",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -44376,7 +44376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NCLH"
         },
         {
-            "Symbol": "NRG",
+            "id": "NRG",
             "Name": "NRG Energy",
             "Sector": "Utilities",
             "Price": [
@@ -44501,7 +44501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NRG"
         },
         {
-            "Symbol": "NUE",
+            "id": "NUE",
             "Name": "Nucor Corp.",
             "Sector": "Materials",
             "Price": [
@@ -44626,7 +44626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NUE"
         },
         {
-            "Symbol": "NVDA",
+            "id": "NVDA",
             "Name": "Nvidia Corporation",
             "Sector": "Information Technology",
             "Price": [
@@ -44751,7 +44751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=NVDA"
         },
         {
-            "Symbol": "ORLY",
+            "id": "ORLY",
             "Name": "O'Reilly Automotive",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -44876,7 +44876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ORLY"
         },
         {
-            "Symbol": "OXY",
+            "id": "OXY",
             "Name": "Occidental Petroleum",
             "Sector": "Energy",
             "Price": [
@@ -45001,7 +45001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=OXY"
         },
         {
-            "Symbol": "OMC",
+            "id": "OMC",
             "Name": "Omnicom Group",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -45126,7 +45126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=OMC"
         },
         {
-            "Symbol": "OKE",
+            "id": "OKE",
             "Name": "ONEOK",
             "Sector": "Energy",
             "Price": [
@@ -45251,7 +45251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=OKE"
         },
         {
-            "Symbol": "ORCL",
+            "id": "ORCL",
             "Name": "Oracle Corp.",
             "Sector": "Information Technology",
             "Price": [
@@ -45376,7 +45376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ORCL"
         },
         {
-            "Symbol": "PCAR",
+            "id": "PCAR",
             "Name": "PACCAR Inc.",
             "Sector": "Industrials",
             "Price": [
@@ -45501,7 +45501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PCAR"
         },
         {
-            "Symbol": "PKG",
+            "id": "PKG",
             "Name": "Packaging Corporation of America",
             "Sector": "Materials",
             "Price": [
@@ -45626,7 +45626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PKG"
         },
         {
-            "Symbol": "PH",
+            "id": "PH",
             "Name": "Parker-Hannifin",
             "Sector": "Industrials",
             "Price": [
@@ -45751,7 +45751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PH"
         },
         {
-            "Symbol": "PDCO",
+            "id": "PDCO",
             "Name": "Patterson Companies",
             "Sector": "Health Care",
             "Price": [
@@ -45876,7 +45876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PDCO"
         },
         {
-            "Symbol": "PAYX",
+            "id": "PAYX",
             "Name": "Paychex Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -46001,7 +46001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PAYX"
         },
         {
-            "Symbol": "PYPL",
+            "id": "PYPL",
             "Name": "PayPal",
             "Sector": "Information Technology",
             "Price": [
@@ -46126,7 +46126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PYPL"
         },
         {
-            "Symbol": "PNR",
+            "id": "PNR",
             "Name": "Pentair Ltd.",
             "Sector": "Industrials",
             "Price": [
@@ -46251,7 +46251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PNR"
         },
         {
-            "Symbol": "PBCT",
+            "id": "PBCT",
             "Name": "People's United Financial",
             "Sector": "Financials",
             "Price": [
@@ -46376,7 +46376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PBCT"
         },
         {
-            "Symbol": "PEP",
+            "id": "PEP",
             "Name": "PepsiCo Inc.",
             "Sector": "Consumer Staples",
             "Price": [
@@ -46501,7 +46501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PEP"
         },
         {
-            "Symbol": "PKI",
+            "id": "PKI",
             "Name": "PerkinElmer",
             "Sector": "Health Care",
             "Price": [
@@ -46626,7 +46626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PKI"
         },
         {
-            "Symbol": "PRGO",
+            "id": "PRGO",
             "Name": "Perrigo",
             "Sector": "Health Care",
             "Price": [
@@ -46751,7 +46751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PRGO"
         },
         {
-            "Symbol": "PFE",
+            "id": "PFE",
             "Name": "Pfizer Inc.",
             "Sector": "Health Care",
             "Price": [
@@ -46876,7 +46876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PFE"
         },
         {
-            "Symbol": "PCG",
+            "id": "PCG",
             "Name": "PG&E Corp.",
             "Sector": "Utilities",
             "Price": [
@@ -47001,7 +47001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PCG"
         },
         {
-            "Symbol": "PM",
+            "id": "PM",
             "Name": "Philip Morris International",
             "Sector": "Consumer Staples",
             "Price": [
@@ -47126,7 +47126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PM"
         },
         {
-            "Symbol": "PSX",
+            "id": "PSX",
             "Name": "Phillips 66",
             "Sector": "Energy",
             "Price": [
@@ -47251,7 +47251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PSX"
         },
         {
-            "Symbol": "PNW",
+            "id": "PNW",
             "Name": "Pinnacle West Capital",
             "Sector": "Utilities",
             "Price": [
@@ -47376,7 +47376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PNW"
         },
         {
-            "Symbol": "PXD",
+            "id": "PXD",
             "Name": "Pioneer Natural Resources",
             "Sector": "Energy",
             "Price": [
@@ -47501,7 +47501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PXD"
         },
         {
-            "Symbol": "PNC",
+            "id": "PNC",
             "Name": "PNC Financial Services",
             "Sector": "Financials",
             "Price": [
@@ -47626,7 +47626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PNC"
         },
         {
-            "Symbol": "RL",
+            "id": "RL",
             "Name": "Polo Ralph Lauren Corp.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -47751,7 +47751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=RL"
         },
         {
-            "Symbol": "PPG",
+            "id": "PPG",
             "Name": "PPG Industries",
             "Sector": "Materials",
             "Price": [
@@ -47876,7 +47876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PPG"
         },
         {
-            "Symbol": "PPL",
+            "id": "PPL",
             "Name": "PPL Corp.",
             "Sector": "Utilities",
             "Price": [
@@ -48001,7 +48001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PPL"
         },
         {
-            "Symbol": "PX",
+            "id": "PX",
             "Name": "Praxair Inc.",
             "Sector": "Materials",
             "Price": [
@@ -48126,7 +48126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PX"
         },
         {
-            "Symbol": "PCLN",
+            "id": "PCLN",
             "Name": "Priceline.com Inc",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -48251,7 +48251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PCLN"
         },
         {
-            "Symbol": "PFG",
+            "id": "PFG",
             "Name": "Principal Financial Group",
             "Sector": "Financials",
             "Price": [
@@ -48376,7 +48376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PFG"
         },
         {
-            "Symbol": "PG",
+            "id": "PG",
             "Name": "Procter & Gamble",
             "Sector": "Consumer Staples",
             "Price": [
@@ -48501,7 +48501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PG"
         },
         {
-            "Symbol": "PGR",
+            "id": "PGR",
             "Name": "Progressive Corp.",
             "Sector": "Financials",
             "Price": [
@@ -48626,7 +48626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PGR"
         },
         {
-            "Symbol": "PLD",
+            "id": "PLD",
             "Name": "Prologis",
             "Sector": "Real Estate",
             "Price": [
@@ -48751,7 +48751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PLD"
         },
         {
-            "Symbol": "PRU",
+            "id": "PRU",
             "Name": "Prudential Financial",
             "Sector": "Financials",
             "Price": [
@@ -48876,7 +48876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PRU"
         },
         {
-            "Symbol": "PEG",
+            "id": "PEG",
             "Name": "Public Serv. Enterprise Inc.",
             "Sector": "Utilities",
             "Price": [
@@ -49001,7 +49001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PEG"
         },
         {
-            "Symbol": "PSA",
+            "id": "PSA",
             "Name": "Public Storage",
             "Sector": "Real Estate",
             "Price": [
@@ -49126,7 +49126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PSA"
         },
         {
-            "Symbol": "PHM",
+            "id": "PHM",
             "Name": "Pulte Homes Inc.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -49251,7 +49251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PHM"
         },
         {
-            "Symbol": "PVH",
+            "id": "PVH",
             "Name": "PVH Corp.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -49376,7 +49376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PVH"
         },
         {
-            "Symbol": "QRVO",
+            "id": "QRVO",
             "Name": "Qorvo",
             "Sector": "Information Technology",
             "Price": [
@@ -49501,7 +49501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=QRVO"
         },
         {
-            "Symbol": "QCOM",
+            "id": "QCOM",
             "Name": "QUALCOMM Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -49626,7 +49626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=QCOM"
         },
         {
-            "Symbol": "PWR",
+            "id": "PWR",
             "Name": "Quanta Services Inc.",
             "Sector": "Industrials",
             "Price": [
@@ -49751,7 +49751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=PWR"
         },
         {
-            "Symbol": "DGX",
+            "id": "DGX",
             "Name": "Quest Diagnostics",
             "Sector": "Health Care",
             "Price": [
@@ -49876,7 +49876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DGX"
         },
         {
-            "Symbol": "RRC",
+            "id": "RRC",
             "Name": "Range Resources Corp.",
             "Sector": "Energy",
             "Price": [
@@ -50001,7 +50001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=RRC"
         },
         {
-            "Symbol": "RJF",
+            "id": "RJF",
             "Name": "Raymond James Financial Inc.",
             "Sector": "Financials",
             "Price": [
@@ -50126,7 +50126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=RJF"
         },
         {
-            "Symbol": "RTN",
+            "id": "RTN",
             "Name": "Raytheon Co.",
             "Sector": "Industrials",
             "Price": [
@@ -50251,7 +50251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=RTN"
         },
         {
-            "Symbol": "O",
+            "id": "O",
             "Name": "Realty Income Corporation",
             "Sector": "Real Estate",
             "Price": [
@@ -50376,7 +50376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=O"
         },
         {
-            "Symbol": "RHT",
+            "id": "RHT",
             "Name": "Red Hat Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -50501,7 +50501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=RHT"
         },
         {
-            "Symbol": "REG",
+            "id": "REG",
             "Name": "Regency Centers Corporation",
             "Sector": "Real Estate",
             "Price": [
@@ -50626,7 +50626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=REG"
         },
         {
-            "Symbol": "REGN",
+            "id": "REGN",
             "Name": "Regeneron",
             "Sector": "Health Care",
             "Price": [
@@ -50751,7 +50751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=REGN"
         },
         {
-            "Symbol": "RF",
+            "id": "RF",
             "Name": "Regions Financial Corp.",
             "Sector": "Financials",
             "Price": [
@@ -50876,7 +50876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=RF"
         },
         {
-            "Symbol": "RSG",
+            "id": "RSG",
             "Name": "Republic Services Inc",
             "Sector": "Industrials",
             "Price": [
@@ -51001,7 +51001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=RSG"
         },
         {
-            "Symbol": "RMD",
+            "id": "RMD",
             "Name": "ResMed",
             "Sector": "Health Care",
             "Price": [
@@ -51126,7 +51126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=RMD"
         },
         {
-            "Symbol": "RHI",
+            "id": "RHI",
             "Name": "Robert Half International",
             "Sector": "Industrials",
             "Price": [
@@ -51251,7 +51251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=RHI"
         },
         {
-            "Symbol": "ROK",
+            "id": "ROK",
             "Name": "Rockwell Automation Inc.",
             "Sector": "Industrials",
             "Price": [
@@ -51376,7 +51376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ROK"
         },
         {
-            "Symbol": "COL",
+            "id": "COL",
             "Name": "Rockwell Collins",
             "Sector": "Industrials",
             "Price": [
@@ -51501,7 +51501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=COL"
         },
         {
-            "Symbol": "ROP",
+            "id": "ROP",
             "Name": "Roper Technologies",
             "Sector": "Industrials",
             "Price": [
@@ -51626,7 +51626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ROP"
         },
         {
-            "Symbol": "ROST",
+            "id": "ROST",
             "Name": "Ross Stores",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -51751,7 +51751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ROST"
         },
         {
-            "Symbol": "RCL",
+            "id": "RCL",
             "Name": "Royal Caribbean Cruises Ltd",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -51876,7 +51876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=RCL"
         },
         {
-            "Symbol": "SPGI",
+            "id": "SPGI",
             "Name": "S&P Global, Inc.",
             "Sector": "Financials",
             "Price": [
@@ -52001,7 +52001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SPGI"
         },
         {
-            "Symbol": "CRM",
+            "id": "CRM",
             "Name": "Salesforce.com",
             "Sector": "Information Technology",
             "Price": [
@@ -52126,7 +52126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CRM"
         },
         {
-            "Symbol": "SBAC",
+            "id": "SBAC",
             "Name": "SBA Communications",
             "Sector": "Real Estate",
             "Price": [
@@ -52251,7 +52251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SBAC"
         },
         {
-            "Symbol": "SCG",
+            "id": "SCG",
             "Name": "SCANA Corp",
             "Sector": "Utilities",
             "Price": [
@@ -52376,7 +52376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SCG"
         },
         {
-            "Symbol": "SLB",
+            "id": "SLB",
             "Name": "Schlumberger Ltd.",
             "Sector": "Energy",
             "Price": [
@@ -52501,7 +52501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SLB"
         },
         {
-            "Symbol": "SNI",
+            "id": "SNI",
             "Name": "Scripps Networks Interactive Inc.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -52626,7 +52626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SNI"
         },
         {
-            "Symbol": "STX",
+            "id": "STX",
             "Name": "Seagate Technology",
             "Sector": "Information Technology",
             "Price": [
@@ -52751,7 +52751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=STX"
         },
         {
-            "Symbol": "SEE",
+            "id": "SEE",
             "Name": "Sealed Air",
             "Sector": "Materials",
             "Price": [
@@ -52876,7 +52876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SEE"
         },
         {
-            "Symbol": "SRE",
+            "id": "SRE",
             "Name": "Sempra Energy",
             "Sector": "Utilities",
             "Price": [
@@ -53001,7 +53001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SRE"
         },
         {
-            "Symbol": "SHW",
+            "id": "SHW",
             "Name": "Sherwin-Williams",
             "Sector": "Materials",
             "Price": [
@@ -53126,7 +53126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SHW"
         },
         {
-            "Symbol": "SIG",
+            "id": "SIG",
             "Name": "Signet Jewelers",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -53251,7 +53251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SIG"
         },
         {
-            "Symbol": "SPG",
+            "id": "SPG",
             "Name": "Simon Property Group Inc",
             "Sector": "Real Estate",
             "Price": [
@@ -53376,7 +53376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SPG"
         },
         {
-            "Symbol": "SWKS",
+            "id": "SWKS",
             "Name": "Skyworks Solutions",
             "Sector": "Information Technology",
             "Price": [
@@ -53501,7 +53501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SWKS"
         },
         {
-            "Symbol": "SLG",
+            "id": "SLG",
             "Name": "SL Green Realty",
             "Sector": "Real Estate",
             "Price": [
@@ -53626,7 +53626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SLG"
         },
         {
-            "Symbol": "SNA",
+            "id": "SNA",
             "Name": "Snap-On Inc.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -53751,7 +53751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SNA"
         },
         {
-            "Symbol": "SO",
+            "id": "SO",
             "Name": "Southern Co.",
             "Sector": "Utilities",
             "Price": [
@@ -53876,7 +53876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SO"
         },
         {
-            "Symbol": "LUV",
+            "id": "LUV",
             "Name": "Southwest Airlines",
             "Sector": "Industrials",
             "Price": [
@@ -54001,7 +54001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=LUV"
         },
         {
-            "Symbol": "SWK",
+            "id": "SWK",
             "Name": "Stanley Black & Decker",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -54126,7 +54126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SWK"
         },
         {
-            "Symbol": "SBUX",
+            "id": "SBUX",
             "Name": "Starbucks Corp.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -54251,7 +54251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SBUX"
         },
         {
-            "Symbol": "STT",
+            "id": "STT",
             "Name": "State Street Corp.",
             "Sector": "Financials",
             "Price": [
@@ -54376,7 +54376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=STT"
         },
         {
-            "Symbol": "SRCL",
+            "id": "SRCL",
             "Name": "Stericycle Inc",
             "Sector": "Industrials",
             "Price": [
@@ -54501,7 +54501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SRCL"
         },
         {
-            "Symbol": "SYK",
+            "id": "SYK",
             "Name": "Stryker Corp.",
             "Sector": "Health Care",
             "Price": [
@@ -54626,7 +54626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SYK"
         },
         {
-            "Symbol": "STI",
+            "id": "STI",
             "Name": "SunTrust Banks",
             "Sector": "Financials",
             "Price": [
@@ -54751,7 +54751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=STI"
         },
         {
-            "Symbol": "SYMC",
+            "id": "SYMC",
             "Name": "Symantec Corp.",
             "Sector": "Information Technology",
             "Price": [
@@ -54876,7 +54876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SYMC"
         },
         {
-            "Symbol": "SYF",
+            "id": "SYF",
             "Name": "Synchrony Financial",
             "Sector": "Financials",
             "Price": [
@@ -55001,7 +55001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SYF"
         },
         {
-            "Symbol": "SNPS",
+            "id": "SNPS",
             "Name": "Synopsys Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -55126,7 +55126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SNPS"
         },
         {
-            "Symbol": "SYY",
+            "id": "SYY",
             "Name": "Sysco Corp.",
             "Sector": "Consumer Staples",
             "Price": [
@@ -55251,7 +55251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=SYY"
         },
         {
-            "Symbol": "TROW",
+            "id": "TROW",
             "Name": "T. Rowe Price Group",
             "Sector": "Financials",
             "Price": [
@@ -55376,7 +55376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=TROW"
         },
         {
-            "Symbol": "TPR",
+            "id": "TPR",
             "Name": "Tapestry, Inc.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -55501,7 +55501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=TPR"
         },
         {
-            "Symbol": "TGT",
+            "id": "TGT",
             "Name": "Target Corp.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -55626,7 +55626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=TGT"
         },
         {
-            "Symbol": "TEL",
+            "id": "TEL",
             "Name": "TE Connectivity Ltd.",
             "Sector": "Information Technology",
             "Price": [
@@ -55751,7 +55751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=TEL"
         },
         {
-            "Symbol": "FTI",
+            "id": "FTI",
             "Name": "TechnipFMC",
             "Sector": "Energy",
             "Price": [
@@ -55876,7 +55876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FTI"
         },
         {
-            "Symbol": "TXN",
+            "id": "TXN",
             "Name": "Texas Instruments",
             "Sector": "Information Technology",
             "Price": [
@@ -56001,7 +56001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=TXN"
         },
         {
-            "Symbol": "TXT",
+            "id": "TXT",
             "Name": "Textron Inc.",
             "Sector": "Industrials",
             "Price": [
@@ -56126,7 +56126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=TXT"
         },
         {
-            "Symbol": "BK",
+            "id": "BK",
             "Name": "The Bank of New York Mellon Corp.",
             "Sector": "Financials",
             "Price": [
@@ -56251,7 +56251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=BK"
         },
         {
-            "Symbol": "CLX",
+            "id": "CLX",
             "Name": "The Clorox Company",
             "Sector": "Consumer Staples",
             "Price": [
@@ -56376,7 +56376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=CLX"
         },
         {
-            "Symbol": "COO",
+            "id": "COO",
             "Name": "The Cooper Companies",
             "Sector": "Health Care",
             "Price": [
@@ -56501,7 +56501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=COO"
         },
         {
-            "Symbol": "HSY",
+            "id": "HSY",
             "Name": "The Hershey Company",
             "Sector": "Consumer Staples",
             "Price": [
@@ -56626,7 +56626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HSY"
         },
         {
-            "Symbol": "MOS",
+            "id": "MOS",
             "Name": "The Mosaic Company",
             "Sector": "Materials",
             "Price": [
@@ -56751,7 +56751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MOS"
         },
         {
-            "Symbol": "TRV",
+            "id": "TRV",
             "Name": "The Travelers Companies Inc.",
             "Sector": "Financials",
             "Price": [
@@ -56876,7 +56876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=TRV"
         },
         {
-            "Symbol": "DIS",
+            "id": "DIS",
             "Name": "The Walt Disney Company",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -57001,7 +57001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=DIS"
         },
         {
-            "Symbol": "TMO",
+            "id": "TMO",
             "Name": "Thermo Fisher Scientific",
             "Sector": "Health Care",
             "Price": [
@@ -57126,7 +57126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=TMO"
         },
         {
-            "Symbol": "TIF",
+            "id": "TIF",
             "Name": "Tiffany & Co.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -57251,7 +57251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=TIF"
         },
         {
-            "Symbol": "TWX",
+            "id": "TWX",
             "Name": "Time Warner Inc.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -57376,7 +57376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=TWX"
         },
         {
-            "Symbol": "TJX",
+            "id": "TJX",
             "Name": "TJX Companies Inc.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -57501,7 +57501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=TJX"
         },
         {
-            "Symbol": "TMK",
+            "id": "TMK",
             "Name": "Torchmark Corp.",
             "Sector": "Financials",
             "Price": [
@@ -57626,7 +57626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=TMK"
         },
         {
-            "Symbol": "TSS",
+            "id": "TSS",
             "Name": "Total System Services",
             "Sector": "Information Technology",
             "Price": [
@@ -57751,7 +57751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=TSS"
         },
         {
-            "Symbol": "TSCO",
+            "id": "TSCO",
             "Name": "Tractor Supply Company",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -57876,7 +57876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=TSCO"
         },
         {
-            "Symbol": "TDG",
+            "id": "TDG",
             "Name": "TransDigm Group",
             "Sector": "Industrials",
             "Price": [
@@ -58001,7 +58001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=TDG"
         },
         {
-            "Symbol": "TRIP",
+            "id": "TRIP",
             "Name": "TripAdvisor",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -58126,7 +58126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=TRIP"
         },
         {
-            "Symbol": "FOXA",
+            "id": "FOXA",
             "Name": "Twenty-First Century Fox Class A",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -58251,7 +58251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FOXA"
         },
         {
-            "Symbol": "FOX",
+            "id": "FOX",
             "Name": "Twenty-First Century Fox Class B",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -58376,7 +58376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=FOX"
         },
         {
-            "Symbol": "TSN",
+            "id": "TSN",
             "Name": "Tyson Foods",
             "Sector": "Consumer Staples",
             "Price": [
@@ -58501,7 +58501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=TSN"
         },
         {
-            "Symbol": "USB",
+            "id": "USB",
             "Name": "U.S. Bancorp",
             "Sector": "Financials",
             "Price": [
@@ -58626,7 +58626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=USB"
         },
         {
-            "Symbol": "UDR",
+            "id": "UDR",
             "Name": "UDR Inc",
             "Sector": "Real Estate",
             "Price": [
@@ -58751,7 +58751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=UDR"
         },
         {
-            "Symbol": "ULTA",
+            "id": "ULTA",
             "Name": "Ulta Salon Cosmetics & Fragrance Inc",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -58876,7 +58876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ULTA"
         },
         {
-            "Symbol": "UAA",
+            "id": "UAA",
             "Name": "Under Armour Class A",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -59001,7 +59001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=UAA"
         },
         {
-            "Symbol": "UA",
+            "id": "UA",
             "Name": "Under Armour Class C",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -59126,7 +59126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=UA"
         },
         {
-            "Symbol": "UNP",
+            "id": "UNP",
             "Name": "Union Pacific",
             "Sector": "Industrials",
             "Price": [
@@ -59251,7 +59251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=UNP"
         },
         {
-            "Symbol": "UAL",
+            "id": "UAL",
             "Name": "United Continental Holdings",
             "Sector": "Industrials",
             "Price": [
@@ -59376,7 +59376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=UAL"
         },
         {
-            "Symbol": "UNH",
+            "id": "UNH",
             "Name": "United Health Group Inc.",
             "Sector": "Health Care",
             "Price": [
@@ -59501,7 +59501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=UNH"
         },
         {
-            "Symbol": "UPS",
+            "id": "UPS",
             "Name": "United Parcel Service",
             "Sector": "Industrials",
             "Price": [
@@ -59626,7 +59626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=UPS"
         },
         {
-            "Symbol": "URI",
+            "id": "URI",
             "Name": "United Rentals, Inc.",
             "Sector": "Industrials",
             "Price": [
@@ -59751,7 +59751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=URI"
         },
         {
-            "Symbol": "UTX",
+            "id": "UTX",
             "Name": "United Technologies",
             "Sector": "Industrials",
             "Price": [
@@ -59876,7 +59876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=UTX"
         },
         {
-            "Symbol": "UHS",
+            "id": "UHS",
             "Name": "Universal Health Services, Inc.",
             "Sector": "Health Care",
             "Price": [
@@ -60001,7 +60001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=UHS"
         },
         {
-            "Symbol": "UNM",
+            "id": "UNM",
             "Name": "Unum Group",
             "Sector": "Financials",
             "Price": [
@@ -60126,7 +60126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=UNM"
         },
         {
-            "Symbol": "VFC",
+            "id": "VFC",
             "Name": "V.F. Corp.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -60251,7 +60251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=VFC"
         },
         {
-            "Symbol": "VLO",
+            "id": "VLO",
             "Name": "Valero Energy",
             "Sector": "Energy",
             "Price": [
@@ -60376,7 +60376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=VLO"
         },
         {
-            "Symbol": "VAR",
+            "id": "VAR",
             "Name": "Varian Medical Systems",
             "Sector": "Health Care",
             "Price": [
@@ -60501,7 +60501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=VAR"
         },
         {
-            "Symbol": "VTR",
+            "id": "VTR",
             "Name": "Ventas Inc",
             "Sector": "Real Estate",
             "Price": [
@@ -60626,7 +60626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=VTR"
         },
         {
-            "Symbol": "VRSN",
+            "id": "VRSN",
             "Name": "Verisign Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -60751,7 +60751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=VRSN"
         },
         {
-            "Symbol": "VRSK",
+            "id": "VRSK",
             "Name": "Verisk Analytics",
             "Sector": "Industrials",
             "Price": [
@@ -60876,7 +60876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=VRSK"
         },
         {
-            "Symbol": "VZ",
+            "id": "VZ",
             "Name": "Verizon Communications",
             "Sector": "Telecommunication Services",
             "Price": [
@@ -61001,7 +61001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=VZ"
         },
         {
-            "Symbol": "VRTX",
+            "id": "VRTX",
             "Name": "Vertex Pharmaceuticals Inc",
             "Sector": "Health Care",
             "Price": [
@@ -61126,7 +61126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=VRTX"
         },
         {
-            "Symbol": "VIAB",
+            "id": "VIAB",
             "Name": "Viacom Inc.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -61251,7 +61251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=VIAB"
         },
         {
-            "Symbol": "V",
+            "id": "V",
             "Name": "Visa Inc.",
             "Sector": "Information Technology",
             "Price": [
@@ -61376,7 +61376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=V"
         },
         {
-            "Symbol": "VNO",
+            "id": "VNO",
             "Name": "Vornado Realty Trust",
             "Sector": "Real Estate",
             "Price": [
@@ -61501,7 +61501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=VNO"
         },
         {
-            "Symbol": "VMC",
+            "id": "VMC",
             "Name": "Vulcan Materials",
             "Sector": "Materials",
             "Price": [
@@ -61626,7 +61626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=VMC"
         },
         {
-            "Symbol": "WMT",
+            "id": "WMT",
             "Name": "Wal-Mart Stores",
             "Sector": "Consumer Staples",
             "Price": [
@@ -61751,7 +61751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=WMT"
         },
         {
-            "Symbol": "WBA",
+            "id": "WBA",
             "Name": "Walgreens Boots Alliance",
             "Sector": "Consumer Staples",
             "Price": [
@@ -61876,7 +61876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=WBA"
         },
         {
-            "Symbol": "WM",
+            "id": "WM",
             "Name": "Waste Management Inc.",
             "Sector": "Industrials",
             "Price": [
@@ -62001,7 +62001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=WM"
         },
         {
-            "Symbol": "WAT",
+            "id": "WAT",
             "Name": "Waters Corporation",
             "Sector": "Health Care",
             "Price": [
@@ -62126,7 +62126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=WAT"
         },
         {
-            "Symbol": "WEC",
+            "id": "WEC",
             "Name": "Wec Energy Group Inc",
             "Sector": "Utilities",
             "Price": [
@@ -62251,7 +62251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=WEC"
         },
         {
-            "Symbol": "WFC",
+            "id": "WFC",
             "Name": "Wells Fargo",
             "Sector": "Financials",
             "Price": [
@@ -62376,7 +62376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=WFC"
         },
         {
-            "Symbol": "HCN",
+            "id": "HCN",
             "Name": "Welltower Inc.",
             "Sector": "Real Estate",
             "Price": [
@@ -62501,7 +62501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=HCN"
         },
         {
-            "Symbol": "WDC",
+            "id": "WDC",
             "Name": "Western Digital",
             "Sector": "Information Technology",
             "Price": [
@@ -62626,7 +62626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=WDC"
         },
         {
-            "Symbol": "WU",
+            "id": "WU",
             "Name": "Western Union Co",
             "Sector": "Information Technology",
             "Price": [
@@ -62751,7 +62751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=WU"
         },
         {
-            "Symbol": "WRK",
+            "id": "WRK",
             "Name": "WestRock Company",
             "Sector": "Materials",
             "Price": [
@@ -62876,7 +62876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=WRK"
         },
         {
-            "Symbol": "WY",
+            "id": "WY",
             "Name": "Weyerhaeuser Corp.",
             "Sector": "Real Estate",
             "Price": [
@@ -63001,7 +63001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=WY"
         },
         {
-            "Symbol": "WHR",
+            "id": "WHR",
             "Name": "Whirlpool Corp.",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -63126,7 +63126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=WHR"
         },
         {
-            "Symbol": "WMB",
+            "id": "WMB",
             "Name": "Williams Cos.",
             "Sector": "Energy",
             "Price": [
@@ -63251,7 +63251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=WMB"
         },
         {
-            "Symbol": "WLTW",
+            "id": "WLTW",
             "Name": "Willis Towers Watson",
             "Sector": "Financials",
             "Price": [
@@ -63376,7 +63376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=WLTW"
         },
         {
-            "Symbol": "WYN",
+            "id": "WYN",
             "Name": "Wyndham Worldwide",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -63501,7 +63501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=WYN"
         },
         {
-            "Symbol": "WYNN",
+            "id": "WYNN",
             "Name": "Wynn Resorts Ltd",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -63626,7 +63626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=WYNN"
         },
         {
-            "Symbol": "XEL",
+            "id": "XEL",
             "Name": "Xcel Energy Inc",
             "Sector": "Utilities",
             "Price": [
@@ -63751,7 +63751,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=XEL"
         },
         {
-            "Symbol": "XRX",
+            "id": "XRX",
             "Name": "Xerox Corp.",
             "Sector": "Information Technology",
             "Price": [
@@ -63876,7 +63876,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=XRX"
         },
         {
-            "Symbol": "XLNX",
+            "id": "XLNX",
             "Name": "Xilinx Inc",
             "Sector": "Information Technology",
             "Price": [
@@ -64001,7 +64001,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=XLNX"
         },
         {
-            "Symbol": "XL",
+            "id": "XL",
             "Name": "XL Capital",
             "Sector": "Financials",
             "Price": [
@@ -64126,7 +64126,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=XL"
         },
         {
-            "Symbol": "XYL",
+            "id": "XYL",
             "Name": "Xylem Inc.",
             "Sector": "Industrials",
             "Price": [
@@ -64251,7 +64251,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=XYL"
         },
         {
-            "Symbol": "YUM",
+            "id": "YUM",
             "Name": "Yum! Brands Inc",
             "Sector": "Consumer Discretionary",
             "Price": [
@@ -64376,7 +64376,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=YUM"
         },
         {
-            "Symbol": "ZBH",
+            "id": "ZBH",
             "Name": "Zimmer Biomet Holdings",
             "Sector": "Health Care",
             "Price": [
@@ -64501,7 +64501,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ZBH"
         },
         {
-            "Symbol": "ZION",
+            "id": "ZION",
             "Name": "Zions Bancorp",
             "Sector": "Financials",
             "Price": [
@@ -64626,7 +64626,7 @@
             "SEC_Filings": "http://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ZION"
         },
         {
-            "Symbol": "ZTS",
+            "id": "ZTS",
             "Name": "Zoetis",
             "Sector": "Health Care",
             "Price": [
