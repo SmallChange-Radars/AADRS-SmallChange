@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ActivityPageComponent } from './activity/activity-page/activity-page.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { PortfolioPageComponent } from './portfolio/portfolio-page/portfolio-page.component';
 import { PreferencesPageComponent } from './preferences/preferences-page/preferences-page.component';
@@ -24,7 +25,7 @@ const routes: Routes = [
   },
   {
     path: 'activity',
-    component: RegisterFormComponent
+    component: ActivityPageComponent
   },
   {
     path: '',
