@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ChartConfiguration } from 'chart.js';
 import { PortfolioService } from 'src/app/shared/services/portfolio.service';
 import { ClientPortfolio } from '../../shared/models/client-portfolio';
 
@@ -9,25 +10,46 @@ import { ClientPortfolio } from '../../shared/models/client-portfolio';
 })
 export class PortfolioPageComponent implements OnInit {
 
-  // cp: ClientPortfolio[] = [
-  //   {name: 'AAPL', price: 158.91, value: 85493.58}, 
-  //   {name: 'AMZN', price: 128.73, value: 59859.45},
-  //   {name: 'SBUX', price: 83.41, value: 82075.44},
-  //   {name: 'PG', price: 140.18, value: 91817.90},
-  //   {name: 'TRMR', price: 7.91, value: 117985.56},
-  // ]
-
   cp: ClientPortfolio[] = [];
+  totalPortfolio: ClientPortfolio = {name: '', qty: 0, price: 0, value: 0, prof: 0, percent: 0};
+  // sum: number = -1;
 
-  // @Input() cp: ClientPortfolio[] = [];
+  public values = this.cp.map(item => item.value)
+  public names = this.cp.map(item => item.name)
+  public doughnutChartLabels: string[] =[];
+  public doughnutChartDatasets: ChartConfiguration<'doughnut'>['data']['datasets'] =[];
+  public doughnutChartOptions: ChartConfiguration<'doughnut'>['options'] = {
+    responsive: false
+  };
+  
   constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit(): void {
     this.getPortfolio();
+    this.getTotalPortfolio();
+    const values = this.cp.map(item => item.value)
+    const names = this.cp.map(item => item.name)
+    // console.log(values)
+    this.doughnutChartLabels = names;
+    this.doughnutChartDatasets= [
+      { data: values, label: 'Asset Allocation'}
+    ];
+    console.log(this.doughnutChartDatasets);
+    console.log(this.doughnutChartLabels)
+  
   }
 
   getPortfolio() {
     this.portfolioService.getPortfolio().subscribe(data => this.cp = data);
   }
+
+  getTotalPortfolio() {
+    this.portfolioService.getTotalPortfolio().subscribe(data => this.totalPortfolio = data);
+  }
+
+  
+
+  
+
 
 }
