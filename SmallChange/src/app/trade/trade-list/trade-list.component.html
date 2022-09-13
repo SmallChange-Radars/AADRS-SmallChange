@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-4">
+        <div class="card">
+            Hello There
+        </div>
+    </div>
+    <div class="col-8">
+        <div class="row">
+            <div class="col-4">
+                <input [(ngModel)]="searchText" type="text" id="stockSearch" class="form-control" (ngModelChange)="onChange($event)" />                     
+            </div>
+        </div>
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Name</th>
+                        <th>Sector</th>
+                        <th>Price</th>
+                        <th>Market Cap</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let stock of stocks">
+                        <td>{{stock.Symbol}}</td>
+                        <td>{{stock.Name}}</td>
+                        <td>{{stock.Sector}}</td>
+                        <td>{{stock.Price[stock.Price.length-1]}}</td>
+                        <td>{{stock.Market_Cap}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
