@@ -15,18 +15,20 @@ import { TradeService } from 'src/app/shared/services/trade.service';
 export class TradeListComponent implements OnInit {
   stocks: Trade[] = [];
 
+  page = 1;
+  pageSize = 10;
+  collectionSize = this.stocks.length;
+
   searchText: string = '';
 
   constructor(private service: TradeService) {}
 
   getStocks() {
-    this.service.getStocks().subscribe((data) => (this.stocks = data));
+    this.service.getStocks(this.page, this.pageSize).subscribe((data) => {
+      this.stocks = data;
+      this.collectionSize = 505;
+    });
   }
-
-  public defaultColDef: ColDef = {
-    sortable: true,
-    filter: true,
-  };
 
   getSearchStocks(searchText: any) {
     this.service
@@ -38,7 +40,7 @@ export class TradeListComponent implements OnInit {
   }
 
   onChange(value: string) {
-    if (value) this.getSearchStocks(value);
+    if (this.searchText) this.getSearchStocks(this.searchText);
     else this.getStocks();
   }
 

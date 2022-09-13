@@ -7,20 +7,21 @@ import { Trade } from '../models/trade';
   providedIn: 'root',
 })
 export class TradeService {
-  url: string = 'http://localhost:3000/stocks?_page=1&_limit=20';
+  url: string = 'http://localhost:3000/stocks';
   constructor(private http: HttpClient) {}
 
-  getStocks(): Observable<Trade[]> {
-    return this.http.get<Trade[]>(this.url);
+  getStocks(pageNo: number, pageSize: number): Observable<Trade[]> {
+    let url = this.url + '?_page=' + pageNo + '&_limit=' + pageSize;
+    return this.http.get<Trade[]>(url);
   }
 
   getSearchStocksSymbol(searchText: string) {
-    let url = this.url + '&Symbol_like=.*' + searchText + '.*';
+    let url = this.url + '?Symbol_like=.*' + searchText + '.*';
     return this.http.get<Trade[]>(url);
   }
 
   getSearchStocksName(searchText: string) {
-    let url = this.url + '&Name_like=.*' + searchText + '.*';
+    let url = this.url + '?Name_like=.*' + searchText + '.*';
     return this.http.get<Trade[]>(url);
   }
 }

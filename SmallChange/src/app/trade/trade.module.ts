@@ -5,10 +5,17 @@ import { AgGridModule } from 'ag-grid-angular';
 
 import { TradeListComponent } from './trade-list/trade-list.component';
 import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [TradeListComponent],
-  imports: [CommonModule, HttpClientModule, AgGridModule, FormsModule],
+  imports: [
+    CommonModule,
+    HttpClientModule,
+    AgGridModule,
+    FormsModule,
+    NgbModule,
+  ],
   exports: [TradeListComponent],
 })
 export class TradeModule {}
