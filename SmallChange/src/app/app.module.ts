@@ -14,7 +14,6 @@ import { RegisterFormComponent } from './register-form/register-form.component';
 
 import { LoginpageModule } from './loginpage/loginpage.module';
 import { PreferencesModule } from './preferences/preferences.module';
-import { CoreModule } from './core/core.module';
 import { NavTabComponent } from './nav-tab/nav-tab.component';
 import { PortfolioModule } from './portfolio/portfolio.module';
 
@@ -23,8 +22,6 @@ import { PortfolioModule } from './portfolio/portfolio.module';
     AppComponent,    
     LandingPageComponent,
     RegisterFormComponent,
-    PortfolioPageComponent,
-    PortfolioTableComponent,
     NavTabComponent
 
   ],
