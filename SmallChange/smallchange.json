@@ -1,0 +1,75 @@
+{
+    "userAuth": {
+        "aadrs@gmail.com": "ItsASecret101",
+        "john@gmail.com": "password101",
+        "jane@yahoo.com": "Password101",
+        "small@gmail.com": "ItsASmallSecret101"
+    },
+    "userDetails": {
+        "aadrs@gmail.com": {
+            "clientId": "1234",
+            "email": "aadrs@gmail.com",
+            "dateOfBirth": "01/01/1990",
+            "conutry": "USA",
+            "postalCode": "123456",
+            "identification": [
+                {
+                    "type": "SSN",
+                    "value": "123647328"
+                }
+            ]
+        },
+        "john@gmail.com": {
+            "clientId": "1235",
+            "email": "john@gmail.com",
+            "dateOfBirth": "19/09/1990",
+            "conutry": "USA",
+            "postalCode": "123456",
+            "identification": [
+                {
+                    "type": "SSN",
+                    "value": "833939929"
+                }
+            ]
+        },
+        "jane@yahoo.com": {
+            "clientId": "1236",
+            "email": "jane@gmail.com",
+            "dateOfBirth": "29/02/2000",
+            "conutry": "USA",
+            "postalCode": "123456",
+            "identification": [
+                {
+                    "type": "SSN",
+                    "value": "987654321"
+                }
+            ]
+        },
+        "small@gmail.com": {
+            "clientId": "1237",
+            "email": "jane@gmail.com",
+            "dateOfBirth": "25/12/1820",
+            "conutry": "USA",
+            "postalCode": "123456",
+            "identification": [
+                {
+                    "type": "SSN",
+                    "value": "987054321"
+                }
+            ]
+        }
+    },
+    "stockList": {},
+    "tradeActivity": {
+        "1234": {},
+        "1235": {},
+        "1236": {},
+        "1237": {}
+    },
+    "tradePreferences": {
+        "1234": {},
+        "1235": {},
+        "1236": {},
+        "1237": {}
+    }
+}
