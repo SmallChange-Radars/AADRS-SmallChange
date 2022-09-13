@@ -1,23 +1,104 @@
-#intro{
-    margin: 5% 10%;
-    padding: 2rem 3rem;
+* {
+    font-family: Roboto, system-ui;
+    //background-color: rgba(213, 234, 255, .45);
+}
+
+.col {
+    float: left;
+    box-sizing: border-box;
+    min-height: 1px;
+}
+
+.headerLogo {
+    font-size: 28px;
+    line-height: 2em;
+    color: #729102;
+    font-weight: bold;
+}
+
+button {
+    background-color: hsl(73, 99%, 30%);
+    color: white;
+    font-size: 18px;
+    padding: 5px 5px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: hsl(73, 89%, 36%);
+    color: white;
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  }
+
+.navbar {
+    margin: 10px 100px;
+}
+
+.intro-options {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+.intro_text {
+    margin-left: 100px;
+    align-items: center;
     max-width: 40%;
-    font-family: 'Fidelity Sans',Arial;
-    // display: inline-block;
 }
 
-#product-image{
-    // display: inline-block;
-    // width: 30%;
-    margin: 5% 10%;
-    padding: 2rem 3rem;  
-    // max-width: 15%;
+.Intro-heading {
+    font-size: 32px;
+    color: #44475b;
+    letter-spacing: .3px;
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+    margin: 0;
 }
 
-.intro-div{
-    display:flex ;
+.intro_text h4 {
+    color: #585a63;
+    margin: 10px 0px;
+    letter-spacing: .3px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
 }
 
-.fright{
-    float: right;
+.intro_text button {
+    margin: 10px 0;
+}
+
+.options1-2 {
+    display: flex;
+    color: #44475b;
+    font-weight: 470;
+}
+
+.flexing {
+    display: flex;
+}
+
+.card {
+    align-items: center;
+    text-align: center;
+    margin: 10px 10px;
+    width: 150px;
+    height: 100px;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 8px;
+}
+
+.card:hover {
+    border-radius: 40%;
+    transition: 300ms;
+    background-color: hsl(73, 95%, 35%);
+    cursor: default;
 }

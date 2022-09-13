@@ -12,6 +12,7 @@ import { RegisterFormComponent } from './register-form/register-form.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { PreferencesModule } from './preferences/preferences.module';
 import { CoreModule } from './core/core.module';
+import { NavTabComponent } from './nav-tab/nav-tab.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CoreModule } from './core/core.module';
     LandingPageComponent,
     RegisterFormComponent,
     PortfolioPageComponent,
-    PortfolioTableComponent
+    PortfolioTableComponent,
+    NavTabComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
+import { NavTabComponent } from './nav-tab/nav-tab.component';
 import { PortfolioPageComponent } from './portfolio/portfolio-page/portfolio-page.component';
 import { PreferencesPageComponent } from './preferences/preferences-page/preferences-page.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
@@ -24,11 +26,11 @@ const routes: Routes = [
   },
   {
     path: 'activity',
-    component: RegisterFormComponent
+    component: NavTabComponent
   },
   {
     path: '',
-    component: LoginpageComponent
+    component: LandingPageComponent
   }
 ];
 
