@@ -1,0 +1,14 @@
+<div>
+    <ag-grid-angular 
+        style="width: 100%; font-family: montserrat; font-size: 14px;" 
+        class="ag-theme-alpine"
+        [rowData]="rowData" 
+        [columnDefs]="columnDefs"
+        [defaultColDef]="defaultColDef"
+        [pagination]="true"
+        [paginationPageSize]="6"
+        domLayout="autoHeight"
+        (gridReady)="onGridReady($event)"
+        [enableCellChangeFlash]="true">
+    </ag-grid-angular>
+</div>

@@ -73,9 +73,6 @@ export class PortfolioTableComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // this.rowData = this.cp;
-    // this.gridApi.sizeColumnsToFit();
-    // this.sizeToFit();
   }
 
 

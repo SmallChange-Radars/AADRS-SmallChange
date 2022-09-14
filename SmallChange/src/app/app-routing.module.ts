@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { ActivityPageComponent } from './activity/activity-page/activity-page.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { NavTabComponent } from './nav-tab/nav-tab.component';
 import { PortfolioPageComponent } from './portfolio/portfolio-page/portfolio-page.component';
@@ -31,7 +32,7 @@ const routes: Routes = [
   },
   {
     path: 'activity',
-    component: NavTabComponent
+    component: ActivityPageComponent
   },
   {
     path: '',
