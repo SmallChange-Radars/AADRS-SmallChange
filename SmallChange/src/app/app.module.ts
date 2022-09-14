@@ -15,10 +15,11 @@ import { LoginpageModule } from './loginpage/loginpage.module';
 import { PreferencesModule } from './preferences/preferences.module';
 import { NavTabComponent } from './nav-tab/nav-tab.component';
 import { PortfolioModule } from './portfolio/portfolio.module';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 import { TradeModule } from './trade/trade.module';
 import { ActivityPageComponent } from './activity/activity-page/activity-page.component';
 import { ActivityTableComponent } from './activity/activity-table/activity-table.component';
+import { BuySellModalComponent } from './shared/components/buy-sell-modal/buy-sell-modal.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ActivityTableComponent } from './activity/activity-table/activity-table
     RegisterFormComponent,
     NavTabComponent,
     ActivityPageComponent,
-    ActivityTableComponent
+    ActivityTableComponent,
+    BuySellModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,9 +44,11 @@ import { ActivityTableComponent } from './activity/activity-table/activity-table
     AgGridModule,
     NgChartsModule,
     HttpClientModule,
-    TradeModule
+    TradeModule,
+    NgChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
+  entryComponents: [BuySellModalComponent],
 })
 export class AppModule {}

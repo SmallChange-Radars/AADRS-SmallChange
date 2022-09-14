@@ -77,6 +77,7 @@ export class ActivityTableComponent implements OnInit {
     this.activityService.getActivityHistory().subscribe(
       (data)=>{
         this.activity=data;
+        console.log(this.activity.value);
         this.rowData = this.activity.value;
       }
     );

@@ -10,10 +10,16 @@ import { Login } from '../models/login';
 })
 export class UpverifyService {
   url: string = "http://localhost:3000/userAuth";
+  detailsUrl: string="http://localhost:3000/userDetails?email=";
 
   verifyCredentials(username: string, password: string): Observable<Login> {
     return this.httpClient.get<Login>(this.url + "/" + username).pipe(catchError(this.handleError));
   }
+
+  getDetails(username: string): Observable<Client[]> {
+    return this.httpClient.get<Client[]>(this.detailsUrl + username).pipe(catchError(this.handleError));
+  }
+
 
   constructor(private httpClient: HttpClient) { }
 
