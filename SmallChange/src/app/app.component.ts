@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { UserService } from './shared/services/user.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +12,30 @@ export class AppComponent {
   navbarOpen = false;
   public clicked = false;
   _el: any;
+  constructor(private user:UserService,private router:Router){}
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
+  }
+
+  logOut(){
+    this.user.removeUser();
+    this.router.navigate(['/']);
+  }
+
+  login(){
+    this.router.navigate(['/login']);
+  }
+
+  register(){
+    this.router.navigate(['/register']);
+  }
+
+  isLoggedIn(){
+    return this.user.isLoggedIn();
+  }
+
+  prefer(){
+    this.user.removeUser();
+    this.router.navigate(['/preferences']);
   }
 }

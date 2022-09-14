@@ -25,7 +25,7 @@ export class UserService extends StateService<clientId>{
     this.setState({ id: [id] })
   }
 
-  removeUser(id: string) {
+  removeUser() {
     this.setState({ id: [] })
   }
 

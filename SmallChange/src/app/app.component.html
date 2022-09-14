@@ -8,7 +8,7 @@
         rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
-<nav class="navbar navbar-expand-lg underline">
+<nav *ngIf="isLoggedIn()" class="navbar navbar-expand-lg underline">
     <div class="container-lg container-fluid">
         <span class="navbar-brand h1">
             <header class="header">
@@ -42,9 +42,9 @@
                     Account
                 </button>
                 <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-menu dropdown-menu-end">
-                    <button ngbDropdownItem>Preferences                        
+                    <button ngbDropdownItem (click)="prefer()">Preferences                        
                     </button>
-                    <button ngbDropdownItem>Log Out                        
+                    <button ngbDropdownItem (click)="logOut()">Log Out                        
                     </button>
                 </div>
             </div>

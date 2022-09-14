@@ -18,7 +18,16 @@ export class LoginpageComponent implements OnInit {
 
   constructor(private service: UpverifyService, private router: Router, private user: UserService) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+  }
+
+  loginF(){
+    this.router.navigate(['/login']);
+  }
+
+  register(){
+    this.router.navigate(['/register']);
+  }
 
   close() {
     this.errorMessage = [];
@@ -28,7 +37,7 @@ export class LoginpageComponent implements OnInit {
     this.service.verifyCredentials(this.login.id, this.login.password).subscribe({
       next: (data) => {
         this.loginReturn = data;
-        if (this.loginReturn.password.length === this.login.password.length) {
+        if (this.loginReturn.password === this.login.password) {
           this.service.getDetails(this.login.id).subscribe({
             next: (data) => {
               this.user.addUser(data[0].clientId);

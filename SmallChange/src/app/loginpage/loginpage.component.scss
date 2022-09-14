@@ -5,6 +5,49 @@
   margin-right: auto;
 }
 
+.navbar {
+  margin: 10px 100px;
+}
+
+
+.headerLogo {
+  font-size: 28px;
+  line-height: 2em;
+  color: #729102;
+  font-weight: bold;
+}
+
+button {
+  background-color: hsl(73, 99%, 30%);
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: hsl(73, 89%, 36%);
+  color: white;
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+
+
+.register{
+  background-color: white;
+  color: black;
+  border: 2px solid hsl(73, 99%, 30%);
+  padding: 8px;
+  font-family: system-ui;
+}
+
 .btn {
   background-color: #024A7A !important;
   border-color: #024A7A !important;
