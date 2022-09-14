@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Login } from '../shared/models/login';
 import { UpverifyService } from 'src/app/shared/services/upverify.service';
 import { Router } from '@angular/router';
+import { UserService } from '../shared/services/user.service';
 
 @Component({
   selector: 'app-loginpage',
@@ -15,7 +16,7 @@ export class LoginpageComponent implements OnInit {
   errorMessage: string[] = [];
   errorType: string = "danger";
 
-  constructor(private service: UpverifyService, private router: Router) { }
+  constructor(private service: UpverifyService, private router: Router, private user: UserService) { }
 
   ngOnInit(): void { }
 
@@ -28,6 +29,12 @@ export class LoginpageComponent implements OnInit {
       next: (data) => {
         this.loginReturn = data;
         if (this.loginReturn.password.length === this.login.password.length) {
+          this.service.getDetails(this.login.id).subscribe({
+            next: (data) => {
+              this.user.addUser(data[0].clientId);
+              console.log(data)
+              console.log(data[0].clientId,this.user.getUser(),this.user.isLoggedIn());
+            }});
           this.router.navigate(['/home']);
         }
         else {

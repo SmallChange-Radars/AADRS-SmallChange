@@ -8,6 +8,5 @@ export class Client {
         public dateOfBirth: string, 
         public country: string,
         public postalCode: string,
-        public identification: ClientIdentification[],
-        public isLoggedIn: boolean) { }
+        public identification: ClientIdentification[]) { }
 }
