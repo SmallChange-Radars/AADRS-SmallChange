@@ -16,13 +16,16 @@ import { LoginpageModule } from './loginpage/loginpage.module';
 import { PreferencesModule } from './preferences/preferences.module';
 import { NavTabComponent } from './nav-tab/nav-tab.component';
 import { PortfolioModule } from './portfolio/portfolio.module';
+import {HttpClientModule} from '@angular/common/http';
+import { AccountFormComponent } from './account-form/account-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,    
     LandingPageComponent,
     RegisterFormComponent,
-    NavTabComponent
+    NavTabComponent,
+    AccountFormComponent
 
   ],
   imports: [
@@ -36,7 +39,8 @@ import { PortfolioModule } from './portfolio/portfolio.module';
     LoginpageModule,
     CoreModule,
     AgGridModule,
-    NgChartsModule
+    NgChartsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

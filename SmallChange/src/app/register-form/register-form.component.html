@@ -1,114 +1,92 @@
-<!-- <div class="register-form">
-    <form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="border border-light p-5">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card">
+                <div style="font-size: 20px; margin-left: 7px;">Registeration Details</div>
+                <hr>
+                <div>
+                    <form class="form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                        <div class="flex pad">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" class="form-control" formControlName="firstName">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" formControlName="lastName">
+                            </div>
+                        </div>
+                        <div class="form-group pad">
+                            <label>Email<span style="color:red;">*</span></label>
+                            <input type="email" class="form-control" formControlName="email">
+                            <span class="text-danger"
+                                *ngIf="(registerFormControl.email.touched || registerFormControl.email.dirty) && registerFormControl.email.errors?.required">
+                                Email is required
+                            </span>
+                            <span class="text-danger"
+                                *ngIf="registerFormControl.email.touched && registerFormControl.email.errors?.email">
+                                Enter a valid email address
+                            </span>
+                            <span class="text-danger"
+                                *ngIf="registerFormControl.email.touched && registerFormControl.email.errors?.EmailExists">
+                                This email is already registered
+                            </span>
+                            
+                        </div>
+                        <div class="flex pad">
+                            <div class="form-group">
+                                <label for="country">Country<span style="color:red;">*</span></label>
+                                <input type="text" name="country" required class="form-control"
+                                    formControlName="country">
+                                <span class="text-danger"
+                                    *ngIf="registerFormControl.country.touched && registerFormControl.country.errors?.required">
+                                    Country is required
+                                </span>
 
-        <p class="h4 text-center mb-4">Sign up</p>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Pincode<span style="color:red;">*</span></label>
+                                <input type="number" class="form-control" formControlName="pincode">
+                            </div>
+                            <span class="text-danger"
+                                *ngIf="registerFormControl.pincode.touched && registerFormControl.pincode.errors?.required">
+                                Pincode is required
+                            </span>
+                        </div>
+                        <div class="form-group pad" *ngIf="registerFormControl.country.valid">
+                            <label>Identification Type: &nbsp;</label>
 
-        <label for="firstName">First Name:</label>
-        <input type="text" id="FirstName" class="form-control mb-4" placeholder="First name">
+                            <span [ngSwitch]="registerFormControl.country.value.toLowerCase()">
+                                <span *ngSwitchCase="'usa'">SSN<span style="color:red;">*</span></span>
+                                <span *ngSwitchDefault>Passport<span style="color:red;">*</span></span>
+                            </span>
+                            <input type="text" id="identification" class="form-control"
+                                formControlName="identification">
 
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="LastName" class="form-control mb-4" placeholder="Last name">
+                        </div>
+                        <div class="form-group pad">
+                            <label>Password<span style="color:red;">*</span></label>
+                            <input type="password" class="form-control" formControlName="password">
+                            <span class="text-danger"
+                                *ngIf="(registerFormControl.password.touched) && registerFormControl.password.errors?.required">
+                                Password is required
+                            </span>
+                            <span class="text-danger" *ngIf="registerFormControl.password.errors?.pattern">
+                                {{passwordErrorTextmsg}}
+                            </span>
+                        </div>
+                        <div class="form-group pad">
+                            <label>Date of Birth</label>
+                            <input type="date" class="form-control" formControlName="dob">
+                        </div>
 
-        <label for="email" class="req control-label">E-mail:<span style="color:red">*</span></label>
-        <input type="email" formControlName="email" id="Email" class="form-control mb-4" placeholder="Email">
-
-        <div *ngIf="email?.touched || email?.dirty">
-            <div *ngIf="email?.hasError('required') || email?.hasError('email')">
-                <div id="errorText">Enter valid email</div>
+                        <div class="form-group" style="text-align: right;">
+                            <button [disabled]="!registerForm.valid" type="submit"
+                                class="btn btn-success">Register</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-
-        <label for="password">Password:<span style="color:red">*</span></label>
-        <input type="password" formControlName="password" id="Password" class="form-control mb-4"
-            placeholder="Password">
-
-        <div *ngIf="password?.touched || password?.dirty">
-            <div *ngIf="password?.hasError('required') || password?.hasError('pattern') ">
-                <div id="errorText">{{ passwordErrorTextmsg }}</div>
-            </div>
-        </div>
-
-        <label for="country">Country:<span style="color:red">*</span></label>
-        <input type="text" formControlName="country" id="Country" class="form-control mb-4" placeholder="Country">
-
-        <div *ngIf="country?.touched || country?.dirty">
-            <div *ngIf="country?.hasError('required')">
-                <div id="errorText">This field required</div>
-            </div>
-        </div>
-
-        <label for="pincode">Pincode:<span style="color:red">*</span></label>
-        <input type="number" formControlName="pincode" id="pincode" class="form-control mb-4" placeholder="Pincode">
-
-        <div *ngIf="pincode?.touched || pincode?.dirty">
-            <div *ngIf="pincode?.hasError('required')">
-                <div id="errorText">This field required</div>
-            </div>
-        </div>
-
-        <label for="identification">Identification:<span style="color:red">*</span></label>
-        <input type="text" formControlName="identification" id="Identification" class="form-control mb-4"
-            placeholder="Identification">
-
-        <div *ngIf="identification?.touched || identification?.dirty">
-            <div *ngIf="identification?.hasError('required')">
-                <div id="errorText">This field required</div>
-            </div>
-        </div>
-
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" class="form-control mb-4">
-
-        <label for="riskAppetite">Investment Risk Appetite:</label>
-        <input type="text" id="defaultRegisterFormRiskAppetite" class="form-control mb-4"
-            placeholder="Risk Appetite">
-
-        <div class="text-center">
-            <button type="submit">Sign in</button>
-        </div>
-    </form>
-</div> -->
-
-<h3>REGISTER</h3>
-<section class="register-form">
-    
-    <form [formGroup]="registerationForm" (ngSubmit)="onSubmit()">
-        <div class="flex">
-            <label>First Name:
-                <input type="text" name="firstName" formControlName="firstName" placeholder="First Name">
-            </label>
-            <label>Last Name:
-                <input type="text" name="lastName" formControlNamw="lastName" placeholder="Last Name">
-            </label>
-        </div>
-        <div>
-            <label>Email Id:
-                <input type="email" name="email" size="30" formControlName="email" placeholder="Email@email.com">
-            </label>
-        </div>
-        <div class="flex">
-            <label>Country:
-                <input type="text" name="country" formControlName="country" placeholder="Country">
-            </label>
-            <label>Identification:
-                <input type="text" name="identificationValue" formControlName="identificationValue">
-            </label>
-        </div>
-        <div>
-            <label>Pincode:
-                <input type="number" name="pincode" formControlName="pincode" placeholder="Pincode">
-            </label>
-        </div>
-        <div>
-            <label for="password">Password:
-                <input type="password" formControlName="password" id="Password" placeholder="Password">
-            </label>
-        </div>
-        <div>
-            <label for="dob">Date of Birth:
-                <input type="date" id="dob">
-            </label>
-        </div>
-        <button type="submit" [disabled]="!registerationForm.valid">Register</button>
-    </form>
-</section>
+    </div>
+</div>

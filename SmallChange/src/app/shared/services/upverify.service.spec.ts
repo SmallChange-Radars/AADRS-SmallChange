@@ -26,8 +26,7 @@ describe('UpverifyService', () => {
         '01/01/1990',
         'USA',
         '123456',
-        [id],
-        false
+        [id]
       );
       expect(service.verifyUSER('aadrs@gmail.com', 'ItsASecret101')).toEqual(
         client

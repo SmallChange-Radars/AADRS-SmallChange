@@ -16,8 +16,7 @@ export class UpverifyService {
     '01/01/1990',
     'USA',
     '123456',
-    [this.id],
-    false
+    [this.id]
   );
 
   verifyUSER(username: String, password: String) {
