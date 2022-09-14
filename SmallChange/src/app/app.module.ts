@@ -6,7 +6,6 @@ import { CoreModule } from './core/core.module';
 import { AgGridModule } from 'ag-grid-angular';
 import { NgChartsModule } from 'ng2-charts';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
@@ -18,15 +17,17 @@ import { NavTabComponent } from './nav-tab/nav-tab.component';
 import { PortfolioModule } from './portfolio/portfolio.module';
 import {HttpClientModule} from '@angular/common/http';
 import { AccountFormComponent } from './account-form/account-form.component';
+import { TradeModule } from './trade/trade.module';
+import { BuySellModalComponent } from './shared/components/buy-sell-modal/buy-sell-modal.component';
 
 @NgModule({
   declarations: [
-    AppComponent,    
+    AppComponent,
     LandingPageComponent,
     RegisterFormComponent,
     NavTabComponent,
-    AccountFormComponent
-
+    AccountFormComponent,
+    BuySellModalComponent
   ],
   imports: [
     BrowserModule,
@@ -40,9 +41,12 @@ import { AccountFormComponent } from './account-form/account-form.component';
     CoreModule,
     AgGridModule,
     NgChartsModule,
-    HttpClientModule
+    HttpClientModule,
+    TradeModule,
+    NgChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
+  entryComponents: [BuySellModalComponent],
 })
 export class AppModule {}

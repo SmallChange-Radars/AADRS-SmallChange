@@ -1,43 +1,96 @@
-import { fakeAsync, inject, TestBed } from '@angular/core/testing';
-import { Client } from '../models/client';
-import { ClientIdentification } from '../models/client-identification';
+import { fakeAsync, inject, TestBed, tick } from '@angular/core/testing';
+import { Login } from '../models/login';
 
 import { UpverifyService } from './upverify.service';
 
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { HttpErrorResponse } from '@angular/common/http';
+
 describe('UpverifyService', () => {
-  let service: UpverifyService;
+
+  let httpTestingController: HttpTestingController;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(UpverifyService);
+    TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule]
+    })
+    httpTestingController = TestBed.inject(HttpTestingController);
   });
 
   it('should be created', () => {
+    const service: UpverifyService = TestBed.inject(UpverifyService);
     expect(service).toBeTruthy();
   });
 
   it('should return an object with correct credntials', inject(
     [UpverifyService],
     fakeAsync((service: UpverifyService) => {
-      let id: ClientIdentification = new ClientIdentification('SSN', '!@_NM');
-      let client: Client = new Client(
-        '1234',
-        'aadrs@gmail.com',
-        '01/01/1990',
-        'USA',
-        '123456',
-        [id]
-      );
-      expect(service.verifyUSER('aadrs@gmail.com', 'ItsASecret101')).toEqual(
-        client
-      );
+      let login: Login = new Login("Something", "Nothing");
+      let loginReturn: Login = new Login('', '');
+      let errorMessage: string[] = [];
+      service.verifyCredentials(login.id, login.password).subscribe({
+        next: (data) => {
+          loginReturn = data;
+          if (loginReturn.password.length !== login.password.length) {
+            errorMessage = ["Incorrect Password"];
+          }
+        },
+        error: (e) => { errorMessage = [e]; }
+      });
+      const req = httpTestingController.expectOne(
+        'http://localhost:3000/userAuth/Something');
+      expect(req.request.method).toEqual("GET");
+      req.flush(login);
+      httpTestingController.verify();
+      tick();
+      expect(loginReturn).toBeTruthy();
+      expect(loginReturn.id).toBe(login.id);
+      expect(loginReturn.password).toBe(login.password);
     })
   ));
 
-  it('should return false with incorrect credntials', inject(
-    [UpverifyService],
-    fakeAsync((service: UpverifyService) => {
-      expect(service.verifyUSER('a000007@fmr.com', 'ItsASecet101')).toBe(false);
-    })
-  ));
+  it('should handle 404', inject([UpverifyService], fakeAsync((service: UpverifyService) => {
+    let errorResp: HttpErrorResponse;
+    let errorReply: string = '';
+    const errorHandlerSpy = spyOn(service, 'handleError').and.callThrough();
+    let login: Login = new Login("Something", "Nothing");
+    service.verifyCredentials(login.id, login.password).subscribe({
+      next: () => fail('Should not succeed'),
+      error: (e) => errorReply = e
+    });
+    const req = httpTestingController.expectOne('http://localhost:3000/userAuth/Something');
+    expect(req.request.method).toEqual('GET');
+    req.flush('Forced 404', {
+      status: 404,
+      statusText: 'Not Found'
+    });
+    httpTestingController.verify();
+    tick();
+    expect(errorReply).toBe('Incorrect Username');
+    expect(errorHandlerSpy).toHaveBeenCalled();
+    errorResp = errorHandlerSpy.calls.argsFor(0)[0];
+    expect(errorResp.status).toBe(404);
+  })));
+  it('should handle Network error', inject([UpverifyService], fakeAsync((service: UpverifyService) => {
+    let errorResp: HttpErrorResponse;
+    let errorReply: string = '';
+    const errorHandlerSpy = spyOn(service, 'handleError').and.callThrough();
+    let login: Login = new Login("Something", "Nothing");
+    service.verifyCredentials(login.id, login.password).subscribe({
+      next: () => fail('Should not succeed'),
+      error: (e) => errorReply = e
+    });
+    const req = httpTestingController.expectOne('http://localhost:3000/userAuth/Something');
+    // Assert that the request is a GET.
+    expect(req.request.method).toEqual('GET');
+    const mockError = new ProgressEvent('Simulated Network Error');
+    req.error(mockError);
+    httpTestingController.verify();
+    tick();
+    expect(errorReply).toBe('Incorrect Username');
+    expect(errorHandlerSpy).toHaveBeenCalled();
+    errorResp = errorHandlerSpy.calls.argsFor(0)[0];
+    expect(errorResp.error.type).toBe('Simulated Network Error');
+
+  })));
 });
