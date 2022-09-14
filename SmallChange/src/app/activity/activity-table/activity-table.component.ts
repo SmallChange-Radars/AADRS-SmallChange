@@ -16,7 +16,6 @@ export class ActivityTableComponent implements OnInit {
   act: Activity[]=[];
   activity: UserActivity = new UserActivity("",this.act);
   private gridApi!: GridApi<Activity>;
-  private temp!: GridReadyEvent<Activity>;
   private gridColumnApi!: ColumnApi;
   
   sizeToFit() {
@@ -59,7 +58,7 @@ export class ActivityTableComponent implements OnInit {
   ];
 
   rowData: Activity[] = [];
-
+  temp: Activity[]=[];
   constructor(private activityService: ActivityService) { }
 
   onGridReady(params: GridReadyEvent<Activity>) {
@@ -78,7 +77,10 @@ export class ActivityTableComponent implements OnInit {
       (data)=>{
         this.activity=data;
         console.log(this.activity.value);
-        this.rowData = this.activity.value;
+        this.temp=this.activity.value;
+        this.temp.sort((a,b)=>a.Date.toLocaleString().localeCompare(b.Date.toLocaleString()));
+        this.temp.reverse();
+        this.rowData = this.temp;
       }
     );
   }

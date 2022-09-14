@@ -19,8 +19,8 @@
 button {
     background-color: hsl(73, 99%, 30%);
     color: white;
-    font-size: 18px;
-    padding: 5px 5px;
+    font-size: 15px;
+    padding: 10px;
     text-align: center;
     outline: none;
     border: none;
@@ -101,4 +101,12 @@ button:active {
     transition: 300ms;
     background-color: hsl(73, 95%, 35%);
     cursor: default;
+}
+
+.register{
+    background-color: white;
+    color: black;
+    border: 2px solid hsl(73, 99%, 30%);
+    padding: 8px;
+    font-family: system-ui;
 }

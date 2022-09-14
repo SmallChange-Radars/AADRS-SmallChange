@@ -15,7 +15,8 @@ import { LoginpageModule } from './loginpage/loginpage.module';
 import { PreferencesModule } from './preferences/preferences.module';
 import { NavTabComponent } from './nav-tab/nav-tab.component';
 import { PortfolioModule } from './portfolio/portfolio.module';
-import { HttpClientModule } from '@angular/common/http';
+import {HttpClientModule} from '@angular/common/http';
+import { AccountFormComponent } from './account-form/account-form.component';
 import { TradeModule } from './trade/trade.module';
 import { ActivityPageComponent } from './activity/activity-page/activity-page.component';
 import { ActivityTableComponent } from './activity/activity-table/activity-table.component';
@@ -29,7 +30,8 @@ import { BuySellModalComponent } from './shared/components/buy-sell-modal/buy-se
     NavTabComponent,
     ActivityPageComponent,
     ActivityTableComponent,
-    BuySellModalComponent,
+    AccountFormComponent,
+    BuySellModalComponent
   ],
   imports: [
     BrowserModule,

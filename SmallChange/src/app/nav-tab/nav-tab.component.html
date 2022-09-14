@@ -1,18 +1,18 @@
-<ul ngbNav #nav="ngbNav" [(activeId)]="active" [destroyOnHide]="false" class="nav-tabs">
+<div class="container">
+  <ul ngbNav #nav="ngbNav" [(activeId)]="active" [destroyOnHide]="false" class="nav-tabs">
     <li [ngbNavItem]="1">
-      <a ngbNavLink>One</a>
+      <a ngbNavLink>User Details</a>
       <ng-template ngbNavContent>
-        Registration
         <app-register-form></app-register-form>
       </ng-template>
     </li>
     <li [ngbNavItem]="2">
-      <a ngbNavLink>Two</a>
-      <ng-template ngbNavContent>  
-        <p>Account Details</p>
+      <a ngbNavLink>Account Details</a>
+      <ng-template ngbNavContent>
+        <app-account-form></app-account-form>
       </ng-template>
     </li>
   </ul>
-  
+
   <div [ngbNavOutlet]="nav" class="mt-2"></div>
-  
+</div>

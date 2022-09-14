@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, Validators } from '@angular/forms';
+import { switchMap } from 'rxjs';
 import { Client } from '../shared/models/client';
+import { ClientIdentification } from '../shared/models/client-identification';
+import { RegisterUserService } from '../shared/services/register-user.service';
 
 @Component({
   selector: 'app-register-form',
@@ -8,57 +11,70 @@ import { Client } from '../shared/models/client';
   styleUrls: ['./register-form.component.scss']
 })
 export class RegisterFormComponent implements OnInit {
-  registerationForm: any;
-  client?: Client;
-  pass?:string;
-  passwordErrorTextmsg:string = "Invalid Password - Must contain between 6 and 24 letters, numbers, underscores or hyphens.";
+  registerForm: any;
+  user:any;
+  // getuser:any;
+  pushedUser:any;
+  identity: ClientIdentification = new ClientIdentification('','');
+  client: Client = new Client('','','','','',[this.identity]);
+  passwordErrorTextmsg:string = "Invalid Password - Must contain between 6 and 18 letters, numbers, underscores or hyphens.";
   
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder, private service: RegisterUserService) { }
 
   ngOnInit(): void {
-    this.registerationForm = this.formBuilder.group({
+    this.registerForm = this.formBuilder.group({
       identification: ['', [
         Validators.required
       ]],
       email: ['', [
         Validators.required,
-        Validators.email
+        Validators.email,
+        this.service.emailValidator()
       ]],
       password: ['', [
         Validators.required, 
-        Validators.pattern('^(?=.*[0-9])(?=.*[-_])[a-zA-Z0-9-_]{3,18}$')
+        Validators.pattern('^(?=.*[0-9])(?=.*[-_])[a-zA-Z0-9-_]{6,18}$')
       ]],
       country: ['',[Validators.required]],
-      pincode: ['', [Validators.required]]
+      pincode: [[Validators.required]],
+      firstName: [''],
+      lastName: [''],
+      dob:['']
     });
   }
 
-  get password() {
-    return this.registerationForm.get('password');
-  }
-
-  get email(){
-    return this.registerationForm.get('email');
-  }
-
-  get pincode(){
-    return this.registerationForm.get('pincode');
-  }
-
-  get country(){
-    return this.registerationForm.get('country');
-  }
-
-  get identification(){
-    return this.registerationForm.get('identification');
+  get registerFormControl() {
+    return this.registerForm.controls;
   }
 
   onSubmit(){
-    if(this.registerationForm.valid){
+    if(this.registerForm.valid){
+      this.pushUser();
       console.log("Form Submitted");
+      console.log(this.registerForm.value);
+      alert('You are registered!')
+      
+      this.registerForm.reset();
     } else {
       console.log("Form not submitted");
     }
   }
 
+  pushUser(){
+    if(this.registerFormControl.country.value.toLowerCase()=='usa'){
+      this.identity.type='SSN';
+    } else{
+      this.identity.type = 'Passport';
+    }
+    this.client.clientId = "1";
+    this.client.dateOfBirth = this.registerForm.value.dob;
+    this.client.country = this.registerForm.value.country;
+    this.client.email = this.registerForm.value.email;
+    this.identity.value = this.registerForm.value.identification;
+    let email = this.client.email;
+    let cl = this.client;
+    this.user = {email:cl};
+    this.service.pushUser(this.user).subscribe(data => this.pushedUser = data);
+    console.log(this.pushedUser);    
+  }
 }

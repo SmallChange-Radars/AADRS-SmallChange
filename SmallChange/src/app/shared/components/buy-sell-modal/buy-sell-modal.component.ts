@@ -5,6 +5,8 @@ import { BaseChartDirective } from 'ng2-charts';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { Trade } from '../../models/trade';
+import { UserService } from '../../services/user.service';
+import { ModalServiceService } from '../../services/modal-service.service';
 
 @Component({
   selector: 'app-buy-sell-modal',
@@ -45,14 +47,53 @@ export class BuySellModalComponent implements OnInit {
   buyForm: FormGroup = new FormGroup({});
   sellForm: FormGroup = new FormGroup({});
 
+  buyError: boolean = false;
+  sellError: boolean = false;
+  sellStockError: boolean = false;
+
+  errorType: string = 'danger';
+  clientPortfolio: any = null;
+
   buyStocks() {
     let quantity: number = +this.buyForm.get('buyQuantity')?.value;
+    let amount: number = +this.userService.getUser() * 1000;
+    let stockPrice: number =
+      this.modalContent.Price[this.modalContent.Price.length - 1];
+    if (quantity * stockPrice <= amount) {
+      this.buyError = false;
+    } else this.buyError = true;
     console.log(quantity);
   }
 
   sellStocks() {
     let quantity: number = +this.sellForm.get('sellQuantity')?.value;
     console.log(quantity);
+    console.log('here');
+
+    this.modalService
+      .getPortfolio(this.userService.getUser())
+      .subscribe((data) => {
+        this.clientPortfolio = data;
+        let flag: Boolean = false;
+        this.clientPortfolio.value.forEach((a: any) => {
+          //Change to for loop and implement break
+          if (a.Stock == this.modalContent.Symbol) {
+            flag = true;
+            const result = a.Quantities.reduce(
+              (accumulator: any, current: any) => {
+                return accumulator + current;
+              },
+              0
+            );
+            console.log(result > quantity);
+            if (result > quantity) {
+              this.sellError = false;
+            } else this.sellError = true;
+          }
+        });
+        if (flag == false) this.sellStockError = true;
+        else this.sellStockError = false;
+      });
   }
 
   graphColor(): string {
@@ -66,7 +107,9 @@ export class BuySellModalComponent implements OnInit {
 
   constructor(
     public activeModal: NgbActiveModal,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private userService: UserService,
+    private modalService: ModalServiceService
   ) {}
 
   ngOnInit(): void {

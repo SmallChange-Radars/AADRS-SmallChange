@@ -1,22 +1,20 @@
-.register-form, h3 {
-    margin: 10px auto;
-    max-width: 40rem;
-    font-family: Arial, sans-serif;
-    border: solid 2px #ccc;
-    padding: 15px;
-
-}
-
 .flex{
     display: flex;
-    justify-content:space-around;
+    margin: 0;
+    justify-content:space-between;
+    align-items: stretch;
+}
+.card{
+    padding: 15px;
+    border: none;
+    margin: 1rem;
 }
 input{
     line-height: 20px;
 }
 
-div{
-    margin: 10px;
+.pad{
+    margin: 7px;
 }
 
 #errorText {
@@ -32,11 +30,14 @@ button {
     color: white;
     font-size: 18px;
     width: 200px;
-    padding: 5px 5px;
+    font-weight: 600;
+    padding: 10px;
     text-align: center;
     outline: none;
     border: none;
     border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 7px;
 }
 
 button:hover {
@@ -50,7 +51,10 @@ button:active {
 }
 
 label{
-    font-weight: 400;
+    font-weight: 430;
     margin-bottom: 2px;
+}
+
+.container{
     font-family: Roboto,system-ui;
 }

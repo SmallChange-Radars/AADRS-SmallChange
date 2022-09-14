@@ -12,6 +12,7 @@ export class NavTabComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.active=1;
   }
 
 }
