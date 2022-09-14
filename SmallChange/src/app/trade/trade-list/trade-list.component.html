@@ -24,7 +24,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr *ngFor="let stock of stocks">
+                        <tr *ngFor="let stock of stocks" (click)="openModal(stock)">
                             <td>{{stock.Symbol}}</td>
                             <td>{{stock.Name}}</td>
                             <td>{{stock.Sector}}</td>
