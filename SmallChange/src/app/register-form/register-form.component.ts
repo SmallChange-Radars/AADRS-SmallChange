@@ -50,13 +50,6 @@ export class RegisterFormComponent implements OnInit {
     return this.registerForm.controls;
   }
 
-  login() {
-    this.router.navigate(['/login']);
-  }
-
-  register() {
-    this.router.navigate(['/register']);
-  }
 
   onSubmit() {
     if (this.registerForm.valid) {
