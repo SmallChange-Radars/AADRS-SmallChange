@@ -6,6 +6,7 @@ import { NavTabComponent } from './nav-tab/nav-tab.component';
 import { PortfolioPageComponent } from './portfolio/portfolio-page/portfolio-page.component';
 import { PreferencesPageComponent } from './preferences/preferences-page/preferences-page.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
+import { TradeListComponent } from './trade/trade-list/trade-list.component';
 
 const routes: Routes = [
   {
@@ -26,7 +27,7 @@ const routes: Routes = [
   },
   {
     path: 'trade',
-    component: LoginpageComponent
+    component: TradeListComponent
   },
   {
     path: 'activity',

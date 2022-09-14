@@ -7,45 +7,48 @@
     <div class="col-12">
         <div class="row mb-3">
             <div class="col-4">
-                <input [(ngModel)]="searchText" type="search" id="stockSearch" class="form-control" (ngModelChange)="onChange($event)" placeholder="Search"/>                     
+                <input [(ngModel)]="searchText" type="search" id="stockSearch" class="form-control"
+                    (ngModelChange)="onChange($event)" placeholder="Search" />
             </div>
         </div>
         <div class="row mt-3">
             <div class="col-12">
-            <table class="table table-bordered ">
-                <thead>
-                    <tr>
-                        <th>Symbol</th>
-                        <th>Name</th>
-                        <th>Sector</th>
-                        <th>Price</th>
-                        <th>Market Cap</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let stock of stocks">
-                        <td>{{stock.Symbol}}</td>
-                        <td>{{stock.Name}}</td>
-                        <td>{{stock.Sector}}</td>
-                        <td>{{stock.Price[stock.Price.length-1] | currency}}</td>
-                        <td>{{stock.Market_Cap}}</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-            <div class="d-flex justify-content-between p-2" *ngIf="!searchText">
+                <table class="table table-bordered ">
+                    <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Name</th>
+                            <th>Sector</th>
+                            <th class="text-end">Price</th>
+                            <th class="text-end">Market Cap</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let stock of stocks">
+                            <td>{{stock.Symbol}}</td>
+                            <td>{{stock.Name}}</td>
+                            <td>{{stock.Sector}}</td>
+                            <td class="text-end">{{stock.Price[stock.Price.length-1] | currency : 'USD' : "symbol" : '1.2-2' }}</td>
+                            <td class="text-end">{{stock.Market_Cap}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-flex justify-content-between p-2">
+                <!-- <div class="d-flex justify-content-between p-2" *ngIf="!searchText"> -->
                 <!-- <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize" (pageChange)="getStocks()">
                 </ngb-pagination> -->
 
-                <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [maxSize]="5" [pageSize]="pageSize" [rotate]="true" [ellipses]="false" [boundaryLinks]="true" (pageChange)="onChange('')"></ngb-pagination>
-              
+                <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [maxSize]="5" [pageSize]="pageSize"
+                    [rotate]="true" [ellipses]="false" [boundaryLinks]="true" (pageChange)="onChange('')">
+                </ngb-pagination>
+
                 <select class="form-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="onChange('')">
-                  <option [ngValue]="5">5 items per page</option>
-                  <option [ngValue]="10">10 items per page</option>
-                  <option [ngValue]="20">20 items per page</option>
+                    <option [ngValue]="5">5 items per page</option>
+                    <option [ngValue]="10">10 items per page</option>
+                    <option [ngValue]="20">20 items per page</option>
                 </select>
-              </div>
+            </div>
         </div>
     </div>
 </div>

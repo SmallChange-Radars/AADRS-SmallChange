@@ -7,6 +7,20 @@ import { catchError, Observable, throwError } from 'rxjs';
 import { Trade } from 'src/app/shared/models/trade';
 import { TradeService } from 'src/app/shared/services/trade.service';
 
+const sectors: string[] = [
+  "All",
+  "Communication Services",
+  "Consumer Discretionary",
+  "Consumer Staples",
+  "Energy",
+  "Financials",
+  "Health Care",
+  "Industrials",
+  "Information Technology",
+  "Materials",
+  "Real Estate",
+  "Utilities"];
+
 @Component({
   selector: 'app-trade-list',
   templateUrl: './trade-list.component.html',
@@ -17,48 +31,33 @@ export class TradeListComponent implements OnInit {
 
   page = 1;
   pageSize = 10;
-  collectionSize = this.stocks.length;
+  collectionSize = 200;
 
-  searchText: string = '';
+  searchText: string = "";
 
-  constructor(private service: TradeService) {}
+  constructor(private service: TradeService) { }
 
   getStocks() {
-    this.service.getStocks(this.page, this.pageSize).subscribe((data) => {
-      this.stocks = data;
-      this.collectionSize = 505;
+    this.service.getStocks(this.page, this.pageSize, this.searchText).subscribe((response) => {
+      this.stocks = response?.body!;
+      this.collectionSize = +response.headers.get('X-Total-Count')!;
     });
   }
 
-  getSearchStocks(searchText: any) {
-    this.service
-      .getSearchStocksSymbol(searchText)
-      .subscribe((data) => (this.stocks = data));
-    this.service
-      .getSearchStocksName(searchText)
-      .subscribe((data) => (this.stocks = this.stocks.concat(data)));
-  }
+  // getSearchStocks(searchText: any) {
+  //   this.service
+  //     .getSearchStocksSymbol(searchText)
+  //     .subscribe((data) => (this.stocks = data));
+  //   this.service
+  //     .getSearchStocksName(searchText)
+  //     .subscribe((data) => (this.stocks = this.stocks.concat(data)));
+  // }
 
   onChange(value: string) {
-    if (this.searchText) this.getSearchStocks(this.searchText);
-    else this.getStocks();
+    this.getStocks();
   }
 
   ngOnInit(): void {
     this.getStocks();
-  }
-
-  handleError(error: HttpErrorResponse) {
-    if (error.error instanceof ErrorEvent) {
-      console.error('An error occured - ', error.error.message);
-    } else {
-      console.error(
-        `Backend returned code ${error.status}, body was - ${error.error}`
-      );
-    }
-
-    return throwError(
-      () => 'Unable to contact service, please try again later.'
-    );
   }
 }
