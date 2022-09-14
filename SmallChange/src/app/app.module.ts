@@ -5,7 +5,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CoreModule } from './core/core.module';
 import { AgGridModule } from 'ag-grid-angular';
 import { NgChartsModule } from 'ng2-charts';
-import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,15 +13,19 @@ import { RegisterFormComponent } from './register-form/register-form.component';
 
 import { LoginpageModule } from './loginpage/loginpage.module';
 import { PreferencesModule } from './preferences/preferences.module';
+import { NavTabComponent } from './nav-tab/nav-tab.component';
 import { PortfolioModule } from './portfolio/portfolio.module';
+import { HttpClientModule } from '@angular/common/http'
+import { TradeModule } from './trade/trade.module';
 import { ActivityPageComponent } from './activity/activity-page/activity-page.component';
 import { ActivityTableComponent } from './activity/activity-table/activity-table.component';
 
 @NgModule({
   declarations: [
-    AppComponent,    
+    AppComponent,
     LandingPageComponent,
     RegisterFormComponent,
+    NavTabComponent,
     ActivityPageComponent,
     ActivityTableComponent
   ],
@@ -38,7 +41,8 @@ import { ActivityTableComponent } from './activity/activity-table/activity-table
     CoreModule,
     AgGridModule,
     NgChartsModule,
-    HttpClientModule
+    HttpClientModule,
+    TradeModule
   ],
   providers: [],
   bootstrap: [AppComponent],

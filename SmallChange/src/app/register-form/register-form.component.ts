@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Client } from '../shared/models/client';
 
 @Component({
   selector: 'app-register-form',
@@ -7,14 +8,15 @@ import { FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./register-form.component.scss']
 })
 export class RegisterFormComponent implements OnInit {
-  userForm: any;
+  registerationForm: any;
+  client?: Client;
   pass?:string;
   passwordErrorTextmsg:string = "Invalid Password - Must contain between 6 and 24 letters, numbers, underscores or hyphens.";
   
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
-    this.userForm = this.formBuilder.group({
+    this.registerationForm = this.formBuilder.group({
       identification: ['', [
         Validators.required
       ]],
@@ -32,27 +34,27 @@ export class RegisterFormComponent implements OnInit {
   }
 
   get password() {
-    return this.userForm.get('password');
+    return this.registerationForm.get('password');
   }
 
   get email(){
-    return this.userForm.get('email');
+    return this.registerationForm.get('email');
   }
 
   get pincode(){
-    return this.userForm.get('pincode');
+    return this.registerationForm.get('pincode');
   }
 
   get country(){
-    return this.userForm.get('country');
+    return this.registerationForm.get('country');
   }
 
   get identification(){
-    return this.userForm.get('identification');
+    return this.registerationForm.get('identification');
   }
 
   onSubmit(){
-    if(this.userForm.valid){
+    if(this.registerationForm.valid){
       console.log("Form Submitted");
     } else {
       console.log("Form not submitted");

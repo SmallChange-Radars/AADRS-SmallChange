@@ -1,4 +1,4 @@
-<div class="register-form">
+<!-- <div class="register-form">
     <form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="border border-light p-5">
 
         <p class="h4 text-center mb-4">Sign up</p>
@@ -57,14 +57,58 @@
         </div>
 
         <label for="dob">Date of Birth:</label>
-        <input type="date" formControlName="dob" id="Dob" class="form-control mb-4">
+        <input type="date" id="dob" class="form-control mb-4">
 
         <label for="riskAppetite">Investment Risk Appetite:</label>
-        <input type="text" formControlName="riskAppetite" id="defaultRegisterFormRiskAppetite" class="form-control mb-4"
+        <input type="text" id="defaultRegisterFormRiskAppetite" class="form-control mb-4"
             placeholder="Risk Appetite">
 
         <div class="text-center">
-            <button class="btn btn-info btn-block" type="submit">Sign in</button>
+            <button type="submit">Sign in</button>
         </div>
     </form>
-</div>
+</div> -->
+
+<h3>REGISTER</h3>
+<section class="register-form">
+    
+    <form [formGroup]="registerationForm" (ngSubmit)="onSubmit()">
+        <div class="flex">
+            <label>First Name:
+                <input type="text" name="firstName" formControlName="firstName" placeholder="First Name">
+            </label>
+            <label>Last Name:
+                <input type="text" name="lastName" formControlNamw="lastName" placeholder="Last Name">
+            </label>
+        </div>
+        <div>
+            <label>Email Id:
+                <input type="email" name="email" size="30" formControlName="email" placeholder="Email@email.com">
+            </label>
+        </div>
+        <div class="flex">
+            <label>Country:
+                <input type="text" name="country" formControlName="country" placeholder="Country">
+            </label>
+            <label>Identification:
+                <input type="text" name="identificationValue" formControlName="identificationValue">
+            </label>
+        </div>
+        <div>
+            <label>Pincode:
+                <input type="number" name="pincode" formControlName="pincode" placeholder="Pincode">
+            </label>
+        </div>
+        <div>
+            <label for="password">Password:
+                <input type="password" formControlName="password" id="Password" placeholder="Password">
+            </label>
+        </div>
+        <div>
+            <label for="dob">Date of Birth:
+                <input type="date" id="dob">
+            </label>
+        </div>
+        <button type="submit" [disabled]="!registerationForm.valid">Register</button>
+    </form>
+</section>
