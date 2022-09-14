@@ -8,3 +8,6 @@ export class ClientPortfolio {
         public percent: number
     ) {}
 }
+// stockname
+// total quantity
+// list of list price quantity

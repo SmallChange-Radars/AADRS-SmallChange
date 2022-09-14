@@ -16,6 +16,7 @@ import { LoginpageModule } from './loginpage/loginpage.module';
 import { PreferencesModule } from './preferences/preferences.module';
 import { NavTabComponent } from './nav-tab/nav-tab.component';
 import { PortfolioModule } from './portfolio/portfolio.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,6 @@ import { PortfolioModule } from './portfolio/portfolio.module';
     LandingPageComponent,
     RegisterFormComponent,
     NavTabComponent
-
   ],
   imports: [
     BrowserModule,
@@ -36,7 +36,8 @@ import { PortfolioModule } from './portfolio/portfolio.module';
     LoginpageModule,
     CoreModule,
     AgGridModule,
-    NgChartsModule
+    NgChartsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

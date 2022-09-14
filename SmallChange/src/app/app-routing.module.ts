@@ -13,6 +13,10 @@ const routes: Routes = [
     component: PortfolioPageComponent
   },
   {
+    path: 'login',
+    component: LoginpageComponent
+  },
+  {
     path: 'register',
     component: RegisterFormComponent
   },
