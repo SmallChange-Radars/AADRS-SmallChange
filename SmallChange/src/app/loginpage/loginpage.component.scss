@@ -57,7 +57,7 @@ button:active {
 .loginform {
   max-width: 20rem;
   margin: 0 auto 0 auto;
-  font-family: 'Fidelity Sans', Arial, sans-serif;
+  font-family: system-ui;
 }
 
 .loginformgroup {
@@ -91,7 +91,7 @@ button:active {
 }
 
 .formlabel {
-  font-family: 'Fidelity Sans', Arial, sans-serif;
+  font-family: system-ui;
   font-weight: bold;
   color: black;
   display: block;
@@ -99,7 +99,7 @@ button:active {
 }
 
 .errormessage {
-  font-family: 'Fidelity Sans', Arial, sans-serif;
+  font-family: system-ui;
   font-size: 0.8em;
   font-weight: bold;
   // display: none;
@@ -127,7 +127,7 @@ button:active {
   border-width: 0px;
   border-radius: 5px;
   padding: .5rem 1rem 1rem 1rem;
-  font-family: 'Fidelity Sans', Arial, sans-serif;
+  font-family: system-ui;
   font-size: 20px;
   color: white;
   background-color: #568200;
@@ -137,7 +137,7 @@ button:active {
 }
 
 .link {
-  font-family: 'Fidelity Sans', Arial, sans-serif;
+  font-family: system-ui;
   color: #356F95;
   display: block;
   text-align: center;
@@ -158,7 +158,7 @@ button:active {
 
 #footerText {
   box-sizing: content-box;
-  font-family: 'Fidelity Sans', Arial, sans-serif;
+  font-family: system-ui;
   font-size: 18px;
   line-height: 1.5em;
   color: #000;
