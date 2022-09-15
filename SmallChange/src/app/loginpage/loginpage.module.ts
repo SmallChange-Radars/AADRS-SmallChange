@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { LoginpageComponent } from './loginpage.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
+import { CoreModule } from '../core/core.module';
 
 
 
@@ -13,7 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     FormsModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    CoreModule
   ],
   exports: [
     LoginpageComponent

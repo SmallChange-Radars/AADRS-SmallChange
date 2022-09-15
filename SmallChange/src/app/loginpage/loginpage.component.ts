@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Login } from '../shared/models/login';
 import { UpverifyService } from 'src/app/shared/services/upverify.service';
 import { Router } from '@angular/router';
 import { UserService } from '../shared/services/user.service';
+import { NgbAlert } from '@ng-bootstrap/ng-bootstrap';
+import { debounceTime, Subject } from 'rxjs';
 
 @Component({
   selector: 'app-loginpage',
@@ -10,28 +12,37 @@ import { UserService } from '../shared/services/user.service';
   styleUrls: ['./loginpage.component.scss'],
 })
 export class LoginpageComponent implements OnInit {
+  private _success = new Subject<string>();
   public login: Login = new Login('', '');
 
   public loginReturn: Login = new Login('', '');
-  errorMessage: string[] = [];
-  errorType: string = "danger";
+  errorMessage: string = '';
 
   constructor(private service: UpverifyService, private router: Router, private user: UserService) { }
 
+  @ViewChild('selfClosingAlert', { static: false })
+  selfClosingAlert: NgbAlert| undefined;
+  
+
   ngOnInit(): void {
+
+    this._success.subscribe(message => this.errorMessage = message);
+    this._success.pipe(debounceTime(5000)).subscribe(() => {
+      if (this.selfClosingAlert) {
+        this.selfClosingAlert.close();
+      }
+    });
   }
 
-  loginF(){
+  loginF() {
     this.router.navigate(['/login']);
   }
 
-  register(){
+  register() {
     this.router.navigate(['/register']);
   }
 
-  close() {
-    this.errorMessage = [];
-  }
+
 
   verifyCredentials() {
     this.service.verifyCredentials(this.login.id, this.login.password).subscribe({
@@ -42,16 +53,17 @@ export class LoginpageComponent implements OnInit {
             next: (data) => {
               this.user.addUser(data[0].clientId);
               console.log(data)
-              console.log(data[0].clientId,this.user.getUser(),this.user.isLoggedIn());
-            }});
+              console.log(data[0].clientId, this.user.getUser(), this.user.isLoggedIn());
+            }
+          });
           this.router.navigate(['/home']);
         }
         else {
-          this.errorMessage = ["Incorrect Password"];
+          this._success.next("Invalid Credentials");
           this.login = new Login(this.login.id, "");
         }
       },
-      error: (e) => { this.errorMessage = [e]; this.login = new Login("", ""); }
+      error: (e) => { this._success.next(e);; this.login = new Login("", ""); }
     });
   }
 }

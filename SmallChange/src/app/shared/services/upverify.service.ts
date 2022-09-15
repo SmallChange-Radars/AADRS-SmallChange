@@ -31,6 +31,6 @@ export class UpverifyService {
         `Error Code: ${error.status}\n` +
         `Body: ${error.error}`);
     }
-    return throwError(() =>"Incorrect Username");
+    return throwError(() =>"Invalid Credentials");
   }
 }
