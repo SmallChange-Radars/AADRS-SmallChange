@@ -1,0 +1,28 @@
+.align-with-text {
+    margin-bottom: 1rem;
+}
+
+.btn-outline-dark {
+    --bs-btn-border-color: #ced4da;
+}
+
+th {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    color: #696969;
+}
+
+td{
+    font-family: Helvetica, sans-serif;
+}
+
+// .table-striped>tbody>tr:nth-child(even)>td, 
+// .table-striped>tbody>tr:nth-child(even)>th {
+//    background-color: #FFFFFF; // Choose your own color here
+//  }
+
+// .table-striped>tbody>tr:nth-child(odd)>td, 
+// .table-striped>tbody>tr:nth-child(odd)>th {
+//    background-color: #F5F5F7; // Choose your own color here
+//    color: #1D1D1F;
+//  }

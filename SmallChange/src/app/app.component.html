@@ -1,5 +1,6 @@
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8,7 +9,7 @@
         rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
-<nav *ngIf="isLoggedIn()" class="navbar navbar-expand-lg underline">
+<nav class="navbar navbar-expand-lg underline">
     <div class="container-lg container-fluid">
         <span class="navbar-brand h1">
             <header class="header">
@@ -37,9 +38,9 @@
                         [routerLinkActiveOptions]="{exact: true}" routerLink="/trade">Trade</a>
                 </li>
             </ul>
-            <div ngbDropdown class="d-inline-block">
+            <div ngbDropdown class="d-inline-block account-circle">
                 <button type="button" class="btn" id="dropdownBasic1" ngbDropdownToggle>
-                    Account
+                    <i class="bi bi-person-circle"></i>
                 </button>
                 <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-menu dropdown-menu-end">
                     <button ngbDropdownItem routerLink="/preferences">Preferences

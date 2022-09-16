@@ -1,54 +1,94 @@
-<div class="row mt-3">
-    <!-- <div class="col-4">
-        <div class="card">
-            Hello There
+<div clas="container mt-4">
+    <div class="row mt-4 align-items-end">
+        <div class="col-12 col-md-6 col-xl-8">
+            <h1>Trade</h1>
+            <p>Search for Stocks and make trades by clicking on them</p>
         </div>
-    </div> -->
-    <div class="col-12">
-        <div class="row mb-3">
-            <div class="col-4">
-                <input [(ngModel)]="searchText" type="search" id="stockSearch" class="form-control"
-                    (ngModelChange)="onChange($event)" placeholder="Search" />
+        <div class="col mt-2 align-with-text">
+            <div class="row gx-0">
+                <div class="col-4 ml-auto">
+                    <div ngbDropdown placement="bottom-end">
+                        <button type="button" class="btn btn-outline-dark" id="dropdownBasic1" ngbDropdownToggle>
+                            <i class="bi bi-filter"></i> Filter </button>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                            <button ngbDropdownItem>Action - 1</button>
+                            <button ngbDropdownItem>Another Action</button>
+                            <button ngbDropdownItem>Something else is here</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <input [(ngModel)]="searchText" type="search" id="stockSearch" class="form-control"
+                        (ngModelChange)="onChange($event)" placeholder="Search" />
+                </div>
             </div>
         </div>
-        <div class="row mt-3">
-            <div class="col-12">
-                <table class="table table-bordered ">
-                    <thead>
-                        <tr>
-                            <th>Symbol</th>
-                            <th>Name</th>
-                            <th>Sector</th>
-                            <th class="text-end">Price</th>
-                            <th class="text-end">Market Cap</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr *ngFor="let stock of stocks" (click)="openModal(stock)">
-                            <td>{{stock.Symbol}}</td>
-                            <td>{{stock.Name}}</td>
-                            <td>{{stock.Sector}}</td>
-                            <td class="text-end">{{stock.Price[stock.Price.length-1] | currency : 'USD' : "symbol" : '1.2-2' }}</td>
-                            <td class="text-end">{{stock.Market_Cap}}</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="d-flex justify-content-between p-2">
-                <!-- <div class="d-flex justify-content-between p-2" *ngIf="!searchText"> -->
-                <!-- <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize" (pageChange)="getStocks()">
-                </ngb-pagination> -->
+    </div>
+    <div class="row mt-3">
+        <div class="col-12">
+            <!-- <table class="table table-bordered "> -->
+         <table class="table">
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Name</th>
+                        <th>Sector</th>
+                        <th class="text-end">Price</th>
+                        <th class="text-end">Market Cap</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let stock of stocks" (click)="openModal(stock)">
+                        <td>{{stock.Symbol}}</td>
+                        <td>{{stock.Name}}</td>
+                        <td>{{stock.Sector}}</td>
+                        <td class="text-end">{{stock.Price[stock.Price.length-1] | currency : 'USD' : "symbol" :
+                            '1.2-2' }}</td>
+                        <td class="text-end">{{stock.Market_Cap}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <!-- <div class="d-flex justify-content-between p-2" *ngIf="!searchText"> -->
+            <!-- <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize" (pageChange)="getStocks()">
+                    </ngb-pagination> -->
 
-                <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [maxSize]="5" [pageSize]="pageSize"
+            <div class="d-flex align-items-center">
+                <p>Rows per page <span>&nbsp;</span> <span>&nbsp;</span></p>
+                <div ngbDropdown placement="top-end" class="align-with-text">
+                    <button type="button" class="btn btn-outline-dark" id="dropdownBasic1" ngbDropdownToggle>
+                        {{pageSize}}</button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                        <button ngbDropdownItem (click)="changePagesize(5)">5</button>
+                        <button ngbDropdownItem (click)="changePagesize(10)">10</button>
+                        <button ngbDropdownItem (click)="changePagesize(15)">15</button>
+                        <button ngbDropdownItem (click)="changePagesize(20)">20</button>
+                        <button ngbDropdownItem (click)="changePagesize(25)">25</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [maxSize]="5" [pageSize]="pageSize"
                     [rotate]="true" [ellipses]="false" [boundaryLinks]="true" (pageChange)="onChange('')">
-                </ngb-pagination>
+                </ngb-pagination> -->
+            <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [maxSize]="5" [pageSize]="pageSize"
+                [boundaryLinks]="true" (pageChange)="onChange('')">
+                <ng-template ngbPaginationPages let-page let-pages=" pages">
+                    <li class="ngb-custom-pages-item" *ngIf="pages.length > 0">
+                        <div class="mb-3 d-flex flex-nowrap px-4">
+                            <span id="paginationDescription" class="col-form-label text-nowrap">{{(page-1)*pageSize +1}}
+                                -
+                                {{(page*pageSize)>collectionSize?collectionSize:(page*pageSize)}} of
+                                {{collectionSize}}</span>
+                        </div>
+                    </li>
+                </ng-template>
 
-                <select class="form-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="onChange('')">
-                    <option [ngValue]="5">5 items per page</option>
-                    <option [ngValue]="10">10 items per page</option>
-                    <option [ngValue]="20">20 items per page</option>
-                </select>
-            </div>
+                <ng-template ngbPaginationFirst><i class="bi bi-chevron-bar-left"></i></ng-template>
+                <ng-template ngbPaginationLast><i class="bi bi-chevron-bar-right"></i></ng-template>
+                <ng-template ngbPaginationPrevious><i class="bi bi-chevron-left"></i></ng-template>
+                <ng-template ngbPaginationNext><i class="bi bi-chevron-right"></i></ng-template>
+            </ngb-pagination>
         </div>
     </div>
 </div>

@@ -62,6 +62,11 @@ export class TradeListComponent implements OnInit {
     this.getStocks();
   }
 
+  changePagesize(size:number){
+    this.pageSize=size;
+    this.onChange("");
+  }
+
   openModal(stock: Trade) {
     const modalRef = this.modalService.open(BuySellModalComponent, {
       size: 'lg',
