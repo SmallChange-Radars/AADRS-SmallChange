@@ -1,5 +1,5 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AgGridAngular } from 'ag-grid-angular';
 import { ColDef, GridReadyEvent } from 'ag-grid-community';
@@ -8,6 +8,7 @@ import { BuySellModalComponent } from 'src/app/shared/components/buy-sell-modal/
 
 import { Trade } from 'src/app/shared/models/trade';
 import { TradeService } from 'src/app/shared/services/trade.service';
+import { NgbdSortableHeader, SortEvent } from './sortable.directive';
 
 const sectors: string[] = [
   'All',
@@ -38,11 +39,29 @@ export class TradeListComponent implements OnInit {
 
   searchText: string = '';
 
-  constructor(private service: TradeService, private modalService: NgbModal) {}
+  @ViewChildren(NgbdSortableHeader) headers!: QueryList<NgbdSortableHeader>;
 
-  getStocks() {
+  onSort({ column, direction }: SortEvent) {
+    // resetting other headers
+    this.headers.forEach(header => {
+      if (header.sortable !== column) {
+        header.direction = '';
+      }
+    });
+
     this.service
-      .getStocks(this.page, this.pageSize, this.searchText)
+      .getSortedStocks(this.page, this.pageSize, this.searchText, direction, column)
+      .subscribe((response) => {
+        this.stocks = response?.body!;
+        this.collectionSize = +response.headers.get('X-Total-Count')!;
+      });
+  }
+
+  constructor(private service: TradeService, private modalService: NgbModal) { }
+
+  getSortedStocks() {
+    this.service
+      .getSortedStocks(this.page, this.pageSize, this.searchText, "", "")
       .subscribe((response) => {
         this.stocks = response?.body!;
         this.collectionSize = +response.headers.get('X-Total-Count')!;
@@ -59,11 +78,11 @@ export class TradeListComponent implements OnInit {
   // }
 
   onChange(value: string) {
-    this.getStocks();
+    this.getSortedStocks();
   }
 
-  changePagesize(size:number){
-    this.pageSize=size;
+  changePagesize(size: number) {
+    this.pageSize = size;
     this.onChange("");
   }
 
@@ -78,6 +97,6 @@ export class TradeListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getStocks();
+    this.getSortedStocks();
   }
 }

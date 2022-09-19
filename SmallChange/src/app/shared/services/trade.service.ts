@@ -10,10 +10,22 @@ export class TradeService {
   url: string = 'http://localhost:3000/stocks';
   constructor(private http: HttpClient) { }
 
-  getStocks(pageNo: number, pageSize: number, query: string): Observable<HttpResponse<Trade[]>> {
+  getSortedStocks(pageNo: number, pageSize: number, query: string, sortDirection: string, sortColumn: string): Observable<HttpResponse<Trade[]>> {
     let url = this.url + '?q=' + query + '&_page=' + pageNo + '&_limit=' + pageSize;
-    return this.http.get<Trade[]>(url, { observe: "response" });
+    if (sortDirection === '' || sortColumn === '') {
+      return this.http.get<Trade[]>(url, { observe: "response" });
+    } else {
+      url += "&_sort="+sortColumn+"&_order="+sortDirection;
+      return this.http.get<Trade[]>(url, { observe: "response" });
+    }
   }
+
+  
+
+  // getStocks(pageNo: number, pageSize: number, query: string): Observable<HttpResponse<Trade[]>> {
+  //   let url = this.url + '?q=' + query + '&_page=' + pageNo + '&_limit=' + pageSize;
+  //   return this.http.get<Trade[]>(url, { observe: "response" });
+  // }
 
   // getStocks(pageNo: number, pageSize: number): Observable<HttpResponse<Trade[]>> {
   //   let url = this.url + '?_page=' + pageNo + '&_limit=' + pageSize;
