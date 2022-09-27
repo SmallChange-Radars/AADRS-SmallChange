@@ -1,8 +1,9 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { ColumnApi, GridApi, GridReadyEvent, RefreshCellsParams } from 'ag-grid-community';
 import { Activity } from 'src/app/shared/models/activity';
 import { UserActivity } from 'src/app/shared/models/user-activity';
 import { ActivityService } from 'src/app/shared/services/activity.service';
+import { NgbdSortableHeader, SortEvent } from './sortable.directive';
 
 @Component({
   selector: 'app-activity-table',
@@ -15,58 +16,28 @@ export class ActivityTableComponent implements OnInit {
   c: any;
   act: Activity[]=[];
   activity: UserActivity = new UserActivity("",this.act);
-  private gridApi!: GridApi<Activity>;
-  private gridColumnApi!: ColumnApi;
+  page = 1;
+  pageSize = 10;
+  collectionSize = 200;
   
-  sizeToFit() {
-    this.gridApi.sizeColumnsToFit();
+  @ViewChildren(NgbdSortableHeader) headers!: QueryList<NgbdSortableHeader>;
+
+  onSort({ column, direction }: SortEvent) {
+    // resetting other headers
+    this.headers.forEach(header => {
+      if (header.sortable !== column) {
+        header.direction = '';
+      }
+    });
   }
   
-
-  toUSD(params: any) {
-    var inrFormat = new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD',
-      minimumFractionDigits: 2
-    });
-    return inrFormat.format(params.value);
-  }
-
-  toPercentage(params: any) {
-    var inrFormat = new Intl.NumberFormat('en-US', {
-      style: 'percent',
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2
-    });
-    return inrFormat.format(params.value / 100);
-  }
-
-  toDate(params: any){
-    return new Date(params.value).toLocaleString();
-  }
-
-
-  defaultColDef = { suppressSizeToFit: false, resizeable: true, sortable: true}
-
-
-  columnDefs = [
-    { headerName: 'Symbol', field: 'Stock'},
-    { headerName: 'Quantity', field: 'Quantity'},
-    { headerName: 'Price', field: 'Price', cellRenderer: this.toUSD},
-    { headerName: 'Buy/Sell', field: 'Type'},
-    { headerName: 'Date', field: 'Date' ,cellRenderer: this.toDate},
-  ];
+  
 
   rowData: Activity[] = [];
   temp: Activity[]=[];
   constructor(private activityService: ActivityService) { }
 
-  onGridReady(params: GridReadyEvent<Activity>) {
-    this.gridApi = params.api;
-    this.gridColumnApi = params.columnApi;
-    
-    this.sizeToFit();
-  }
+  
 
   ngOnInit(): void {
     this.getAllActivity();
@@ -78,7 +49,7 @@ export class ActivityTableComponent implements OnInit {
         this.activity=data;
         console.log(this.activity.value);
         this.temp=this.activity.value;
-        this.temp.sort((a,b)=>a.Date.toLocaleString().localeCompare(b.Date.toLocaleString()));
+        //this.temp.sort((a,b)=>a.Date.toLocaleString().localeCompare(b.Date.toLocaleString()));
         this.temp.reverse();
         this.rowData = this.temp;
       }

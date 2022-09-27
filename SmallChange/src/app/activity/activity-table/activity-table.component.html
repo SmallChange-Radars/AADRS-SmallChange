@@ -1,14 +1,60 @@
-<div>
-    <ag-grid-angular 
-        style="width: 100%; font-family: montserrat; font-size: 14px;" 
-        class="ag-theme-alpine"
-        [rowData]="rowData" 
-        [columnDefs]="columnDefs"
-        [defaultColDef]="defaultColDef"
-        [pagination]="true"
-        [paginationPageSize]="6"
-        domLayout="autoHeight"
-        (gridReady)="onGridReady($event)"
-        [enableCellChangeFlash]="true">
-    </ag-grid-angular>
+<div class="container mt-4">
+    <div class="row mt-3">
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col" sortable="Stock" (sort)="onSort($event)">Symbol</th>
+                        <th scope="col" sortable="Quantity" (sort)="onSort($event)">Quantity</th>
+                        <th scope="col" sortable="Price" (sort)="onSort($event)">Price</th>
+                        <th scope="col" sortable="Type" (sort)="onSort($event)" >Type</th>
+                        <th scope="col" sortable="Date" (sort)="onSort($event)" >Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let row of rowData">
+                        <td>{{row.Stock}}</td>
+                        <td>{{row.Quantity}}</td>
+                        <td>{{row.Price | currency}}</td>
+                        <td >{{row.Type}}</td>
+                        <td >{{row.Date | date: 'long'}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="d-flex justify-content-between align-items-start">
+            <div class="d-flex align-items-center">
+                <p>Rows per page <span>&nbsp;</span> <span>&nbsp;</span></p>
+                <div ngbDropdown placement="top-end" class="align-with-text">
+                    <button type="button" class="btn btn-outline-dark" id="dropdownBasic1" ngbDropdownToggle>
+                        </button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                        <button ngbDropdownItem >5</button>
+                        <button ngbDropdownItem >10</button>
+                        <button ngbDropdownItem >15</button>
+                        <button ngbDropdownItem >20</button>
+                        <button ngbDropdownItem >25</button>
+                    </div>
+                </div>
+            </div>
+            <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [maxSize]="5" [pageSize]="pageSize"
+            [boundaryLinks]="true"  >
+                <ng-template ngbPaginationPages let-page let-pages="pages">
+                    <li class="ngb-custom-pages-item" *ngIf="pages.length > 0">
+                        <div class="mb-3 d-flex flex-nowrap px-4">
+                            <span id="paginationDescription" class="col-form-label text-nowrap">{{(page-1)*pageSize +1}}
+                                -
+                                {{(page*pageSize)>collectionSize?collectionSize:(page*pageSize)}} of
+                                {{collectionSize}}</span>
+                        </div>
+                    </li>
+                </ng-template>
+
+                <ng-template ngbPaginationFirst><i class="bi bi-chevron-bar-left"></i></ng-template>
+                <ng-template ngbPaginationLast><i class="bi bi-chevron-bar-right"></i></ng-template>
+                <ng-template ngbPaginationPrevious><i class="bi bi-chevron-left"></i></ng-template>
+                <ng-template ngbPaginationNext><i class="bi bi-chevron-right"></i></ng-template>
+            </ngb-pagination>
+        </div>
+    </div>
 </div>

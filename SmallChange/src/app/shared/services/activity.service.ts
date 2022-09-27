@@ -9,12 +9,12 @@ import { UserService } from './user.service';
 })
 export class ActivityService {
 
-  url="http://localhost:3000/tradeActivity/";
+  url="http://localhost:3000/tradeActivity/1234";
   
   constructor(private http: HttpClient,private user:UserService) { }
 
   getActivityHistory():Observable<UserActivity>{
-    return this.http.get<UserActivity>(this.url+this.user.getUser()).pipe(catchError(this.handleError));
+    return this.http.get<UserActivity>(this.url).pipe(catchError(this.handleError));
   }
 
   handleError(error: HttpErrorResponse) {
