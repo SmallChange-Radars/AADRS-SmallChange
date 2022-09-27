@@ -73,2690 +73,2933 @@
     ],
     "tradeActivity": [
         {
-            "id": "1234",
-            "value": [
-                {
-                    "Stock": "URI",
-                    "Price": 159.981324,
-                    "Quantity": 6952,
-                    "Type": "Sell",
-                    "Date": 1601510437000
-                },
-                {
-                    "Stock": "LOW",
-                    "Price": 95.988603,
-                    "Quantity": 1670,
-                    "Type": "Buy",
-                    "Date": 1602221604000
-                },
-                {
-                    "Stock": "NI",
-                    "Price": 22.212868,
-                    "Quantity": 5277,
-                    "Type": "Sell",
-                    "Date": 1603662283000
-                },
-                {
-                    "Stock": "FITB",
-                    "Price": 31.02536,
-                    "Quantity": 7864,
-                    "Type": "Sell",
-                    "Date": 1604563740000
-                },
-                {
-                    "Stock": "ACN",
-                    "Price": 150.871224,
-                    "Quantity": 1485,
-                    "Type": "Sell",
-                    "Date": 1605379122000
-                },
-                {
-                    "Stock": "DGX",
-                    "Price": 95.176182,
-                    "Quantity": 394,
-                    "Type": "Sell",
-                    "Date": 1605629997000
-                },
-                {
-                    "Stock": "PXD",
-                    "Price": 170.716272,
-                    "Quantity": 7687,
-                    "Type": "Sell",
-                    "Date": 1605650198000
-                },
-                {
-                    "Stock": "AVB",
-                    "Price": 152.708864,
-                    "Quantity": 9074,
-                    "Type": "Buy",
-                    "Date": 1606804791000
-                },
-                {
-                    "Stock": "LH",
-                    "Price": 163.275928,
-                    "Quantity": 5575,
-                    "Type": "Buy",
-                    "Date": 1607462516000
-                },
-                {
-                    "Stock": "IR",
-                    "Price": 87.30216,
-                    "Quantity": 9812,
-                    "Type": "Buy",
-                    "Date": 1608708267000
-                },
-                {
-                    "Stock": "NBL",
-                    "Price": 25.262162,
-                    "Quantity": 1505,
-                    "Type": "Sell",
-                    "Date": 1612051252000
-                },
-                {
-                    "Stock": "AES",
-                    "Price": 10.107282,
-                    "Quantity": 414,
-                    "Type": "Buy",
-                    "Date": 1612706801000
-                },
-                {
-                    "Stock": "TXT",
-                    "Price": 55.09568,
-                    "Quantity": 988,
-                    "Type": "Buy",
-                    "Date": 1612744950000
-                },
-                {
-                    "Stock": "MDT",
-                    "Price": 78.442704,
-                    "Quantity": 7220,
-                    "Type": "Sell",
-                    "Date": 1613094600000
-                },
-                {
-                    "Stock": "EFX",
-                    "Price": 114.855,
-                    "Quantity": 9238,
-                    "Type": "Sell",
-                    "Date": 1613475648000
-                },
-                {
-                    "Stock": "TJX",
-                    "Price": 75.230012,
-                    "Quantity": 6098,
-                    "Type": "Sell",
-                    "Date": 1613505913000
-                },
-                {
-                    "Stock": "AWK",
-                    "Price": 75.48955,
-                    "Quantity": 354,
-                    "Type": "Sell",
-                    "Date": 1614251126000
-                },
-                {
-                    "Stock": "IVZ",
-                    "Price": 31.859352,
-                    "Quantity": 7119,
-                    "Type": "Buy",
-                    "Date": 1614298425000
-                },
-                {
-                    "Stock": "SHW",
-                    "Price": 385.40163,
-                    "Quantity": 4700,
-                    "Type": "Buy",
-                    "Date": 1614366092000
-                },
-                {
-                    "Stock": "HP",
-                    "Price": 65.330577,
-                    "Quantity": 7175,
-                    "Type": "Buy",
-                    "Date": 1615865339000
-                },
-                {
-                    "Stock": "LUV",
-                    "Price": 55.674504,
-                    "Quantity": 1118,
-                    "Type": "Buy",
-                    "Date": 1618509014000
-                },
-                {
-                    "Stock": "FLIR",
-                    "Price": 46.641194,
-                    "Quantity": 8028,
-                    "Type": "Sell",
-                    "Date": 1620044467000
-                },
-                {
-                    "Stock": "AEP",
-                    "Price": 62.568736,
-                    "Quantity": 2059,
-                    "Type": "Buy",
-                    "Date": 1621273130000
-                },
-                {
-                    "Stock": "CHRW",
-                    "Price": 89.38436,
-                    "Quantity": 9355,
-                    "Type": "Buy",
-                    "Date": 1621611867000
-                },
-                {
-                    "Stock": "AGN",
-                    "Price": 164.51198,
-                    "Quantity": 2556,
-                    "Type": "Buy",
-                    "Date": 1622216083000
-                },
-                {
-                    "Stock": "NFX",
-                    "Price": 26.269204,
-                    "Quantity": 3279,
-                    "Type": "Sell",
-                    "Date": 1623147120000
-                },
-                {
-                    "Stock": "LMT",
-                    "Price": 333.99913,
-                    "Quantity": 2294,
-                    "Type": "Sell",
-                    "Date": 1625325357000
-                },
-                {
-                    "Stock": "CTAS",
-                    "Price": 150.648948,
-                    "Quantity": 6948,
-                    "Type": "Sell",
-                    "Date": 1625792306000
-                },
-                {
-                    "Stock": "HII",
-                    "Price": 225.437611,
-                    "Quantity": 4222,
-                    "Type": "Sell",
-                    "Date": 1626157591000
-                },
-                {
-                    "Stock": "KIM",
-                    "Price": 14.022609,
-                    "Quantity": 6085,
-                    "Type": "Sell",
-                    "Date": 1628289841000
-                },
-                {
-                    "Stock": "TSCO",
-                    "Price": 66.553242,
-                    "Quantity": 7044,
-                    "Type": "Sell",
-                    "Date": 1630010419000
-                },
-                {
-                    "Stock": "KSU",
-                    "Price": 104.699889,
-                    "Quantity": 9596,
-                    "Type": "Buy",
-                    "Date": 1632427162000
-                },
-                {
-                    "Stock": "UNH",
-                    "Price": 214.273754,
-                    "Quantity": 9629,
-                    "Type": "Sell",
-                    "Date": 1632828125000
-                },
-                {
-                    "Stock": "AKAM",
-                    "Price": 62.846193,
-                    "Quantity": 9810,
-                    "Type": "Sell",
-                    "Date": 1634256369000
-                },
-                {
-                    "Stock": "INFO",
-                    "Price": 43.345176,
-                    "Quantity": 5815,
-                    "Type": "Sell",
-                    "Date": 1635751327000
-                },
-                {
-                    "Stock": "CPB",
-                    "Price": 45.251402,
-                    "Quantity": 5849,
-                    "Type": "Sell",
-                    "Date": 1637493586000
-                },
-                {
-                    "Stock": "ALK",
-                    "Price": 64.443452,
-                    "Quantity": 1525,
-                    "Type": "Buy",
-                    "Date": 1637810465000
-                },
-                {
-                    "Stock": "ZTS",
-                    "Price": 72.253704,
-                    "Quantity": 3979,
-                    "Type": "Sell",
-                    "Date": 1641077397000
-                },
-                {
-                    "Stock": "HPQ",
-                    "Price": 19.6212,
-                    "Quantity": 4859,
-                    "Type": "Sell",
-                    "Date": 1642069081000
-                },
-                {
-                    "Stock": "CNC",
-                    "Price": 99.647444,
-                    "Quantity": 9223,
-                    "Type": "Sell",
-                    "Date": 1643375163000
-                },
-                {
-                    "Stock": "ALLE",
-                    "Price": 77.613816,
-                    "Quantity": 4147,
-                    "Type": "Sell",
-                    "Date": 1643571760000
-                },
-                {
-                    "Stock": "HIG",
-                    "Price": 53.92674,
-                    "Quantity": 2763,
-                    "Type": "Sell",
-                    "Date": 1644160646000
-                },
-                {
-                    "Stock": "NFLX",
-                    "Price": 251.6006,
-                    "Quantity": 7639,
-                    "Type": "Sell",
-                    "Date": 1644360365000
-                },
-                {
-                    "Stock": "EL",
-                    "Price": 129.61956,
-                    "Quantity": 4854,
-                    "Type": "Sell",
-                    "Date": 1646354391000
-                },
-                {
-                    "Stock": "URI",
-                    "Price": 160.726478,
-                    "Quantity": 2903,
-                    "Type": "Sell",
-                    "Date": 1647675852000
-                },
-                {
-                    "Stock": "IDXX",
-                    "Price": 169.44928,
-                    "Quantity": 4224,
-                    "Type": "Buy",
-                    "Date": 1647952551000
-                },
-                {
-                    "Stock": "CLX",
-                    "Price": 128.424352,
-                    "Quantity": 8431,
-                    "Type": "Sell",
-                    "Date": 1648450965000
-                },
-                {
-                    "Stock": "NOC",
-                    "Price": 328.157328,
-                    "Quantity": 8958,
-                    "Type": "Buy",
-                    "Date": 1648465695000
-                },
-                {
-                    "Stock": "CME",
-                    "Price": 152.12176,
-                    "Quantity": 158,
-                    "Type": "Buy",
-                    "Date": 1648822897000
-                },
-                {
-                    "Stock": "NEM",
-                    "Price": 36.474543,
-                    "Quantity": 2771,
-                    "Type": "Buy",
-                    "Date": 1649989094000
-                },
-                {
-                    "Stock": "AAL",
-                    "Price": 48.32784,
-                    "Quantity": 4830,
-                    "Type": "Sell",
-                    "Date": 1650891217000
-                },
-                {
-                    "Stock": "ORCL",
-                    "Price": 46.610484,
-                    "Quantity": 8850,
-                    "Type": "Buy",
-                    "Date": 1654144571000
-                },
-                {
-                    "Stock": "VLO",
-                    "Price": 86.179964,
-                    "Quantity": 2739,
-                    "Type": "Buy",
-                    "Date": 1654549405000
-                },
-                {
-                    "Stock": "KORS",
-                    "Price": 60.858414,
-                    "Quantity": 5864,
-                    "Type": "Buy",
-                    "Date": 1654685498000
-                },
-                {
-                    "Stock": "ROST",
-                    "Price": 75.953214,
-                    "Quantity": 2855,
-                    "Type": "Sell",
-                    "Date": 1657249422000
-                },
-                {
-                    "Stock": "AVGO",
-                    "Price": 230.442366,
-                    "Quantity": 4009,
-                    "Type": "Buy",
-                    "Date": 1657657801000
-                },
-                {
-                    "Stock": "MHK",
-                    "Price": 259.854096,
-                    "Quantity": 6264,
-                    "Type": "Buy",
-                    "Date": 1658975419000
-                },
-                {
-                    "Stock": "DG",
-                    "Price": 95.70864,
-                    "Quantity": 1997,
-                    "Type": "Sell",
-                    "Date": 1659034574000
-                },
-                {
-                    "Stock": "CMS",
-                    "Price": 42.333895,
-                    "Quantity": 8368,
-                    "Type": "Sell",
-                    "Date": 1661219504000
-                },
-                {
-                    "Stock": "PSX",
-                    "Price": 93.577012,
-                    "Quantity": 7499,
-                    "Type": "Buy",
-                    "Date": 1661498094000
-                },
-                {
-                    "Stock": "NWL",
-                    "Price": 27.499723,
-                    "Quantity": 3516,
-                    "Type": "Buy",
-                    "Date": 1662219871000
-                }
-            ]
+            "id": 1234,
+            "Stock": "URI",
+            "Price": 159.981324,
+            "Quantity": 6952,
+            "Type": "Sell",
+            "Date": 1601510437000
         },
         {
-            "id": "1235",
-            "value": [
-                {
-                    "Stock": "WBA",
-                    "Price": 67.43547,
-                    "Quantity": 814,
-                    "Type": "Buy",
-                    "Date": 1600657472000
-                },
-                {
-                    "Stock": "DTE",
-                    "Price": 99.829464,
-                    "Quantity": 1293,
-                    "Type": "Buy",
-                    "Date": 1601510821000
-                },
-                {
-                    "Stock": "RHI",
-                    "Price": 52.254774,
-                    "Quantity": 3618,
-                    "Type": "Sell",
-                    "Date": 1602221988000
-                },
-                {
-                    "Stock": "JWN",
-                    "Price": 47.291399,
-                    "Quantity": 9282,
-                    "Type": "Sell",
-                    "Date": 1603662667000
-                },
-                {
-                    "Stock": "GOOGL",
-                    "Price": 994.912083,
-                    "Quantity": 1866,
-                    "Type": "Buy",
-                    "Date": 1604564124000
-                },
-                {
-                    "Stock": "NOC",
-                    "Price": 320.640296,
-                    "Quantity": 1418,
-                    "Type": "Buy",
-                    "Date": 1605379506000
-                },
-                {
-                    "Stock": "PEP",
-                    "Price": 109.434025,
-                    "Quantity": 2810,
-                    "Type": "Buy",
-                    "Date": 1605630381000
-                },
-                {
-                    "Stock": "CPB",
-                    "Price": 45.242436,
-                    "Quantity": 4647,
-                    "Type": "Sell",
-                    "Date": 1605650582000
-                },
-                {
-                    "Stock": "WDC",
-                    "Price": 80.546513,
-                    "Quantity": 2121,
-                    "Type": "Buy",
-                    "Date": 1606805175000
-                },
-                {
-                    "Stock": "D",
-                    "Price": 73.610571,
-                    "Quantity": 8875,
-                    "Type": "Buy",
-                    "Date": 1607434756000
-                },
-                {
-                    "Stock": "DVN",
-                    "Price": 34.873614,
-                    "Quantity": 9643,
-                    "Type": "Sell",
-                    "Date": 1607462900000
-                },
-                {
-                    "Stock": "CB",
-                    "Price": 138.452618,
-                    "Quantity": 9599,
-                    "Type": "Buy",
-                    "Date": 1608708651000
-                },
-                {
-                    "Stock": "SRE",
-                    "Price": 102.801856,
-                    "Quantity": 7914,
-                    "Type": "Sell",
-                    "Date": 1612051636000
-                },
-                {
-                    "Stock": "XEC",
-                    "Price": 101.632736,
-                    "Quantity": 1126,
-                    "Type": "Buy",
-                    "Date": 1612191064000
-                },
-                {
-                    "Stock": "ZTS",
-                    "Price": 70.880712,
-                    "Quantity": 2533,
-                    "Type": "Buy",
-                    "Date": 1612466149000
-                },
-                {
-                    "Stock": "ZTS",
-                    "Price": 71.123846,
-                    "Quantity": 302,
-                    "Type": "Buy",
-                    "Date": 1612707185000
-                },
-                {
-                    "Stock": "CXO",
-                    "Price": 139.795811,
-                    "Quantity": 1824,
-                    "Type": "Buy",
-                    "Date": 1612745334000
-                },
-                {
-                    "Stock": "WEC",
-                    "Price": 59.5238,
-                    "Quantity": 8954,
-                    "Type": "Sell",
-                    "Date": 1613094984000
-                },
-                {
-                    "Stock": "BXP",
-                    "Price": 112.415061,
-                    "Quantity": 4880,
-                    "Type": "Buy",
-                    "Date": 1613476032000
-                },
-                {
-                    "Stock": "PPL",
-                    "Price": 29.65284,
-                    "Quantity": 6667,
-                    "Type": "Sell",
-                    "Date": 1613506297000
-                },
-                {
-                    "Stock": "CAT",
-                    "Price": 144.486303,
-                    "Quantity": 1912,
-                    "Type": "Sell",
-                    "Date": 1614251510000
-                },
-                {
-                    "Stock": "VRSK",
-                    "Price": 93.304308,
-                    "Quantity": 2247,
-                    "Type": "Sell",
-                    "Date": 1614298809000
-                },
-                {
-                    "Stock": "AIV",
-                    "Price": 38.274957,
-                    "Quantity": 6497,
-                    "Type": "Sell",
-                    "Date": 1614366476000
-                },
-                {
-                    "Stock": "UNH",
-                    "Price": 213.299684,
-                    "Quantity": 1424,
-                    "Type": "Sell",
-                    "Date": 1615239256000
-                },
-                {
-                    "Stock": "GILD",
-                    "Price": 77.570774,
-                    "Quantity": 964,
-                    "Type": "Buy",
-                    "Date": 1615698423000
-                },
-                {
-                    "Stock": "TGT",
-                    "Price": 71.877988,
-                    "Quantity": 7481,
-                    "Type": "Sell",
-                    "Date": 1615865723000
-                },
-                {
-                    "Stock": "SYMC",
-                    "Price": 25.559292,
-                    "Quantity": 4886,
-                    "Type": "Sell",
-                    "Date": 1618509398000
-                },
-                {
-                    "Stock": "HCP",
-                    "Price": 22.486048,
-                    "Quantity": 5551,
-                    "Type": "Buy",
-                    "Date": 1620044851000
-                },
-                {
-                    "Stock": "ARE",
-                    "Price": 115.565388,
-                    "Quantity": 7475,
-                    "Type": "Sell",
-                    "Date": 1621273514000
-                },
-                {
-                    "Stock": "HON",
-                    "Price": 146.09301,
-                    "Quantity": 9874,
-                    "Type": "Sell",
-                    "Date": 1621612251000
-                },
-                {
-                    "Stock": "AMG",
-                    "Price": 180.36377,
-                    "Quantity": 4698,
-                    "Type": "Buy",
-                    "Date": 1622216467000
-                },
-                {
-                    "Stock": "MKC",
-                    "Price": 100.407216,
-                    "Quantity": 4608,
-                    "Type": "Buy",
-                    "Date": 1622710041000
-                },
-                {
-                    "Stock": "KR",
-                    "Price": 27.302571,
-                    "Quantity": 7789,
-                    "Type": "Sell",
-                    "Date": 1623147504000
-                },
-                {
-                    "Stock": "ISRG",
-                    "Price": 381.755439,
-                    "Quantity": 2445,
-                    "Type": "Buy",
-                    "Date": 1623612839000
-                },
-                {
-                    "Stock": "NAVI",
-                    "Price": 13.337184,
-                    "Quantity": 4048,
-                    "Type": "Buy",
-                    "Date": 1625325741000
-                },
-                {
-                    "Stock": "BDX",
-                    "Price": 210.023352,
-                    "Quantity": 7703,
-                    "Type": "Sell",
-                    "Date": 1625792690000
-                },
-                {
-                    "Stock": "KMB",
-                    "Price": 112.650534,
-                    "Quantity": 8854,
-                    "Type": "Sell",
-                    "Date": 1626157975000
-                },
-                {
-                    "Stock": "SRCL",
-                    "Price": 70.78987,
-                    "Quantity": 7871,
-                    "Type": "Buy",
-                    "Date": 1627195119000
-                },
-                {
-                    "Stock": "AYI",
-                    "Price": 146.878641,
-                    "Quantity": 5356,
-                    "Type": "Sell",
-                    "Date": 1628290225000
-                },
-                {
-                    "Stock": "LUV",
-                    "Price": 55.034759,
-                    "Quantity": 1454,
-                    "Type": "Buy",
-                    "Date": 1629393343000
-                },
-                {
-                    "Stock": "A",
-                    "Price": 65.25816,
-                    "Quantity": 6337,
-                    "Type": "Buy",
-                    "Date": 1630010803000
-                },
-                {
-                    "Stock": "CERN",
-                    "Price": 60.571068,
-                    "Quantity": 4270,
-                    "Type": "Sell",
-                    "Date": 1632427546000
-                },
-                {
-                    "Stock": "BDX",
-                    "Price": 212.581776,
-                    "Quantity": 2438,
-                    "Type": "Buy",
-                    "Date": 1632828509000
-                },
-                {
-                    "Stock": "NBL",
-                    "Price": 25.641069,
-                    "Quantity": 6639,
-                    "Type": "Buy",
-                    "Date": 1634256753000
-                },
-                {
-                    "Stock": "CB",
-                    "Price": 141.218301,
-                    "Quantity": 4499,
-                    "Type": "Buy",
-                    "Date": 1635751711000
-                },
-                {
-                    "Stock": "KSU",
-                    "Price": 102.256581,
-                    "Quantity": 3719,
-                    "Type": "Sell",
-                    "Date": 1637493970000
-                },
-                {
-                    "Stock": "COG",
-                    "Price": 23.313732,
-                    "Quantity": 1188,
-                    "Type": "Buy",
-                    "Date": 1637787985000
-                },
-                {
-                    "Stock": "AET",
-                    "Price": 180.5454,
-                    "Quantity": 8305,
-                    "Type": "Sell",
-                    "Date": 1637810849000
-                },
-                {
-                    "Stock": "LLL",
-                    "Price": 197.140043,
-                    "Quantity": 7587,
-                    "Type": "Buy",
-                    "Date": 1640058181000
-                },
-                {
-                    "Stock": "RE",
-                    "Price": 242.843844,
-                    "Quantity": 5922,
-                    "Type": "Buy",
-                    "Date": 1641077781000
-                },
-                {
-                    "Stock": "BA",
-                    "Price": 328.802884,
-                    "Quantity": 3448,
-                    "Type": "Buy",
-                    "Date": 1642069465000
-                },
-                {
-                    "Stock": "COF",
-                    "Price": 92.57112,
-                    "Quantity": 4988,
-                    "Type": "Sell",
-                    "Date": 1642162591000
-                },
-                {
-                    "Stock": "EOG",
-                    "Price": 100.88844,
-                    "Quantity": 4555,
-                    "Type": "Sell",
-                    "Date": 1643375547000
-                },
-                {
-                    "Stock": "AEE",
-                    "Price": 51.843222,
-                    "Quantity": 6376,
-                    "Type": "Sell",
-                    "Date": 1643572144000
-                },
-                {
-                    "Stock": "APC",
-                    "Price": 55.357,
-                    "Quantity": 4149,
-                    "Type": "Sell",
-                    "Date": 1644161030000
-                },
-                {
-                    "Stock": "XYL",
-                    "Price": 70.879184,
-                    "Quantity": 7065,
-                    "Type": "Sell",
-                    "Date": 1644360749000
-                },
-                {
-                    "Stock": "JNPR",
-                    "Price": 24.731514,
-                    "Quantity": 5369,
-                    "Type": "Sell",
-                    "Date": 1646354775000
-                },
-                {
-                    "Stock": "CMG",
-                    "Price": 267.526257,
-                    "Quantity": 5979,
-                    "Type": "Sell",
-                    "Date": 1646435621000
-                },
-                {
-                    "Stock": "HON",
-                    "Price": 148.035076,
-                    "Quantity": 8756,
-                    "Type": "Sell",
-                    "Date": 1647676236000
-                },
-                {
-                    "Stock": "HBAN",
-                    "Price": 15.1,
-                    "Quantity": 1985,
-                    "Type": "Buy",
-                    "Date": 1647952935000
-                },
-                {
-                    "Stock": "MRO",
-                    "Price": 15.89952,
-                    "Quantity": 1396,
-                    "Type": "Sell",
-                    "Date": 1648451349000
-                },
-                {
-                    "Stock": "NBL",
-                    "Price": 25.572408,
-                    "Quantity": 9123,
-                    "Type": "Buy",
-                    "Date": 1648466079000
-                },
-                {
-                    "Stock": "DXC",
-                    "Price": 92.921928,
-                    "Quantity": 9086,
-                    "Type": "Buy",
-                    "Date": 1648823281000
-                },
-                {
-                    "Stock": "BMY",
-                    "Price": 62.389088,
-                    "Quantity": 1848,
-                    "Type": "Sell",
-                    "Date": 1649158867000
-                },
-                {
-                    "Stock": "MAS",
-                    "Price": 40.64302,
-                    "Quantity": 7245,
-                    "Type": "Buy",
-                    "Date": 1649989478000
-                },
-                {
-                    "Stock": "AAL",
-                    "Price": 48.4785,
-                    "Quantity": 9194,
-                    "Type": "Sell",
-                    "Date": 1650891601000
-                },
-                {
-                    "Stock": "KMI",
-                    "Price": 16.60008,
-                    "Quantity": 8571,
-                    "Type": "Sell",
-                    "Date": 1651511600000
-                },
-                {
-                    "Stock": "ANTM",
-                    "Price": 228.932953,
-                    "Quantity": 8851,
-                    "Type": "Sell",
-                    "Date": 1652104045000
-                },
-                {
-                    "Stock": "WHR",
-                    "Price": 162.50874,
-                    "Quantity": 6453,
-                    "Type": "Sell",
-                    "Date": 1652638554000
-                },
-                {
-                    "Stock": "CCL",
-                    "Price": 67.52774,
-                    "Quantity": 8723,
-                    "Type": "Sell",
-                    "Date": 1653127834000
-                },
-                {
-                    "Stock": "DHI",
-                    "Price": 44.38962,
-                    "Quantity": 8403,
-                    "Type": "Sell",
-                    "Date": 1654144955000
-                },
-                {
-                    "Stock": "GPC",
-                    "Price": 95.048339,
-                    "Quantity": 4295,
-                    "Type": "Buy",
-                    "Date": 1654549789000
-                },
-                {
-                    "Stock": "ABBV",
-                    "Price": 109.315296,
-                    "Quantity": 7799,
-                    "Type": "Buy",
-                    "Date": 1654685882000
-                },
-                {
-                    "Stock": "NOC",
-                    "Price": 328.124927,
-                    "Quantity": 679,
-                    "Type": "Sell",
-                    "Date": 1657249806000
-                },
-                {
-                    "Stock": "ICE",
-                    "Price": 66.7454,
-                    "Quantity": 1803,
-                    "Type": "Buy",
-                    "Date": 1657658185000
-                },
-                {
-                    "Stock": "ETR",
-                    "Price": 71.126952,
-                    "Quantity": 3338,
-                    "Type": "Buy",
-                    "Date": 1658975803000
-                },
-                {
-                    "Stock": "CME",
-                    "Price": 153.621552,
-                    "Quantity": 3219,
-                    "Type": "Buy",
-                    "Date": 1659034958000
-                },
-                {
-                    "Stock": "AIG",
-                    "Price": 58.670476,
-                    "Quantity": 3859,
-                    "Type": "Buy",
-                    "Date": 1659319796000
-                },
-                {
-                    "Stock": "RRC",
-                    "Price": 12.744362,
-                    "Quantity": 8077,
-                    "Type": "Sell",
-                    "Date": 1660470744000
-                },
-                {
-                    "Stock": "VIAB",
-                    "Price": 32.517011,
-                    "Quantity": 1817,
-                    "Type": "Sell",
-                    "Date": 1661219888000
-                },
-                {
-                    "Stock": "LUK",
-                    "Price": 23.833754,
-                    "Quantity": 8341,
-                    "Type": "Sell",
-                    "Date": 1661498478000
-                },
-                {
-                    "Stock": "EA",
-                    "Price": 115.630988,
-                    "Quantity": 9701,
-                    "Type": "Sell",
-                    "Date": 1661531427000
-                },
-                {
-                    "Stock": "INTC",
-                    "Price": 42.6474,
-                    "Quantity": 8928,
-                    "Type": "Buy",
-                    "Date": 1662220255000
-                }
-            ]
+            "id": 1234,
+            "Stock": "LOW",
+            "Price": 95.988603,
+            "Quantity": 1670,
+            "Type": "Buy",
+            "Date": 1602221604000
         },
         {
-            "id": "1236",
-            "value": [
-                {
-                    "Stock": "IRM",
-                    "Price": 32.223936,
-                    "Quantity": 5289,
-                    "Type": "Sell",
-                    "Date": 1605379595000
-                },
-                {
-                    "Stock": "ALXN",
-                    "Price": 107.233442,
-                    "Quantity": 2414,
-                    "Type": "Buy",
-                    "Date": 1605630470000
-                },
-                {
-                    "Stock": "CB",
-                    "Price": 141.007716,
-                    "Quantity": 9477,
-                    "Type": "Sell",
-                    "Date": 1605650671000
-                },
-                {
-                    "Stock": "BDX",
-                    "Price": 208.775856,
-                    "Quantity": 7565,
-                    "Type": "Sell",
-                    "Date": 1607462989000
-                },
-                {
-                    "Stock": "UPS",
-                    "Price": 109.60784,
-                    "Quantity": 9117,
-                    "Type": "Sell",
-                    "Date": 1608708740000
-                },
-                {
-                    "Stock": "AEE",
-                    "Price": 52.595259,
-                    "Quantity": 3192,
-                    "Type": "Sell",
-                    "Date": 1612051725000
-                },
-                {
-                    "Stock": "IP",
-                    "Price": 56.09484,
-                    "Quantity": 8078,
-                    "Type": "Sell",
-                    "Date": 1612707274000
-                },
-                {
-                    "Stock": "CHRW",
-                    "Price": 89.230561,
-                    "Quantity": 8290,
-                    "Type": "Buy",
-                    "Date": 1612745423000
-                },
-                {
-                    "Stock": "WU",
-                    "Price": 18.651996,
-                    "Quantity": 517,
-                    "Type": "Buy",
-                    "Date": 1613095073000
-                },
-                {
-                    "Stock": "GE",
-                    "Price": 14.45,
-                    "Quantity": 4224,
-                    "Type": "Buy",
-                    "Date": 1613506386000
-                },
-                {
-                    "Stock": "MMC",
-                    "Price": 80.26172,
-                    "Quantity": 6071,
-                    "Type": "Sell",
-                    "Date": 1614366565000
-                },
-                {
-                    "Stock": "FCX",
-                    "Price": 17.32302,
-                    "Quantity": 1685,
-                    "Type": "Buy",
-                    "Date": 1618509487000
-                },
-                {
-                    "Stock": "PGR",
-                    "Price": 50.589942,
-                    "Quantity": 1106,
-                    "Type": "Buy",
-                    "Date": 1620044940000
-                },
-                {
-                    "Stock": "GRMN",
-                    "Price": 61.826882,
-                    "Quantity": 7433,
-                    "Type": "Sell",
-                    "Date": 1621273603000
-                },
-                {
-                    "Stock": "FITB",
-                    "Price": 30.65838,
-                    "Quantity": 3765,
-                    "Type": "Buy",
-                    "Date": 1625325830000
-                },
-                {
-                    "Stock": "EMR",
-                    "Price": 65.82232,
-                    "Quantity": 5008,
-                    "Type": "Sell",
-                    "Date": 1625792779000
-                },
-                {
-                    "Stock": "OMC",
-                    "Price": 76.927194,
-                    "Quantity": 8745,
-                    "Type": "Buy",
-                    "Date": 1644360838000
-                },
-                {
-                    "Stock": "SWK",
-                    "Price": 153.08929,
-                    "Quantity": 9938,
-                    "Type": "Sell",
-                    "Date": 1647676325000
-                },
-                {
-                    "Stock": "PPG",
-                    "Price": 111.68978,
-                    "Quantity": 3033,
-                    "Type": "Buy",
-                    "Date": 1647953024000
-                },
-                {
-                    "Stock": "MET",
-                    "Price": 44.14716,
-                    "Quantity": 7103,
-                    "Type": "Buy",
-                    "Date": 1648823370000
-                },
-                {
-                    "Stock": "ADS",
-                    "Price": 238.84362,
-                    "Quantity": 6467,
-                    "Type": "Sell",
-                    "Date": 1654685971000
-                },
-                {
-                    "Stock": "GE",
-                    "Price": 14.384975,
-                    "Quantity": 1405,
-                    "Type": "Sell",
-                    "Date": 1657249895000
-                },
-                {
-                    "Stock": "ILMN",
-                    "Price": 212.096388,
-                    "Quantity": 4511,
-                    "Type": "Buy",
-                    "Date": 1659035047000
-                },
-                {
-                    "Stock": "LEG",
-                    "Price": 44.113172,
-                    "Quantity": 1729,
-                    "Type": "Buy",
-                    "Date": 1662220344000
-                }
-            ]
+            "id": 1234,
+            "Stock": "NI",
+            "Price": 22.212868,
+            "Quantity": 5277,
+            "Type": "Sell",
+            "Date": 1603662283000
         },
         {
-            "id": "1237",
-            "value": [
-                {
-                    "Stock": "PNR",
-                    "Price": 66.363318,
-                    "Quantity": 5226,
-                    "Type": "Sell",
-                    "Date": 1602223113000
-                },
-                {
-                    "Stock": "L",
-                    "Price": 45.879615,
-                    "Quantity": 983,
-                    "Type": "Buy",
-                    "Date": 1603663792000
-                },
-                {
-                    "Stock": "IFF",
-                    "Price": 139.7388,
-                    "Quantity": 5163,
-                    "Type": "Buy",
-                    "Date": 1605380631000
-                },
-                {
-                    "Stock": "DAL",
-                    "Price": 51.834514,
-                    "Quantity": 6542,
-                    "Type": "Sell",
-                    "Date": 1605631506000
-                },
-                {
-                    "Stock": "SYMC",
-                    "Price": 25.533702,
-                    "Quantity": 3,
-                    "Type": "Sell",
-                    "Date": 1605651707000
-                },
-                {
-                    "Stock": "XYL",
-                    "Price": 69.762368,
-                    "Quantity": 8222,
-                    "Type": "Sell",
-                    "Date": 1606806300000
-                },
-                {
-                    "Stock": "CMCSA",
-                    "Price": 38.262561,
-                    "Quantity": 818,
-                    "Type": "Sell",
-                    "Date": 1607464025000
-                },
-                {
-                    "Stock": "GPN",
-                    "Price": 100.247994,
-                    "Quantity": 431,
-                    "Type": "Sell",
-                    "Date": 1608709776000
-                },
-                {
-                    "Stock": "NCLH",
-                    "Price": 56.766135,
-                    "Quantity": 9808,
-                    "Type": "Buy",
-                    "Date": 1612052761000
-                },
-                {
-                    "Stock": "CAH",
-                    "Price": 65.717169,
-                    "Quantity": 378,
-                    "Type": "Buy",
-                    "Date": 1612708310000
-                },
-                {
-                    "Stock": "CFG",
-                    "Price": 42.759565,
-                    "Quantity": 6658,
-                    "Type": "Buy",
-                    "Date": 1612746459000
-                },
-                {
-                    "Stock": "CME",
-                    "Price": 154.754048,
-                    "Quantity": 2120,
-                    "Type": "Sell",
-                    "Date": 1613096109000
-                },
-                {
-                    "Stock": "LNT",
-                    "Price": 37.674816,
-                    "Quantity": 5635,
-                    "Type": "Buy",
-                    "Date": 1613507422000
-                },
-                {
-                    "Stock": "INCY",
-                    "Price": 84.104624,
-                    "Quantity": 1728,
-                    "Type": "Buy",
-                    "Date": 1614252635000
-                },
-                {
-                    "Stock": "WU",
-                    "Price": 18.781785,
-                    "Quantity": 7906,
-                    "Type": "Sell",
-                    "Date": 1614367601000
-                },
-                {
-                    "Stock": "CSCO",
-                    "Price": 38.490856,
-                    "Quantity": 3542,
-                    "Type": "Buy",
-                    "Date": 1618510523000
-                },
-                {
-                    "Stock": "BWA",
-                    "Price": 52.56328,
-                    "Quantity": 1844,
-                    "Type": "Sell",
-                    "Date": 1620045976000
-                },
-                {
-                    "Stock": "NEM",
-                    "Price": 37.027354,
-                    "Quantity": 7856,
-                    "Type": "Sell",
-                    "Date": 1621274639000
-                },
-                {
-                    "Stock": "TROW",
-                    "Price": 102.204179,
-                    "Quantity": 2769,
-                    "Type": "Buy",
-                    "Date": 1621613376000
-                },
-                {
-                    "Stock": "XRX",
-                    "Price": 29.43346,
-                    "Quantity": 5232,
-                    "Type": "Buy",
-                    "Date": 1623148629000
-                },
-                {
-                    "Stock": "A",
-                    "Price": 64.939415,
-                    "Quantity": 786,
-                    "Type": "Sell",
-                    "Date": 1625326866000
-                },
-                {
-                    "Stock": "CHRW",
-                    "Price": 89.248655,
-                    "Quantity": 603,
-                    "Type": "Buy",
-                    "Date": 1625793815000
-                },
-                {
-                    "Stock": "PXD",
-                    "Price": 167.180828,
-                    "Quantity": 1396,
-                    "Type": "Buy",
-                    "Date": 1626159100000
-                },
-                {
-                    "Stock": "CSX",
-                    "Price": 50.303449,
-                    "Quantity": 2027,
-                    "Type": "Sell",
-                    "Date": 1628291350000
-                },
-                {
-                    "Stock": "XLNX",
-                    "Price": 62.838846,
-                    "Quantity": 708,
-                    "Type": "Buy",
-                    "Date": 1630011928000
-                },
-                {
-                    "Stock": "LKQ",
-                    "Price": 38.86,
-                    "Quantity": 3357,
-                    "Type": "Buy",
-                    "Date": 1635752836000
-                },
-                {
-                    "Stock": "WAT",
-                    "Price": 190.850229,
-                    "Quantity": 4779,
-                    "Type": "Sell",
-                    "Date": 1637495095000
-                },
-                {
-                    "Stock": "JEC",
-                    "Price": 62.69436,
-                    "Quantity": 1186,
-                    "Type": "Buy",
-                    "Date": 1637811974000
-                },
-                {
-                    "Stock": "MCO",
-                    "Price": 153.083268,
-                    "Quantity": 4800,
-                    "Type": "Sell",
-                    "Date": 1641078906000
-                },
-                {
-                    "Stock": "AMP",
-                    "Price": 151.72225,
-                    "Quantity": 1603,
-                    "Type": "Sell",
-                    "Date": 1642070590000
-                },
-                {
-                    "Stock": "TAP",
-                    "Price": 74.837844,
-                    "Quantity": 1443,
-                    "Type": "Buy",
-                    "Date": 1643376672000
-                },
-                {
-                    "Stock": "ARNC",
-                    "Price": 24.677385,
-                    "Quantity": 679,
-                    "Type": "Buy",
-                    "Date": 1644162155000
-                },
-                {
-                    "Stock": "EIX",
-                    "Price": 58.563595,
-                    "Quantity": 8987,
-                    "Type": "Sell",
-                    "Date": 1644361874000
-                },
-                {
-                    "Stock": "AMAT",
-                    "Price": 45.425175,
-                    "Quantity": 4521,
-                    "Type": "Buy",
-                    "Date": 1646355900000
-                },
-                {
-                    "Stock": "ANTM",
-                    "Price": 227.411191,
-                    "Quantity": 4645,
-                    "Type": "Sell",
-                    "Date": 1647677361000
-                },
-                {
-                    "Stock": "RL",
-                    "Price": 100.35746,
-                    "Quantity": 3896,
-                    "Type": "Buy",
-                    "Date": 1647954060000
-                },
-                {
-                    "Stock": "ROP",
-                    "Price": 255.74246,
-                    "Quantity": 5204,
-                    "Type": "Buy",
-                    "Date": 1648467204000
-                },
-                {
-                    "Stock": "MET",
-                    "Price": 44.310996,
-                    "Quantity": 9159,
-                    "Type": "Buy",
-                    "Date": 1648824406000
-                },
-                {
-                    "Stock": "AMD",
-                    "Price": 11.291808,
-                    "Quantity": 17,
-                    "Type": "Sell",
-                    "Date": 1649990603000
-                },
-                {
-                    "Stock": "LMT",
-                    "Price": 336.57324,
-                    "Quantity": 9538,
-                    "Type": "Buy",
-                    "Date": 1654146080000
-                },
-                {
-                    "Stock": "MU",
-                    "Price": 39.936,
-                    "Quantity": 5149,
-                    "Type": "Sell",
-                    "Date": 1654550914000
-                },
-                {
-                    "Stock": "QCOM",
-                    "Price": 61.533636,
-                    "Quantity": 5856,
-                    "Type": "Buy",
-                    "Date": 1654687007000
-                },
-                {
-                    "Stock": "WFC",
-                    "Price": 55.48864,
-                    "Quantity": 1276,
-                    "Type": "Sell",
-                    "Date": 1657250931000
-                },
-                {
-                    "Stock": "JEC",
-                    "Price": 62.983332,
-                    "Quantity": 410,
-                    "Type": "Sell",
-                    "Date": 1657659310000
-                },
-                {
-                    "Stock": "SPG",
-                    "Price": 152.666976,
-                    "Quantity": 7933,
-                    "Type": "Buy",
-                    "Date": 1658976928000
-                },
-                {
-                    "Stock": "DISCA",
-                    "Price": 23.103274,
-                    "Quantity": 7308,
-                    "Type": "Sell",
-                    "Date": 1659036083000
-                },
-                {
-                    "Stock": "NOV",
-                    "Price": 33.002304,
-                    "Quantity": 1683,
-                    "Type": "Sell",
-                    "Date": 1661221013000
-                },
-                {
-                    "Stock": "VMC",
-                    "Price": 119.781567,
-                    "Quantity": 1012,
-                    "Type": "Sell",
-                    "Date": 1661499603000
-                },
-                {
-                    "Stock": "DGX",
-                    "Price": 95.50401,
-                    "Quantity": 6764,
-                    "Type": "Sell",
-                    "Date": 1662221380000
-                }
-            ]
+            "id": 1234,
+            "Stock": "FITB",
+            "Price": 31.02536,
+            "Quantity": 7864,
+            "Type": "Sell",
+            "Date": 1604563740000
+        },
+        {
+            "id": 1234,
+            "Stock": "ACN",
+            "Price": 150.871224,
+            "Quantity": 1485,
+            "Type": "Sell",
+            "Date": 1605379122000
+        },
+        {
+            "id": 1234,
+            "Stock": "DGX",
+            "Price": 95.176182,
+            "Quantity": 394,
+            "Type": "Sell",
+            "Date": 1605629997000
+        },
+        {
+            "id": 1234,
+            "Stock": "PXD",
+            "Price": 170.716272,
+            "Quantity": 7687,
+            "Type": "Sell",
+            "Date": 1605650198000
+        },
+        {
+            "id": 1234,
+            "Stock": "AVB",
+            "Price": 152.708864,
+            "Quantity": 9074,
+            "Type": "Buy",
+            "Date": 1606804791000
+        },
+        {
+            "id": 1234,
+            "Stock": "LH",
+            "Price": 163.275928,
+            "Quantity": 5575,
+            "Type": "Buy",
+            "Date": 1607462516000
+        },
+        {
+            "id": 1234,
+            "Stock": "IR",
+            "Price": 87.30216,
+            "Quantity": 9812,
+            "Type": "Buy",
+            "Date": 1608708267000
+        },
+        {
+            "id": 1234,
+            "Stock": "NBL",
+            "Price": 25.262162,
+            "Quantity": 1505,
+            "Type": "Sell",
+            "Date": 1612051252000
+        },
+        {
+            "id": 1234,
+            "Stock": "AES",
+            "Price": 10.107282,
+            "Quantity": 414,
+            "Type": "Buy",
+            "Date": 1612706801000
+        },
+        {
+            "id": 1234,
+            "Stock": "TXT",
+            "Price": 55.09568,
+            "Quantity": 988,
+            "Type": "Buy",
+            "Date": 1612744950000
+        },
+        {
+            "id": 1234,
+            "Stock": "MDT",
+            "Price": 78.442704,
+            "Quantity": 7220,
+            "Type": "Sell",
+            "Date": 1613094600000
+        },
+        {
+            "id": 1234,
+            "Stock": "EFX",
+            "Price": 114.855,
+            "Quantity": 9238,
+            "Type": "Sell",
+            "Date": 1613475648000
+        },
+        {
+            "id": 1234,
+            "Stock": "TJX",
+            "Price": 75.230012,
+            "Quantity": 6098,
+            "Type": "Sell",
+            "Date": 1613505913000
+        },
+        {
+            "id": 1234,
+            "Stock": "AWK",
+            "Price": 75.48955,
+            "Quantity": 354,
+            "Type": "Sell",
+            "Date": 1614251126000
+        },
+        {
+            "id": 1234,
+            "Stock": "IVZ",
+            "Price": 31.859352,
+            "Quantity": 7119,
+            "Type": "Buy",
+            "Date": 1614298425000
+        },
+        {
+            "id": 1234,
+            "Stock": "SHW",
+            "Price": 385.40163,
+            "Quantity": 4700,
+            "Type": "Buy",
+            "Date": 1614366092000
+        },
+        {
+            "id": 1234,
+            "Stock": "HP",
+            "Price": 65.330577,
+            "Quantity": 7175,
+            "Type": "Buy",
+            "Date": 1615865339000
+        },
+        {
+            "id": 1234,
+            "Stock": "LUV",
+            "Price": 55.674504,
+            "Quantity": 1118,
+            "Type": "Buy",
+            "Date": 1618509014000
+        },
+        {
+            "id": 1234,
+            "Stock": "FLIR",
+            "Price": 46.641194,
+            "Quantity": 8028,
+            "Type": "Sell",
+            "Date": 1620044467000
+        },
+        {
+            "id": 1234,
+            "Stock": "AEP",
+            "Price": 62.568736,
+            "Quantity": 2059,
+            "Type": "Buy",
+            "Date": 1621273130000
+        },
+        {
+            "id": 1234,
+            "Stock": "CHRW",
+            "Price": 89.38436,
+            "Quantity": 9355,
+            "Type": "Buy",
+            "Date": 1621611867000
+        },
+        {
+            "id": 1234,
+            "Stock": "AGN",
+            "Price": 164.51198,
+            "Quantity": 2556,
+            "Type": "Buy",
+            "Date": 1622216083000
+        },
+        {
+            "id": 1234,
+            "Stock": "NFX",
+            "Price": 26.269204,
+            "Quantity": 3279,
+            "Type": "Sell",
+            "Date": 1623147120000
+        },
+        {
+            "id": 1234,
+            "Stock": "LMT",
+            "Price": 333.99913,
+            "Quantity": 2294,
+            "Type": "Sell",
+            "Date": 1625325357000
+        },
+        {
+            "id": 1234,
+            "Stock": "CTAS",
+            "Price": 150.648948,
+            "Quantity": 6948,
+            "Type": "Sell",
+            "Date": 1625792306000
+        },
+        {
+            "id": 1234,
+            "Stock": "HII",
+            "Price": 225.437611,
+            "Quantity": 4222,
+            "Type": "Sell",
+            "Date": 1626157591000
+        },
+        {
+            "id": 1234,
+            "Stock": "KIM",
+            "Price": 14.022609,
+            "Quantity": 6085,
+            "Type": "Sell",
+            "Date": 1628289841000
+        },
+        {
+            "id": 1234,
+            "Stock": "TSCO",
+            "Price": 66.553242,
+            "Quantity": 7044,
+            "Type": "Sell",
+            "Date": 1630010419000
+        },
+        {
+            "id": 1234,
+            "Stock": "KSU",
+            "Price": 104.699889,
+            "Quantity": 9596,
+            "Type": "Buy",
+            "Date": 1632427162000
+        },
+        {
+            "id": 1234,
+            "Stock": "UNH",
+            "Price": 214.273754,
+            "Quantity": 9629,
+            "Type": "Sell",
+            "Date": 1632828125000
+        },
+        {
+            "id": 1234,
+            "Stock": "AKAM",
+            "Price": 62.846193,
+            "Quantity": 9810,
+            "Type": "Sell",
+            "Date": 1634256369000
+        },
+        {
+            "id": 1234,
+            "Stock": "INFO",
+            "Price": 43.345176,
+            "Quantity": 5815,
+            "Type": "Sell",
+            "Date": 1635751327000
+        },
+        {
+            "id": 1234,
+            "Stock": "CPB",
+            "Price": 45.251402,
+            "Quantity": 5849,
+            "Type": "Sell",
+            "Date": 1637493586000
+        },
+        {
+            "id": 1234,
+            "Stock": "ALK",
+            "Price": 64.443452,
+            "Quantity": 1525,
+            "Type": "Buy",
+            "Date": 1637810465000
+        },
+        {
+            "id": 1234,
+            "Stock": "ZTS",
+            "Price": 72.253704,
+            "Quantity": 3979,
+            "Type": "Sell",
+            "Date": 1641077397000
+        },
+        {
+            "id": 1234,
+            "Stock": "HPQ",
+            "Price": 19.6212,
+            "Quantity": 4859,
+            "Type": "Sell",
+            "Date": 1642069081000
+        },
+        {
+            "id": 1234,
+            "Stock": "CNC",
+            "Price": 99.647444,
+            "Quantity": 9223,
+            "Type": "Sell",
+            "Date": 1643375163000
+        },
+        {
+            "id": 1234,
+            "Stock": "ALLE",
+            "Price": 77.613816,
+            "Quantity": 4147,
+            "Type": "Sell",
+            "Date": 1643571760000
+        },
+        {
+            "id": 1234,
+            "Stock": "HIG",
+            "Price": 53.92674,
+            "Quantity": 2763,
+            "Type": "Sell",
+            "Date": 1644160646000
+        },
+        {
+            "id": 1234,
+            "Stock": "NFLX",
+            "Price": 251.6006,
+            "Quantity": 7639,
+            "Type": "Sell",
+            "Date": 1644360365000
+        },
+        {
+            "id": 1234,
+            "Stock": "EL",
+            "Price": 129.61956,
+            "Quantity": 4854,
+            "Type": "Sell",
+            "Date": 1646354391000
+        },
+        {
+            "id": 1234,
+            "Stock": "URI",
+            "Price": 160.726478,
+            "Quantity": 2903,
+            "Type": "Sell",
+            "Date": 1647675852000
+        },
+        {
+            "id": 1234,
+            "Stock": "IDXX",
+            "Price": 169.44928,
+            "Quantity": 4224,
+            "Type": "Buy",
+            "Date": 1647952551000
+        },
+        {
+            "id": 1234,
+            "Stock": "CLX",
+            "Price": 128.424352,
+            "Quantity": 8431,
+            "Type": "Sell",
+            "Date": 1648450965000
+        },
+        {
+            "id": 1234,
+            "Stock": "NOC",
+            "Price": 328.157328,
+            "Quantity": 8958,
+            "Type": "Buy",
+            "Date": 1648465695000
+        },
+        {
+            "id": 1234,
+            "Stock": "CME",
+            "Price": 152.12176,
+            "Quantity": 158,
+            "Type": "Buy",
+            "Date": 1648822897000
+        },
+        {
+            "id": 1234,
+            "Stock": "NEM",
+            "Price": 36.474543,
+            "Quantity": 2771,
+            "Type": "Buy",
+            "Date": 1649989094000
+        },
+        {
+            "id": 1234,
+            "Stock": "AAL",
+            "Price": 48.32784,
+            "Quantity": 4830,
+            "Type": "Sell",
+            "Date": 1650891217000
+        },
+        {
+            "id": 1234,
+            "Stock": "ORCL",
+            "Price": 46.610484,
+            "Quantity": 8850,
+            "Type": "Buy",
+            "Date": 1654144571000
+        },
+        {
+            "id": 1234,
+            "Stock": "VLO",
+            "Price": 86.179964,
+            "Quantity": 2739,
+            "Type": "Buy",
+            "Date": 1654549405000
+        },
+        {
+            "id": 1234,
+            "Stock": "KORS",
+            "Price": 60.858414,
+            "Quantity": 5864,
+            "Type": "Buy",
+            "Date": 1654685498000
+        },
+        {
+            "id": 1234,
+            "Stock": "ROST",
+            "Price": 75.953214,
+            "Quantity": 2855,
+            "Type": "Sell",
+            "Date": 1657249422000
+        },
+        {
+            "id": 1234,
+            "Stock": "AVGO",
+            "Price": 230.442366,
+            "Quantity": 4009,
+            "Type": "Buy",
+            "Date": 1657657801000
+        },
+        {
+            "id": 1234,
+            "Stock": "MHK",
+            "Price": 259.854096,
+            "Quantity": 6264,
+            "Type": "Buy",
+            "Date": 1658975419000
+        },
+        {
+            "id": 1234,
+            "Stock": "DG",
+            "Price": 95.70864,
+            "Quantity": 1997,
+            "Type": "Sell",
+            "Date": 1659034574000
+        },
+        {
+            "id": 1234,
+            "Stock": "CMS",
+            "Price": 42.333895,
+            "Quantity": 8368,
+            "Type": "Sell",
+            "Date": 1661219504000
+        },
+        {
+            "id": 1234,
+            "Stock": "PSX",
+            "Price": 93.577012,
+            "Quantity": 7499,
+            "Type": "Buy",
+            "Date": 1661498094000
+        },
+        {
+            "id": 1234,
+            "Stock": "NWL",
+            "Price": 27.499723,
+            "Quantity": 3516,
+            "Type": "Buy",
+            "Date": 1662219871000
+        },
+        {
+            "id": 1235,
+            "Stock": "WBA",
+            "Price": 67.43547,
+            "Quantity": 814,
+            "Type": "Buy",
+            "Date": 1600657472000
+        },
+        {
+            "id": 1235,
+            "Stock": "DTE",
+            "Price": 99.829464,
+            "Quantity": 1293,
+            "Type": "Buy",
+            "Date": 1601510821000
+        },
+        {
+            "id": 1235,
+            "Stock": "RHI",
+            "Price": 52.254774,
+            "Quantity": 3618,
+            "Type": "Sell",
+            "Date": 1602221988000
+        },
+        {
+            "id": 1235,
+            "Stock": "JWN",
+            "Price": 47.291399,
+            "Quantity": 9282,
+            "Type": "Sell",
+            "Date": 1603662667000
+        },
+        {
+            "id": 1235,
+            "Stock": "GOOGL",
+            "Price": 994.912083,
+            "Quantity": 1866,
+            "Type": "Buy",
+            "Date": 1604564124000
+        },
+        {
+            "id": 1235,
+            "Stock": "NOC",
+            "Price": 320.640296,
+            "Quantity": 1418,
+            "Type": "Buy",
+            "Date": 1605379506000
+        },
+        {
+            "id": 1235,
+            "Stock": "PEP",
+            "Price": 109.434025,
+            "Quantity": 2810,
+            "Type": "Buy",
+            "Date": 1605630381000
+        },
+        {
+            "id": 1235,
+            "Stock": "CPB",
+            "Price": 45.242436,
+            "Quantity": 4647,
+            "Type": "Sell",
+            "Date": 1605650582000
+        },
+        {
+            "id": 1235,
+            "Stock": "WDC",
+            "Price": 80.546513,
+            "Quantity": 2121,
+            "Type": "Buy",
+            "Date": 1606805175000
+        },
+        {
+            "id": 1235,
+            "Stock": "D",
+            "Price": 73.610571,
+            "Quantity": 8875,
+            "Type": "Buy",
+            "Date": 1607434756000
+        },
+        {
+            "id": 1235,
+            "Stock": "DVN",
+            "Price": 34.873614,
+            "Quantity": 9643,
+            "Type": "Sell",
+            "Date": 1607462900000
+        },
+        {
+            "id": 1235,
+            "Stock": "CB",
+            "Price": 138.452618,
+            "Quantity": 9599,
+            "Type": "Buy",
+            "Date": 1608708651000
+        },
+        {
+            "id": 1235,
+            "Stock": "SRE",
+            "Price": 102.801856,
+            "Quantity": 7914,
+            "Type": "Sell",
+            "Date": 1612051636000
+        },
+        {
+            "id": 1235,
+            "Stock": "XEC",
+            "Price": 101.632736,
+            "Quantity": 1126,
+            "Type": "Buy",
+            "Date": 1612191064000
+        },
+        {
+            "id": 1235,
+            "Stock": "ZTS",
+            "Price": 70.880712,
+            "Quantity": 2533,
+            "Type": "Buy",
+            "Date": 1612466149000
+        },
+        {
+            "id": 1235,
+            "Stock": "ZTS",
+            "Price": 71.123846,
+            "Quantity": 302,
+            "Type": "Buy",
+            "Date": 1612707185000
+        },
+        {
+            "id": 1235,
+            "Stock": "CXO",
+            "Price": 139.795811,
+            "Quantity": 1824,
+            "Type": "Buy",
+            "Date": 1612745334000
+        },
+        {
+            "id": 1235,
+            "Stock": "WEC",
+            "Price": 59.5238,
+            "Quantity": 8954,
+            "Type": "Sell",
+            "Date": 1613094984000
+        },
+        {
+            "id": 1235,
+            "Stock": "BXP",
+            "Price": 112.415061,
+            "Quantity": 4880,
+            "Type": "Buy",
+            "Date": 1613476032000
+        },
+        {
+            "id": 1235,
+            "Stock": "PPL",
+            "Price": 29.65284,
+            "Quantity": 6667,
+            "Type": "Sell",
+            "Date": 1613506297000
+        },
+        {
+            "id": 1235,
+            "Stock": "CAT",
+            "Price": 144.486303,
+            "Quantity": 1912,
+            "Type": "Sell",
+            "Date": 1614251510000
+        },
+        {
+            "id": 1235,
+            "Stock": "VRSK",
+            "Price": 93.304308,
+            "Quantity": 2247,
+            "Type": "Sell",
+            "Date": 1614298809000
+        },
+        {
+            "id": 1235,
+            "Stock": "AIV",
+            "Price": 38.274957,
+            "Quantity": 6497,
+            "Type": "Sell",
+            "Date": 1614366476000
+        },
+        {
+            "id": 1235,
+            "Stock": "UNH",
+            "Price": 213.299684,
+            "Quantity": 1424,
+            "Type": "Sell",
+            "Date": 1615239256000
+        },
+        {
+            "id": 1235,
+            "Stock": "GILD",
+            "Price": 77.570774,
+            "Quantity": 964,
+            "Type": "Buy",
+            "Date": 1615698423000
+        },
+        {
+            "id": 1235,
+            "Stock": "TGT",
+            "Price": 71.877988,
+            "Quantity": 7481,
+            "Type": "Sell",
+            "Date": 1615865723000
+        },
+        {
+            "id": 1235,
+            "Stock": "SYMC",
+            "Price": 25.559292,
+            "Quantity": 4886,
+            "Type": "Sell",
+            "Date": 1618509398000
+        },
+        {
+            "id": 1235,
+            "Stock": "HCP",
+            "Price": 22.486048,
+            "Quantity": 5551,
+            "Type": "Buy",
+            "Date": 1620044851000
+        },
+        {
+            "id": 1235,
+            "Stock": "ARE",
+            "Price": 115.565388,
+            "Quantity": 7475,
+            "Type": "Sell",
+            "Date": 1621273514000
+        },
+        {
+            "id": 1235,
+            "Stock": "HON",
+            "Price": 146.09301,
+            "Quantity": 9874,
+            "Type": "Sell",
+            "Date": 1621612251000
+        },
+        {
+            "id": 1235,
+            "Stock": "AMG",
+            "Price": 180.36377,
+            "Quantity": 4698,
+            "Type": "Buy",
+            "Date": 1622216467000
+        },
+        {
+            "id": 1235,
+            "Stock": "MKC",
+            "Price": 100.407216,
+            "Quantity": 4608,
+            "Type": "Buy",
+            "Date": 1622710041000
+        },
+        {
+            "id": 1235,
+            "Stock": "KR",
+            "Price": 27.302571,
+            "Quantity": 7789,
+            "Type": "Sell",
+            "Date": 1623147504000
+        },
+        {
+            "id": 1235,
+            "Stock": "ISRG",
+            "Price": 381.755439,
+            "Quantity": 2445,
+            "Type": "Buy",
+            "Date": 1623612839000
+        },
+        {
+            "id": 1235,
+            "Stock": "NAVI",
+            "Price": 13.337184,
+            "Quantity": 4048,
+            "Type": "Buy",
+            "Date": 1625325741000
+        },
+        {
+            "id": 1235,
+            "Stock": "BDX",
+            "Price": 210.023352,
+            "Quantity": 7703,
+            "Type": "Sell",
+            "Date": 1625792690000
+        },
+        {
+            "id": 1235,
+            "Stock": "KMB",
+            "Price": 112.650534,
+            "Quantity": 8854,
+            "Type": "Sell",
+            "Date": 1626157975000
+        },
+        {
+            "id": 1235,
+            "Stock": "SRCL",
+            "Price": 70.78987,
+            "Quantity": 7871,
+            "Type": "Buy",
+            "Date": 1627195119000
+        },
+        {
+            "id": 1235,
+            "Stock": "AYI",
+            "Price": 146.878641,
+            "Quantity": 5356,
+            "Type": "Sell",
+            "Date": 1628290225000
+        },
+        {
+            "id": 1235,
+            "Stock": "LUV",
+            "Price": 55.034759,
+            "Quantity": 1454,
+            "Type": "Buy",
+            "Date": 1629393343000
+        },
+        {
+            "id": 1235,
+            "Stock": "A",
+            "Price": 65.25816,
+            "Quantity": 6337,
+            "Type": "Buy",
+            "Date": 1630010803000
+        },
+        {
+            "id": 1235,
+            "Stock": "CERN",
+            "Price": 60.571068,
+            "Quantity": 4270,
+            "Type": "Sell",
+            "Date": 1632427546000
+        },
+        {
+            "id": 1235,
+            "Stock": "BDX",
+            "Price": 212.581776,
+            "Quantity": 2438,
+            "Type": "Buy",
+            "Date": 1632828509000
+        },
+        {
+            "id": 1235,
+            "Stock": "NBL",
+            "Price": 25.641069,
+            "Quantity": 6639,
+            "Type": "Buy",
+            "Date": 1634256753000
+        },
+        {
+            "id": 1235,
+            "Stock": "CB",
+            "Price": 141.218301,
+            "Quantity": 4499,
+            "Type": "Buy",
+            "Date": 1635751711000
+        },
+        {
+            "id": 1235,
+            "Stock": "KSU",
+            "Price": 102.256581,
+            "Quantity": 3719,
+            "Type": "Sell",
+            "Date": 1637493970000
+        },
+        {
+            "id": 1235,
+            "Stock": "COG",
+            "Price": 23.313732,
+            "Quantity": 1188,
+            "Type": "Buy",
+            "Date": 1637787985000
+        },
+        {
+            "id": 1235,
+            "Stock": "AET",
+            "Price": 180.5454,
+            "Quantity": 8305,
+            "Type": "Sell",
+            "Date": 1637810849000
+        },
+        {
+            "id": 1235,
+            "Stock": "LLL",
+            "Price": 197.140043,
+            "Quantity": 7587,
+            "Type": "Buy",
+            "Date": 1640058181000
+        },
+        {
+            "id": 1235,
+            "Stock": "RE",
+            "Price": 242.843844,
+            "Quantity": 5922,
+            "Type": "Buy",
+            "Date": 1641077781000
+        },
+        {
+            "id": 1235,
+            "Stock": "BA",
+            "Price": 328.802884,
+            "Quantity": 3448,
+            "Type": "Buy",
+            "Date": 1642069465000
+        },
+        {
+            "id": 1235,
+            "Stock": "COF",
+            "Price": 92.57112,
+            "Quantity": 4988,
+            "Type": "Sell",
+            "Date": 1642162591000
+        },
+        {
+            "id": 1235,
+            "Stock": "EOG",
+            "Price": 100.88844,
+            "Quantity": 4555,
+            "Type": "Sell",
+            "Date": 1643375547000
+        },
+        {
+            "id": 1235,
+            "Stock": "AEE",
+            "Price": 51.843222,
+            "Quantity": 6376,
+            "Type": "Sell",
+            "Date": 1643572144000
+        },
+        {
+            "id": 1235,
+            "Stock": "APC",
+            "Price": 55.357,
+            "Quantity": 4149,
+            "Type": "Sell",
+            "Date": 1644161030000
+        },
+        {
+            "id": 1235,
+            "Stock": "XYL",
+            "Price": 70.879184,
+            "Quantity": 7065,
+            "Type": "Sell",
+            "Date": 1644360749000
+        },
+        {
+            "id": 1235,
+            "Stock": "JNPR",
+            "Price": 24.731514,
+            "Quantity": 5369,
+            "Type": "Sell",
+            "Date": 1646354775000
+        },
+        {
+            "id": 1235,
+            "Stock": "CMG",
+            "Price": 267.526257,
+            "Quantity": 5979,
+            "Type": "Sell",
+            "Date": 1646435621000
+        },
+        {
+            "id": 1235,
+            "Stock": "HON",
+            "Price": 148.035076,
+            "Quantity": 8756,
+            "Type": "Sell",
+            "Date": 1647676236000
+        },
+        {
+            "id": 1235,
+            "Stock": "HBAN",
+            "Price": 15.1,
+            "Quantity": 1985,
+            "Type": "Buy",
+            "Date": 1647952935000
+        },
+        {
+            "id": 1235,
+            "Stock": "MRO",
+            "Price": 15.89952,
+            "Quantity": 1396,
+            "Type": "Sell",
+            "Date": 1648451349000
+        },
+        {
+            "id": 1235,
+            "Stock": "NBL",
+            "Price": 25.572408,
+            "Quantity": 9123,
+            "Type": "Buy",
+            "Date": 1648466079000
+        },
+        {
+            "id": 1235,
+            "Stock": "DXC",
+            "Price": 92.921928,
+            "Quantity": 9086,
+            "Type": "Buy",
+            "Date": 1648823281000
+        },
+        {
+            "id": 1235,
+            "Stock": "BMY",
+            "Price": 62.389088,
+            "Quantity": 1848,
+            "Type": "Sell",
+            "Date": 1649158867000
+        },
+        {
+            "id": 1235,
+            "Stock": "MAS",
+            "Price": 40.64302,
+            "Quantity": 7245,
+            "Type": "Buy",
+            "Date": 1649989478000
+        },
+        {
+            "id": 1235,
+            "Stock": "AAL",
+            "Price": 48.4785,
+            "Quantity": 9194,
+            "Type": "Sell",
+            "Date": 1650891601000
+        },
+        {
+            "id": 1235,
+            "Stock": "KMI",
+            "Price": 16.60008,
+            "Quantity": 8571,
+            "Type": "Sell",
+            "Date": 1651511600000
+        },
+        {
+            "id": 1235,
+            "Stock": "ANTM",
+            "Price": 228.932953,
+            "Quantity": 8851,
+            "Type": "Sell",
+            "Date": 1652104045000
+        },
+        {
+            "id": 1235,
+            "Stock": "WHR",
+            "Price": 162.50874,
+            "Quantity": 6453,
+            "Type": "Sell",
+            "Date": 1652638554000
+        },
+        {
+            "id": 1235,
+            "Stock": "CCL",
+            "Price": 67.52774,
+            "Quantity": 8723,
+            "Type": "Sell",
+            "Date": 1653127834000
+        },
+        {
+            "id": 1235,
+            "Stock": "DHI",
+            "Price": 44.38962,
+            "Quantity": 8403,
+            "Type": "Sell",
+            "Date": 1654144955000
+        },
+        {
+            "id": 1235,
+            "Stock": "GPC",
+            "Price": 95.048339,
+            "Quantity": 4295,
+            "Type": "Buy",
+            "Date": 1654549789000
+        },
+        {
+            "id": 1235,
+            "Stock": "ABBV",
+            "Price": 109.315296,
+            "Quantity": 7799,
+            "Type": "Buy",
+            "Date": 1654685882000
+        },
+        {
+            "id": 1235,
+            "Stock": "NOC",
+            "Price": 328.124927,
+            "Quantity": 679,
+            "Type": "Sell",
+            "Date": 1657249806000
+        },
+        {
+            "id": 1235,
+            "Stock": "ICE",
+            "Price": 66.7454,
+            "Quantity": 1803,
+            "Type": "Buy",
+            "Date": 1657658185000
+        },
+        {
+            "id": 1235,
+            "Stock": "ETR",
+            "Price": 71.126952,
+            "Quantity": 3338,
+            "Type": "Buy",
+            "Date": 1658975803000
+        },
+        {
+            "id": 1235,
+            "Stock": "CME",
+            "Price": 153.621552,
+            "Quantity": 3219,
+            "Type": "Buy",
+            "Date": 1659034958000
+        },
+        {
+            "id": 1235,
+            "Stock": "AIG",
+            "Price": 58.670476,
+            "Quantity": 3859,
+            "Type": "Buy",
+            "Date": 1659319796000
+        },
+        {
+            "id": 1235,
+            "Stock": "RRC",
+            "Price": 12.744362,
+            "Quantity": 8077,
+            "Type": "Sell",
+            "Date": 1660470744000
+        },
+        {
+            "id": 1235,
+            "Stock": "VIAB",
+            "Price": 32.517011,
+            "Quantity": 1817,
+            "Type": "Sell",
+            "Date": 1661219888000
+        },
+        {
+            "id": 1235,
+            "Stock": "LUK",
+            "Price": 23.833754,
+            "Quantity": 8341,
+            "Type": "Sell",
+            "Date": 1661498478000
+        },
+        {
+            "id": 1235,
+            "Stock": "EA",
+            "Price": 115.630988,
+            "Quantity": 9701,
+            "Type": "Sell",
+            "Date": 1661531427000
+        },
+        {
+            "id": 1235,
+            "Stock": "INTC",
+            "Price": 42.6474,
+            "Quantity": 8928,
+            "Type": "Buy",
+            "Date": 1662220255000
+        },
+        {
+            "id": 1236,
+            "Stock": "IRM",
+            "Price": 32.223936,
+            "Quantity": 5289,
+            "Type": "Sell",
+            "Date": 1605379595000
+        },
+        {
+            "id": 1236,
+            "Stock": "ALXN",
+            "Price": 107.233442,
+            "Quantity": 2414,
+            "Type": "Buy",
+            "Date": 1605630470000
+        },
+        {
+            "id": 1236,
+            "Stock": "CB",
+            "Price": 141.007716,
+            "Quantity": 9477,
+            "Type": "Sell",
+            "Date": 1605650671000
+        },
+        {
+            "id": 1236,
+            "Stock": "BDX",
+            "Price": 208.775856,
+            "Quantity": 7565,
+            "Type": "Sell",
+            "Date": 1607462989000
+        },
+        {
+            "id": 1236,
+            "Stock": "UPS",
+            "Price": 109.60784,
+            "Quantity": 9117,
+            "Type": "Sell",
+            "Date": 1608708740000
+        },
+        {
+            "id": 1236,
+            "Stock": "AEE",
+            "Price": 52.595259,
+            "Quantity": 3192,
+            "Type": "Sell",
+            "Date": 1612051725000
+        },
+        {
+            "id": 1236,
+            "Stock": "IP",
+            "Price": 56.09484,
+            "Quantity": 8078,
+            "Type": "Sell",
+            "Date": 1612707274000
+        },
+        {
+            "id": 1236,
+            "Stock": "CHRW",
+            "Price": 89.230561,
+            "Quantity": 8290,
+            "Type": "Buy",
+            "Date": 1612745423000
+        },
+        {
+            "id": 1236,
+            "Stock": "WU",
+            "Price": 18.651996,
+            "Quantity": 517,
+            "Type": "Buy",
+            "Date": 1613095073000
+        },
+        {
+            "id": 1236,
+            "Stock": "GE",
+            "Price": 14.45,
+            "Quantity": 4224,
+            "Type": "Buy",
+            "Date": 1613506386000
+        },
+        {
+            "id": 1236,
+            "Stock": "MMC",
+            "Price": 80.26172,
+            "Quantity": 6071,
+            "Type": "Sell",
+            "Date": 1614366565000
+        },
+        {
+            "id": 1236,
+            "Stock": "FCX",
+            "Price": 17.32302,
+            "Quantity": 1685,
+            "Type": "Buy",
+            "Date": 1618509487000
+        },
+        {
+            "id": 1236,
+            "Stock": "PGR",
+            "Price": 50.589942,
+            "Quantity": 1106,
+            "Type": "Buy",
+            "Date": 1620044940000
+        },
+        {
+            "id": 1236,
+            "Stock": "GRMN",
+            "Price": 61.826882,
+            "Quantity": 7433,
+            "Type": "Sell",
+            "Date": 1621273603000
+        },
+        {
+            "id": 1236,
+            "Stock": "FITB",
+            "Price": 30.65838,
+            "Quantity": 3765,
+            "Type": "Buy",
+            "Date": 1625325830000
+        },
+        {
+            "id": 1236,
+            "Stock": "EMR",
+            "Price": 65.82232,
+            "Quantity": 5008,
+            "Type": "Sell",
+            "Date": 1625792779000
+        },
+        {
+            "id": 1236,
+            "Stock": "OMC",
+            "Price": 76.927194,
+            "Quantity": 8745,
+            "Type": "Buy",
+            "Date": 1644360838000
+        },
+        {
+            "id": 1236,
+            "Stock": "SWK",
+            "Price": 153.08929,
+            "Quantity": 9938,
+            "Type": "Sell",
+            "Date": 1647676325000
+        },
+        {
+            "id": 1236,
+            "Stock": "PPG",
+            "Price": 111.68978,
+            "Quantity": 3033,
+            "Type": "Buy",
+            "Date": 1647953024000
+        },
+        {
+            "id": 1236,
+            "Stock": "MET",
+            "Price": 44.14716,
+            "Quantity": 7103,
+            "Type": "Buy",
+            "Date": 1648823370000
+        },
+        {
+            "id": 1236,
+            "Stock": "ADS",
+            "Price": 238.84362,
+            "Quantity": 6467,
+            "Type": "Sell",
+            "Date": 1654685971000
+        },
+        {
+            "id": 1236,
+            "Stock": "GE",
+            "Price": 14.384975,
+            "Quantity": 1405,
+            "Type": "Sell",
+            "Date": 1657249895000
+        },
+        {
+            "id": 1236,
+            "Stock": "ILMN",
+            "Price": 212.096388,
+            "Quantity": 4511,
+            "Type": "Buy",
+            "Date": 1659035047000
+        },
+        {
+            "id": 1236,
+            "Stock": "LEG",
+            "Price": 44.113172,
+            "Quantity": 1729,
+            "Type": "Buy",
+            "Date": 1662220344000
+        },
+        {
+            "id": 1237,
+            "Stock": "PNR",
+            "Price": 66.363318,
+            "Quantity": 5226,
+            "Type": "Sell",
+            "Date": 1602223113000
+        },
+        {
+            "id": 1237,
+            "Stock": "L",
+            "Price": 45.879615,
+            "Quantity": 983,
+            "Type": "Buy",
+            "Date": 1603663792000
+        },
+        {
+            "id": 1237,
+            "Stock": "IFF",
+            "Price": 139.7388,
+            "Quantity": 5163,
+            "Type": "Buy",
+            "Date": 1605380631000
+        },
+        {
+            "id": 1237,
+            "Stock": "DAL",
+            "Price": 51.834514,
+            "Quantity": 6542,
+            "Type": "Sell",
+            "Date": 1605631506000
+        },
+        {
+            "id": 1237,
+            "Stock": "SYMC",
+            "Price": 25.533702,
+            "Quantity": 3,
+            "Type": "Sell",
+            "Date": 1605651707000
+        },
+        {
+            "id": 1237,
+            "Stock": "XYL",
+            "Price": 69.762368,
+            "Quantity": 8222,
+            "Type": "Sell",
+            "Date": 1606806300000
+        },
+        {
+            "id": 1237,
+            "Stock": "CMCSA",
+            "Price": 38.262561,
+            "Quantity": 818,
+            "Type": "Sell",
+            "Date": 1607464025000
+        },
+        {
+            "id": 1237,
+            "Stock": "GPN",
+            "Price": 100.247994,
+            "Quantity": 431,
+            "Type": "Sell",
+            "Date": 1608709776000
+        },
+        {
+            "id": 1237,
+            "Stock": "NCLH",
+            "Price": 56.766135,
+            "Quantity": 9808,
+            "Type": "Buy",
+            "Date": 1612052761000
+        },
+        {
+            "id": 1237,
+            "Stock": "CAH",
+            "Price": 65.717169,
+            "Quantity": 378,
+            "Type": "Buy",
+            "Date": 1612708310000
+        },
+        {
+            "id": 1237,
+            "Stock": "CFG",
+            "Price": 42.759565,
+            "Quantity": 6658,
+            "Type": "Buy",
+            "Date": 1612746459000
+        },
+        {
+            "id": 1237,
+            "Stock": "CME",
+            "Price": 154.754048,
+            "Quantity": 2120,
+            "Type": "Sell",
+            "Date": 1613096109000
+        },
+        {
+            "id": 1237,
+            "Stock": "LNT",
+            "Price": 37.674816,
+            "Quantity": 5635,
+            "Type": "Buy",
+            "Date": 1613507422000
+        },
+        {
+            "id": 1237,
+            "Stock": "INCY",
+            "Price": 84.104624,
+            "Quantity": 1728,
+            "Type": "Buy",
+            "Date": 1614252635000
+        },
+        {
+            "id": 1237,
+            "Stock": "WU",
+            "Price": 18.781785,
+            "Quantity": 7906,
+            "Type": "Sell",
+            "Date": 1614367601000
+        },
+        {
+            "id": 1237,
+            "Stock": "CSCO",
+            "Price": 38.490856,
+            "Quantity": 3542,
+            "Type": "Buy",
+            "Date": 1618510523000
+        },
+        {
+            "id": 1237,
+            "Stock": "BWA",
+            "Price": 52.56328,
+            "Quantity": 1844,
+            "Type": "Sell",
+            "Date": 1620045976000
+        },
+        {
+            "id": 1237,
+            "Stock": "NEM",
+            "Price": 37.027354,
+            "Quantity": 7856,
+            "Type": "Sell",
+            "Date": 1621274639000
+        },
+        {
+            "id": 1237,
+            "Stock": "TROW",
+            "Price": 102.204179,
+            "Quantity": 2769,
+            "Type": "Buy",
+            "Date": 1621613376000
+        },
+        {
+            "id": 1237,
+            "Stock": "XRX",
+            "Price": 29.43346,
+            "Quantity": 5232,
+            "Type": "Buy",
+            "Date": 1623148629000
+        },
+        {
+            "id": 1237,
+            "Stock": "A",
+            "Price": 64.939415,
+            "Quantity": 786,
+            "Type": "Sell",
+            "Date": 1625326866000
+        },
+        {
+            "id": 1237,
+            "Stock": "CHRW",
+            "Price": 89.248655,
+            "Quantity": 603,
+            "Type": "Buy",
+            "Date": 1625793815000
+        },
+        {
+            "id": 1237,
+            "Stock": "PXD",
+            "Price": 167.180828,
+            "Quantity": 1396,
+            "Type": "Buy",
+            "Date": 1626159100000
+        },
+        {
+            "id": 1237,
+            "Stock": "CSX",
+            "Price": 50.303449,
+            "Quantity": 2027,
+            "Type": "Sell",
+            "Date": 1628291350000
+        },
+        {
+            "id": 1237,
+            "Stock": "XLNX",
+            "Price": 62.838846,
+            "Quantity": 708,
+            "Type": "Buy",
+            "Date": 1630011928000
+        },
+        {
+            "id": 1237,
+            "Stock": "LKQ",
+            "Price": 38.86,
+            "Quantity": 3357,
+            "Type": "Buy",
+            "Date": 1635752836000
+        },
+        {
+            "id": 1237,
+            "Stock": "WAT",
+            "Price": 190.850229,
+            "Quantity": 4779,
+            "Type": "Sell",
+            "Date": 1637495095000
+        },
+        {
+            "id": 1237,
+            "Stock": "JEC",
+            "Price": 62.69436,
+            "Quantity": 1186,
+            "Type": "Buy",
+            "Date": 1637811974000
+        },
+        {
+            "id": 1237,
+            "Stock": "MCO",
+            "Price": 153.083268,
+            "Quantity": 4800,
+            "Type": "Sell",
+            "Date": 1641078906000
+        },
+        {
+            "id": 1237,
+            "Stock": "AMP",
+            "Price": 151.72225,
+            "Quantity": 1603,
+            "Type": "Sell",
+            "Date": 1642070590000
+        },
+        {
+            "id": 1237,
+            "Stock": "TAP",
+            "Price": 74.837844,
+            "Quantity": 1443,
+            "Type": "Buy",
+            "Date": 1643376672000
+        },
+        {
+            "id": 1237,
+            "Stock": "ARNC",
+            "Price": 24.677385,
+            "Quantity": 679,
+            "Type": "Buy",
+            "Date": 1644162155000
+        },
+        {
+            "id": 1237,
+            "Stock": "EIX",
+            "Price": 58.563595,
+            "Quantity": 8987,
+            "Type": "Sell",
+            "Date": 1644361874000
+        },
+        {
+            "id": 1237,
+            "Stock": "AMAT",
+            "Price": 45.425175,
+            "Quantity": 4521,
+            "Type": "Buy",
+            "Date": 1646355900000
+        },
+        {
+            "id": 1237,
+            "Stock": "ANTM",
+            "Price": 227.411191,
+            "Quantity": 4645,
+            "Type": "Sell",
+            "Date": 1647677361000
+        },
+        {
+            "id": 1237,
+            "Stock": "RL",
+            "Price": 100.35746,
+            "Quantity": 3896,
+            "Type": "Buy",
+            "Date": 1647954060000
+        },
+        {
+            "id": 1237,
+            "Stock": "ROP",
+            "Price": 255.74246,
+            "Quantity": 5204,
+            "Type": "Buy",
+            "Date": 1648467204000
+        },
+        {
+            "id": 1237,
+            "Stock": "MET",
+            "Price": 44.310996,
+            "Quantity": 9159,
+            "Type": "Buy",
+            "Date": 1648824406000
+        },
+        {
+            "id": 1237,
+            "Stock": "AMD",
+            "Price": 11.291808,
+            "Quantity": 17,
+            "Type": "Sell",
+            "Date": 1649990603000
+        },
+        {
+            "id": 1237,
+            "Stock": "LMT",
+            "Price": 336.57324,
+            "Quantity": 9538,
+            "Type": "Buy",
+            "Date": 1654146080000
+        },
+        {
+            "id": 1237,
+            "Stock": "MU",
+            "Price": 39.936,
+            "Quantity": 5149,
+            "Type": "Sell",
+            "Date": 1654550914000
+        },
+        {
+            "id": 1237,
+            "Stock": "QCOM",
+            "Price": 61.533636,
+            "Quantity": 5856,
+            "Type": "Buy",
+            "Date": 1654687007000
+        },
+        {
+            "id": 1237,
+            "Stock": "WFC",
+            "Price": 55.48864,
+            "Quantity": 1276,
+            "Type": "Sell",
+            "Date": 1657250931000
+        },
+        {
+            "id": 1237,
+            "Stock": "JEC",
+            "Price": 62.983332,
+            "Quantity": 410,
+            "Type": "Sell",
+            "Date": 1657659310000
+        },
+        {
+            "id": 1237,
+            "Stock": "SPG",
+            "Price": 152.666976,
+            "Quantity": 7933,
+            "Type": "Buy",
+            "Date": 1658976928000
+        },
+        {
+            "id": 1237,
+            "Stock": "DISCA",
+            "Price": 23.103274,
+            "Quantity": 7308,
+            "Type": "Sell",
+            "Date": 1659036083000
+        },
+        {
+            "id": 1237,
+            "Stock": "NOV",
+            "Price": 33.002304,
+            "Quantity": 1683,
+            "Type": "Sell",
+            "Date": 1661221013000
+        },
+        {
+            "id": 1237,
+            "Stock": "VMC",
+            "Price": 119.781567,
+            "Quantity": 1012,
+            "Type": "Sell",
+            "Date": 1661499603000
+        },
+        {
+            "id": 1237,
+            "Stock": "DGX",
+            "Price": 95.50401,
+            "Quantity": 6764,
+            "Type": "Sell",
+            "Date": 1662221380000
         }
     ],
     "portfolio": [
         {
-            "id": "1234",
-            "value": [
-                {
-                    "Stock": "MGM",
-                    "Prices": [
-                        33.2722,
-                        33.46315,
-                        33.4598
-                    ],
-                    "Quantities": [
-                        7216,
-                        4275,
-                        5304
-                    ]
-                },
-                {
-                    "Stock": "AIG",
-                    "Prices": [
-                        59.0085
-                    ],
-                    "Quantities": [
-                        5279
-                    ]
-                },
-                {
-                    "Stock": "ADM",
-                    "Prices": [
-                        40.97785,
-                        41.693205,
-                        41.924765
-                    ],
-                    "Quantities": [
-                        6624,
-                        333,
-                        8702
-                    ]
-                },
-                {
-                    "Stock": "MOS",
-                    "Prices": [
-                        23.920069,
-                        24.431625,
-                        23.946612,
-                        24.10587
-                    ],
-                    "Quantities": [
-                        6611,
-                        1542,
-                        3429,
-                        7217
-                    ]
-                },
-                {
-                    "Stock": "APD",
-                    "Prices": [
-                        153.27368,
-                        151.08864,
-                        152.90696,
-                        151.08864,
-                        154.64888,
-                        153.74736
-                    ],
-                    "Quantities": [
-                        5096,
-                        9707,
-                        7069,
-                        3788,
-                        6979,
-                        6098
-                    ]
-                },
-                {
-                    "Stock": "GD",
-                    "Prices": [
-                        208.56381,
-                        203.1653,
-                        206.606335,
-                        205.122775,
-                        206.606335,
-                        206.00879,
-                        204.77249,
-                        203.00046,
-                        203.474375,
-                        208.5226
-                    ],
-                    "Quantities": [
-                        7940,
-                        9109,
-                        3045,
-                        6206,
-                        785,
-                        406,
-                        7689,
-                        5648,
-                        9682,
-                        9736
-                    ]
-                },
-                {
-                    "Stock": "AAL",
-                    "Prices": [
-                        48.07026,
-                        49.07142,
-                        48.66318,
-                        48.9645,
-                        48.07026,
-                        48.8187
-                    ],
-                    "Quantities": [
-                        7817,
-                        7731,
-                        9361,
-                        7498,
-                        45,
-                        8031
-                    ]
-                },
-                {
-                    "Stock": "GRMN",
-                    "Prices": [
-                        60.353649
-                    ],
-                    "Quantities": [
-                        5993
-                    ]
-                },
-                {
-                    "Stock": "ALXN",
-                    "Prices": [
-                        107.775792,
-                        107.190054,
-                        108.611011
-                    ],
-                    "Quantities": [
-                        8127,
-                        2226,
-                        3974
-                    ]
-                },
-                {
-                    "Stock": "INCY",
-                    "Prices": [
-                        84.272464,
-                        84.977392,
-                        83.735376
-                    ],
-                    "Quantities": [
-                        6173,
-                        9781,
-                        7219
-                    ]
-                },
-                {
-                    "Stock": "ICE",
-                    "Prices": [
-                        67.2479,
-                        67.7236,
-                        66.1491,
-                        67.9313,
-                        67.536,
-                        66.4908,
-                        67.9983,
-                        67.6633,
-                        66.1491,
-                        66.732
-                    ],
-                    "Quantities": [
-                        5566,
-                        1198,
-                        5405,
-                        9308,
-                        8017,
-                        8277,
-                        4204,
-                        6580,
-                        5230,
-                        3040
-                    ]
-                },
-                {
-                    "Stock": "EQT",
-                    "Prices": [
-                        46.0095,
-                        46.939125,
-                        45.87075,
-                        46.25,
-                        46.411875,
-                        45.6765
-                    ],
-                    "Quantities": [
-                        6985,
-                        350,
-                        4472,
-                        4041,
-                        1285,
-                        4223
-                    ]
-                },
-                {
-                    "Stock": "MMC",
-                    "Prices": [
-                        80.436202
-                    ],
-                    "Quantities": [
-                        2199
-                    ]
-                },
-                {
-                    "Stock": "SNPS",
-                    "Prices": [
-                        83.619702,
-                        83.636226,
-                        81.777276,
-                        82.669572
-                    ],
-                    "Quantities": [
-                        9171,
-                        4412,
-                        4399,
-                        1058
-                    ]
-                },
-                {
-                    "Stock": "UHS",
-                    "Prices": [
-                        116.501154,
-                        113.652378,
-                        114.594312
-                    ],
-                    "Quantities": [
-                        3306,
-                        3575,
-                        5394
-                    ]
-                },
-                {
-                    "Stock": "UNM",
-                    "Prices": [
-                        48.559328,
-                        47.87,
-                        48.008823,
-                        48.181155,
-                        47.793408
-                    ],
-                    "Quantities": [
-                        923,
-                        4350,
-                        4852,
-                        1574,
-                        8236
-                    ]
-                },
-                {
-                    "Stock": "K",
-                    "Prices": [
-                        66.692584,
-                        66.34289,
-                        66.883926,
-                        66.521036,
-                        66.580418,
-                        66.521036,
-                        66.026186,
-                        66.60681
-                    ],
-                    "Quantities": [
-                        8675,
-                        6562,
-                        1701,
-                        8050,
-                        487,
-                        4624,
-                        1809,
-                        7298
-                    ]
-                },
-                {
-                    "Stock": "PLD",
-                    "Prices": [
-                        58.551654,
-                        58.714978,
-                        58.376664,
-                        58.067515,
-                        59.175785
-                    ],
-                    "Quantities": [
-                        1520,
-                        434,
-                        6843,
-                        6064,
-                        2996
-                    ]
-                },
-                {
-                    "Stock": "PFG",
-                    "Prices": [
-                        61.231358
-                    ],
-                    "Quantities": [
-                        1704
-                    ]
-                },
-                {
-                    "Stock": "AZO",
-                    "Prices": [
-                        713.396296,
-                        713.54001,
-                        720.797567,
-                        728.270695,
-                        723.528133
-                    ],
-                    "Quantities": [
-                        7126,
-                        9669,
-                        7766,
-                        7169,
-                        180
-                    ]
-                },
-                {
-                    "Stock": "CBS",
-                    "Prices": [
-                        51.1266,
-                        51.0489,
-                        51.16286,
-                        51.83108
-                    ],
-                    "Quantities": [
-                        4285,
-                        5715,
-                        2354,
-                        7078
-                    ]
-                },
-                {
-                    "Stock": "CDNS",
-                    "Prices": [
-                        36.495984,
-                        37.166108,
-                        36.923096,
-                        36.34134
-                    ],
-                    "Quantities": [
-                        9796,
-                        1131,
-                        6863,
-                        5617
-                    ]
-                },
-                {
-                    "Stock": "DVA",
-                    "Prices": [
-                        72.564381,
-                        71.76618,
-                        71.47854,
-                        72.039438
-                    ],
-                    "Quantities": [
-                        5736,
-                        9682,
-                        4596,
-                        4328
-                    ]
-                }
+            "id": 1234,
+            "Stock": "MGM",
+            "Prices": [
+                33.2722,
+                33.46315,
+                33.4598
+            ],
+            "Quantities": [
+                7216,
+                4275,
+                5304
             ]
         },
         {
-            "id": "1235",
-            "value": [
-                {
-                    "Stock": "LUV",
-                    "Prices": [
-                        55.96378,
-                        55.262842,
-                        55.324035,
-                        54.856743,
-                        56.342064,
-                        54.929062,
-                        55.479799
-                    ],
-                    "Quantities": [
-                        8825,
-                        2944,
-                        7473,
-                        3350,
-                        5157,
-                        4854,
-                        1062
-                    ]
-                },
-                {
-                    "Stock": "LEG",
-                    "Prices": [
-                        43.382938,
-                        44.636653,
-                        43.479716,
-                        44.636653,
-                        44.223147,
-                        44.346319,
-                        43.598489,
-                        43.633681,
-                        44.575067,
-                        44.126369
-                    ],
-                    "Quantities": [
-                        1984,
-                        791,
-                        1705,
-                        1084,
-                        5481,
-                        3262,
-                        8493,
-                        392,
-                        6065,
-                        7721
-                    ]
-                },
-                {
-                    "Stock": "PNC",
-                    "Prices": [
-                        148.842232,
-                        149.439752,
-                        149.97752,
-                        147.51275,
-                        151.17256,
-                        150.35097,
-                        148.901984
-                    ],
-                    "Quantities": [
-                        6765,
-                        4570,
-                        7137,
-                        3870,
-                        5953,
-                        2212,
-                        4610
-                    ]
-                },
-                {
-                    "Stock": "COG",
-                    "Prices": [
-                        22.694763,
-                        23.267712,
-                        23.230896,
-                        22.929465
-                    ],
-                    "Quantities": [
-                        1644,
-                        3338,
-                        3146,
-                        9902
-                    ]
-                },
-                {
-                    "Stock": "IT",
-                    "Prices": [
-                        112.614656
-                    ],
-                    "Quantities": [
-                        6504
-                    ]
-                },
-                {
-                    "Stock": "UNP",
-                    "Prices": [
-                        123.04953,
-                        126.083628,
-                        124.660224,
-                        125.946282
-                    ],
-                    "Quantities": [
-                        8220,
-                        5537,
-                        2536,
-                        2375
-                    ]
-                },
-                {
-                    "Stock": "GM",
-                    "Prices": [
-                        40.688875,
-                        40.61145,
-                        40.1632,
-                        40.9782
-                    ],
-                    "Quantities": [
-                        1978,
-                        1202,
-                        4198,
-                        1811
-                    ]
-                },
-                {
-                    "Stock": "HES",
-                    "Prices": [
-                        43.3569
-                    ],
-                    "Quantities": [
-                        7909
-                    ]
-                },
-                {
-                    "Stock": "NRG",
-                    "Prices": [
-                        23.9472,
-                        23.6424,
-                        23.6904
-                    ],
-                    "Quantities": [
-                        5474,
-                        2161,
-                        1804
-                    ]
-                },
-                {
-                    "Stock": "EA",
-                    "Prices": [
-                        116.71481,
-                        118.043366,
-                        114.826862,
-                        115.817452,
-                        115.654296,
-                        117.460666,
-                        116.36519,
-                        117.23924,
-                        117.23924,
-                        115.164828
-                    ],
-                    "Quantities": [
-                        7035,
-                        8745,
-                        5315,
-                        4884,
-                        9886,
-                        1519,
-                        8643,
-                        1228,
-                        2282,
-                        6183
-                    ]
-                }
+            "id": 1234,
+            "Stock": "AIG",
+            "Prices": [
+                59.0085
+            ],
+            "Quantities": [
+                5279
             ]
         },
         {
-            "id": "1236",
-            "value": [
-                {
-                    "Stock": "FCX",
-                    "Prices": [
-                        17.388228,
-                        17.122248,
-                        17.165148,
-                        17.395092
-                    ],
-                    "Quantities": [
-                        3287,
-                        1043,
-                        3794,
-                        229
-                    ]
-                },
-                {
-                    "Stock": "USB",
-                    "Prices": [
-                        53.423955
-                    ],
-                    "Quantities": [
-                        1027
-                    ]
-                },
-                {
-                    "Stock": "VIAB",
-                    "Prices": [
-                        32.497385,
-                        33.014203,
-                        33.194108,
-                        32.373087,
-                        32.402526,
-                        33.122146,
-                        33.014203,
-                        32.360003
-                    ],
-                    "Quantities": [
-                        8525,
-                        6836,
-                        2309,
-                        1579,
-                        4989,
-                        3556,
-                        8257,
-                        525
-                    ]
-                },
-                {
-                    "Stock": "ICE",
-                    "Prices": [
-                        66.1357,
-                        66.0352,
-                        67.6231,
-                        67.9715,
-                        66.1357,
-                        67.9715,
-                        66.5444
-                    ],
-                    "Quantities": [
-                        4544,
-                        5698,
-                        5699,
-                        8168,
-                        2856,
-                        6808,
-                        2051
-                    ]
-                },
-                {
-                    "Stock": "KMI",
-                    "Prices": [
-                        16.84032,
-                        16.8,
-                        16.77816,
-                        17.0268,
-                        16.67064,
-                        16.92264,
-                        16.8504,
-                        16.86216,
-                        16.68072,
-                        16.674
-                    ],
-                    "Quantities": [
-                        1776,
-                        4660,
-                        2415,
-                        9530,
-                        6836,
-                        6926,
-                        4636,
-                        7314,
-                        9024,
-                        9964
-                    ]
-                },
-                {
-                    "Stock": "BAX",
-                    "Prices": [
-                        62.99792,
-                        62.015728,
-                        62.18464,
-                        61.740464,
-                        62.65384,
-                        62.678864,
-                        62.972896
-                    ],
-                    "Quantities": [
-                        2445,
-                        606,
-                        2500,
-                        6899,
-                        2405,
-                        320,
-                        2852
-                    ]
-                },
-                {
-                    "Stock": "FE",
-                    "Prices": [
-                        30.97704,
-                        30.787072
-                    ],
-                    "Quantities": [
-                        1601,
-                        2604
-                    ]
-                },
-                {
-                    "Stock": "ADBE",
-                    "Prices": [
-                        186.474636,
-                        184.030524,
-                        182.993628,
-                        185.178516,
-                        184.197168,
-                        186.82644,
-                        182.734404
-                    ],
-                    "Quantities": [
-                        7348,
-                        6580,
-                        1805,
-                        7484,
-                        2435,
-                        3346,
-                        7092
-                    ]
-                },
-                {
-                    "Stock": "JWN",
-                    "Prices": [
-                        47.102479,
-                        47.451981,
-                        47.626732,
-                        47.102479,
-                        46.701024,
-                        47.810929,
-                        47.688131,
-                        47.622009,
-                        47.201662
-                    ],
-                    "Quantities": [
-                        3898,
-                        1561,
-                        7179,
-                        6051,
-                        7146,
-                        2114,
-                        7320,
-                        5228,
-                        2655
-                    ]
-                },
-                {
-                    "Stock": "EOG",
-                    "Prices": [
-                        102.545496,
-                        99.72648,
-                        100.979376,
-                        102.303,
-                        102.272688,
-                        99.72648,
-                        102.414144,
-                        101.908944,
-                        100.5348,
-                        101.656344
-                    ],
-                    "Quantities": [
-                        7723,
-                        5939,
-                        8105,
-                        5526,
-                        6772,
-                        874,
-                        7394,
-                        9066,
-                        7968,
-                        9183
-                    ]
-                },
-                {
-                    "Stock": "MAA",
-                    "Prices": [
-                        86.611077,
-                        85.261915,
-                        85.64617,
-                        85.005745
-                    ],
-                    "Quantities": [
-                        958,
-                        2528,
-                        3447,
-                        3750
-                    ]
-                },
-                {
-                    "Stock": "ULTA",
-                    "Prices": [
-                        209.612725,
-                        209.09,
-                        209.549998,
-                        206.37183,
-                        210.219086
-                    ],
-                    "Quantities": [
-                        2834,
-                        9430,
-                        2235,
-                        8621,
-                        9462
-                    ]
-                },
-                {
-                    "Stock": "INCY",
-                    "Prices": [
-                        83.37452,
-                        82.74512,
-                        82.938136
-                    ],
-                    "Quantities": [
-                        2210,
-                        8262,
-                        678
-                    ]
-                },
-                {
-                    "Stock": "K",
-                    "Prices": [
-                        66.699182,
-                        66.415468,
-                        65.48515,
-                        66.725574,
-                        65.590718,
-                        66.718976,
-                        66.336292,
-                        66.356086,
-                        66.270312
-                    ],
-                    "Quantities": [
-                        2481,
-                        8384,
-                        8968,
-                        437,
-                        7983,
-                        5506,
-                        6924,
-                        3185,
-                        5058
-                    ]
-                },
-                {
-                    "Stock": "CNP",
-                    "Prices": [
-                        26.17571,
-                        26.11884,
-                        25.65354,
-                        25.60701,
-                        25.50361,
-                        26.17571,
-                        25.666465,
-                        25.930135,
-                        26.012855,
-                        25.92755
-                    ],
-                    "Quantities": [
-                        2947,
-                        948,
-                        2219,
-                        7170,
-                        4956,
-                        7453,
-                        7532,
-                        3715,
-                        9664,
-                        366
-                    ]
-                }
+            "id": 1234,
+            "Stock": "ADM",
+            "Prices": [
+                40.977850000000004,
+                41.693205,
+                41.924765
+            ],
+            "Quantities": [
+                6624,
+                333,
+                8702
             ]
         },
         {
-            "id": "1237",
-            "value": [
-                {
-                    "Stock": "GGP",
-                    "Prices": [
-                        21.453526,
-                        21.85782,
-                        21.455688,
-                        21.790798,
-                        21.514062,
-                        21.617838,
-                        21.85782
-                    ],
-                    "Quantities": [
-                        9581,
-                        8752,
-                        3646,
-                        9871,
-                        3444,
-                        6328,
-                        6543
-                    ]
-                },
-                {
-                    "Stock": "TIF",
-                    "Prices": [
-                        100.81544,
-                        100.247606,
-                        98.135662,
-                        100.6162,
-                        99.301216
-                    ],
-                    "Quantities": [
-                        289,
-                        6942,
-                        3970,
-                        1099,
-                        9057
-                    ]
-                },
-                {
-                    "Stock": "BBT",
-                    "Prices": [
-                        51.575593,
-                        51.17214,
-                        50.390769,
-                        50.35502,
-                        51.728803,
-                        51.105749,
-                        50.722724,
-                        50.646119
-                    ],
-                    "Quantities": [
-                        315,
-                        3829,
-                        4345,
-                        2733,
-                        246,
-                        5449,
-                        4851,
-                        3452
-                    ]
-                },
-                {
-                    "Stock": "MDT",
-                    "Prices": [
-                        79.061906,
-                        77.572686,
-                        78.18405
-                    ],
-                    "Quantities": [
-                        5582,
-                        5596,
-                        6494
-                    ]
-                },
-                {
-                    "Stock": "BK",
-                    "Prices": [
-                        53.838887
-                    ],
-                    "Quantities": [
-                        4520
-                    ]
-                },
-                {
-                    "Stock": "SRE",
-                    "Prices": [
-                        102.967232,
-                        103.577056,
-                        104.589984,
-                        103.070592,
-                        104.476288,
-                        102.698496,
-                        103.36
-                    ],
-                    "Quantities": [
-                        821,
-                        5541,
-                        1348,
-                        2580,
-                        4921,
-                        6468,
-                        1687
-                    ]
-                },
-                {
-                    "Stock": "DVA",
-                    "Prices": [
-                        72.319887
-                    ],
-                    "Quantities": [
-                        2054
-                    ]
-                },
-                {
-                    "Stock": "IR",
-                    "Prices": [
-                        88.8702,
-                        87.24084
-                    ],
-                    "Quantities": [
-                        7291,
-                        8960
-                    ]
-                },
-                {
-                    "Stock": "EQT",
-                    "Prices": [
-                        46.754125,
-                        46.717125,
-                        46.40725,
-                        46.74025
-                    ],
-                    "Quantities": [
-                        945,
-                        1235,
-                        9724,
-                        5799
-                    ]
-                },
-                {
-                    "Stock": "IQV",
-                    "Prices": [
-                        94.715758,
-                        95.506167,
-                        94.725281
-                    ],
-                    "Quantities": [
-                        5238,
-                        6893,
-                        243
-                    ]
-                },
-                {
-                    "Stock": "MCK",
-                    "Prices": [
-                        148.487332,
-                        151.13138,
-                        150.860966,
-                        150.605575,
-                        149.809356,
-                        148.036642,
-                        152.107875,
-                        151.912576,
-                        148.57747
-                    ],
-                    "Quantities": [
-                        6969,
-                        1462,
-                        2744,
-                        6536,
-                        1798,
-                        879,
-                        5566,
-                        3135,
-                        4313
-                    ]
-                },
-                {
-                    "Stock": "SBUX",
-                    "Prices": [
-                        54.296946
-                    ],
-                    "Quantities": [
-                        9669
-                    ]
-                },
-                {
-                    "Stock": "CINF",
-                    "Prices": [
-                        69.974232,
-                        70.923822,
-                        70.776108,
-                        70.684666,
-                        69.74211
-                    ],
-                    "Quantities": [
-                        6580,
-                        1673,
-                        9742,
-                        3042,
-                        9694
-                    ]
-                },
-                {
-                    "Stock": "EFX",
-                    "Prices": [
-                        113.4528,
-                        115.0488,
-                        114.2052,
-                        113.7492,
-                        113.2932,
-                        115.2882,
-                        114.0798,
-                        114.7068
-                    ],
-                    "Quantities": [
-                        4877,
-                        5977,
-                        8887,
-                        7500,
-                        2462,
-                        5461,
-                        5319,
-                        7964
-                    ]
-                },
-                {
-                    "Stock": "SPG",
-                    "Prices": [
-                        151.708242,
-                        150.292968,
-                        153.367004,
-                        153.09308,
-                        152.058256,
-                        151.358228,
-                        150.627764,
-                        151.358228,
-                        151.632152
-                    ],
-                    "Quantities": [
-                        9709,
-                        2514,
-                        3155,
-                        8431,
-                        3207,
-                        2063,
-                        7427,
-                        9249,
-                        7215
-                    ]
-                },
-                {
-                    "Stock": "INCY",
-                    "Prices": [
-                        84.893472,
-                        83.097584,
-                        83.760552,
-                        84.566184,
-                        82.963312,
-                        84.306032,
-                        83.517184,
-                        85.019352,
-                        84.347992,
-                        82.82904
-                    ],
-                    "Quantities": [
-                        9040,
-                        7714,
-                        5091,
-                        453,
-                        5357,
-                        7268,
-                        6766,
-                        675,
-                        2176,
-                        4721
-                    ]
-                },
-                {
-                    "Stock": "CB",
-                    "Prices": [
-                        142.060641
-                    ],
-                    "Quantities": [
-                        5497
-                    ]
-                },
-                {
-                    "Stock": "NOC",
-                    "Prices": [
-                        319.538662
-                    ],
-                    "Quantities": [
-                        9428
-                    ]
-                }
+            "id": 1234,
+            "Stock": "MOS",
+            "Prices": [
+                23.920069,
+                24.431625,
+                23.946612000000002,
+                24.10587
+            ],
+            "Quantities": [
+                6611,
+                1542,
+                3429,
+                7217
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "APD",
+            "Prices": [
+                153.27368,
+                151.08864,
+                152.90696,
+                151.08864,
+                154.64888,
+                153.74736
+            ],
+            "Quantities": [
+                5096,
+                9707,
+                7069,
+                3788,
+                6979,
+                6098
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "GD",
+            "Prices": [
+                208.56381,
+                203.1653,
+                206.606335,
+                205.122775,
+                206.606335,
+                206.00879,
+                204.77249,
+                203.00046,
+                203.474375,
+                208.5226
+            ],
+            "Quantities": [
+                7940,
+                9109,
+                3045,
+                6206,
+                785,
+                406,
+                7689,
+                5648,
+                9682,
+                9736
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "AAL",
+            "Prices": [
+                48.07026,
+                49.07142,
+                48.66318,
+                48.9645,
+                48.07026,
+                48.8187
+            ],
+            "Quantities": [
+                7817,
+                7731,
+                9361,
+                7498,
+                45,
+                8031
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "GRMN",
+            "Prices": [
+                60.353649
+            ],
+            "Quantities": [
+                5993
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "ALXN",
+            "Prices": [
+                107.775792,
+                107.190054,
+                108.611011
+            ],
+            "Quantities": [
+                8127,
+                2226,
+                3974
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "INCY",
+            "Prices": [
+                84.272464,
+                84.977392,
+                83.735376
+            ],
+            "Quantities": [
+                6173,
+                9781,
+                7219
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "ICE",
+            "Prices": [
+                67.2479,
+                67.7236,
+                66.1491,
+                67.9313,
+                67.536,
+                66.4908,
+                67.9983,
+                67.6633,
+                66.1491,
+                66.732
+            ],
+            "Quantities": [
+                5566,
+                1198,
+                5405,
+                9308,
+                8017,
+                8277,
+                4204,
+                6580,
+                5230,
+                3040
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "EQT",
+            "Prices": [
+                46.0095,
+                46.939125,
+                45.87075,
+                46.25,
+                46.411875,
+                45.6765
+            ],
+            "Quantities": [
+                6985,
+                350,
+                4472,
+                4041,
+                1285,
+                4223
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "MMC",
+            "Prices": [
+                80.436202
+            ],
+            "Quantities": [
+                2199
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "SNPS",
+            "Prices": [
+                83.619702,
+                83.636226,
+                81.777276,
+                82.669572
+            ],
+            "Quantities": [
+                9171,
+                4412,
+                4399,
+                1058
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "UHS",
+            "Prices": [
+                116.501154,
+                113.652378,
+                114.594312
+            ],
+            "Quantities": [
+                3306,
+                3575,
+                5394
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "UNM",
+            "Prices": [
+                48.559328,
+                47.87,
+                48.008823,
+                48.181155,
+                47.793408
+            ],
+            "Quantities": [
+                923,
+                4350,
+                4852,
+                1574,
+                8236
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "K",
+            "Prices": [
+                66.692584,
+                66.34289,
+                66.883926,
+                66.521036,
+                66.580418,
+                66.521036,
+                66.026186,
+                66.60681
+            ],
+            "Quantities": [
+                8675,
+                6562,
+                1701,
+                8050,
+                487,
+                4624,
+                1809,
+                7298
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "PLD",
+            "Prices": [
+                58.551654,
+                58.714978,
+                58.376664,
+                58.067515,
+                59.175785
+            ],
+            "Quantities": [
+                1520,
+                434,
+                6843,
+                6064,
+                2996
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "PFG",
+            "Prices": [
+                61.231358
+            ],
+            "Quantities": [
+                1704
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "AZO",
+            "Prices": [
+                713.396296,
+                713.54001,
+                720.797567,
+                728.270695,
+                723.528133
+            ],
+            "Quantities": [
+                7126,
+                9669,
+                7766,
+                7169,
+                180
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "CBS",
+            "Prices": [
+                51.1266,
+                51.0489,
+                51.16286,
+                51.83108
+            ],
+            "Quantities": [
+                4285,
+                5715,
+                2354,
+                7078
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "CDNS",
+            "Prices": [
+                36.495984,
+                37.166108,
+                36.923096,
+                36.34134
+            ],
+            "Quantities": [
+                9796,
+                1131,
+                6863,
+                5617
+            ]
+        },
+        {
+            "id": 1234,
+            "Stock": "DVA",
+            "Prices": [
+                72.564381,
+                71.76618,
+                71.47854,
+                72.039438
+            ],
+            "Quantities": [
+                5736,
+                9682,
+                4596,
+                4328
+            ]
+        },
+        {
+            "id": 1235,
+            "Stock": "LUV",
+            "Prices": [
+                55.96378,
+                55.262842,
+                55.324035,
+                54.856743,
+                56.342064,
+                54.929062,
+                55.479799
+            ],
+            "Quantities": [
+                8825,
+                2944,
+                7473,
+                3350,
+                5157,
+                4854,
+                1062
+            ]
+        },
+        {
+            "id": 1235,
+            "Stock": "LEG",
+            "Prices": [
+                43.382938,
+                44.636653,
+                43.479716,
+                44.636653,
+                44.223147,
+                44.346319,
+                43.598489,
+                43.633681,
+                44.575067,
+                44.126369
+            ],
+            "Quantities": [
+                1984,
+                791,
+                1705,
+                1084,
+                5481,
+                3262,
+                8493,
+                392,
+                6065,
+                7721
+            ]
+        },
+        {
+            "id": 1235,
+            "Stock": "PNC",
+            "Prices": [
+                148.842232,
+                149.439752,
+                149.97752,
+                147.51275,
+                151.17256,
+                150.35097,
+                148.901984
+            ],
+            "Quantities": [
+                6765,
+                4570,
+                7137,
+                3870,
+                5953,
+                2212,
+                4610
+            ]
+        },
+        {
+            "id": 1235,
+            "Stock": "COG",
+            "Prices": [
+                22.694763000000002,
+                23.267712,
+                23.230896,
+                22.929465
+            ],
+            "Quantities": [
+                1644,
+                3338,
+                3146,
+                9902
+            ]
+        },
+        {
+            "id": 1235,
+            "Stock": "IT",
+            "Prices": [
+                112.614656
+            ],
+            "Quantities": [
+                6504
+            ]
+        },
+        {
+            "id": 1235,
+            "Stock": "UNP",
+            "Prices": [
+                123.04953,
+                126.083628,
+                124.660224,
+                125.946282
+            ],
+            "Quantities": [
+                8220,
+                5537,
+                2536,
+                2375
+            ]
+        },
+        {
+            "id": 1235,
+            "Stock": "GM",
+            "Prices": [
+                40.688875,
+                40.61145,
+                40.1632,
+                40.9782
+            ],
+            "Quantities": [
+                1978,
+                1202,
+                4198,
+                1811
+            ]
+        },
+        {
+            "id": 1235,
+            "Stock": "HES",
+            "Prices": [
+                43.3569
+            ],
+            "Quantities": [
+                7909
+            ]
+        },
+        {
+            "id": 1235,
+            "Stock": "NRG",
+            "Prices": [
+                23.9472,
+                23.6424,
+                23.6904
+            ],
+            "Quantities": [
+                5474,
+                2161,
+                1804
+            ]
+        },
+        {
+            "id": 1235,
+            "Stock": "EA",
+            "Prices": [
+                116.71481,
+                118.043366,
+                114.826862,
+                115.817452,
+                115.654296,
+                117.460666,
+                116.36519,
+                117.23924,
+                117.23924,
+                115.164828
+            ],
+            "Quantities": [
+                7035,
+                8745,
+                5315,
+                4884,
+                9886,
+                1519,
+                8643,
+                1228,
+                2282,
+                6183
+            ]
+        },
+        {
+            "id": 1236,
+            "Stock": "FCX",
+            "Prices": [
+                17.388228,
+                17.122248,
+                17.165148,
+                17.395091999999998
+            ],
+            "Quantities": [
+                3287,
+                1043,
+                3794,
+                229
+            ]
+        },
+        {
+            "id": 1236,
+            "Stock": "USB",
+            "Prices": [
+                53.423955
+            ],
+            "Quantities": [
+                1027
+            ]
+        },
+        {
+            "id": 1236,
+            "Stock": "VIAB",
+            "Prices": [
+                32.497385,
+                33.014203,
+                33.194108,
+                32.373087,
+                32.402526,
+                33.122146,
+                33.014203,
+                32.360003
+            ],
+            "Quantities": [
+                8525,
+                6836,
+                2309,
+                1579,
+                4989,
+                3556,
+                8257,
+                525
+            ]
+        },
+        {
+            "id": 1236,
+            "Stock": "ICE",
+            "Prices": [
+                66.1357,
+                66.0352,
+                67.6231,
+                67.9715,
+                66.1357,
+                67.9715,
+                66.5444
+            ],
+            "Quantities": [
+                4544,
+                5698,
+                5699,
+                8168,
+                2856,
+                6808,
+                2051
+            ]
+        },
+        {
+            "id": 1236,
+            "Stock": "KMI",
+            "Prices": [
+                16.84032,
+                16.8,
+                16.77816,
+                17.0268,
+                16.67064,
+                16.92264,
+                16.8504,
+                16.86216,
+                16.68072,
+                16.674
+            ],
+            "Quantities": [
+                1776,
+                4660,
+                2415,
+                9530,
+                6836,
+                6926,
+                4636,
+                7314,
+                9024,
+                9964
+            ]
+        },
+        {
+            "id": 1236,
+            "Stock": "BAX",
+            "Prices": [
+                62.99792,
+                62.015728,
+                62.18464,
+                61.740464,
+                62.65384,
+                62.678864,
+                62.972896
+            ],
+            "Quantities": [
+                2445,
+                606,
+                2500,
+                6899,
+                2405,
+                320,
+                2852
+            ]
+        },
+        {
+            "id": 1236,
+            "Stock": "FE",
+            "Prices": [
+                30.97704,
+                30.787072
+            ],
+            "Quantities": [
+                1601,
+                2604
+            ]
+        },
+        {
+            "id": 1236,
+            "Stock": "ADBE",
+            "Prices": [
+                186.474636,
+                184.030524,
+                182.993628,
+                185.178516,
+                184.197168,
+                186.82644,
+                182.734404
+            ],
+            "Quantities": [
+                7348,
+                6580,
+                1805,
+                7484,
+                2435,
+                3346,
+                7092
+            ]
+        },
+        {
+            "id": 1236,
+            "Stock": "JWN",
+            "Prices": [
+                47.102479,
+                47.451981,
+                47.626732,
+                47.102479,
+                46.701024,
+                47.810929,
+                47.688131,
+                47.622009,
+                47.201662
+            ],
+            "Quantities": [
+                3898,
+                1561,
+                7179,
+                6051,
+                7146,
+                2114,
+                7320,
+                5228,
+                2655
+            ]
+        },
+        {
+            "id": 1236,
+            "Stock": "EOG",
+            "Prices": [
+                102.545496,
+                99.72648,
+                100.979376,
+                102.303,
+                102.272688,
+                99.72648,
+                102.414144,
+                101.908944,
+                100.5348,
+                101.656344
+            ],
+            "Quantities": [
+                7723,
+                5939,
+                8105,
+                5526,
+                6772,
+                874,
+                7394,
+                9066,
+                7968,
+                9183
+            ]
+        },
+        {
+            "id": 1236,
+            "Stock": "MAA",
+            "Prices": [
+                86.611077,
+                85.261915,
+                85.64617,
+                85.005745
+            ],
+            "Quantities": [
+                958,
+                2528,
+                3447,
+                3750
+            ]
+        },
+        {
+            "id": 1236,
+            "Stock": "ULTA",
+            "Prices": [
+                209.612725,
+                209.09,
+                209.549998,
+                206.37183,
+                210.219086
+            ],
+            "Quantities": [
+                2834,
+                9430,
+                2235,
+                8621,
+                9462
+            ]
+        },
+        {
+            "id": 1236,
+            "Stock": "INCY",
+            "Prices": [
+                83.37452,
+                82.74512,
+                82.938136
+            ],
+            "Quantities": [
+                2210,
+                8262,
+                678
+            ]
+        },
+        {
+            "id": 1236,
+            "Stock": "K",
+            "Prices": [
+                66.699182,
+                66.415468,
+                65.48515,
+                66.725574,
+                65.590718,
+                66.718976,
+                66.336292,
+                66.356086,
+                66.270312
+            ],
+            "Quantities": [
+                2481,
+                8384,
+                8968,
+                437,
+                7983,
+                5506,
+                6924,
+                3185,
+                5058
+            ]
+        },
+        {
+            "id": 1236,
+            "Stock": "CNP",
+            "Prices": [
+                26.17571,
+                26.11884,
+                25.65354,
+                25.60701,
+                25.50361,
+                26.17571,
+                25.666465,
+                25.930135,
+                26.012855,
+                25.92755
+            ],
+            "Quantities": [
+                2947,
+                948,
+                2219,
+                7170,
+                4956,
+                7453,
+                7532,
+                3715,
+                9664,
+                366
+            ]
+        },
+        {
+            "id": 1237,
+            "Stock": "GGP",
+            "Prices": [
+                21.453526,
+                21.85782,
+                21.455688,
+                21.790798,
+                21.514062,
+                21.617838,
+                21.85782
+            ],
+            "Quantities": [
+                9581,
+                8752,
+                3646,
+                9871,
+                3444,
+                6328,
+                6543
+            ]
+        },
+        {
+            "id": 1237,
+            "Stock": "TIF",
+            "Prices": [
+                100.81544,
+                100.247606,
+                98.135662,
+                100.6162,
+                99.301216
+            ],
+            "Quantities": [
+                289,
+                6942,
+                3970,
+                1099,
+                9057
+            ]
+        },
+        {
+            "id": 1237,
+            "Stock": "BBT",
+            "Prices": [
+                51.575593,
+                51.17214,
+                50.390769,
+                50.35502,
+                51.728803,
+                51.105749,
+                50.722724,
+                50.646119
+            ],
+            "Quantities": [
+                315,
+                3829,
+                4345,
+                2733,
+                246,
+                5449,
+                4851,
+                3452
+            ]
+        },
+        {
+            "id": 1237,
+            "Stock": "MDT",
+            "Prices": [
+                79.061906,
+                77.572686,
+                78.18405
+            ],
+            "Quantities": [
+                5582,
+                5596,
+                6494
+            ]
+        },
+        {
+            "id": 1237,
+            "Stock": "BK",
+            "Prices": [
+                53.838887
+            ],
+            "Quantities": [
+                4520
+            ]
+        },
+        {
+            "id": 1237,
+            "Stock": "SRE",
+            "Prices": [
+                102.967232,
+                103.577056,
+                104.589984,
+                103.070592,
+                104.476288,
+                102.698496,
+                103.36
+            ],
+            "Quantities": [
+                821,
+                5541,
+                1348,
+                2580,
+                4921,
+                6468,
+                1687
+            ]
+        },
+        {
+            "id": 1237,
+            "Stock": "DVA",
+            "Prices": [
+                72.319887
+            ],
+            "Quantities": [
+                2054
+            ]
+        },
+        {
+            "id": 1237,
+            "Stock": "IR",
+            "Prices": [
+                88.8702,
+                87.24084
+            ],
+            "Quantities": [
+                7291,
+                8960
+            ]
+        },
+        {
+            "id": 1237,
+            "Stock": "EQT",
+            "Prices": [
+                46.754125,
+                46.717125,
+                46.40725,
+                46.74025
+            ],
+            "Quantities": [
+                945,
+                1235,
+                9724,
+                5799
+            ]
+        },
+        {
+            "id": 1237,
+            "Stock": "IQV",
+            "Prices": [
+                94.715758,
+                95.506167,
+                94.725281
+            ],
+            "Quantities": [
+                5238,
+                6893,
+                243
+            ]
+        },
+        {
+            "id": 1237,
+            "Stock": "MCK",
+            "Prices": [
+                148.487332,
+                151.13138,
+                150.860966,
+                150.605575,
+                149.809356,
+                148.036642,
+                152.107875,
+                151.912576,
+                148.57747
+            ],
+            "Quantities": [
+                6969,
+                1462,
+                2744,
+                6536,
+                1798,
+                879,
+                5566,
+                3135,
+                4313
+            ]
+        },
+        {
+            "id": 1237,
+            "Stock": "SBUX",
+            "Prices": [
+                54.296946
+            ],
+            "Quantities": [
+                9669
+            ]
+        },
+        {
+            "id": 1237,
+            "Stock": "CINF",
+            "Prices": [
+                69.974232,
+                70.923822,
+                70.776108,
+                70.68466599999999,
+                69.74211
+            ],
+            "Quantities": [
+                6580,
+                1673,
+                9742,
+                3042,
+                9694
+            ]
+        },
+        {
+            "id": 1237,
+            "Stock": "EFX",
+            "Prices": [
+                113.4528,
+                115.0488,
+                114.2052,
+                113.7492,
+                113.2932,
+                115.2882,
+                114.0798,
+                114.7068
+            ],
+            "Quantities": [
+                4877,
+                5977,
+                8887,
+                7500,
+                2462,
+                5461,
+                5319,
+                7964
+            ]
+        },
+        {
+            "id": 1237,
+            "Stock": "SPG",
+            "Prices": [
+                151.708242,
+                150.292968,
+                153.367004,
+                153.09308,
+                152.058256,
+                151.358228,
+                150.627764,
+                151.358228,
+                151.632152
+            ],
+            "Quantities": [
+                9709,
+                2514,
+                3155,
+                8431,
+                3207,
+                2063,
+                7427,
+                9249,
+                7215
+            ]
+        },
+        {
+            "id": 1237,
+            "Stock": "INCY",
+            "Prices": [
+                84.893472,
+                83.097584,
+                83.760552,
+                84.566184,
+                82.963312,
+                84.306032,
+                83.517184,
+                85.019352,
+                84.347992,
+                82.82904
+            ],
+            "Quantities": [
+                9040,
+                7714,
+                5091,
+                453,
+                5357,
+                7268,
+                6766,
+                675,
+                2176,
+                4721
+            ]
+        },
+        {
+            "id": 1237,
+            "Stock": "CB",
+            "Prices": [
+                142.060641
+            ],
+            "Quantities": [
+                5497
+            ]
+        },
+        {
+            "id": 1237,
+            "Stock": "NOC",
+            "Prices": [
+                319.538662
+            ],
+            "Quantities": [
+                9428
             ]
         }
     ],
