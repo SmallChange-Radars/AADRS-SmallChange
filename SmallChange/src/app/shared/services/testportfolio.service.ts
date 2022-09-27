@@ -1,4 +1,4 @@
-import { HttpClient, HttpResponse } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { ClientPortfolio } from '../models/client-portfolio';
@@ -8,7 +8,7 @@ import { Portfolio } from '../models/portfolio';
   providedIn: 'root',
 })
 export class PortfolioService {
-  
+
   public url: string = 'http://localhost:3000/portfolio/1234';
 
   port: Portfolio = {id: '', value: [
@@ -32,6 +32,8 @@ export class PortfolioService {
     { name: 'GM', qty: 2635, price: 39.13, value: 103107.55, prof: 3399.15, percent: 3.41 }
   ];
 
+  // tb: Cl
+
   getPortfolio(): Observable<ClientPortfolio[]> {
     return of(this.cp);
   }
@@ -44,6 +46,7 @@ export class PortfolioService {
       pf.value += obj.value;
       pf.prof += obj.prof;
     });
+    // console.log(pf);
     return of(pf);
   }
 
@@ -67,11 +70,9 @@ export class PortfolioService {
           x_value += obj.Prices[j] * obj.Quantities[j];
           x_qty += obj.Quantities[j];
         }
-        var curr_value = obj.Prices[i-1] * x_qty;
         // console.log(x_value);
-        var gains = curr_value - x_value;
-        var percent = gains*100/x_value;
-        x_tb = {name: obj.Stock, qty: x_qty, value: x_value, price: obj.Prices[0], prof: gains, percent: percent};
+
+        x_tb = {name: obj.Stock, qty: x_qty, value: x_value, price: obj.Prices[0], prof: 0, percent: 1};
         tb.push(x_tb);
     },
     // console.log(tb)

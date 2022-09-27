@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
     <ag-grid-angular 
         style="width: 100%; font-family: montserrat; font-size: 14px;" 
         class="ag-theme-alpine"
@@ -10,9 +10,9 @@
         domLayout="autoHeight"
         (gridReady)="onGridReady($event)">
     </ag-grid-angular>
-</div>
+</div> -->
 
-<!-- <div class="container border rounded mx-auto my-2 p-0">
+<div class="container border rounded mx-auto my-2 p-0">
     <table class="table table-hover rounded m-0">
         <thead class="bg-light">
             <tr>
@@ -32,8 +32,8 @@
                 <td class="text-end">{{item.value | currency : 'USD' : "symbol" : '1.2-2'}}</td>
                 <td class="text-end" [ngStyle]="{'color':item.prof >=0 ? 'green' : 'red' }">{{item.prof | currency :
                     'USD' : "symbol" : '1.2-2'}}</td>
-                <td class="text-end" [ngStyle]="{'color':item.percent >=0 ? 'green' : 'red' }">{{item.percent}}%</td>
+                <td class="text-end" [ngStyle]="{'color':item.percent >=0 ? 'green' : 'red' }">{{item.percent | number : '1.2-2'}}%</td>
             </tr>
         </tbody>
     </table>
-</div> -->
+</div>

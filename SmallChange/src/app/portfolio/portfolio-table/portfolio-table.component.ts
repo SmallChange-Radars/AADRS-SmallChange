@@ -13,6 +13,15 @@ export class PortfolioTableComponent implements OnInit {
   sum: any = 0;
   c: any
   @Input() cp: ClientPortfolio[] = [];
+
+
+  page = 1;
+  pageSize = 10;
+  collectionSize = 200;
+
+  searchText: string = '';
+
+  /*
   private gridApi!: GridApi<ClientPortfolio>;
   private gridColumnApi!: ColumnApi;
   
@@ -63,14 +72,17 @@ export class PortfolioTableComponent implements OnInit {
 
   rowData: ClientPortfolio[] = [];
 
-  constructor() { }
-
   onGridReady(params: GridReadyEvent<ClientPortfolio>) {
     this.gridApi = params.api;
     this.gridColumnApi = params.columnApi;
     this.rowData = this.cp;
     this.sizeToFit();
-  }
+  }  
+
+  */
+  
+  constructor() { }
+  
 
   ngOnInit(): void {
   }
