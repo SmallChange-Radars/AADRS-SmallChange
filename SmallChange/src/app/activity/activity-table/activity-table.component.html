@@ -27,18 +27,18 @@
                 <p>Rows per page <span>&nbsp;</span> <span>&nbsp;</span></p>
                 <div ngbDropdown placement="top-end" class="align-with-text">
                     <button type="button" class="btn btn-outline-dark" id="dropdownBasic1" ngbDropdownToggle>
-                        </button>
+                        {{pageSize}}</button>
                     <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                        <button ngbDropdownItem >5</button>
-                        <button ngbDropdownItem >10</button>
-                        <button ngbDropdownItem >15</button>
-                        <button ngbDropdownItem >20</button>
-                        <button ngbDropdownItem >25</button>
+                        <button ngbDropdownItem (click)="changePagesize(5)">5</button>
+                        <button ngbDropdownItem (click)="changePagesize(10)">10</button>
+                        <button ngbDropdownItem (click)="changePagesize(15)">15</button>
+                        <button ngbDropdownItem (click)="changePagesize(20)">20</button>
+                        <button ngbDropdownItem (click)="changePagesize(25)">25</button>
                     </div>
                 </div>
             </div>
             <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [maxSize]="5" [pageSize]="pageSize"
-            [boundaryLinks]="true"  >
+            [boundaryLinks]="true" (pageChange)="onChange()" >
                 <ng-template ngbPaginationPages let-page let-pages="pages">
                     <li class="ngb-custom-pages-item" *ngIf="pages.length > 0">
                         <div class="mb-3 d-flex flex-nowrap px-4">

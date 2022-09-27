@@ -18,7 +18,7 @@ export class ActivityTableComponent implements OnInit {
   activity: UserActivity = new UserActivity("",this.act);
   page = 1;
   pageSize = 10;
-  collectionSize = 200;
+  collectionSize : number = 0;
   
   @ViewChildren(NgbdSortableHeader) headers!: QueryList<NgbdSortableHeader>;
 
@@ -29,6 +29,12 @@ export class ActivityTableComponent implements OnInit {
         header.direction = '';
       }
     });
+    this.activityService.getActivityHistory(this.page, this.pageSize, direction, column).subscribe(
+      (response)=>{
+        this.rowData=response?.body!;
+        this.collectionSize = +response.headers.get('X-Total-Count')!;
+      }
+    );
   }
   
   
@@ -44,16 +50,21 @@ export class ActivityTableComponent implements OnInit {
   }
 
   getAllActivity(){
-    this.activityService.getActivityHistory().subscribe(
-      (data)=>{
-        this.activity=data;
-        console.log(this.activity.value);
-        this.temp=this.activity.value;
-        //this.temp.sort((a,b)=>a.Date.toLocaleString().localeCompare(b.Date.toLocaleString()));
-        this.temp.reverse();
-        this.rowData = this.temp;
+    this.activityService.getActivityHistory(this.page, this.pageSize, "", "").subscribe(
+      (response)=>{
+        this.rowData=response?.body!;
+        this.collectionSize = +response.headers.get('X-Total-Count')!;
       }
     );
+  }
+
+  onChange(){
+    this.getAllActivity();
+  }
+
+  changePagesize(size: number) {
+    this.pageSize = size;
+    this.onChange();
   }
 
 }
