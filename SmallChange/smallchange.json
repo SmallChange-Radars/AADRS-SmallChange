@@ -1809,8 +1809,6 @@
             "Date": 1662221380000
         }
     ],
-<<<<<<< HEAD
-=======
     "portfolio-table": [
         {
             "name": "AAPL",
@@ -1861,7 +1859,6 @@
             "percent": 3.41
         }
     ],
->>>>>>> f651aed9e12f6ee64cb5b29c6decca7e9c5b63d4
     "portfolio": [
         {
             "id": 1234,
