@@ -8,14 +8,16 @@ import { Portfolio } from '../models/portfolio';
   providedIn: 'root',
 })
 export class PortfolioService {
-  
-  public url: string = 'http://localhost:3000/portfolio/1234';
 
-  port: Portfolio = {id: '', value: [
-    {Stock: '', Prices: [], Quantities: []}
-  ]}
-  
-  constructor(private http: HttpClient) {}
+  public url: string = 'http://localhost:3000/portfolio?id=1235';
+
+  // port: Portfolio = {id: '', value: [
+  //   {Stock: '', Prices: [], Quantities: []}
+  // ]}
+
+  port: Portfolio[] = [];
+
+  constructor(private http: HttpClient) { }
 
   cp: ClientPortfolio[] = [
     { name: 'AAPL', qty: 538, price: 158.91, value: 85493.58, prof: -7459.37, percent: -8.02 },
@@ -37,7 +39,7 @@ export class PortfolioService {
   }
 
   getTotalPortfolio(): Observable<ClientPortfolio> {
-    let pf: ClientPortfolio = {name: '', qty: 0, price: 0, value: 0, prof: 0, percent: 0};
+    let pf: ClientPortfolio = { name: '', qty: 0, price: 0, value: 0, prof: 0, percent: 0 };
     this.cp.forEach((obj) => {
       pf.qty += obj.qty;
       pf.price += obj.price;
@@ -47,38 +49,52 @@ export class PortfolioService {
     return of(pf);
   }
 
-  getPortfolioCheck(): Observable<Portfolio> {
+  getPortfolioCheck(): Observable<Portfolio[]> {
 
-    return this.http.get<Portfolio>(this.url);       
+    return this.http.get<Portfolio[]>(this.url);
   }
 
-  getPortfolioTable(): Observable<ClientPortfolio[]> {
-    var x_tb: ClientPortfolio;
-    var tb: ClientPortfolio[] = [];
-    let i=0;
-    // : Portfolio[];
-    this.getPortfolioCheck().subscribe(data => {
-      this.port = data; 
-      this.port.value.forEach((obj) => {
-        i = obj.Prices.length;
-        var x_value = 0;
-        var x_qty = 0;
-        for (var j=0; j<i; j++) {
-          x_value += obj.Prices[j] * obj.Quantities[j];
-          x_qty += obj.Quantities[j];
-        }
-        var curr_value = obj.Prices[i-1] * x_qty;
-        // console.log(x_value);
-        var gains = curr_value - x_value;
-        var percent = gains*100/x_value;
-        x_tb = {name: obj.Stock, qty: x_qty, value: x_value, price: obj.Prices[0], prof: gains, percent: percent};
-        tb.push(x_tb);
-    },
-    // console.log(tb)
-    )} );
+  getSortedStocks(pageNo: number, pageSize: number, query: string, sortDirection: string, sortColumn: string): Observable<HttpResponse<ClientPortfolio[]>> {
+    // let url = this.url + '?q=' + query + '&_page=' + pageNo + '&_limit=' + pageSize;
+    let url = 'http://localhost:3000/portfolio-table' + '?&_page=' + pageNo + '&_limit=' + pageSize;
+    if (sortDirection === '' || sortColumn === '') {
+      return this.http.get<ClientPortfolio[]>(url, { observe: "response" });
+    } else {
+      url += "&_sort="+sortColumn+"&_order="+sortDirection;
+      return this.http.get<ClientPortfolio[]>(url, { observe: "response" });
+    }
     
-    return of(tb);
   }
+
+  // getPortfolioTable(pageNo: number, pageSize: number, query: string, sortDirection: string, sortColumn: string): Observable<ClientPortfolio[]> {
+  //   var x_tb: ClientPortfolio;
+  //   var tb: ClientPortfolio[] = [];
+  //   let i = 0;
+  //   // : Portfolio[];
+  //   this.getSortedStocks(1, 2, '', 'asc', '').subscribe(response => {
+  //     this.port = response;
+  //     console.log(this.port);
+  //     this.port.forEach((obj) => {
+  //       i = obj.Prices.length;
+  //       var x_value = 0;
+  //       var x_qty = 0;
+  //       for (var j = 0; j < i; j++) {
+  //         x_value += obj.Prices[j] * obj.Quantities[j];
+  //         x_qty += obj.Quantities[j];
+  //       }
+  //       var curr_value = obj.Prices[i - 1] * x_qty;
+  //       // console.log(x_value);
+  //       var gains = curr_value - x_value;
+  //       var percent = gains * 100 / x_value;
+  //       x_tb = { name: obj.Stock, qty: x_qty, value: x_value, price: obj.Prices[0], prof: gains, percent: percent };
+  //       tb.push(x_tb);
+  //     },
+  //       // console.log(tb)
+  //     )
+  //   });
+
+  //   return of(tb);
+  // }
 
 
 }

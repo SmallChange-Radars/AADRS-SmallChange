@@ -5,6 +5,9 @@ import { PortfolioTableComponent } from './portfolio-table/portfolio-table.compo
 import { SummaryComponent } from './summary/summary.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { NgChartsModule } from 'ng2-charts';
+import { NgbdSortableHeader } from './portfolio-table/sortable.directive';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PortfolioGraphComponent } from './portfolio-graph/portfolio-graph.component';
 
 
 
@@ -13,12 +16,15 @@ import { NgChartsModule } from 'ng2-charts';
   declarations: [
     PortfolioPageComponent,
     PortfolioTableComponent,
-    SummaryComponent
+    SummaryComponent,
+    NgbdSortableHeader,
+    PortfolioGraphComponent
   ],
   imports: [
     CommonModule,
     AgGridModule,
-    NgChartsModule
+    NgChartsModule,
+    NgbModule
   ],
   exports: [
     PortfolioPageComponent

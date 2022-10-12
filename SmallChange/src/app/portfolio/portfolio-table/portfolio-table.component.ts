@@ -1,6 +1,8 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { ColumnApi, GridApi, GridReadyEvent } from 'ag-grid-community';
+import { PortfolioService } from 'src/app/shared/services/portfolio.service';
 import { ClientPortfolio } from '../../shared/models/client-portfolio';
+import { NgbdSortableHeader, SortEvent } from './sortable.directive';
 
 
 @Component({
@@ -11,80 +13,58 @@ import { ClientPortfolio } from '../../shared/models/client-portfolio';
 
 export class PortfolioTableComponent implements OnInit {
   sum: any = 0;
-  c: any
-  @Input() cp: ClientPortfolio[] = [];
+  cp: ClientPortfolio[] = [];
+  @Input() c: ClientPortfolio[] = [];
 
 
   page = 1;
-  pageSize = 10;
+  pageSize = 3;
   collectionSize = 200;
 
   searchText: string = '';
-
-  /*
-  private gridApi!: GridApi<ClientPortfolio>;
-  private gridColumnApi!: ColumnApi;
   
-  sizeToFit() {
-    this.gridApi.sizeColumnsToFit();
-  }
-  
+  @ViewChildren(NgbdSortableHeader) headers!: QueryList<NgbdSortableHeader>;
 
-  toUSD(params: any) {
-    var inrFormat = new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD',
-      minimumFractionDigits: 2
+  onSort({ column, direction }: SortEvent) {
+    // resetting other headers
+    this.headers.forEach(header => {
+      if (header.sortable !== column) {
+        header.direction = '';
+      }
     });
-    return inrFormat.format(params.value);
+
+    this.service
+      .getSortedStocks(this.page, this.pageSize, this.searchText, direction, column)
+      .subscribe((response) => {
+        this.cp = response?.body!;
+        this.collectionSize = +response.headers.get('X-Total-Count')!;
+      });
   }
 
-  toPercentage(params: any) {
-    var inrFormat = new Intl.NumberFormat('en-US', {
-      style: 'percent',
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2
-    });
-    return inrFormat.format(params.value / 100);
+  changePagesize(size: number) {
+    this.pageSize = size;
+    this.onChange("");
   }
 
-  posOrNeg(params: any) {
-    if (params.node.data.prof >= 0) {
-      return { color: 'green', textAlign: 'right' };
-    } else {
-      // console.log(params.node);
-      return { color: 'red', textAlign: 'right' };
-
-    }
+  onChange(value: string) {
+    this.getSortedStocks();
   }
 
-  defaultColDef = { suppressSizeToFit: false, resizeable: true, sortable: true}
-
-
-  columnDefs = [
-    { headerName: 'Name', field: 'name'},
-    { headerName: 'Shares', field: 'qty'},
-    { headerName: 'Price', field: 'price', headerClass: 'ag-right-aligned-header', cellRenderer: this.toUSD, cellStyle: { textAlign: 'right' } },
-    { headerName: 'Value', field: 'value', headerClass: 'ag-right-aligned-header', cellRenderer: this.toUSD, cellStyle: { textAlign: 'right' } },
-    { headerName: 'Gains', field: 'prof', headerClass: 'ag-right-aligned-header', cellRenderer: this.toUSD, cellStyle: this.posOrNeg },
-    { headerName: 'Returns', field: 'percent', headerClass: 'ag-right-aligned-header', cellRenderer: this.toPercentage, cellStyle: this.posOrNeg }
-  ];
-
-  rowData: ClientPortfolio[] = [];
-
-  onGridReady(params: GridReadyEvent<ClientPortfolio>) {
-    this.gridApi = params.api;
-    this.gridColumnApi = params.columnApi;
-    this.rowData = this.cp;
-    this.sizeToFit();
-  }  
-
-  */
+  getSortedStocks() {
+    this.service
+      .getSortedStocks(this.page, this.pageSize, this.searchText, "", "")
+      .subscribe((response) => {
+        this.cp = response?.body!;
+        this.collectionSize = +response.headers.get('X-Total-Count')!;
+        console.log("hi");
+      });
+  }
   
-  constructor() { }
+  constructor(private service: PortfolioService) { }
   
 
   ngOnInit(): void {
+    this.getSortedStocks();
   }
 
 
