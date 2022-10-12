@@ -21,6 +21,7 @@ import { TradeModule } from './trade/trade.module';
 import { ActivityPageComponent } from './activity/activity-page/activity-page.component';
 import { ActivityTableComponent } from './activity/activity-table/activity-table.component';
 import { BuySellModalComponent } from './shared/components/buy-sell-modal/buy-sell-modal.component';
+import { NgbdSortableHeader } from './activity/activity-table/sortable.directive';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { BuySellModalComponent } from './shared/components/buy-sell-modal/buy-se
     ActivityPageComponent,
     ActivityTableComponent,
     AccountFormComponent,
-    BuySellModalComponent
+    BuySellModalComponent,
+    NgbdSortableHeader
   ],
   imports: [
     BrowserModule,
@@ -47,7 +49,7 @@ import { BuySellModalComponent } from './shared/components/buy-sell-modal/buy-se
     NgChartsModule,
     HttpClientModule,
     TradeModule,
-    NgChartsModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

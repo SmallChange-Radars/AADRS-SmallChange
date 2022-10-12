@@ -1,6 +1,7 @@
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, Observable, of, throwError } from 'rxjs';
+import { Activity } from '../models/activity';
 import { UserActivity } from '../models/user-activity';
 import { UserService } from './user.service';
 
@@ -9,12 +10,18 @@ import { UserService } from './user.service';
 })
 export class ActivityService {
 
-  url="http://localhost:3000/tradeActivity/";
+  url="http://localhost:3000/tradeActivity";
   
   constructor(private http: HttpClient,private user:UserService) { }
 
-  getActivityHistory():Observable<UserActivity>{
-    return this.http.get<UserActivity>(this.url+this.user.getUser()).pipe(catchError(this.handleError));
+  getActivityHistory(pageNo: number, pageSize: number, sortDirection: string, sortColumn: string):Observable<HttpResponse<Activity[]>>{
+    let url = this.url + '?q=' + 1234 + '&_page=' + pageNo + '&_limit=' + pageSize;
+    if (sortDirection === '' || sortColumn === '') {
+      return this.http.get<Activity[]>(url, { observe: "response" });
+    } else {
+      url += "&_sort="+sortColumn+"&_order="+sortDirection;
+      return this.http.get<Activity[]>(url, { observe: "response" });
+    }
   }
 
   handleError(error: HttpErrorResponse) {
