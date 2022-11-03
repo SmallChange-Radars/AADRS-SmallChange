@@ -22,6 +22,7 @@ import { ActivityPageComponent } from './activity/activity-page/activity-page.co
 import { ActivityTableComponent } from './activity/activity-table/activity-table.component';
 import { BuySellModalComponent } from './shared/components/buy-sell-modal/buy-sell-modal.component';
 import { NgbdSortableHeader } from './activity/activity-table/sortable.directive';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,7 @@ import { NgbdSortableHeader } from './activity/activity-table/sortable.directive
     TradeModule,
     NgChartsModule
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent],
   entryComponents: [BuySellModalComponent],
 })

@@ -5,6 +5,9 @@ import { Router } from '@angular/router';
 import { UserService } from '../shared/services/user.service';
 import { NgbAlert } from '@ng-bootstrap/ng-bootstrap';
 import { debounceTime, Subject } from 'rxjs';
+import { CookieService } from 'ngx-cookie-service';
+import { TokenService } from '../shared/services/token.service';
+import { Token } from '../shared/models/token';
 
 @Component({
   selector: 'app-loginpage',
@@ -18,7 +21,12 @@ export class LoginpageComponent implements OnInit {
   public loginReturn: Login = new Login('', '');
   errorMessage: string = '';
 
-  constructor(private service: UpverifyService, private router: Router, private user: UserService) { }
+  //Storing token as cookie
+  // public token: Token= new Token("",[""],"","");
+  private token?:Token;
+  public accessToken: String = '';
+
+  constructor(private tokenService: TokenService, private service: UpverifyService, private router: Router, private user: UserService, private cookieService: CookieService) { }
 
   @ViewChild('selfClosingAlert', { static: false })
   selfClosingAlert: NgbAlert| undefined;
@@ -45,22 +53,35 @@ export class LoginpageComponent implements OnInit {
 
 
   verifyCredentials() {
-    this.service.verifyCredentials(this.login.id, this.login.password).subscribe({
+    this.tokenService.postUserLogin(this.login).subscribe(response => {
+      console.log(response);
+      this.token = response;
+      console.log(typeof(this.token.accessToken));
+      this.accessToken = this.token.accessToken;
+      this.cookieService.set("accessToken",this.accessToken.toString());
+    });
+    console.log("Getting a cookie:", this.cookieService.get("accessToken"));
+
+    this.service.verifyCredentials(this.login.email, this.login.password).subscribe({
       next: (data) => {
         this.loginReturn = data;
         if (this.loginReturn.password === this.login.password) {
-          this.service.getDetails(this.login.id).subscribe({
+          this.service.getDetails(this.login.email).subscribe({
             next: (data) => {
               this.user.addUser(data[0].clientId);
               console.log(data)
               console.log(data[0].clientId, this.user.getUser(), this.user.isLoggedIn());
             }
           });
+
+          //setting token as cookie on user login
+          
+
           this.router.navigate(['/home']);
         }
         else {
           this._success.next("Invalid Credentials");
-          this.login = new Login(this.login.id, "");
+          this.login = new Login(this.login.email, "");
         }
       },
       error: (e) => { this._success.next(e);; this.login = new Login("", ""); }
