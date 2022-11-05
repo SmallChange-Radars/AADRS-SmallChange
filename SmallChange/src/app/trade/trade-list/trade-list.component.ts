@@ -1,10 +1,7 @@
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { AgGridAngular } from 'ag-grid-angular';
-import { ColDef, GridReadyEvent } from 'ag-grid-community';
-import { catchError, Observable, throwError } from 'rxjs';
 import { BuySellModalComponent } from 'src/app/shared/components/buy-sell-modal/buy-sell-modal.component';
+import { Instrument } from 'src/app/shared/models/instrument';
 
 import { Trade } from 'src/app/shared/models/trade';
 import { TradeService } from 'src/app/shared/services/trade.service';
@@ -31,7 +28,7 @@ const sectors: string[] = [
   styleUrls: ['./trade-list.component.scss'],
 })
 export class TradeListComponent implements OnInit {
-  stocks: Trade[] = [];
+  stocks: Instrument[] = [];
 
   page = 1;
   pageSize = 10;

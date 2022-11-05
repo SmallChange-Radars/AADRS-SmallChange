@@ -1,8 +1,8 @@
 import {Directive, EventEmitter, Input, Output} from '@angular/core';
-import { Trade } from 'src/app/shared/models/trade';
+import { Instrument } from 'src/app/shared/models/instrument';
 
 
-export type SortColumn = keyof Trade | '';
+export type SortColumn = keyof Instrument | '';
 export type SortDirection = 'asc' | 'desc' | '';
 const rotate: {[key: string]: SortDirection} = { 'asc': 'desc', 'desc': '', '': 'asc' };
 

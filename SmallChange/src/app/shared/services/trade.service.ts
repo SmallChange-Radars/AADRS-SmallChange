@@ -1,22 +1,23 @@
 import { HttpClient, HttpErrorResponse, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, Observable, throwError } from 'rxjs';
+import { Instrument } from '../models/instrument';
 import { Trade } from '../models/trade';
 
 @Injectable({
   providedIn: 'root',
 })
 export class TradeService {
-  url: string = 'http://localhost:3000/stocks';
+  url: string = 'http://localhost:3000/instruments-prices';
   constructor(private http: HttpClient) { }
 
-  getSortedStocks(pageNo: number, pageSize: number, query: string, sortDirection: string, sortColumn: string): Observable<HttpResponse<Trade[]>> {
+  getSortedStocks(pageNo: number, pageSize: number, query: string, sortDirection: string, sortColumn: string): Observable<HttpResponse<Instrument[]>> {
     let url = this.url + '?q=' + query + '&_page=' + pageNo + '&_limit=' + pageSize;
     if (sortDirection === '' || sortColumn === '') {
-      return this.http.get<Trade[]>(url, { observe: "response" });
+      return this.http.get<Instrument[]>(url, { observe: "response" });
     } else {
       url += "&_sort="+sortColumn+"&_order="+sortDirection;
-      return this.http.get<Trade[]>(url, { observe: "response" });
+      return this.http.get<Instrument[]>(url, { observe: "response" });
     }
   }
 

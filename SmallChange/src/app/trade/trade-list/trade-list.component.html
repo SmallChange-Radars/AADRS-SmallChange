@@ -30,21 +30,24 @@
          <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col" sortable="Symbol" (sort)="onSort($event)">Symbol</th>
-                        <th scope="col" sortable="Name" (sort)="onSort($event)">Name</th>
-                        <th scope="col" sortable="Sector" (sort)="onSort($event)">Sector</th>
-                        <th scope="col" sortable="Price" (sort)="onSort($event)" class="text-end">Price</th>
-                        <th scope="col" sortable="Market_Cap" (sort)="onSort($event)" class="text-end">Market Cap</th>
+                        <th scope="col" sortable="instrumentId" (sort)="onSort($event)">Symbol</th>
+                        <th scope="col" sortable="instrumentDescription" (sort)="onSort($event)">Name</th>
+                        <th scope="col" sortable="categoryId" (sort)="onSort($event)">Category</th>
+                        <th scope="col" sortable="askPrice" (sort)="onSort($event)" class="text-end">Price</th>
+                        <th scope="col" sortable="minQuantity" (sort)="onSort($event)" class="text-end">Minimum Quanitity</th>
+                        <th scope="col" sortable="maxQuantity" (sort)="onSort($event)" class="text-end">Maximum Quanitity</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let stock of stocks" (click)="openModal(stock)">
-                        <td>{{stock.Symbol}}</td>
-                        <td>{{stock.Name}}</td>
-                        <td>{{stock.Sector}}</td>
-                        <td class="text-end">{{stock.Price[stock.Price.length-1] | currency : 'USD' : "symbol" :
+                    <!-- <tr *ngFor="let stock of stocks" (click)="openModal(stock)"> -->
+                        <tr *ngFor="let stock of stocks">
+                        <td>{{stock.instrumentId}}</td>
+                        <td>{{stock.instrumentDescription}}</td>
+                        <td>{{stock.categoryId}}</td>
+                        <td class="text-end">{{stock.askPrice | currency : 'USD' : "symbol" :
                             '1.2-2' }}</td>
-                        <td class="text-end">{{stock.Market_Cap}}</td>
+                        <td class="text-end">{{stock.minQuantity}}</td>
+                        <td class="text-end">{{stock.maxQuantity}}</td>
                     </tr>
                 </tbody>
             </table>
