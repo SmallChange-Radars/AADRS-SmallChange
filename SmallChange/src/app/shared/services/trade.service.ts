@@ -1,8 +1,7 @@
-import { HttpClient, HttpErrorResponse, HttpResponse } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { catchError, Observable, throwError } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Instrument } from '../models/instrument';
-import { Trade } from '../models/trade';
 
 @Injectable({
   providedIn: 'root',
@@ -11,17 +10,18 @@ export class TradeService {
   url: string = 'http://localhost:3000/instruments-prices';
   constructor(private http: HttpClient) { }
 
-  getSortedStocks(pageNo: number, pageSize: number, query: string, sortDirection: string, sortColumn: string): Observable<HttpResponse<Instrument[]>> {
+  getSortedStocks(pageNo: number, pageSize: number, query: string, sortDirection: string, sortColumn: string, categoryId: string): Observable<HttpResponse<Instrument[]>> {
     let url = this.url + '?q=' + query + '&_page=' + pageNo + '&_limit=' + pageSize;
-    if (sortDirection === '' || sortColumn === '') {
-      return this.http.get<Instrument[]>(url, { observe: "response" });
-    } else {
-      url += "&_sort="+sortColumn+"&_order="+sortDirection;
-      return this.http.get<Instrument[]>(url, { observe: "response" });
+    if (!(categoryId === '')) {
+      url += '&categoryId=' + categoryId;
     }
+    if (!(sortDirection === '' || sortColumn === '')) {
+      url += "&_sort=" + sortColumn + "&_order=" + sortDirection;
+    }
+    return this.http.get<Instrument[]>(url, { observe: "response" });
   }
 
-  
+
 
   // getStocks(pageNo: number, pageSize: number, query: string): Observable<HttpResponse<Trade[]>> {
   //   let url = this.url + '?q=' + query + '&_page=' + pageNo + '&_limit=' + pageSize;

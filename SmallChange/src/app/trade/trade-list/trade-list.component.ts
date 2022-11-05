@@ -35,6 +35,9 @@ export class TradeListComponent implements OnInit {
   collectionSize = 200;
 
   searchText: string = '';
+  direction = 'asc';
+  column = 'instrumentDescription';
+  category = "";
 
   @ViewChildren(NgbdSortableHeader) headers!: QueryList<NgbdSortableHeader>;
 
@@ -46,19 +49,24 @@ export class TradeListComponent implements OnInit {
       }
     });
 
-    this.service
-      .getSortedStocks(this.page, this.pageSize, this.searchText, direction, column)
-      .subscribe((response) => {
-        this.stocks = response?.body!;
-        this.collectionSize = +response.headers.get('X-Total-Count')!;
-      });
+    this.direction = direction;
+    this.column = column;
+    console.log(direction.length)
+
+    //to display based on sort order
+    if (direction == '') {
+      this.direction = 'asc';
+      this.column = 'instrumentDescription';
+    }
+
+    this.getSortedStocks();
   }
 
   constructor(private service: TradeService, private modalService: NgbModal) { }
 
   getSortedStocks() {
     this.service
-      .getSortedStocks(this.page, this.pageSize, this.searchText, "", "")
+      .getSortedStocks(this.page, this.pageSize, this.searchText, this.direction, this.column, this.category)
       .subscribe((response) => {
         this.stocks = response?.body!;
         this.collectionSize = +response.headers.get('X-Total-Count')!;
@@ -80,6 +88,11 @@ export class TradeListComponent implements OnInit {
 
   changePagesize(size: number) {
     this.pageSize = size;
+    this.onChange("");
+  }
+
+  changeCategory(category: string) {
+    this.category = category;
     this.onChange("");
   }
 

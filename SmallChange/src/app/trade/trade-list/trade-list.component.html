@@ -11,9 +11,10 @@
                         <button type="button" class="btn btn-outline-dark" id="dropdownBasic1" ngbDropdownToggle>
                             <i class="bi bi-filter"></i> Filter </button>
                         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                            <button ngbDropdownItem>Action - 1</button>
-                            <button ngbDropdownItem>Another Action</button>
-                            <button ngbDropdownItem>Something else is here</button>
+                            <button ngbDropdownItem (click)="changeCategory('')">All</button>
+                            <button ngbDropdownItem (click)="changeCategory('STOCK')">Stocks</button>
+                            <button ngbDropdownItem (click)="changeCategory('GOVT')">Government Bonds</button>
+                            <button ngbDropdownItem (click)="changeCategory('CD')">CD</button>
                         </div>
                     </div>
                 </div>
@@ -27,20 +28,22 @@
     <div class="row mt-3">
         <div class="col-12">
             <!-- <table class="table table-bordered "> -->
-         <table class="table">
+            <table class="table">
                 <thead>
                     <tr>
                         <th scope="col" sortable="instrumentId" (sort)="onSort($event)">Symbol</th>
                         <th scope="col" sortable="instrumentDescription" (sort)="onSort($event)">Name</th>
                         <th scope="col" sortable="categoryId" (sort)="onSort($event)">Category</th>
                         <th scope="col" sortable="askPrice" (sort)="onSort($event)" class="text-end">Price</th>
-                        <th scope="col" sortable="minQuantity" (sort)="onSort($event)" class="text-end">Minimum Quanitity</th>
-                        <th scope="col" sortable="maxQuantity" (sort)="onSort($event)" class="text-end">Maximum Quanitity</th>
+                        <th scope="col" sortable="minQuantity" (sort)="onSort($event)" class="text-end">Minimum
+                            Quanitity</th>
+                        <th scope="col" sortable="maxQuantity" (sort)="onSort($event)" class="text-end">Maximum
+                            Quanitity</th>
                     </tr>
                 </thead>
                 <tbody>
                     <!-- <tr *ngFor="let stock of stocks" (click)="openModal(stock)"> -->
-                        <tr *ngFor="let stock of stocks">
+                    <tr *ngFor="let stock of stocks">
                         <td>{{stock.instrumentId}}</td>
                         <td>{{stock.instrumentDescription}}</td>
                         <td>{{stock.categoryId}}</td>
