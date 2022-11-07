@@ -1,39 +1,32 @@
 import { Injectable } from '@angular/core';
+import { CookieService } from 'ngx-cookie-service';
 import { Observable } from 'rxjs';
 import { StateService } from './state.service';
-
-interface clientId {
-  id: string[]
-}
-
-const initialState: clientId = {
-  id: []
-};
 
 @Injectable({
   providedIn: 'root'
 })
-export class UserService extends StateService<clientId>{
+export class UserService{
 
-  clientId$: Observable<string[]> = this.select(state => state.id);
+  
 
-  constructor() {
-    super(initialState);
+  constructor(private cookieService: CookieService) {
+    
   }
 
-  addUser(id: string) {
-    this.setState({ id: [id] })
+  addUser(token: string) {
+    this.cookieService.set("accessToken",token);
   }
 
   removeUser() {
-    this.setState({ id: [] })
+    this.cookieService.delete("accessToken");
   }
 
   getUser() {
-    return this.state.id[0];
+    return this.cookieService.get("accessToken");
   }
 
   isLoggedIn(): boolean {
-    return this.state.id.length != 0;
+    return this.getUser != null;
   }
 }
