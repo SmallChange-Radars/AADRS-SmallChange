@@ -8,31 +8,21 @@ import { InvestmentPreferences } from 'src/app/shared/models/investment-preferen
   styleUrls: ['./preferences-form.component.scss'],
 })
 export class PreferencesFormComponent implements OnInit {
-  clientId = '2';
-
   public investmentPreferences: InvestmentPreferences =
-    new InvestmentPreferences(this.clientId, '', '', '', '');
-
+    new InvestmentPreferences('', '', '', '', '');
   rTolerances: any = [];
   iCategories: any = [];
   iLengths: any = [];
   formInputs: any = [];
   formError: any = null;
+  formFilled: boolean = false;
 
   submit() {
     let ret;
     this.service
-      .submitForm(this.investmentPreferences)
+      .submitForm(this.investmentPreferences, this.formFilled)
       .subscribe((data) => (ret = data));
-    if (ret == 1 || ret == 2) {
-      console.log(this.investmentPreferences);
-      this.investmentPreferences = new InvestmentPreferences(
-        this.clientId,
-        '',
-        '',
-        '',
-        ''
-      );
+    if (ret != 0) {
       this.formError = false;
     } else this.formError = true;
   }
@@ -40,17 +30,21 @@ export class PreferencesFormComponent implements OnInit {
   constructor(private service: CupreferencesService) {}
 
   ngOnInit(): void {
-    this.service
-      .getFormInputs(this.clientId)
-      .subscribe((data) => (this.formInputs = data));
+    this.service.getFormInputs().subscribe((data) => (this.formInputs = data));
     this.rTolerances = this.formInputs[0];
     this.iCategories = this.formInputs[1];
     this.iLengths = this.formInputs[2];
-    if (this.formInputs.length > 3) {
-      this.investmentPreferences.investmentPurpose = this.formInputs[3];
-      this.investmentPreferences.riskTolerance = this.formInputs[4];
-      this.investmentPreferences.incomeCategory = this.formInputs[5];
-      this.investmentPreferences.investmentLength = this.formInputs[6];
-    }
+    let filled!: any;
+    this.service.preferenceFilled().subscribe((data) => {
+      filled = data;
+      if (filled) {
+        this.formFilled = true;
+        this.investmentPreferences.investmentPurpose = filled.investmentPurpose;
+        this.investmentPreferences.riskTolerance = filled.riskTolerance;
+        this.investmentPreferences.incomeCategory = filled.incomeCategory;
+        this.investmentPreferences.lengthOfInvestment =
+          filled.lengthOfInvestment;
+      }
+    });
   }
 }
