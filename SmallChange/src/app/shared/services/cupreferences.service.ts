@@ -4,101 +4,82 @@ import { Observable, of } from 'rxjs';
 import { InvestmentPreferences } from '../models/investment-preferences';
 import { UserService } from './user.service';
 
+enum rTolerancesValues {
+  'CONSERVATIVE',
+  'BELOW AVERAGE',
+  'AVERAGE',
+  'ABOVE AVERAGE',
+  'AGGRESIVE',
+}
+
+enum iCategoriesValues {
+  '0-20,000',
+  '20,001-40,000',
+  '40,001-60,000',
+  '60,001-80,000',
+  '80,001-100,000',
+  '100,001-150,000',
+  '150,000+',
+}
+
+enum iLengthsValues {
+  '0-5 years',
+  '5-7 years',
+  '7-10 years',
+  '10-15 years',
+}
 @Injectable({
   providedIn: 'root',
 })
 export class CupreferencesService {
-  rTolerances = [
-    {
-      name: 'CONSERVATIVE',
-    },
-    {
-      name: 'BELOW AVERAGE',
-    },
-    {
-      name: 'AVERAGE',
-    },
-    {
-      name: 'ABOVE AVERAGE',
-    },
-    {
-      name: 'AGGRESIVE',
-    },
-  ];
-
-  iCategories = [
-    {
-      name: '0-20,000',
-    },
-    {
-      name: '20,001-40,000',
-    },
-    {
-      name: '40,001-60,000',
-    },
-    {
-      name: '60,001-80,000',
-    },
-    {
-      name: '80,001-100,000',
-    },
-    {
-      name: '100,001-150,000',
-    },
-    {
-      name: '150,000+',
-    },
-  ];
-
-  iLengths = [
-    {
-      name: '0-5 years',
-    },
-    {
-      name: '5-7 years',
-    },
-    {
-      name: '7-10 years',
-    },
-    {
-      name: '10-15 years',
-    },
-  ];
   formInputs: any = [];
   constructor(private http: HttpClient, private user: UserService) {}
-  getFormInputs(clientId: string): Observable<any> {
-    this.formInputs.push(this.rTolerances, this.iCategories, this.iLengths);
-    // if (this.preferenceFilled(clientId)) {
-    //   this.formInputs.push('College', 1, 3, 4);
-    // }
-    let ip!: InvestmentPreferences;
-    this.preferenceFilled(clientId).subscribe((data) => (ip = data));
-    console.log(ip);
+  getFormInputs(): Observable<any> {
+    this.formInputs.push(
+      Object.keys(rTolerancesValues).filter((v) => isNaN(Number(v))),
+      Object.keys(iCategoriesValues).filter((v) => isNaN(Number(v))),
+      Object.keys(iLengthsValues).filter((v) => isNaN(Number(v)))
+    );
     return of(this.formInputs);
   }
 
-  submitForm(investmentPreferences: InvestmentPreferences): Observable<number> {
+  submitForm(
+    investmentPreferences: InvestmentPreferences,
+    formFilled: boolean
+  ): Observable<any> {
     if (
       investmentPreferences.investmentPurpose == '' ||
       investmentPreferences.riskTolerance == '' ||
       investmentPreferences.incomeCategory == '' ||
-      investmentPreferences.investmentLength == ''
+      investmentPreferences.lengthOfInvestment == ''
     )
       return of(0);
-    if (this.preferenceFilled(investmentPreferences.clientId)) return of(1);
-    else return of(2);
+    const headers = new HttpHeaders()
+      .set('Authorization', 'Bearer ' + this.user.getUser())
+      .set('Content-Type', 'application/json')
+      .set('Accept', 'application/json');
+    if (!formFilled)
+      return this.http.post(
+        'http://localhost:8080/client/preferences',
+        investmentPreferences,
+        {
+          headers: headers,
+        }
+      );
+    return this.http.put(
+      'http://localhost:8080/client/preferences',
+      investmentPreferences,
+      {
+        headers: headers,
+      }
+    );
   }
 
-  preferenceFilled(clientId: string): Observable<any> {
-    //console.log(this.http.get('http://localhost:8080/client/preferences'));
-    // if (clientId == '1') return true;
-    // return false;
+  preferenceFilled(): Observable<any> {
     let token = this.user.getUser();
-    console.log(token);
-    const headers = new HttpHeaders().set(
-      'Authorization',
-      'Bearer ' + this.user.getUser()
-    );
+    const headers = new HttpHeaders()
+      .set('Authorization', 'Bearer ' + this.user.getUser())
+      .set('Content-Type', 'application/json');
     return this.http.get('http://localhost:8080/client/preferences', {
       headers: headers,
     });
