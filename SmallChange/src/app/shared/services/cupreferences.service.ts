@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { InvestmentPreferences } from '../models/investment-preferences';
+import { UserService } from './user.service';
 
 @Injectable({
   providedIn: 'root',
@@ -63,7 +64,7 @@ export class CupreferencesService {
     },
   ];
   formInputs: any = [];
-  constructor() {}
+  constructor( private user: UserService) {}
   getFormInputs(clientId: string): Observable<any> {
     this.formInputs.push(this.rTolerances, this.iCategories, this.iLengths);
     if (this.preferenceFilled(clientId)) {
@@ -85,6 +86,8 @@ export class CupreferencesService {
   }
 
   preferenceFilled(clientId: string): boolean {
+    console.log(this.user.getUser());
+    console.log(this.user.isLoggedIn());
     if (clientId == '1') return true;
     return false;
   }

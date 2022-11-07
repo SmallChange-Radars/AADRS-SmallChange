@@ -13,10 +13,8 @@ export class UpverifyService {
   url: string = "http://localhost:8080/api/auth/signin";
 
   verifyCredentials(user: Login): Observable<Token> {
-    
     return this.httpClient.post<Token>(this.url,user).pipe(catchError(this.handleError));
   }
-
 
   constructor(private httpClient: HttpClient) { }
 
