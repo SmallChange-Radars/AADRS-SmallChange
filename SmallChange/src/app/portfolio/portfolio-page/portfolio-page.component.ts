@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ChartConfiguration } from 'chart.js';
 import { CookieService } from 'ngx-cookie-service';
 import { PortfolioService } from 'src/app/shared/services/portfolio.service';
+import { UserService } from 'src/app/shared/services/user.service';
 import { ClientPortfolio } from '../../shared/models/client-portfolio';
 
 @Component({
@@ -31,7 +32,7 @@ export class PortfolioPageComponent implements OnInit {
 
   public token = '';
 
-  constructor(private portfolioService: PortfolioService, private cookieService: CookieService) { }
+  constructor(private userService: UserService,private portfolioService: PortfolioService, private cookieService: CookieService) { }
 
   ngOnInit(): void {
     this.getPortfolio();
@@ -46,8 +47,9 @@ export class PortfolioPageComponent implements OnInit {
     ];
     // console.log(this.doughnutChartDatasets);
     // console.log(this.doughnutChartLabels)
-
+//Bearer token
     this.token = this.cookieService.get("accessToken");
+    this.userService.addUser(this.token);
     console.log("This is in portfolio",this.token);
   }
 
