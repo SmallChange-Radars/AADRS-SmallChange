@@ -21,7 +21,6 @@ export class AppComponent {
     this.user.removeUser();
     console.log(this.user.getUser());
     console.log(this.user.isLoggedIn());
-    this.router.navigate(['/']);
   }
 
   login(){

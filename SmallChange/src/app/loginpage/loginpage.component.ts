@@ -57,7 +57,8 @@ export class LoginpageComponent implements OnInit {
         this.token = data;
         this.accessToken = this.token.accessToken.toString();
         this.user.addUser(this.accessToken);
-        this.router.navigate(['/home']);
+        console.log(this.user.getUser());
+        console.log(this.user.isLoggedIn());
       },
       error: (e) => { this._success.next(e);; this.login = new Login("", ""); }
     });
