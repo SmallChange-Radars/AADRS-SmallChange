@@ -19,6 +19,8 @@ export class AppComponent {
 
   logOut(){
     this.user.removeUser();
+    console.log(this.user.getUser());
+    console.log(this.user.isLoggedIn());
     this.router.navigate(['/']);
   }
 
