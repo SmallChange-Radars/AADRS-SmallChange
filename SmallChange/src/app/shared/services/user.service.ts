@@ -34,12 +34,11 @@ export class UserService extends StateService<accessToken>{
   }
 
   getUser() {
-    if (this.cookieService.get("accessToken")) {
-      console.log("Yes");
-      this.setState({ id: [this.cookieService.get("accessToken")] })
-    }
-    else {
-      this.setState({ id: [] })
+    if (this.state.id.length != 0) {
+      if (this.cookieService.get("accessToken") == "")
+        this.setState({ id: [this.cookieService.get("accessToken")] })
+      else
+        this.setState({ id: [] })
     }
     return this.state.id[0];
   }
