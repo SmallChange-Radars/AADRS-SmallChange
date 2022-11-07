@@ -24,7 +24,7 @@ export class LoginpageComponent implements OnInit {
   //Storing token as cookie
   // public token: Token= new Token("",[""],"","");
   private token?:Token;
-  public accessToken: String = '';
+  public accessToken: string = '';
 
   constructor(private tokenService: TokenService, private service: UpverifyService, private router: Router, private user: UserService, private cookieService: CookieService) { }
 
@@ -57,8 +57,9 @@ export class LoginpageComponent implements OnInit {
       console.log(response);
       this.token = response;
       console.log(typeof(this.token.accessToken));
-      this.accessToken = this.token.accessToken;
-      this.cookieService.set("accessToken",this.accessToken.toString());
+      this.accessToken = this.token.accessToken.toString();
+      this.cookieService.set("accessToken",this.accessToken);
+      this.user.addUser(this.accessToken);
     });
     console.log("Getting a cookie:", this.cookieService.get("accessToken"));
 
