@@ -1,6 +1,8 @@
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { InvestmentPreferences } from '../models/investment-preferences';
+import { UserService } from './user.service';
 
 @Injectable({
   providedIn: 'root',
@@ -63,12 +65,15 @@ export class CupreferencesService {
     },
   ];
   formInputs: any = [];
-  constructor() {}
+  constructor(private http: HttpClient, private user: UserService) {}
   getFormInputs(clientId: string): Observable<any> {
     this.formInputs.push(this.rTolerances, this.iCategories, this.iLengths);
-    if (this.preferenceFilled(clientId)) {
-      this.formInputs.push('College', 1, 3, 4);
-    }
+    // if (this.preferenceFilled(clientId)) {
+    //   this.formInputs.push('College', 1, 3, 4);
+    // }
+    let ip!: InvestmentPreferences;
+    this.preferenceFilled(clientId).subscribe((data) => (ip = data));
+    console.log(ip);
     return of(this.formInputs);
   }
 
@@ -84,8 +89,18 @@ export class CupreferencesService {
     else return of(2);
   }
 
-  preferenceFilled(clientId: string): boolean {
-    if (clientId == '1') return true;
-    return false;
+  preferenceFilled(clientId: string): Observable<any> {
+    //console.log(this.http.get('http://localhost:8080/client/preferences'));
+    // if (clientId == '1') return true;
+    // return false;
+    let token = this.user.getUser();
+    console.log(token);
+    const headers = new HttpHeaders().set(
+      'Authorization',
+      'Bearer ' + this.user.getUser()
+    );
+    return this.http.get('http://localhost:8080/client/preferences', {
+      headers: headers,
+    });
   }
 }
