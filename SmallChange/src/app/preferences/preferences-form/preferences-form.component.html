@@ -10,19 +10,19 @@
                 <div class="mb-3">
                     <label for="riskTolerance">Risk Tolerance:</label>
                     <select class="form-select" id="riskTolerance" [(ngModel)] = "investmentPreferences.riskTolerance" name="riskTolerance" required>
-                        <option *ngFor = "let rTolerance of rTolerances; let i = index" value="{{i+1}}">{{rTolerance.name}}</option>
+                        <option *ngFor = "let rTolerance of rTolerances; let i = index" value="{{i+1}}">{{rTolerance}}</option>
                     </select>
                 </div>
                 <div class="mb-3">
                     <label for="incomeCategory">Income Category:</label>
                     <select class="form-select" id="incomeCategory" [(ngModel)] = "investmentPreferences.incomeCategory" name="incomeCategory" required>
-                        <option *ngFor = "let iCategory of iCategories; let i = index" value="{{i+1}}">{{iCategory.name}}</option>
+                        <option *ngFor = "let iCategory of iCategories; let i = index" value="{{i+1}}">{{iCategory}}</option>
                     </select>
                 </div>
                 <div class="mb-3">
                     <label for="investmentLength">Investment Length:</label>
-                    <select class="form-select" id="investmentLength" [(ngModel)] = "investmentPreferences.investmentLength" name = "investmentLength" required>
-                        <option *ngFor = "let iLength of iLengths; let i = index" value="{{i+1}}">{{iLength.name}}</option>
+                    <select class="form-select" id="investmentLength" [(ngModel)] = "investmentPreferences.lengthOfInvestment" name = "investmentLength" required>
+                        <option *ngFor = "let iLength of iLengths; let i = index" value="{{i+1}}">{{iLength}}</option>
                     </select>
                 </div>
                 <button type="button" class="btn btn-primary" (click)="submit()">Submit</button>

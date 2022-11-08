@@ -4,22 +4,17 @@ import { ClientIdentification } from '../models/client-identification';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { catchError, Observable, throwError } from 'rxjs';
 import { Login } from '../models/login';
+import { Token } from '../models/token';
 
 @Injectable({
   providedIn: 'root',
 })
 export class UpverifyService {
-  url: string = "http://localhost:3000/userAuth";
-  detailsUrl: string="http://localhost:3000/userDetails?email=";
+  url: string = "http://localhost:8080/api/auth/signin";
 
-  verifyCredentials(username: string, password: string): Observable<Login> {
-    return this.httpClient.get<Login>(this.url + "/" + username).pipe(catchError(this.handleError));
+  verifyCredentials(user: Login): Observable<Token> {
+    return this.httpClient.post<Token>(this.url,user).pipe(catchError(this.handleError));
   }
-
-  getDetails(username: string): Observable<Client[]> {
-    return this.httpClient.get<Client[]>(this.detailsUrl + username).pipe(catchError(this.handleError));
-  }
-
 
   constructor(private httpClient: HttpClient) { }
 

@@ -18,19 +18,18 @@ export class LoginpageComponent implements OnInit {
   private _success = new Subject<string>();
   public login: Login = new Login('', '');
 
-  public loginReturn: Login = new Login('', '');
   errorMessage: string = '';
 
   //Storing token as cookie
   // public token: Token= new Token("",[""],"","");
-  private token?:Token;
-  public accessToken: String = '';
+  private token?: Token;
+  public accessToken: string = '';
 
-  constructor(private tokenService: TokenService, private service: UpverifyService, private router: Router, private user: UserService, private cookieService: CookieService) { }
+  constructor(private service: UpverifyService, private router: Router, private user: UserService, private cookieService: CookieService) { }
 
   @ViewChild('selfClosingAlert', { static: false })
-  selfClosingAlert: NgbAlert| undefined;
-  
+  selfClosingAlert: NgbAlert | undefined;
+
 
   ngOnInit(): void {
 
@@ -53,36 +52,13 @@ export class LoginpageComponent implements OnInit {
 
 
   verifyCredentials() {
-    this.tokenService.postUserLogin(this.login).subscribe(response => {
-      console.log(response);
-      this.token = response;
-      console.log(typeof(this.token.accessToken));
-      this.accessToken = this.token.accessToken;
-      this.cookieService.set("accessToken",this.accessToken.toString());
-    });
-    console.log("Getting a cookie:", this.cookieService.get("accessToken"));
-
-    this.service.verifyCredentials(this.login.email, this.login.password).subscribe({
+    this.service.verifyCredentials(this.login).subscribe({
       next: (data) => {
-        this.loginReturn = data;
-        if (this.loginReturn.password === this.login.password) {
-          this.service.getDetails(this.login.email).subscribe({
-            next: (data) => {
-              this.user.addUser(data[0].clientId);
-              console.log(data)
-              console.log(data[0].clientId, this.user.getUser(), this.user.isLoggedIn());
-            }
-          });
-
-          //setting token as cookie on user login
-          
-
-          this.router.navigate(['/home']);
-        }
-        else {
-          this._success.next("Invalid Credentials");
-          this.login = new Login(this.login.email, "");
-        }
+        this.token = data;
+        this.accessToken = this.token.accessToken.toString();
+        this.user.addUser(this.accessToken);
+        console.log(this.user.getUser());
+        console.log(this.user.isLoggedIn());
       },
       error: (e) => { this._success.next(e);; this.login = new Login("", ""); }
     });
