@@ -4,6 +4,6 @@ export class InvestmentPreferences {
     public investmentPurpose: string,
     public riskTolerance: string,
     public incomeCategory: string,
-    public investmentLength: string
+    public lengthOfInvestment: string
   ) {}
 }
