@@ -27,9 +27,7 @@ export class TradeService {
     }
     return this.http.get<Instrument[]>(url, { headers: headers, observe: "response" });
   }
-
-
-
+  
   // getStocks(pageNo: number, pageSize: number, query: string): Observable<HttpResponse<Trade[]>> {
   //   let url = this.url + '?q=' + query + '&_page=' + pageNo + '&_limit=' + pageSize;
   //   return this.http.get<Trade[]>(url, { observe: "response" });
