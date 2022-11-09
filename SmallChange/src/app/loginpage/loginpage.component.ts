@@ -60,7 +60,7 @@ export class LoginpageComponent implements OnInit {
         console.log(this.user.getUser());
         console.log(this.user.isLoggedIn());
       },
-      error: (e) => { this._success.next(e);; this.login = new Login("", ""); }
+      error: (e) => { this._success.next(e); this.login = new Login("", ""); }
     });
   }
 }

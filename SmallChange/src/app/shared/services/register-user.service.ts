@@ -1,8 +1,9 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AbstractControl, ValidatorFn } from '@angular/forms';
-import { Observable } from 'rxjs';
+import { catchError, Observable, throwError } from 'rxjs';
 import { Client } from '../models/client';
+import { UpverifyService } from './upverify.service';
 
 @Injectable({
   providedIn: 'root'
@@ -10,29 +11,37 @@ import { Client } from '../models/client';
 export class RegisterUserService {
 
   user: any;
+  private url: string = "http://localhost:8080/api/auth/signup";
 
   constructor(private http: HttpClient) {
   }
 
-  emailValidator(): ValidatorFn {
-    return (control: AbstractControl): { [key: string]: any; } | null => {
-      let valid = false;
-      if (!control.value) {
-        return null;
-      }
-      if(control.value == "aadrs@gmail.com" || control.value== "john@gmail.com" || control.value == "jane@yahoo.com"){
-        valid = true;
-      }
-      return valid ? { EmailExists: true } : null;
-    };
+  getUsers(): Observable<Client> {
+    const headers = new HttpHeaders().set(
+      'Authorization',
+      'Bearer ' + this.user.getUser()
+    );
+    return this.http.get<Client>("http://localhost:8080/client/clientInfo",{
+      headers: headers,
+    }).pipe(catchError(this.handleError));
   }
 
-  getUsers(email: string): Observable<any> {
-    return this.http.get('http://localhost:3000/userDetails?email=' + email);
+  pushUser(user: Client): Observable<any> {
+    return this.http.post(this.url, user).pipe(catchError(this.handleError));
   }
 
-  pushUser(user: any): Observable<any> {
-    return this.http.put('http://localhost:3000/userDetails', user);
+  handleError(error: HttpErrorResponse) {
+    console.log("In error: ",error.error);
+    if (error.error instanceof ErrorEvent) {
+      console.error('Error:', error.error.message);
+    } else {
+      console.error(
+        `Error Code: ${error.status}\n` +
+        `Body: ${error.error}`);
+    }
+    if(error.error.message == "Error: Email is already in use!")
+      return throwError(() =>"Error: Email is already in use!");
+    else
+      return throwError(() =>"Invalid Credentials");
   }
-
 }

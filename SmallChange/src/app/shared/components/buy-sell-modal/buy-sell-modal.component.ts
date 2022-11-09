@@ -1,13 +1,12 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
-import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbActiveModal, NgbAlert } from '@ng-bootstrap/ng-bootstrap';
 import { ChartConfiguration, ChartOptions, ChartType } from 'chart.js';
-import { BaseChartDirective } from 'ng2-charts';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
-import { Trade } from '../../models/trade';
 import { UserService } from '../../services/user.service';
 import { ModalServiceService } from '../../services/modal-service.service';
 import { Instrument } from '../../models/instrument';
+import { Order } from '../../models/order';
+import { debounceTime, Subject } from 'rxjs';
 
 @Component({
   selector: 'app-buy-sell-modal',
@@ -17,6 +16,14 @@ import { Instrument } from '../../models/instrument';
 export class BuySellModalComponent implements OnInit {
   @Input() modalTitle: any;
   @Input() modalContent!: Instrument;
+
+
+  private _success = new Subject<string>();
+  errorMessage: string = '';
+
+  @ViewChild('selfClosingAlert', { static: false })
+  selfClosingAlert: NgbAlert | undefined;
+
 
   // public lineChartData: ChartConfiguration<'line'>['data']['datasets'] = [];
   public lineChartData!: ChartConfiguration<'line'>['data'];
@@ -48,56 +55,67 @@ export class BuySellModalComponent implements OnInit {
   buyForm: FormGroup = new FormGroup({});
   sellForm: FormGroup = new FormGroup({});
 
-  buyError: boolean = false;
-  sellError: boolean = false;
-  sellStockError: boolean = false;
-
   errorType: string = 'danger';
   clientPortfolio: any = null;
 
+  stockPresent: boolean = false;
   portfolioQuantity: number = 0;
   walletAmount: number = 0;
   calculatedPrice: number = 0;
 
   buyStocks() {
     let quantity: number = +this.buyForm.get('buyQuantity')?.value;
-    let amount: number = 0.5 * 1000;
+
     let stockPrice: number = this.modalContent.askPrice;
-    if (quantity * stockPrice <= amount) {
-      this.buyError = false;
-    } else this.buyError = true;
-    console.log(quantity);
+    if (quantity * stockPrice * 1.01 > this.walletAmount) {
+      this._success.next("Insufficient Funds");
+      return;
+    }
+
+    if (quantity >= this.modalContent.minQuantity && quantity <= this.modalContent.maxQuantity) {
+      this._success.next(`Please enter a quantity between ${this.modalContent.minQuantity} and ${this.modalContent.maxQuantity}`);
+      return;
+    }
+    if (confirm(`Please confirm that you want to buy ${quantity} ${quantity > 1 ? "units" : 'unit'} of ${this.modalContent.instrumentDescription}.`) == false) {
+      return
+    }
+    this.modalService.executeTrade(new Order(this.modalContent.instrumentId, "B", quantity, stockPrice)).subscribe({
+      next: (data) => {
+        console.log(data);
+        this.getPortfolioWallet();
+      },
+      error: (e) => {
+        console.log(e);
+        this._success.next("Server couldnt Perform your trade. Please Try Again.");
+      }
+    });
   }
 
   sellStocks() {
     let quantity: number = +this.sellForm.get('sellQuantity')?.value;
-    console.log(quantity);
-    console.log('here');
 
-    this.modalService
-      .getPortfolio(this.userService.getUser())
-      .subscribe((data) => {
-        this.clientPortfolio = data;
-        let flag: Boolean = false;
-        this.clientPortfolio.value.forEach((a: any) => {
-          //Change to for loop and implement break
-          if (a.Stock == this.modalContent.instrumentId) {
-            flag = true;
-            const result = a.Quantities.reduce(
-              (accumulator: any, current: any) => {
-                return accumulator + current;
-              },
-              0
-            );
-            console.log(result > quantity);
-            if (result > quantity) {
-              this.sellError = false;
-            } else this.sellError = true;
-          }
-        });
-        if (flag == false) this.sellStockError = true;
-        else this.sellStockError = false;
-      });
+    let stockPrice: number = this.modalContent.bidPrice;
+    if (!this.stockPresent) {
+      this._success.next("Stock not in portfolio");
+      return;
+    }
+    if (quantity > this.portfolioQuantity) {
+      this._success.next("Insufficient Shares Bought");
+      return;
+    }
+    if (confirm(`Please confirm that you want to sell ${quantity} ${quantity > 1 ? "units" : 'unit'} of ${this.modalContent.instrumentDescription}.`) == false) {
+      return
+    }
+    this.modalService.executeTrade(new Order(this.modalContent.instrumentId, "S", quantity, stockPrice)).subscribe({
+      next: (data) => {
+        console.log(data);
+        this.getPortfolioWallet();
+      },
+      error: (e) => {
+        console.log(e);
+        this._success.next("Server couldnt Perform your trade. Please Try Again.");
+      }
+    });
   }
 
   graphColor(): string {
@@ -110,14 +128,38 @@ export class BuySellModalComponent implements OnInit {
     return '#eb5b3c';
   }
 
+  getPortfolioWallet() {
+    this.modalService.getWalletAmount().subscribe((walletResult) => {
+      let q = 0;
+      this.modalService.getPortfolio().subscribe((portfolio) => {
+        portfolio.every((p: any) => {
+          if (this.modalContent.instrumentId == p.instrumentId) {
+            q = p.quantity;
+            this.stockPresent = true;
+            return false
+          }
+          return true;
+        });
+        this.portfolioQuantity = q;
+        this.walletAmount = walletResult.wallet;
+      });
+    });
+  }
+
   constructor(
     public activeModal: NgbActiveModal,
     private formBuilder: FormBuilder,
     private userService: UserService,
     private modalService: ModalServiceService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
+    this._success.subscribe(message => this.errorMessage = message);
+    this._success.pipe(debounceTime(5000)).subscribe(() => {
+      if (this.selfClosingAlert) {
+        this.selfClosingAlert.close();
+      }
+    });
     let labels: any[] = [];
     // this.lineChartData = [
     //   {
@@ -162,19 +204,6 @@ export class BuySellModalComponent implements OnInit {
         ]),
       ],
     });
-    let portfolio: any;
-    this.modalService.getPortfolioActual().subscribe((data) => {
-      portfolio = data;
-      console.log(portfolio);
-      portfolio.forEach((p: any) => {
-        if (this.modalContent.instrumentId == p.instrumentId)
-          this.portfolioQuantity = p.quantity;
-      });
-    });
-    let walletResult: any;
-    this.modalService.getWalletAmount().subscribe((data) => {
-      walletResult = data;
-      this.walletAmount = walletResult.wallet;
-    });
+    this.getPortfolioWallet();
   }
 }

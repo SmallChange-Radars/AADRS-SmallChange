@@ -1,25 +1,24 @@
-.flex{
+.flex {
     display: flex;
     margin: 0;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: stretch;
 }
-.card{
-    padding: 15px;
+
+.card {
+
     border: none;
     margin: 1rem;
 }
-input{
+
+input {
     line-height: 20px;
 }
 
-.pad{
+.pad {
     margin: 7px;
 }
 
-
-
-  
 
 #errorText {
     color: red;
@@ -54,11 +53,37 @@ button:active {
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
-label{
+label {
     font-weight: 430;
     margin-bottom: 2px;
 }
 
-.container{
-    font-family: Roboto,system-ui;
+.container {
+    font-family: Roboto, system-ui;
+}
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+}
+
+.Icon-inside {
+    position: relative;
+}
+
+.Icon-inside i {
+    position: absolute;
+    right: 0;
+    top: 0.1em;
+    padding: 10px 10px;
 }
