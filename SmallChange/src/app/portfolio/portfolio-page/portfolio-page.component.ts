@@ -19,16 +19,17 @@ export class PortfolioPageComponent implements OnInit {
   searchText: string = '';
 
   cp: ClientPortfolio[] = [];
-  totalPortfolio: ClientPortfolio = { name: '', qty: 0, price: 0, value: 0, prof: 0, percent: 0 };
-  // sum: number = -1;
+  totalPortfolio: ClientPortfolio = { instrumentId: '', quantity: 0, currentPrice: 0, value: 0, gains: 0, returns: 0 };
 
-  public values = this.cp.map(item => item.value)
-  public names = this.cp.map(item => item.name)
-  public doughnutChartLabels: string[] = [];
-  public doughnutChartDatasets: ChartConfiguration<'doughnut'>['data']['datasets'] = [];
-  public doughnutChartOptions: ChartConfiguration<'doughnut'>['options'] = {
-    responsive: false
-  };
+  summary: number = 0;
+  summaryGains: number = 0;
+  // public values = this.cp.map(item => item.value)
+  // public names = this.cp.map(item => item.instrumentId)
+  // public doughnutChartLabels: string[] = [];
+  // public doughnutChartDatasets: ChartConfiguration<'doughnut'>['data']['datasets'] = [];
+  // public doughnutChartOptions: ChartConfiguration<'doughnut'>['options'] = {
+  //   responsive: false
+  // };
 
   public token = '';
 
@@ -37,14 +38,16 @@ export class PortfolioPageComponent implements OnInit {
   ngOnInit(): void {
     this.getPortfolio();
     this.getTotalPortfolio();
+    this.getPortfolioSummary();
+
     // this.getPortfolioTable();
-    const values = this.cp.map(item => item.value)
-    const names = this.cp.map(item => item.name)
-    // console.log(values)
-    this.doughnutChartLabels = names;
-    this.doughnutChartDatasets = [
-      { data: values, label: 'Asset Allocation' }
-    ];
+    // const values = this.cp.map(item => item.value)
+    // const names = this.cp.map(item => item.instrumentId)
+    // // console.log(values)
+    // this.doughnutChartLabels = names;
+    // this.doughnutChartDatasets = [
+    //   { data: values, label: 'Asset Allocation' }
+    // ];
     // console.log(this.doughnutChartDatasets);
     // console.log(this.doughnutChartLabels)
 //Bearer token
@@ -54,7 +57,17 @@ export class PortfolioPageComponent implements OnInit {
   }
 
   getPortfolio() {
-    this.portfolioService.getPortfolio().subscribe(data => this.cp = data);
+    this.portfolioService.getPortfolio().subscribe(data => {
+      this.cp = data;
+    });
+  }
+
+  getPortfolioSummary() {
+    this.portfolioService.getPortfolioSummary().subscribe(data => {
+      this.summary = data[0];
+      this.summaryGains = data[1];
+      console.log(this.summaryGains)
+    });
   }
 
   getTotalPortfolio() {
