@@ -1,4 +1,4 @@
-import { HttpClient, HttpErrorResponse, HttpResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, Observable, of, throwError } from 'rxjs';
 import { Activity } from '../models/activity';
@@ -10,18 +10,19 @@ import { UserService } from './user.service';
 })
 export class ActivityService {
 
-  url="http://localhost:3000/tradeActivity";
+  url="http://localhost:8080/api/tradeActivity";
   
   constructor(private http: HttpClient,private user:UserService) { }
 
-  getActivityHistory(pageNo: number, pageSize: number, sortDirection: string, sortColumn: string):Observable<HttpResponse<Activity[]>>{
-    let url = this.url + '?q=' + 1234 + '&_page=' + pageNo + '&_limit=' + pageSize;
-    if (sortDirection === '' || sortColumn === '') {
-      return this.http.get<Activity[]>(url, { observe: "response" });
-    } else {
-      url += "&_sort="+sortColumn+"&_order="+sortDirection;
-      return this.http.get<Activity[]>(url, { observe: "response" });
-    }
+  getActivityHistory(searchString: string, category: string,sortColumn: string,sortDirection: string, pageNo: number, pageSize: number ):Observable<HttpResponse<Activity[]>>{
+    let url = this.url + '?q=' + searchString+ '&_category=' + category+ '&_sort=' + sortColumn+ '&_order=' + sortDirection + '&_page=' + pageNo + '&_limit=' + pageSize;
+    const headers = new HttpHeaders()
+      .set('Authorization', 'Bearer ' + this.user.getUser())
+      .set('Content-Type', 'application/json')
+      .set('Accept', 'application/json');
+    
+      return this.http.get<Activity[]>(url, {headers: headers, observe: "response" });
+    
   }
 
   handleError(error: HttpErrorResponse) {

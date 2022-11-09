@@ -1,9 +1,12 @@
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 <div class="container">
     <div class="row">
         <div class="col-md-8 mx-auto">
             <div class="card">
                 <div style="font-size: 20px; margin-left: 7px;">Registeration Details</div>
+                <ngb-alert *ngIf="errorMessage" type="danger" (closed)="errorMessage=''" [dismissible]="false">{{
+                    errorMessage }}
+                </ngb-alert>
                 <hr>
                 <div>
                     <form class="form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
@@ -32,7 +35,7 @@
                                 *ngIf="registerFormControl.email.touched && registerFormControl.email.errors?.EmailExists">
                                 This email is already registered
                             </span>
-                            
+
                         </div>
                         <div class="flex pad">
                             <div class="form-group">
@@ -67,7 +70,10 @@
                         </div>
                         <div class="form-group pad">
                             <label>Password<span style="color:red;">*</span></label>
-                            <input type="password" class="form-control" formControlName="password">
+                            <div class="Icon-inside">
+                            <input [type]="hide ? 'password' : 'text'" class="form-control" formControlName="password">
+                            <i class="far fa-eye icon" (click)="passwordVisibilty()" style="cursor: pointer; "></i>
+                        </div>
                             <span class="text-danger"
                                 *ngIf="(registerFormControl.password.touched) && registerFormControl.password.errors?.required">
                                 Password is required

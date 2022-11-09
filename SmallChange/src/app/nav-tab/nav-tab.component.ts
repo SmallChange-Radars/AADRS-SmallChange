@@ -16,13 +16,5 @@ export class NavTabComponent implements OnInit {
     this.active=1;
   }
 
-  
-  login() {
-    this.router.navigate(['/login']);
-  }
-
-  register() {
-    this.router.navigate(['/register']);
-  }
 
 }
