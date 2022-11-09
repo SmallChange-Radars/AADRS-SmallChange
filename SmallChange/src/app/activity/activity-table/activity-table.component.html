@@ -1,23 +1,48 @@
 <div class="container mt-4">
+    <div class="row mt-4 align-items-end">
+        <div class="col-12 col-md-6 col-xl-8 mt-2">
+            <h1>Trade Activity</h1>
+            <p>Look for your previous trades</p>
+        </div>
+        <div class="col mt-2 align-with-text">
+            <div class="row gx-0">
+                <div class="col-4 ml-auto">
+                    <div ngbDropdown placement="bottom-end">
+                        <button type="button" class="btn btn-outline-dark" id="dropdownBasic1" ngbDropdownToggle>
+                            <i class="bi bi-filter"></i> Filter </button>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                            <button ngbDropdownItem (click)="changeCategory('')">All</button>
+                            <button ngbDropdownItem (click)="changeCategory('B')">Buy</button>
+                            <button ngbDropdownItem (click)="changeCategory('S')">Sell</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <input [(ngModel)]="searchText" type="search" id="stockSearch" class="form-control"
+                        (ngModelChange)="onChange()" placeholder="Search" />
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row mt-3">
         <div class="col-12">
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col" sortable="Stock" (sort)="onSort($event)">Symbol</th>
-                        <th scope="col" sortable="Quantity" (sort)="onSort($event)">Quantity</th>
-                        <th scope="col" sortable="Price" (sort)="onSort($event)">Price</th>
-                        <th scope="col" sortable="Type" (sort)="onSort($event)" >Type</th>
-                        <th scope="col" sortable="Date" (sort)="onSort($event)" >Date</th>
+                        <th scope="col" sortable="instrumentId" (sort)="onSort($event)">Symbol</th>
+                        <th scope="col" sortable="quantity" (sort)="onSort($event)">Quantity</th>
+                        <th scope="col" sortable="cashValue" (sort)="onSort($event)">Price</th>
+                        <th scope="col" sortable="direction" (sort)="onSort($event)" >Type</th>
+                        <th scope="col" sortable="timestamp" (sort)="onSort($event)" >Date</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let row of rowData">
-                        <td>{{row.Stock}}</td>
-                        <td>{{row.Quantity}}</td>
-                        <td>{{row.Price | currency}}</td>
-                        <td >{{row.Type}}</td>
-                        <td >{{row.Date | date: 'long'}}</td>
+                        <td>{{row.instrumentId}}</td>
+                        <td>{{row.quantity}}</td>
+                        <td>{{row.cashValue | currency}}</td>
+                        <td >{{row.direction}}</td>
+                        <td >{{row.timestamp | date: 'long'}}</td>
                     </tr>
                 </tbody>
             </table>
