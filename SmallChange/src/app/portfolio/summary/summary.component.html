@@ -2,9 +2,9 @@
     <h4 class="text-center mb-5">Summary</h4>
     <div class="">
         <p class="text-center">Total Value:</p>
-        <h4 class="text-center">{{totalPortfolio.value | currency : 'USD' : "symbol" : '1.2-2'}}</h4>
+        <h4 class="text-center">{{summary | currency : 'USD' : "symbol" : '1.2-2'}}</h4>
         <p class="text-center">Total Gains:</p>
-        <h5 class="text-center" [ngStyle]="{'color':totalPortfolio.prof >=0 ? 'green' : 'red' }">{{totalPortfolio.prof |
+        <h5 class="text-center" [ngStyle]="{'color':summaryGains >=0 ? 'green' : 'red' }">{{summaryGains |
             currency : 'USD' : "symbol" : '1.2-2'}}</h5>
     </div>
 </div>

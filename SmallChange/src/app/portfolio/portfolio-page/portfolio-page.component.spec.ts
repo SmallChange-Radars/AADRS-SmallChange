@@ -12,11 +12,11 @@ describe('PortfolioPageComponent', () => {
 
   beforeEach(async () => {
     const testcp: ClientPortfolio[] = [
-      { name: 'AAPL', qty: 538, price: 158.91, value: 85493.58, prof: -7459.37, percent: -8.02 },
-      { name: 'AMZN', qty: 465, price: 128.73, value: 59859.45, prof: 6470.48, percent: 9.75 },
-      { name: 'SBUX', qty: 984, price: 83.41, value: 82075.44, prof: -4910.16, percent: -5.64 },
-      { name: 'PG', qty: 655, price: 140.18, value: 91817.9, prof: -5777.10, percent: -5.92 },
-      { name: 'TRMR', qty: 14916, price: 7.91, value: 117985.56, prof: -4027.32, percent: -3.30 },
+      { instrumentId: 'AAPL', quantity: 538, currentPrice: 158.91, value: 85493.58, gains: -7459.37, returns: -8.02 },
+      { instrumentId: 'AMZN', quantity: 465, currentPrice: 128.73, value: 59859.45, gains: 6470.48, returns: 9.75 },
+      { instrumentId: 'SBUX', quantity: 984, currentPrice: 83.41, value: 82075.44, gains: -4910.16, returns: -5.64 },
+      { instrumentId: 'PG', quantity: 655, currentPrice: 140.18, value: 91817.9, gains: -5777.10, returns: -5.92 },
+      { instrumentId: 'TRMR', quantity: 14916, currentPrice: 7.91, value: 117985.56, gains: -4027.32, returns: -3.30 },
     ];
     let portfolioService: any = jasmine.createSpyObj('PortfolioService', [
       'getPortfolio',
@@ -40,8 +40,8 @@ describe('PortfolioPageComponent', () => {
 
   it('should receive portfolio details from portfolio service', () => {
     expect(component.cp.length).toBe(5);
-    expect(component.cp[0].name).toContain('AAPL');
-    expect(component.cp[1].name).toContain('AMZN');
+    expect(component.cp[0].instrumentId).toContain('AAPL');
+    expect(component.cp[1].instrumentId).toContain('AMZN');
   });
 
   it('should pass portfolio details to portfolio-table component', () => {

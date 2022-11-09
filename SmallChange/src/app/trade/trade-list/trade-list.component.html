@@ -2,7 +2,7 @@
     <div class="row mt-4 align-items-end">
         <div class="col-12 col-md-6 col-xl-8 mt-2">
             <h1>Trade</h1>
-            <p>Search for Stocks and make trades by clicking on them</p>
+            <p>Search for Stocks and make trades</p>
         </div>
         <div class="col mt-2 align-with-text">
             <div class="row gx-0">
@@ -34,11 +34,11 @@
                         <th scope="col" sortable="instrumentId" (sort)="onSort($event)">Symbol</th>
                         <th scope="col" sortable="instrumentDescription" (sort)="onSort($event)">Name</th>
                         <th scope="col" sortable="categoryId" (sort)="onSort($event)">Category</th>
+                        <th scope="col" sortable="minQuantity" (sort)="onSort($event)" class="text-center">Minimum
+                            Quanitity</th>
+                        <th scope="col" sortable="maxQuantity" (sort)="onSort($event)" class="text-center">Maximum
+                            Quanitity</th>                            
                         <th scope="col" sortable="askPrice" (sort)="onSort($event)" class="text-end">Price</th>
-                        <th scope="col" sortable="minQuantity" (sort)="onSort($event)" class="text-end">Minimum
-                            Quanitity</th>
-                        <th scope="col" sortable="maxQuantity" (sort)="onSort($event)" class="text-end">Maximum
-                            Quanitity</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -47,10 +47,10 @@
                         <td>{{stock.instrumentId}}</td>
                         <td>{{stock.instrumentDescription}}</td>
                         <td>{{stock.categoryId}}</td>
+                        <td class="text-center">{{stock.minQuantity}}</td>
+                        <td class="text-center">{{stock.maxQuantity}}</td>                        
                         <td class="text-end">{{stock.askPrice | currency : 'USD' : "symbol" :
                             '1.2-2' }}</td>
-                        <td class="text-end">{{stock.minQuantity}}</td>
-                        <td class="text-end">{{stock.maxQuantity}}</td>
                     </tr>
                 </tbody>
             </table>

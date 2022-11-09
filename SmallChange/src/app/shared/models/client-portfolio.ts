@@ -1,11 +1,11 @@
 export class ClientPortfolio {
     constructor(
-        public name: string,
-        public qty: number,
-        public price: number,
+        public instrumentId: string,
+        public quantity: number,
+        public currentPrice: number,
         public value: number,
-        public prof: number,
-        public percent: number
+        public gains: number,
+        public returns: number
     ) {}
 }
 // stockname
