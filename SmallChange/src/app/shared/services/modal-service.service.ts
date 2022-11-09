@@ -1,47 +1,33 @@
-import { HttpClient, HttpHeaders, HttpResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { Stock } from '../models/stock';
+import { catchError, Observable, throwError } from 'rxjs';
+import { Order } from '../models/order';
 import { UserService } from './user.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ModalServiceService {
-  url: string = 'http://localhost:3000/stocksList';
-  portfolioUrl: string = 'http://localhost:3000/portfolio';
-  activityUrl: string = 'http://localhost:3000/tradeActivity';
+  url: string = 'http://localhost:8080/api';
 
-  constructor(private http: HttpClient, private user: UserService) {}
+  constructor(private http: HttpClient, private user: UserService) { }
 
-  getStock(query: string): Observable<Stock[]> {
-    let url = this.url + '?Symbol=' + query;
-    return this.http.get<Stock[]>(url);
-  }
-
-  getPortfolio(userId: string): Observable<any> {
-    return this.http.get<any>(this.portfolioUrl + '/' + userId);
-  }
-
-  setPortfolio(stock: Stock): Observable<Stock> {
-    const headers = new HttpHeaders({ 'Content-type': 'application/json' });
-    return this.http.post<Stock>(this.portfolioUrl, stock, {
-      headers: headers,
-    });
-  }
-
-  setActivity(stock: Stock): Observable<Stock> {
-    const headers = new HttpHeaders({ 'Content-type': 'application/json' });
-    return this.http.post<Stock>(this.url, stock, { headers: headers });
-  }
-
-  getPortfolioActual(): Observable<any> {
+  executeTrade(order: Order): Observable<any> {
     const headers = new HttpHeaders()
       .set('Authorization', 'Bearer ' + this.user.getUser())
       .set('Content-Type', 'application/json');
-    return this.http.get('http://localhost:8080/api/portfolio', {
+    return this.http.post<Order>(this.url + '/tradeExecution', order, {
       headers: headers,
-    });
+    }).pipe(catchError(this.handleError));
+  }
+
+  getPortfolio(): Observable<any> {
+    const headers = new HttpHeaders()
+      .set('Authorization', 'Bearer ' + this.user.getUser())
+      .set('Content-Type', 'application/json');
+    return this.http.get(this.url + '/portfolio', {
+      headers: headers,
+    }).pipe(catchError(this.handleError));
   }
 
   getWalletAmount(): Observable<any> {
@@ -50,6 +36,17 @@ export class ModalServiceService {
       .set('Content-Type', 'application/json');
     return this.http.get('http://localhost:8080/client/wallet', {
       headers: headers,
-    });
+    }).pipe(catchError(this.handleError));
+  }
+
+  handleError(error: HttpErrorResponse) {
+    if (error.error instanceof ErrorEvent) {
+      console.error('Error:', error.error.message);
+    } else {
+      console.error(
+        `Error Code: ${error.status}\n` +
+        `Body: ${error.error}`);
+    }
+    return throwError(() => "Error Querying Database");
   }
 }
