@@ -8,7 +8,7 @@ import { NgChartsModule } from 'ng2-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LandingPageComponent } from './Landing/landing-page/landing-page.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
 
 import { LoginpageModule } from './loginpage/loginpage.module';
@@ -23,11 +23,12 @@ import { ActivityTableComponent } from './activity/activity-table/activity-table
 import { BuySellModalComponent } from './shared/components/buy-sell-modal/buy-sell-modal.component';
 import { NgbdSortableHeader } from './activity/activity-table/sortable.directive';
 import { CookieService } from 'ngx-cookie-service';
+import { LandingNavComponent } from './Landing/landing-nav/landing-nav.component';
+import { LandingModule } from './Landing/landing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingPageComponent,
     RegisterFormComponent,
     NavTabComponent,
     ActivityPageComponent,
@@ -45,6 +46,7 @@ import { CookieService } from 'ngx-cookie-service';
     PreferencesModule,
     PortfolioModule,
     LoginpageModule,
+    LandingModule,
     CoreModule,
     AgGridModule,
     NgChartsModule,

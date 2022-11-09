@@ -8,5 +8,10 @@ export class Client {
         public dateOfBirth: string, 
         public country: string,
         public postalCode: string,
-        public identification: ClientIdentification[]) { }
+        public identification: ClientIdentification[],   
+	    public password: string,
+        public token: string,
+	    public wallet: number,
+	    public walletCurrency: string,
+	    public role: string ) { }
 }

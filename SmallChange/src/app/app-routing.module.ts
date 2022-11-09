@@ -1,6 +1,6 @@
 import { Injectable, NgModule } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, Router, RouterModule, RouterStateSnapshot, Routes, UrlTree } from '@angular/router';
-import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LandingPageComponent } from './Landing/landing-page/landing-page.component';
 import { ActivityPageComponent } from './activity/activity-page/activity-page.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { NavTabComponent } from './nav-tab/nav-tab.component';
@@ -24,6 +24,19 @@ class OnlyLoggedInUsersGuard implements CanActivate {
   }
 }
 
+@Injectable()
+class NotLoggedInUsersGuard implements CanActivate {
+  constructor(private userService: UserService, private router: Router) { };
+  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | UrlTree | Observable<boolean | UrlTree> | Promise<boolean | UrlTree> {
+    if (!this.userService.isLoggedIn()) {
+      return true;
+    } else {
+      this.router.navigate(['/home']);
+      return false;
+    }
+  }
+}
+
 const routes: Routes = [
   {
     path: 'home',
@@ -32,10 +45,12 @@ const routes: Routes = [
   },
   {
     path: 'login',
+    canActivate: [NotLoggedInUsersGuard],
     component: LoginpageComponent
   },
   {
     path: 'register',
+    canActivate: [NotLoggedInUsersGuard],
     component: NavTabComponent
   },
   {
@@ -55,14 +70,16 @@ const routes: Routes = [
   },
   {
     path: '',
-    component: LandingPageComponent
+    component: LandingPageComponent,
+    canActivate: [NotLoggedInUsersGuard]
   }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   providers: [
-    OnlyLoggedInUsersGuard
+    OnlyLoggedInUsersGuard,
+    NotLoggedInUsersGuard
   ],
   exports: [RouterModule]
 })
