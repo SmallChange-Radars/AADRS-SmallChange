@@ -23,7 +23,7 @@ export class PortfolioGraphComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.getPortfolio().subscribe(data => {
-      this.cp = data;
+      this.cp = data?.body!;
 
       console.log(this.cp)
     const values = this.cp.map(item => item.value)
