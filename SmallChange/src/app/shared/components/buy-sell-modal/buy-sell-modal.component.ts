@@ -7,6 +7,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Trade } from '../../models/trade';
 import { UserService } from '../../services/user.service';
 import { ModalServiceService } from '../../services/modal-service.service';
+import { Instrument } from '../../models/instrument';
 
 @Component({
   selector: 'app-buy-sell-modal',
@@ -15,7 +16,7 @@ import { ModalServiceService } from '../../services/modal-service.service';
 })
 export class BuySellModalComponent implements OnInit {
   @Input() modalTitle: any;
-  @Input() modalContent!: Trade;
+  @Input() modalContent!: Instrument;
 
   // public lineChartData: ChartConfiguration<'line'>['data']['datasets'] = [];
   public lineChartData!: ChartConfiguration<'line'>['data'];
@@ -54,11 +55,14 @@ export class BuySellModalComponent implements OnInit {
   errorType: string = 'danger';
   clientPortfolio: any = null;
 
+  portfolioQuantity: number = 0;
+  walletAmount: number = 0;
+  calculatedPrice: number = 0;
+
   buyStocks() {
     let quantity: number = +this.buyForm.get('buyQuantity')?.value;
-    let amount: number = +this.userService.getUser() * 1000;
-    let stockPrice: number =
-      this.modalContent.Price[this.modalContent.Price.length - 1];
+    let amount: number = 0.5 * 1000;
+    let stockPrice: number = this.modalContent.askPrice;
     if (quantity * stockPrice <= amount) {
       this.buyError = false;
     } else this.buyError = true;
@@ -77,7 +81,7 @@ export class BuySellModalComponent implements OnInit {
         let flag: Boolean = false;
         this.clientPortfolio.value.forEach((a: any) => {
           //Change to for loop and implement break
-          if (a.Stock == this.modalContent.Symbol) {
+          if (a.Stock == this.modalContent.instrumentId) {
             flag = true;
             const result = a.Quantities.reduce(
               (accumulator: any, current: any) => {
@@ -98,8 +102,9 @@ export class BuySellModalComponent implements OnInit {
 
   graphColor(): string {
     if (
-      this.modalContent.Price[this.modalContent.Price.length - 1] >=
-      this.modalContent.Price[0]
+      // this.modalContent.Price[this.modalContent.Price.length - 1] >=
+      // this.modalContent.Price[0]
+      true
     )
       return '#00d09c';
     return '#eb5b3c';
@@ -119,14 +124,16 @@ export class BuySellModalComponent implements OnInit {
     //     data: this.modalContent.Price,
     //   },
     // ];
-    this.modalContent.Price.forEach((value, index) => {
+    let Price: number[] = [];
+    for (let i = 0; i < 100; i++) Price[i] = this.modalContent.askPrice;
+    Price.forEach((value, index) => {
       labels.push(index.toString(10));
     });
 
     this.lineChartData = {
       datasets: [
         {
-          data: this.modalContent.Price,
+          data: Price,
           pointRadius: 0,
           label: 'Price',
           backgroundColor: 'rgba(148,159,177,0.2)',
@@ -154,6 +161,20 @@ export class BuySellModalComponent implements OnInit {
           Validators.pattern('^[0-9]+'),
         ]),
       ],
+    });
+    let portfolio: any;
+    this.modalService.getPortfolioActual().subscribe((data) => {
+      portfolio = data;
+      console.log(portfolio);
+      portfolio.forEach((p: any) => {
+        if (this.modalContent.instrumentId == p.instrumentId)
+          this.portfolioQuantity = p.quantity;
+      });
+    });
+    let walletResult: any;
+    this.modalService.getWalletAmount().subscribe((data) => {
+      walletResult = data;
+      this.walletAmount = walletResult.wallet;
     });
   }
 }
