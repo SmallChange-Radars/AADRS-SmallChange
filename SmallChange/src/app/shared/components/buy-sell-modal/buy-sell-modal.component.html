@@ -1,82 +1,91 @@
+<div class="modal-header">
+    <h5 class="modal-title">
+        {{modalContent.categoryId}}</h5>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
 <div class="modal-body">
-    <div class="row">
-        <div class="col-12 text-end">
-            <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-    </div>
     <div class="row">
         <div class="col-6 text-start">
             <h4>{{modalContent.instrumentDescription}}</h4>
-        </div>
-        <div class="col-6 text-end">
-            {{modalContent.categoryId}}
         </div>
     </div>
     <div class="row">
         <div class="col-auto">
             <h3>{{modalContent.askPrice|currency}}</h3>
         </div>
-        <div class="col-auto align-bottom" style="display:flex;align-items:center">
-            <h5 [ngStyle]="{'color': modalContent.askPrice >= 0 ? 'green' : 'red' }">{{modalContent.askPrice -
-                modalContent.askPrice|currency}}</h5>
+        <div class="col-auto" style="display:flex;align-items:center">
+            <h5 class="align-bottom" [ngStyle]="{'color': modalContent.askPrice < calculatedPrice ? 'green' : 'red' }">
+                {{
+                calculatedPrice-modalContent.askPrice |currency}}
+                ({{((calculatedPrice-modalContent.askPrice)/modalContent.askPrice)*100 | percent:'1.2-2'}})</h5>
         </div>
     </div>
     <div class="row">
-        <div class="col-12">
+        <div class="col-12" style="height:80%;">
             <canvas baseChart width="80%" [type]="'line'" [data]="lineChartData" [options]="lineChartOptions"
                 [legend]="lineChartLegend">
             </canvas>
         </div>
     </div>
     <div class="row mt-2">
-        <div class="col-6">
-            Funds: {{walletAmount | currency}}
-            <div class="mt-2" id="portfolioQuantity">Current quantity: {{portfolioQuantity}} </div>
+        <div class="col m-2 card">
+            <div class="card-body">
+                <h5 class="card-title">Funds</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{walletAmount | currency}}</h6>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Holdings</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{portfolioQuantity}}</h6>
+            </div>
         </div>
-        <div class="col-6">
-            <div calss="card">
-                <div class="card-header">
-                    <ul ngbNav #buySellNav="ngbNav" class="nav-tabs">
-                        <li ngbNavItem>
-                            <a ngbNavLink>Buy</a>
-                            <ng-template ngbNavContent>
-                                <ngb-alert *ngIf="errorMessage" #selfClosingAlert type="danger"
-                                    (closed)="errorMessage=''" [dismissible]="true" class="mt-2">{{ errorMessage }}
-                                </ngb-alert>
-                                <form [formGroup]="buyForm" (ngSubmit)="buyStocks()" class="form mt-2">
-                                    <label for="buyQuantity">Shares:</label>
-                                    <input type="text" placeholder="Quantity" formControlName="buyQuantity"
-                                        id="buyQuantity" class="form-control mb-2">
-                                    <span> {{buyForm.get("buyQuantity")?.value * modalContent.askPrice * 1.01 | currency
-                                        : 'USD' : "symbol" :'1.2-2'}} </span>
-                                    <button type="submit" [disabled]="!buyForm.valid"
-                                        class="btn btn-primary float-right">Buy</button>
-                                </form>
+        <div class="col-8 mt-2 mb-2">
 
-                            </ng-template>
-                        </li>
-                        <li ngbNavItem>
-                            <a ngbNavLink>Sell</a>
+            <ul ngbNav #buySellNav="ngbNav" class="nav nav-tabs nav-justified">
+                <li ngbNavItem>
+                    <a ngbNavLink>Buy</a>
+                    <ng-template ngbNavContent>
+                        <ngb-alert *ngIf="errorMessage" #selfClosingAlert type="danger" (closed)="errorMessage=''"
+                            [dismissible]="true" class="mt-2">{{ errorMessage }}
+                        </ngb-alert>
+                        <form [formGroup]="buyForm" (ngSubmit)="buyStocks()" class="form mt-2">
+                            <label for="buyQuantity">Shares:</label>
+                            <input type="text" placeholder="Quantity" formControlName="buyQuantity" id="buyQuantity"
+                                class="form-control mb-2">
+                            <span *ngIf="buyForm.valid"> {{buyForm.get("buyQuantity")?.value * modalContent.askPrice *
+                                1.01 | currency
+                                : 'USD' : "symbol" :'1.2-2'}} </span>
+                            <span placement="top"
+                                ngbTooltip="Please enter a quantity between {{this.modalContent.minQuantity}} and {{this.modalContent.maxQuantity}}"
+                                [disableTooltip]="buyForm.valid" class="float-end">
+                                <button type="submit" class="btn btn-primary"
+                                    [disabled]="!buyForm.valid">Buy</button></span>
+                        </form>
 
-                            <ng-template ngbNavContent>
-                                <ngb-alert *ngIf="errorMessage" #selfClosingAlert type="danger"
-                                    (closed)="errorMessage=''" [dismissible]="true" class="mt-2">{{ errorMessage }}
-                                </ngb-alert>
-                                <form [formGroup]="sellForm" (ngSubmit)="sellStocks()" class="form mt-2">
-                                    <label for="sellQuantity">Shares:</label>
-                                    <input type="text" placeholder="Quantity" formControlName="sellQuantity"
-                                        id="sellQuantity" class="form-control mb-2">
-                                    <span> {{sellForm.get("sellQuantity")?.value * modalContent.bidPrice * 1.01 |
-                                        currency : 'USD' : "symbol" :'1.2-2'}} </span>
-                                    <button type="submit" [disabled]="!sellForm.valid"
-                                        class="btn btn-primary">Sell</button>
-                                </form>
-                            </ng-template>
-                        </li>
-                    </ul>
-                </div>
+                    </ng-template>
+                </li>
+                <li ngbNavItem>
+                    <a ngbNavLink>Sell</a>
+
+                    <ng-template ngbNavContent>
+                        <ngb-alert *ngIf="errorMessage" #selfClosingAlert type="danger" (closed)="errorMessage=''"
+                            [dismissible]="true" class="mt-2">{{ errorMessage }}
+                        </ngb-alert>
+                        <form [formGroup]="sellForm" (ngSubmit)="sellStocks()" class="form mt-2">
+                            <label for="sellQuantity">Shares:</label>
+                            <input type="text" placeholder="Quantity" formControlName="sellQuantity" id="sellQuantity"
+                                class="form-control mb-2">
+                            <span *ngIf="sellForm.valid"> {{sellForm.get("sellQuantity")?.value * modalContent.bidPrice
+                                * 1.01 |
+                                currency : 'USD' : "symbol" :'1.2-2'}} </span>
+                            <button type="submit" [disabled]="!sellForm.valid"
+                                class="btn btn-primary float-end">Sell</button>
+                        </form>
+                    </ng-template>
+                </li>
+            </ul>
+            <div class="card border-top-0 rounded-0">
                 <div class="card-body">
                     <div [ngbNavOutlet]="buySellNav"></div>
                 </div>
