@@ -38,7 +38,7 @@ export class PortfolioPageComponent implements OnInit {
   ngOnInit(): void {
     this.getPortfolio();
     this.getTotalPortfolio();
-    this.getPortfolioSummary();
+    // this.getPortfolioSummary();
 
     // this.getPortfolioTable();
     // const values = this.cp.map(item => item.value)
@@ -58,7 +58,9 @@ export class PortfolioPageComponent implements OnInit {
 
   getPortfolio() {
     this.portfolioService.getPortfolio().subscribe(data => {
-      this.cp = data;
+      this.cp = data?.body!;
+      this.summary = +data.headers.get("totalValue")!;
+      this.summaryGains = +data.headers.get("totalGains")!;
     });
   }
 

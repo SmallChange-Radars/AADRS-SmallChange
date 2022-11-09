@@ -1,8 +1,10 @@
 <div class="container border h-100 mx-auto py-3 px-1">
     <h4 class="text-center mb-5">Summary</h4>
     <div class="">
+        <p class="text-center">Available Funds:</p>
+        <h4 class="text-center">{{walletAmount | currency : 'USD' : "symbol" : '1.2-2'}}</h4>
         <p class="text-center">Total Value:</p>
-        <h4 class="text-center">{{summary | currency : 'USD' : "symbol" : '1.2-2'}}</h4>
+        <h4 class="text-center">{{summaryValue | currency : 'USD' : "symbol" : '1.2-2'}}</h4>
         <p class="text-center">Total Gains:</p>
         <h5 class="text-center" [ngStyle]="{'color':summaryGains >=0 ? 'green' : 'red' }">{{summaryGains |
             currency : 'USD' : "symbol" : '1.2-2'}}</h5>

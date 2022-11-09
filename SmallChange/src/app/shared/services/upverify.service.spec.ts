@@ -6,6 +6,7 @@ import { UpverifyService } from './upverify.service';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { HttpErrorResponse } from '@angular/common/http';
 
+/*
 describe('UpverifyService', () => {
 
   let httpTestingController: HttpTestingController;
@@ -94,3 +95,4 @@ describe('UpverifyService', () => {
 
   })));
 });
+*/

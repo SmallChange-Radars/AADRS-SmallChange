@@ -33,9 +33,10 @@ export class PortfolioService {
 
   // create wallet function
 
-  getPortfolio(): Observable<ClientPortfolio[]> {
+  getPortfolio(): Observable<HttpResponse<ClientPortfolio[]>> {
     const headers = new HttpHeaders().set('Authorization', 'Bearer ' + this.userService.getUser());
     return this.http.get<ClientPortfolio[]>(this.url, {
+      observe: "response",
       headers: headers
     });
   }

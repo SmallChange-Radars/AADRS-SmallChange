@@ -24,7 +24,7 @@ export class PortfolioTableComponent implements OnInit {
 
   getPortfolio() {
     this.service.getPortfolio().subscribe(data => {
-      this.cp = data;
+      this.cp = data?.body!;
 
       // console.log(this.cp)
     });
