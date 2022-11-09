@@ -31,6 +31,10 @@ td {
     border-color: #F2F2F4;
 }
 
+tbody {
+    cursor: pointer;
+}
+
 th[sortable] {
     cursor: pointer;
     user-select: none;

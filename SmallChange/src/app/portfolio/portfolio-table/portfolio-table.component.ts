@@ -1,5 +1,4 @@
 import { Component, Input, OnInit, QueryList, ViewChildren } from '@angular/core';
-import { ColumnApi, GridApi, GridReadyEvent } from 'ag-grid-community';
 import { PortfolioService } from 'src/app/shared/services/portfolio.service';
 import { ClientPortfolio } from '../../shared/models/client-portfolio';
 import { NgbdSortableHeader, SortEvent } from './sortable.directive';
@@ -22,7 +21,15 @@ export class PortfolioTableComponent implements OnInit {
   collectionSize = 200;
 
   searchText: string = '';
-  
+
+  getPortfolio() {
+    this.service.getPortfolio().subscribe(data => {
+      this.cp = data;
+
+      // console.log(this.cp)
+    });
+  }
+
   @ViewChildren(NgbdSortableHeader) headers!: QueryList<NgbdSortableHeader>;
 
   onSort({ column, direction }: SortEvent) {
@@ -59,12 +66,13 @@ export class PortfolioTableComponent implements OnInit {
         console.log("hi");
       });
   }
-  
+
   constructor(private service: PortfolioService) { }
-  
+
 
   ngOnInit(): void {
-    this.getSortedStocks();
+    this.getPortfolio();
+    // this.getSortedStocks();
   }
 
 

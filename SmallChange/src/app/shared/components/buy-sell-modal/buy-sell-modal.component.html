@@ -8,18 +8,18 @@
     </div>
     <div class="row">
         <div class="col-6 text-start">
-            <h4>{{modalContent.Name}}</h4>
+            <h4>{{modalContent.instrumentDescription}}</h4>
         </div>
         <div class="col-6 text-end">
-            {{modalContent.Sector}}
+            {{modalContent.categoryId}}
         </div>
     </div>
     <div class="row">
         <div class="col-auto">
-            <h3>{{modalContent.Price[modalContent.Price.length-1]|currency}}</h3>
+            <h3>{{modalContent.askPrice|currency}}</h3>
         </div>
         <div class="col-auto align-bottom" style="display:flex;align-items:center">
-            <h5 [ngStyle]="{'color': modalContent.Price[modalContent.Price.length-1] >= 0 ? 'green' : 'red' }">{{modalContent.Price[modalContent.Price.length-1] - modalContent.Price[0]|currency}}</h5>
+            <h5 [ngStyle]="{'color': modalContent.askPrice >= 0 ? 'green' : 'red' }">{{modalContent.askPrice - modalContent.askPrice|currency}}</h5>
         </div>
     </div>
     <div class="row">
@@ -32,7 +32,11 @@
           </canvas>
         </div>
     </div>
-    <div class="row mt-2">        
+    <div class="row mt-2">     
+        <div class="col-6">
+            Funds: {{walletAmount | currency}}
+            <div class="mt-2" id="portfolioQuantity">Current quantity: {{portfolioQuantity}} </div>
+        </div>   
         <div class="col-6">
             <div calss="card">
                 <div class="card-header">
@@ -42,8 +46,8 @@
                             <ng-template ngbNavContent>
                             <form [formGroup]="buyForm" (ngSubmit)="buyStocks()" class="form mt-2">
                                 <label for="buyQuantity">Shares:</label>
-                                <input type="text" placeholder="Quantity" formControlName="buyQuantity" id="#buyQuantity" class="form-control">
-                                <button type="submit" [disabled]="!buyForm.valid" class="btn btn-primary">Buy</button>
+                                <input type="text" placeholder="Quantity" formControlName="buyQuantity" id="buyQuantity" class="form-control mb-2">
+                                <span> {{buyForm.get("buyQuantity")?.value * modalContent.askPrice * 1.01 | currency : 'USD' : "symbol" :'1.2-2'}} </span><button type="submit" [disabled]="!buyForm.valid" class="btn btn-primary float-right">Buy</button>
                             </form>
                             <ngb-alert *ngIf="buyError" [type]="errorType" [dismissible]="false">Insufficient Funds!</ngb-alert>
                             </ng-template>
@@ -53,8 +57,8 @@
                             <ng-template ngbNavContent>
                                 <form [formGroup]="sellForm" (ngSubmit)="sellStocks()" class="form mt-2">
                                     <label for="sellQuantity">Shares:</label>
-                                    <input type="text" placeholder="Quantity" formControlName="sellQuantity" id="#sellQuantity" class="form-control">
-                                    <button type="submit" [disabled]="!sellForm.valid" class="btn btn-primary">Sell</button>
+                                    <input type="text" placeholder="Quantity" formControlName="sellQuantity" id="sellQuantity" class="form-control mb-2">
+                                    <span> {{sellForm.get("sellQuantity")?.value * modalContent.bidPrice * 1.01 | currency : 'USD' : "symbol" :'1.2-2'}} </span><button type="submit" [disabled]="!sellForm.valid" class="btn btn-primary">Sell</button>
                                 </form>
                                 <ngb-alert *ngIf="sellError" [type]="errorType" [dismissible]="false">Insufficient Shares!</ngb-alert>
                                 <ngb-alert *ngIf="sellStockError" [type]="errorType" [dismissible]="false">Stock not in portfolio</ngb-alert>
@@ -67,5 +71,6 @@
                 </div>
             </div>
         </div>
+        
     </div>
 </div>

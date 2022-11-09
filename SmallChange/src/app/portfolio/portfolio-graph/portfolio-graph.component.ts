@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ChartConfiguration } from 'chart.js';
 import { ClientPortfolio } from 'src/app/shared/models/client-portfolio';
+import { PortfolioService } from 'src/app/shared/services/portfolio.service';
 
 @Component({
   selector: 'app-portfolio-graph',
@@ -9,25 +10,31 @@ import { ClientPortfolio } from 'src/app/shared/models/client-portfolio';
 })
 export class PortfolioGraphComponent implements OnInit {
 
-  @Input() cp: ClientPortfolio[] = [];
+  cp: ClientPortfolio[] = [];
   public values = this.cp.map(item => item.value)
-  public names = this.cp.map(item => item.name)
+  public names = this.cp.map(item => item.instrumentId)
   public doughnutChartLabels: string[] = [];
   public doughnutChartDatasets: ChartConfiguration<'doughnut'>['data']['datasets'] = [];
   public doughnutChartOptions: ChartConfiguration<'doughnut'>['options'] = {
     responsive: false
   };
 
-  constructor() { }
+  constructor(private service: PortfolioService) { }
 
   ngOnInit(): void {
+    this.service.getPortfolio().subscribe(data => {
+      this.cp = data;
+
+      console.log(this.cp)
     const values = this.cp.map(item => item.value)
-    const names = this.cp.map(item => item.name)
+    const names = this.cp.map(item => item.instrumentId)
     // console.log(values)
     this.doughnutChartLabels = names;
     this.doughnutChartDatasets = [
       { data: values, label: 'Asset Allocation' }
     ];
+    
+  });
   }
 
 }

@@ -1,4 +1,10 @@
-import { Component, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  QueryList,
+  ViewChild,
+  ViewChildren,
+} from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { BuySellModalComponent } from 'src/app/shared/components/buy-sell-modal/buy-sell-modal.component';
 import { Instrument } from 'src/app/shared/models/instrument';
@@ -37,13 +43,13 @@ export class TradeListComponent implements OnInit {
   searchText: string = '';
   direction = 'asc';
   column = 'instrumentDescription';
-  category = "";
+  category = '';
 
   @ViewChildren(NgbdSortableHeader) headers!: QueryList<NgbdSortableHeader>;
 
   onSort({ column, direction }: SortEvent) {
     // resetting other headers
-    this.headers.forEach(header => {
+    this.headers.forEach((header) => {
       if (header.sortable !== column) {
         header.direction = '';
       }
@@ -51,7 +57,7 @@ export class TradeListComponent implements OnInit {
 
     this.direction = direction;
     this.column = column;
-    console.log(direction.length)
+    console.log(direction.length);
 
     //to display based on sort order
     if (direction == '') {
@@ -62,11 +68,18 @@ export class TradeListComponent implements OnInit {
     this.getSortedStocks();
   }
 
-  constructor(private service: TradeService, private modalService: NgbModal) { }
+  constructor(private service: TradeService, private modalService: NgbModal) {}
 
   getSortedStocks() {
     this.service
-      .getSortedStocks(this.page, this.pageSize, this.searchText, this.direction, this.column, this.category)
+      .getSortedStocks(
+        this.page,
+        this.pageSize,
+        this.searchText,
+        this.direction,
+        this.column,
+        this.category
+      )
       .subscribe((response) => {
         this.stocks = response?.body!;
         this.collectionSize = +response.headers.get('X-Total-Count')!;
@@ -88,15 +101,15 @@ export class TradeListComponent implements OnInit {
 
   changePagesize(size: number) {
     this.pageSize = size;
-    this.onChange("");
+    this.onChange('');
   }
 
   changeCategory(category: string) {
     this.category = category;
-    this.onChange("");
+    this.onChange('');
   }
 
-  openModal(stock: Trade) {
+  openModal(stock: Instrument) {
     const modalRef = this.modalService.open(BuySellModalComponent, {
       size: 'lg',
       backdrop: 'static',
