@@ -42,8 +42,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- <tr *ngFor="let stock of stocks" (click)="openModal(stock)"> -->
-                    <tr *ngFor="let stock of stocks">
+                    <tr *ngFor="let stock of stocks" (click)="openModal(stock)">
+                    <!-- <tr *ngFor="let stock of stocks"> -->
                         <td>{{stock.instrumentId}}</td>
                         <td>{{stock.instrumentDescription}}</td>
                         <td>{{stock.categoryId}}</td>

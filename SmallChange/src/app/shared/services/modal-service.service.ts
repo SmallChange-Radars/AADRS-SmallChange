@@ -34,4 +34,22 @@ export class ModalServiceService {
     const headers = new HttpHeaders({ 'Content-type': 'application/json' });
     return this.http.post<Stock>(this.url, stock, { headers: headers });
   }
+
+  getPortfolioActual(): Observable<any> {
+    const headers = new HttpHeaders()
+      .set('Authorization', 'Bearer ' + this.user.getUser())
+      .set('Content-Type', 'application/json');
+    return this.http.get('http://localhost:8080/api/portfolio', {
+      headers: headers,
+    });
+  }
+
+  getWalletAmount(): Observable<any> {
+    const headers = new HttpHeaders()
+      .set('Authorization', 'Bearer ' + this.user.getUser())
+      .set('Content-Type', 'application/json');
+    return this.http.get('http://localhost:8080/client/wallet', {
+      headers: headers,
+    });
+  }
 }
