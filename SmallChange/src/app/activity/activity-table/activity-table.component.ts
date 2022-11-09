@@ -19,7 +19,10 @@ export class ActivityTableComponent implements OnInit {
   page = 1;
   pageSize = 10;
   collectionSize : number = 0;
-  
+  category = "";
+  searchText = "";
+  direction = 'DESC';
+  column = 'timestamp';
   @ViewChildren(NgbdSortableHeader) headers!: QueryList<NgbdSortableHeader>;
 
   onSort({ column, direction }: SortEvent) {
@@ -27,9 +30,11 @@ export class ActivityTableComponent implements OnInit {
     this.headers.forEach(header => {
       if (header.sortable !== column) {
         header.direction = '';
+        this.direction=direction;
+        this.column=column;
       }
     });
-    this.activityService.getActivityHistory(this.page, this.pageSize, direction, column).subscribe(
+    this.activityService.getActivityHistory(this.searchText, this.category,this.column,this.direction,this.page, this.pageSize ).subscribe(
       (response)=>{
         this.rowData=response?.body!;
         this.collectionSize = +response.headers.get('X-Total-Count')!;
@@ -37,20 +42,15 @@ export class ActivityTableComponent implements OnInit {
     );
   }
   
-  
-
   rowData: Activity[] = [];
   temp: Activity[]=[];
   constructor(private activityService: ActivityService) { }
-
-  
-
   ngOnInit(): void {
     this.getAllActivity();
   }
 
   getAllActivity(){
-    this.activityService.getActivityHistory(this.page, this.pageSize, "", "").subscribe(
+    this.activityService.getActivityHistory(this.searchText, this.category,this.column, this.direction, this.page, this.pageSize).subscribe(
       (response)=>{
         this.rowData=response?.body!;
         this.collectionSize = +response.headers.get('X-Total-Count')!;
@@ -59,11 +59,17 @@ export class ActivityTableComponent implements OnInit {
   }
 
   onChange(){
+    this.searchText=this.searchText.toUpperCase();
     this.getAllActivity();
   }
 
   changePagesize(size: number) {
     this.pageSize = size;
+    this.onChange();
+  }
+
+  changeCategory(category: string) {
+    this.category = category;
     this.onChange();
   }
 
