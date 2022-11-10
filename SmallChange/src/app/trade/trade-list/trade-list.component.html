@@ -34,9 +34,9 @@
                         <th scope="col" sortable="instrumentId" (sort)="onSort($event)">Symbol</th>
                         <th scope="col" sortable="instrumentDescription" (sort)="onSort($event)">Name</th>
                         <th scope="col" sortable="categoryId" (sort)="onSort($event)">Category</th>
-                        <th scope="col" sortable="minQuantity" (sort)="onSort($event)" class="text-center">Minimum
+                        <th scope="col" sortable="minQuantity" (sort)="onSort($event)" class="text-end">Minimum
                             Quanitity</th>
-                        <th scope="col" sortable="maxQuantity" (sort)="onSort($event)" class="text-center">Maximum
+                        <th scope="col" sortable="maxQuantity" (sort)="onSort($event)" class="text-end">Maximum
                             Quanitity</th>                            
                         <th scope="col" sortable="askPrice" (sort)="onSort($event)" class="text-end">Price</th>
                     </tr>
@@ -47,8 +47,8 @@
                         <td>{{stock.instrumentId}}</td>
                         <td>{{stock.instrumentDescription}}</td>
                         <td>{{stock.categoryId}}</td>
-                        <td class="text-center">{{stock.minQuantity}}</td>
-                        <td class="text-center">{{stock.maxQuantity}}</td>                        
+                        <td class="text-end">{{stock.minQuantity}}</td>
+                        <td class="text-end">{{stock.maxQuantity}}</td>                        
                         <td class="text-end">{{stock.askPrice | currency : 'USD' : "symbol" :
                             '1.2-2' }}</td>
                     </tr>

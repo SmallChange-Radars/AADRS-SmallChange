@@ -15,7 +15,7 @@ import { LoginpageModule } from './loginpage/loginpage.module';
 import { PreferencesModule } from './preferences/preferences.module';
 import { NavTabComponent } from './nav-tab/nav-tab.component';
 import { PortfolioModule } from './portfolio/portfolio.module';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AccountFormComponent } from './account-form/account-form.component';
 import { TradeModule } from './trade/trade.module';
 import { ActivityPageComponent } from './activity/activity-page/activity-page.component';
@@ -25,6 +25,7 @@ import { NgbdSortableHeader } from './activity/activity-table/sortable.directive
 import { CookieService } from 'ngx-cookie-service';
 import { LandingModule } from './Landing/landing.module';
 import { RoboAdvisorModule } from './Robo/robo-advisor.module';
+import { UserService } from './shared/services/user.service';
 
 @NgModule({
   declarations: [
@@ -55,8 +56,8 @@ import { RoboAdvisorModule } from './Robo/robo-advisor.module';
     NgChartsModule,
     RoboAdvisorModule
   ],
-  providers: [CookieService],
+  providers: [CookieService, UserService],
   bootstrap: [AppComponent],
   entryComponents: [BuySellModalComponent],
 })
-export class AppModule {}
+export class AppModule { }

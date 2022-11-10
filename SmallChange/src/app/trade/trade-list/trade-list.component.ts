@@ -5,12 +5,14 @@ import {
   ViewChild,
   ViewChildren,
 } from '@angular/core';
+import { Router } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { BuySellModalComponent } from 'src/app/shared/components/buy-sell-modal/buy-sell-modal.component';
 import { Instrument } from 'src/app/shared/models/instrument';
 
 import { Trade } from 'src/app/shared/models/trade';
 import { TradeService } from 'src/app/shared/services/trade.service';
+import { UserService } from 'src/app/shared/services/user.service';
 import { NgbdSortableHeader, SortEvent } from './sortable.directive';
 
 const sectors: string[] = [
@@ -68,7 +70,7 @@ export class TradeListComponent implements OnInit {
     this.getSortedStocks();
   }
 
-  constructor(private service: TradeService, private modalService: NgbModal) {}
+  constructor(private service: TradeService, private modalService: NgbModal, private user: UserService) { }
 
   getSortedStocks() {
     this.service
@@ -79,10 +81,15 @@ export class TradeListComponent implements OnInit {
         this.direction,
         this.column,
         this.category
-      )
-      .subscribe((response) => {
-        this.stocks = response?.body!;
-        this.collectionSize = +response.headers.get('X-Total-Count')!;
+      ).subscribe({
+        next: (response) => {
+          this.stocks = response?.body!;
+          this.collectionSize = +response.headers.get('X-Total-Count')!;
+        },
+        error: (e) => {
+          console.log(e);
+          this.user.removeUser();
+        }
       });
   }
 

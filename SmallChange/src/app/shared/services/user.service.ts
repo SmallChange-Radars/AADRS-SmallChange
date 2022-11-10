@@ -33,9 +33,13 @@ export class UserService extends StateService<accessToken>{
       this.router.navigate([this.redirectUrl]);
       this.redirectUrl = null;
     }
-    else{
+    else {
       this.router.navigate(["/home"]);
     }
+  }
+
+  redirect() {
+    this.router.navigate(["/"]);
   }
 
   removeUser() {
@@ -45,7 +49,7 @@ export class UserService extends StateService<accessToken>{
       this.router.navigate([this.redirectUrl]);
       this.redirectUrl = null;
     }
-    else{
+    else {
       this.router.navigate(["/"]);
     }
   }
@@ -61,7 +65,12 @@ export class UserService extends StateService<accessToken>{
   }
 
   isLoggedIn(): boolean {
-    this.getUser();
+    try {
+      this.getUser();
+    }
+    catch (err) {
+      return false;
+    }
     return this.state.id.length != 0;
   }
 }

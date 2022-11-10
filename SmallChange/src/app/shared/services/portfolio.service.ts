@@ -1,5 +1,6 @@
 import { HttpClient, HttpErrorResponse, HttpHeaders, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { catchError, Observable, of, throwError } from 'rxjs';
 import { ClientPortfolio } from '../models/client-portfolio';
 import { Portfolio } from '../models/portfolio';
@@ -14,7 +15,7 @@ export class PortfolioService {
 
   port: Portfolio[] = [];
 
-  constructor(private http: HttpClient, private userService: UserService) { }
+  constructor(private http: HttpClient, private userService: UserService, private router: Router) { }
 
   // cp: ClientPortfolio[] = [
   //   { instrumentId: 'AAPL', quantity: 538, currentPrice: 158.91, value: 85493.58, gains: -7459.37, returns: -8.02 },

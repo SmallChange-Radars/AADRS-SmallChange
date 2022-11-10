@@ -3,6 +3,7 @@ import { ColumnApi, GridApi, GridReadyEvent, RefreshCellsParams } from 'ag-grid-
 import { Activity } from 'src/app/shared/models/activity';
 import { UserActivity } from 'src/app/shared/models/user-activity';
 import { ActivityService } from 'src/app/shared/services/activity.service';
+import { UserService } from 'src/app/shared/services/user.service';
 import { NgbdSortableHeader, SortEvent } from './sortable.directive';
 
 @Component({
@@ -34,27 +35,37 @@ export class ActivityTableComponent implements OnInit {
         this.column=column;
       }
     });
-    this.activityService.getActivityHistory(this.searchText, this.category,this.column,this.direction,this.page, this.pageSize ).subscribe(
-      (response)=>{
+    this.activityService.getActivityHistory(this.searchText, this.category,this.column,this.direction,this.page, this.pageSize ).subscribe({
+      next: (response) => {
         this.rowData=response?.body!;
         this.collectionSize = +response.headers.get('X-Total-Count')!;
+      },
+      error: (e) => {
+        console.log(e);
+        this.user.removeUser();
       }
+    }
     );
   }
   
   rowData: Activity[] = [];
   temp: Activity[]=[];
-  constructor(private activityService: ActivityService) { }
+  constructor(private activityService: ActivityService,private user:UserService) { }
   ngOnInit(): void {
     this.getAllActivity();
   }
 
   getAllActivity(){
-    this.activityService.getActivityHistory(this.searchText, this.category,this.column, this.direction, this.page, this.pageSize).subscribe(
-      (response)=>{
+    this.activityService.getActivityHistory(this.searchText, this.category,this.column, this.direction, this.page, this.pageSize).subscribe({
+      next: (response) => {
         this.rowData=response?.body!;
         this.collectionSize = +response.headers.get('X-Total-Count')!;
+      },
+      error: (e) => {
+        console.log(e);
+        this.user.removeUser();
       }
+    }
     );
   }
 
