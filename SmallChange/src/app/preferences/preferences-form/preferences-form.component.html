@@ -25,6 +25,10 @@
                         <option *ngFor = "let iLength of iLengths; let i = index" value="{{i+1}}">{{iLength}}</option>
                     </select>
                 </div>
+                <div class="mb-3 form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="preferencesCheckbox" [(ngModel)]="checkbox" name="checkbox">
+                    <label class="form-check-label" for="preferencesCheckbox">I understand and agree to the terms of the RoboAdvisor Subscriber Agreement</label>
+                </div> 
                 <button type="button" class="btn btn-primary" (click)="submit()">Submit</button>
                 <div class="mb-3" *ngIf = "formError">
                     Kindly fill all the form fields!

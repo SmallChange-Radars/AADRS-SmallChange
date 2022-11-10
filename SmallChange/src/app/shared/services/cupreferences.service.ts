@@ -45,13 +45,15 @@ export class CupreferencesService {
 
   submitForm(
     investmentPreferences: InvestmentPreferences,
-    formFilled: boolean
+    formFilled: boolean,
+    checkbox: boolean
   ): Observable<any> {
     if (
       investmentPreferences.investmentPurpose == '' ||
       investmentPreferences.riskTolerance == '' ||
       investmentPreferences.incomeCategory == '' ||
-      investmentPreferences.lengthOfInvestment == ''
+      investmentPreferences.lengthOfInvestment == '' ||
+      checkbox == false
     )
       return of(0);
     const headers = new HttpHeaders()
@@ -60,14 +62,14 @@ export class CupreferencesService {
       .set('Accept', 'application/json');
     if (!formFilled)
       return this.http.post(
-        'http://localhost:8080/client/preferences',
+        'http://localhost:8080/api/client/preferences',
         investmentPreferences,
         {
           headers: headers,
         }
       );
     return this.http.put(
-      'http://localhost:8080/client/preferences',
+      'http://localhost:8080/api/client/preferences',
       investmentPreferences,
       {
         headers: headers,
@@ -80,7 +82,7 @@ export class CupreferencesService {
     const headers = new HttpHeaders()
       .set('Authorization', 'Bearer ' + this.user.getUser())
       .set('Content-Type', 'application/json');
-    return this.http.get('http://localhost:8080/client/preferences', {
+    return this.http.get('http://localhost:8080/api/client/preferences', {
       headers: headers,
     });
   }
