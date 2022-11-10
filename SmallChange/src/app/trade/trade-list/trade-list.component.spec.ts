@@ -1,4 +1,6 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 import { of } from 'rxjs';
 import { Instrument } from 'src/app/shared/models/instrument';
 import { Trade } from 'src/app/shared/models/trade';
@@ -46,6 +48,7 @@ describe('TradeListComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [TradeListComponent],
       providers: [{ provide: TradeService, useValue: tradeService }],
+      imports: [HttpClientTestingModule, RouterTestingModule],
     }).compileComponents();
   });
 

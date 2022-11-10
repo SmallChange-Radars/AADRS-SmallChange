@@ -61,7 +61,7 @@
                             <label>Identification Type: &nbsp;</label>
 
                             <span [ngSwitch]="registerFormControl.country.value.toLowerCase()">
-                                <span *ngSwitchCase="'usa'">SSN<span style="color:red;">*</span></span>
+                                <span *ngSwitchCase="'us'">SSN<span style="color:red;">*</span></span>
                                 <span *ngSwitchDefault>Passport<span style="color:red;">*</span></span>
                             </span>
                             <input type="text" id="identification" class="form-control"
