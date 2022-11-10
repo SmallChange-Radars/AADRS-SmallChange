@@ -1,6 +1,6 @@
 <div class="modal-header">
-    <h5 class="modal-title">
-        {{modalContent.categoryId}}</h5>
+    <h6 class="modal-title">
+        {{modalContent.categoryId}}</h6>
     <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
         <span aria-hidden="true">&times;</span>
     </button>
@@ -53,14 +53,16 @@
                             <label for="buyQuantity">Shares:</label>
                             <input type="text" placeholder="Quantity" formControlName="buyQuantity" id="buyQuantity"
                                 class="form-control mb-2">
-                            <span *ngIf="buyForm.valid"> {{buyForm.get("buyQuantity")?.value * modalContent.askPrice *
+                            <span *ngIf="buyForm.valid">Approx. Cost {{buyForm.get("buyQuantity")?.value *
+                                modalContent.askPrice *
                                 1.01 | currency
                                 : 'USD' : "symbol" :'1.2-2'}} </span>
-                            <span placement="top"
-                                ngbTooltip="Please enter a quantity between {{this.modalContent.minQuantity}} and {{this.modalContent.maxQuantity}}"
-                                [disableTooltip]="buyForm.valid" class="float-end">
+                            <span placement="left"
+                                ngbTooltip="Please enter a quantity between {{this.modalContent.minQuantity}} and {{(this.modalContent.maxQuantity>this.maxQuantity?this.maxQuantity:this.modalContent.maxQuantity) | number: '1.0-0'}}"
+                                [disableTooltip]="buyForm.valid && (this.modalContent.maxQuantity > this.maxQuantity ? this.maxQuantity : this.modalContent.maxQuantity) >= buyForm.get('buyQuantity')?.value"
+                                class="float-end">
                                 <button type="submit" class="btn btn-primary"
-                                    [disabled]="!buyForm.valid">Buy</button></span>
+                                    [disabled]="!buyForm.valid || (this.modalContent.maxQuantity > this.maxQuantity ? this.maxQuantity : this.modalContent.maxQuantity) < buyForm.get('buyQuantity')?.value">Buy</button></span>
                         </form>
 
                     </ng-template>
@@ -76,11 +78,13 @@
                             <label for="sellQuantity">Shares:</label>
                             <input type="text" placeholder="Quantity" formControlName="sellQuantity" id="sellQuantity"
                                 class="form-control mb-2">
-                            <span *ngIf="sellForm.valid"> {{sellForm.get("sellQuantity")?.value * modalContent.bidPrice
+                            <span *ngIf="sellForm.valid">Approx. Return {{sellForm.get("sellQuantity")?.value *
+                                modalContent.bidPrice
                                 * 1.01 |
                                 currency : 'USD' : "symbol" :'1.2-2'}} </span>
-                            <button type="submit" [disabled]="!sellForm.valid"
-                                class="btn btn-primary float-end">Sell</button>
+                            <span placement="left" ngbTooltip="Please enter a quantity below number of Holdings."
+                                [disableTooltip]="buyForm.valid" class="float-end"><button type="submit"
+                                    [disabled]="!sellForm.valid" class="btn btn-primary float-end">Sell</button></span>
                         </form>
                     </ng-template>
                 </li>

@@ -70,6 +70,7 @@ export class BuySellModalComponent implements OnInit {
   stockPresent: boolean = false;
   portfolioQuantity: number = 0;
   walletAmount: number = 0;
+  maxQuantity: number = 0;
   calculatedPrice: number = 0;
 
   display: number = 100;
@@ -150,6 +151,7 @@ export class BuySellModalComponent implements OnInit {
         });
         this.portfolioQuantity = q;
         this.walletAmount = walletResult.wallet;
+        this.maxQuantity = this.walletAmount / (this.modalContent.askPrice * 1.01)
       });
     });
   }
@@ -157,7 +159,6 @@ export class BuySellModalComponent implements OnInit {
   constructor(
     public activeModal: NgbActiveModal,
     private formBuilder: FormBuilder,
-    private userService: UserService,
     private modalService: ModalServiceService
   ) { }
 
@@ -172,6 +173,8 @@ export class BuySellModalComponent implements OnInit {
         this.selfClosingAlert.close();
       }
     });
+
+    this.getPortfolioWallet();
     let labels: any[] = [];
     // this.lineChartData = [
     //   {
@@ -212,9 +215,8 @@ export class BuySellModalComponent implements OnInit {
         '',
         Validators.compose([
           Validators.required,
-          Validators.pattern('^[0-9]+'), 
+          Validators.pattern('^[0-9]+'),
           Validators.min(this.modalContent.minQuantity),
-          Validators.max(this.modalContent.maxQuantity),
         ]),
       ],
     });
@@ -225,9 +227,10 @@ export class BuySellModalComponent implements OnInit {
         Validators.compose([
           Validators.required,
           Validators.pattern('^[0-9]+'),
+          Validators.min(0),
+          Validators.max(this.portfolioQuantity),
         ]),
       ],
     });
-    this.getPortfolioWallet();
   }
 }
