@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ModalServiceService } from './shared/services/modal-service.service';
 import { UserService } from './shared/services/user.service';
 
 @Component({
@@ -8,13 +9,21 @@ import { UserService } from './shared/services/user.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  wallet:number = 0;
   title = 'SmallChange';
   navbarOpen = false;
   public clicked = false;
   _el: any;
-  constructor(private user:UserService,private router:Router){}
+
+ 
+  constructor(private user:UserService,private router:Router,private modalService: ModalServiceService){}
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
+    this.updateWallet();
+  }
+  
+  updateWallet(){
+    this.modalService.getWalletAmount().subscribe((data)=> this.wallet = data.wallet )
   }
 
   logOut(){

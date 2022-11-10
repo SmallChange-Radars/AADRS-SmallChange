@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { NavTabComponent } from './nav-tab.component';
 
@@ -8,7 +9,8 @@ describe('NavTabComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavTabComponent ]
+      declarations: [ NavTabComponent ],
+      imports: [NgbNavModule]
     })
     .compileComponents();
   });

@@ -7,6 +7,7 @@ import { TradeListComponent } from './trade-list/trade-list.component';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbdSortableHeader } from './trade-list/sortable.directive';
+import { RoboAdvisorModule } from '../Robo/robo-advisor.module';
 
 @NgModule({
   declarations: [TradeListComponent,NgbdSortableHeader],
@@ -16,6 +17,7 @@ import { NgbdSortableHeader } from './trade-list/sortable.directive';
     AgGridModule,
     FormsModule,
     NgbModule,
+    RoboAdvisorModule
   ],
   exports: [TradeListComponent],
   bootstrap: [TradeListComponent]

@@ -18,8 +18,8 @@
         <div class="col-auto" style="display:flex;align-items:center">
             <h5 class="align-bottom" [ngStyle]="{'color': modalContent.askPrice < calculatedPrice ? 'green' : 'red' }">
                 {{
-                calculatedPrice-modalContent.askPrice |currency}}
-                ({{((calculatedPrice-modalContent.askPrice)/modalContent.askPrice)*100 | percent:'1.2-2'}})</h5>
+                calculatedPrice-modalContent.askPrice |currency: 'USD' : "symbol" :'1.2-2'}}
+                ({{((calculatedPrice-modalContent.askPrice)/modalContent.askPrice) | percent:'1.2-2'}})</h5>
         </div>
     </div>
     <div class="row">
@@ -57,7 +57,7 @@
                                 modalContent.askPrice *
                                 1.01 | currency
                                 : 'USD' : "symbol" :'1.2-2'}} </span>
-                            <span placement="left"
+                            <span placement="left" 
                                 ngbTooltip="Please enter a quantity between {{this.modalContent.minQuantity}} and {{(this.modalContent.maxQuantity>this.maxQuantity?this.maxQuantity:this.modalContent.maxQuantity) | number: '1.0-0'}}"
                                 [disableTooltip]="buyForm.valid && (this.modalContent.maxQuantity > this.maxQuantity ? this.maxQuantity : this.modalContent.maxQuantity) >= buyForm.get('buyQuantity')?.value"
                                 class="float-end">

@@ -8,17 +8,9 @@ import { Router } from '@angular/router';
 })
 export class LandingNavComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  login() {
-    this.router.navigate(['/login']);
-  }
-
-  register() {
-    this.router.navigate(['/register']);
   }
 
 }

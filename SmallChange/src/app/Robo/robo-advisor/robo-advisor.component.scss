@@ -1,0 +1,43 @@
+
+.fab-container {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+}
+
+
+.iconbutton {
+    // width: 90px;
+    // height: 90px;
+    border-radius: 100%;
+    background: #789A01;
+    box-shadow: 10px 10px 5px #c0bfbf;
+}
+
+.button {
+    width: 70px;
+    height: 70px;
+}
+
+.iconbutton i {
+    display: flex;
+    padding-top: 8px;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+}
+
+.modal-footer button{
+    background-color: #789A01 !important;
+    color: #ffffff;
+}
+
+.modal-header{
+    background-color: #789A01 !important;
+    color: #ffffff;
+    
+}
+
+

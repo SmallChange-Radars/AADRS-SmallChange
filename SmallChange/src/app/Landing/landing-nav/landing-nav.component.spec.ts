@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Router } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { LandingNavComponent } from './landing-nav.component';
 
@@ -8,13 +10,14 @@ describe('LandingNavComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LandingNavComponent ]
+      declarations: [LandingNavComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(LandingNavComponent);
+
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -22,4 +25,5 @@ describe('LandingNavComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });

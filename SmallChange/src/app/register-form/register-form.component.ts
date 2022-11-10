@@ -59,9 +59,9 @@ export class RegisterFormComponent implements OnInit {
       this.identity.type= this.registerFormControl.country.value.toLowerCase() === 'usa' ? 'SSN': 'Passport';
     this.identity.value = this.registerForm.value.identification;
     let registerFormValue = this.registerForm.value;
-    let client:Client = new Client('', registerFormValue.email, registerFormValue.dob, registerFormValue.country, registerFormValue.pincode, [this.identity],registerFormValue.password,'',-1,'','ROLE_CLIENT');
+    let client:Client = new Client('', registerFormValue.email, registerFormValue.dob, registerFormValue.country, registerFormValue.pincode, [this.identity],registerFormValue.password,'',20.00,'','ROLE_CLIENT');
     this.service.pushUser(client).subscribe({
-      next: (data) => { console.log("Posted");this.router.navigate(['/home']);},
+      next: (data) => { console.log("Posted");alert("Registered Successfully! Please fill Account Details"); this.registerForm.reset();},
       error: (e) => {this._success.next(e); }
     });
       

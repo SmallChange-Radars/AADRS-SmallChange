@@ -10,11 +10,9 @@ export class NavTabComponent implements OnInit {
 
   active = 1;
 
-  constructor(private router:Router) { }
+  constructor() { }
 
   ngOnInit(): void {
     this.active=1;
   }
-
-
 }

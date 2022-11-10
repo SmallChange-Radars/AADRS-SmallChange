@@ -8,6 +8,7 @@ import { NgChartsModule } from 'ng2-charts';
 import { NgbdSortableHeader } from './portfolio-table/sortable.directive';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PortfolioGraphComponent } from './portfolio-graph/portfolio-graph.component';
+import { RoboAdvisorModule } from '../Robo/robo-advisor.module';
 
 
 
@@ -24,7 +25,9 @@ import { PortfolioGraphComponent } from './portfolio-graph/portfolio-graph.compo
     CommonModule,
     AgGridModule,
     NgChartsModule,
-    NgbModule
+    NgbModule,
+    RoboAdvisorModule
+    
   ],
   exports: [
     PortfolioPageComponent

@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="fab-container">
+    <div class="button iconbutton">
+        <i class="fa-solid fa-robot fa-3x" (click)="openPopup()"></i>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+  <div class="modal-dialog  modal-xl" role="document" style="width: 1000px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" style="font-weight: bolder;">Robo Advisor</h3>
+      </div>
+      <div class="modal-body">
+        <h4 style=" text-align: center; font-weight:550!important; margin: 10px;">Stocks to Invest </h4>
+        <h5  style=" text-align: center;">Based on your preferences</h5>
+        <br>
+        <div class="col-12">
+            <!-- <table class="table table-bordered "> -->
+            <table class="table table-bordered">
+                <thead class="text-center" >
+                    <tr>
+                        <th scope="col" style="font-weight: lighter; font-size: 20px;">Symbol</th>
+                        <th scope="col" style="font-weight: lighter; font-size: 20px;">Name</th>
+                        <th scope="col" style="font-weight: lighter; font-size: 20px;">Category</th>
+                        <th scope="col" style="font-weight: lighter; font-size: 20px;">Minimum
+                            Quanitity</th>
+                        <th scope="col" style="font-weight: lighter; font-size: 20px;">Maximum
+                            Quanitity</th>                            
+                        <th scope="col" style="font-weight: lighter; font-size: 20px;">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr *ngFor="let stock of stocks" (click)="openModal(stock)">
+                    
+                        <td>{{stock.instrumentId}}</td>
+                        <td>{{stock.instrumentDescription}}</td>
+                        <td>{{stock.categoryId}}</td>
+                        <td class="text-center">{{stock.minQuantity}}</td>
+                        <td class="text-center">{{stock.maxQuantity}}</td>                        
+                        <td class="text-end">{{stock.askPrice | currency : 'USD' : "symbol" :
+                            '1.2-2' }}</td>
+                    </tr> -->
+                    <tr class="text-center">
+                    
+                        <td>MMM</td>
+                        <td>3M Company</td>
+                        <td>STOCK</td>
+                        <td >2</td>
+                        <td >137</td>                        
+                        <td >222.89$</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" 
+                (click)="closePopup()">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

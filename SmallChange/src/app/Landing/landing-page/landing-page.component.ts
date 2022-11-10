@@ -9,17 +9,9 @@ import { UserService } from '../../shared/services/user.service';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor(private user:UserService,private router:Router) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  login(){
-    this.router.navigate(['/login']);
-  }
-
-  register(){
-    this.router.navigate(['/register']);
   }
 
 }

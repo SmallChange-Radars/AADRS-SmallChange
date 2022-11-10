@@ -23,8 +23,8 @@ import { ActivityTableComponent } from './activity/activity-table/activity-table
 import { BuySellModalComponent } from './shared/components/buy-sell-modal/buy-sell-modal.component';
 import { NgbdSortableHeader } from './activity/activity-table/sortable.directive';
 import { CookieService } from 'ngx-cookie-service';
-import { LandingNavComponent } from './Landing/landing-nav/landing-nav.component';
 import { LandingModule } from './Landing/landing.module';
+import { RoboAdvisorModule } from './Robo/robo-advisor.module';
 
 @NgModule({
   declarations: [
@@ -52,7 +52,8 @@ import { LandingModule } from './Landing/landing.module';
     NgChartsModule,
     HttpClientModule,
     TradeModule,
-    NgChartsModule
+    NgChartsModule,
+    RoboAdvisorModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent],
