@@ -53,7 +53,7 @@ export class PortfolioPageComponent implements OnInit {
 //Bearer token
     this.token = this.cookieService.get("accessToken");
     this.userService.addUser(this.token);
-    console.log("This is in portfolio",this.token);
+    // console.log("This is in portfolio",this.token);
   }
 
   getPortfolio() {

@@ -2,14 +2,6 @@
 <p>View your portfolio</p>
 <div class="row my-3">
     <app-summary class="col-4" [totalPortfolio]="totalPortfolio"></app-summary>
-    <!-- <div class="col container border py-3">
-        <h4 class="text-center">Allocation</h4>
-        <div class="d-flex justify-content-center">
-            <canvas baseChart [labels]="doughnutChartLabels" [datasets]="doughnutChartDatasets"
-                [options]="doughnutChartOptions" [legend]="true" [type]="'doughnut'">
-            </canvas>
-        </div>
-    </div> -->
     <app-portfolio-graph class="col container border py-3"></app-portfolio-graph>
 </div>
 <div class="row">

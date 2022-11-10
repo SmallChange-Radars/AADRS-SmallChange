@@ -2,81 +2,44 @@
     <table class="table table-hover rounded m-0">
         <thead class="bg-light">
             <tr>
-                <th>Symbol</th>
-                <th class="text-center">Quantity</th>
-                <th class="text-end">Current Price</th>
-                <th class="text-end">Value</th>
-                <th class="text-end">Gains</th>
-                <th class="text-end">Returns</th>
+                <th scope="col" sortable="instrumentId" (sort)="onSort($event)">Symbol</th>
+                <th scope="col" sortable="quantity" (sort)="onSort($event)" class="text-center">Quantity</th>
+                <th scope="col" sortable="currentPrice" (sort)="onSort($event)" class="text-end">Current Price</th>
+                <th scope="col" sortable="value" (sort)="onSort($event)" class="text-end">Value</th>
+                <th scope="col" class="text-end">Gains</th>
+                <th scope="col" class="text-end">Returns</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let item of cp">
+            <tr *ngFor="let item of cp | paginate: { itemsPerPage: 5, currentPage: page }">
                 <td>{{item.instrumentId}}</td>
                 <td class="text-center">{{item.quantity}}</td>
                 <td class="text-end">{{item.currentPrice | currency : 'USD' : "symbol" : '1.2-2'}}</td>
                 <td class="text-end">{{item.value | currency : 'USD' : "symbol" : '1.2-2'}}</td>
                 <td class="text-end" [ngStyle]="{'color':item.gains >=0 ? 'green' : 'red' }">{{item.gains | currency :
                     'USD' : "symbol" : '1.2-2'}}</td>
-                <td class="text-end" [ngStyle]="{'color':item.returns >=0 ? 'green' : 'red' }">{{item.returns * 100 | number : '1.2-2'}}%</td>
+                <td class="text-end" [ngStyle]="{'color':item.returns >=0 ? 'green' : 'red' }">{{item.returns * 100 |
+                    number : '1.2-2'}}%</td>
             </tr>
+            <!-- <pagination-controls (pageChange)="page = $event"></pagination-controls> -->
         </tbody>
     </table>
 </div>
-<!-- <div class="container border rounded mx-auto my-2 p-0">
-    <table class="table table-hover rounded m-0">
-        <thead class="bg-light">
-            <tr>
-                <th scope="col" sortable="name" (sort)="onSort($event)">Name</th>
-                <th scope="col" sortable="qty" (sort)="onSort($event)">Shares</th>
-                <th class="text-end" scope="col" sortable="price" (sort)="onSort($event)">Price</th>
-                <th class="text-end" scope="col" sortable="value" (sort)="onSort($event)">Value</th>
-                <th class="text-end" scope="col" sortable="prof" (sort)="onSort($event)">Gains</th>
-                <th class="text-end" scope="col" sortable="percent" (sort)="onSort($event)">Returns</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let item of cp">
-                <td>{{item.name}}</td>
-                <td>{{item.qty}}</td>
-                <td class="text-end">{{item.price | currency : 'USD' : "symbol" : '1.2-2'}}</td>
-                <td class="text-end">{{item.value | currency : 'USD' : "symbol" : '1.2-2'}}</td>
-                <td class="text-end" [ngStyle]="{'color':item.prof >=0 ? 'green' : 'red' }">{{item.prof | currency :
-                    'USD' : "symbol" : '1.2-2'}}</td>
-                <td class="text-end" [ngStyle]="{'color':item.percent >=0 ? 'green' : 'red' }">{{item.percent | number : '1.2-2'}}%</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<div class="d-flex justify-content-between align-items-start">
-    <div class="d-flex align-items-center">
-        <p class="pt-2">Rows per page &nbsp;<span>&nbsp;</span></p>
-        <div ngbDropdown placement="top-end" class="align-with-text">
-            <button type="button" class="btn btn-outline-dark" id="dropdownBasic1" ngbDropdownToggle>
-                {{pageSize}}</button>
-            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                <button ngbDropdownItem (click)="changePagesize(2)">2</button>
-                <button ngbDropdownItem (click)="changePagesize(3)">3</button>
-                <button ngbDropdownItem (click)="changePagesize(6)">6</button>
+<ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [maxSize]="5" [pageSize]="pageSize"
+    [boundaryLinks]="true" (pageChange)="onChange('')">
+    <ng-template ngbPaginationPages let-page let-pages=" pages">
+        <li class="ngb-custom-pages-item" *ngIf="pages.length > 0">
+            <div class="mb-3 d-flex flex-nowrap px-4">
+                <span id="paginationDescription" class="col-form-label text-nowrap">{{(page-1)*pageSize +1}}
+                    -
+                    {{(page*pageSize)>collectionSize?collectionSize:(page*pageSize)}} of
+                    {{collectionSize}}</span>
             </div>
-        </div>
-    </div>
-    <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [maxSize]="5" [pageSize]="pageSize"
-                [boundaryLinks]="true" (pageChange)="onChange('')">
-                <ng-template ngbPaginationPages let-page let-pages=" pages">
-                    <li class="ngb-custom-pages-item" *ngIf="pages.length > 0">
-                        <div class="mb-3 d-flex flex-nowrap px-4">
-                            <span id="paginationDescription" class="col-form-label text-nowrap">{{(page-1)*pageSize +1}}
-                                -
-                                {{(page*pageSize)>collectionSize?collectionSize:(page*pageSize)}} of
-                                {{collectionSize}}</span>
-                        </div>
-                    </li>
-                </ng-template>
+        </li>
+    </ng-template>
 
-                <ng-template ngbPaginationFirst><i class="bi bi-chevron-bar-left"></i></ng-template>
-                <ng-template ngbPaginationLast><i class="bi bi-chevron-bar-right"></i></ng-template>
-                <ng-template ngbPaginationPrevious><i class="bi bi-chevron-left"></i></ng-template>
-                <ng-template ngbPaginationNext><i class="bi bi-chevron-right"></i></ng-template>
-            </ngb-pagination>
-</div> -->
+    <ng-template ngbPaginationFirst><i class="bi bi-chevron-bar-left"></i></ng-template>
+    <ng-template ngbPaginationLast><i class="bi bi-chevron-bar-right"></i></ng-template>
+    <ng-template ngbPaginationPrevious><i class="bi bi-chevron-left"></i></ng-template>
+    <ng-template ngbPaginationNext><i class="bi bi-chevron-right"></i></ng-template>
+</ngb-pagination>

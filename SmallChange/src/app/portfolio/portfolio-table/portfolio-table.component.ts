@@ -13,20 +13,22 @@ import { NgbdSortableHeader, SortEvent } from './sortable.directive';
 export class PortfolioTableComponent implements OnInit {
   sum: any = 0;
   cp: ClientPortfolio[] = [];
+  p: ClientPortfolio[] = [];
   @Input() c: ClientPortfolio[] = [];
 
 
   page = 1;
   pageSize = 3;
   collectionSize = 200;
+  
 
   searchText: string = '';
+item: any;
 
   getPortfolio() {
     this.service.getPortfolio().subscribe(data => {
-      this.cp = data?.body!;
-
-      // console.log(this.cp)
+      this.p = data?.body!;      
+    this.cp = this.p;
     });
   }
 
@@ -40,12 +42,24 @@ export class PortfolioTableComponent implements OnInit {
       }
     });
 
-    this.service
-      .getSortedStocks(this.page, this.pageSize, this.searchText, direction, column)
-      .subscribe((response) => {
-        this.cp = response?.body!;
-        this.collectionSize = +response.headers.get('X-Total-Count')!;
-      });
+    if (direction === '' || column === '') {
+			this.service.getPortfolio().subscribe(data => {
+      this.cp = data?.body!;
+    });
+		} else {
+      const compare = (v1: string | number, v2: string | number) => (v1 < v2 ? -1 : v1 > v2 ? 1 : 0);
+			this.cp = [...this.p].sort((a, b) => {
+				const res = compare(a[column], b[column]);
+				return direction === 'asc' ? res : -res;
+			});
+		}
+
+    // this.service
+    //   .getSortedStocks(this.page, this.pageSize, this.searchText, direction, column)
+    //   .subscribe((response) => {
+    //     this.cp = response?.body!;
+    //     this.collectionSize = +response.headers.get('X-Total-Count')!;
+    //   });
   }
 
   changePagesize(size: number) {

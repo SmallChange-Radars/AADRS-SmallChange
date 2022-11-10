@@ -25,6 +25,7 @@ import { NgbdSortableHeader } from './activity/activity-table/sortable.directive
 import { CookieService } from 'ngx-cookie-service';
 import { LandingModule } from './Landing/landing.module';
 import { RoboAdvisorModule } from './Robo/robo-advisor.module';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { RoboAdvisorModule } from './Robo/robo-advisor.module';
     HttpClientModule,
     TradeModule,
     NgChartsModule,
-    RoboAdvisorModule
+    RoboAdvisorModule,
+    NgxPaginationModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent],

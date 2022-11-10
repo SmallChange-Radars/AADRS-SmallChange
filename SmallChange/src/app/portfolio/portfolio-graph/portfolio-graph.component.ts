@@ -21,7 +21,10 @@ export class PortfolioGraphComponent implements OnInit {
       legend: {
         display: true,
         position: 'right'
-      }
+     },
+     tooltip: {
+        enabled: true
+     }
     }
   };
 
@@ -31,7 +34,7 @@ export class PortfolioGraphComponent implements OnInit {
     this.service.getPortfolio().subscribe(data => {
       this.cp = data?.body!;
 
-      console.log(this.cp)
+      // console.log(this.cp)
     const values = this.cp.map(item => item.value)
     const names = this.cp.map(item => item.instrumentId)
     // console.log(values)
