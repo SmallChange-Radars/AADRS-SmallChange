@@ -59,10 +59,10 @@
                                 : 'USD' : "symbol" :'1.2-2'}} </span>
                             <span placement="left" 
                                 ngbTooltip="Please enter a quantity between {{this.modalContent.minQuantity}} and {{(this.modalContent.maxQuantity>this.maxQuantity?this.maxQuantity:this.modalContent.maxQuantity) | number: '1.0-0'}}"
-                                [disableTooltip]="buyForm.valid && (this.modalContent.maxQuantity > this.maxQuantity ? this.maxQuantity : this.modalContent.maxQuantity) >= buyForm.get('buyQuantity')?.value"
+                                [disableTooltip]="buyForm.valid && ((this.modalContent.maxQuantity > this.maxQuantity ? this.maxQuantity : this.modalContent.maxQuantity) >= buyForm.get('buyQuantity')?.value || (this.modalContent.minQuantity > this.maxQuantity ? this.maxQuantity : this.modalContent.minQuantity) <= buyForm.get('buyQuantity')?.value)"
                                 class="float-end">
                                 <button type="submit" class="btn btn-primary"
-                                    [disabled]="!buyForm.valid || (this.modalContent.maxQuantity > this.maxQuantity ? this.maxQuantity : this.modalContent.maxQuantity) < buyForm.get('buyQuantity')?.value">Buy</button></span>
+                                    [disabled]="!buyForm.valid || (this.modalContent.minQuantity > this.maxQuantity ? this.maxQuantity : this.modalContent.minQuantity) > buyForm.get('buyQuantity')?.value||(this.modalContent.maxQuantity > this.maxQuantity ? this.maxQuantity : this.modalContent.maxQuantity) < buyForm.get('buyQuantity')?.value">Buy</button></span>
                         </form>
 
                     </ng-template>
@@ -83,8 +83,8 @@
                                 * 1.01 |
                                 currency : 'USD' : "symbol" :'1.2-2'}} </span>
                             <span placement="left" ngbTooltip="Please enter a quantity below number of Holdings."
-                                [disableTooltip]="buyForm.valid" class="float-end"><button type="submit"
-                                    [disabled]="!sellForm.valid" class="btn btn-primary float-end">Sell</button></span>
+                                [disableTooltip]="sellForm.valid && this.portfolioQuantity>sellForm.get('sellQuantity')?.value" class="float-end"><button type="submit"
+                                    [disabled]="!sellForm.valid || this.portfolioQuantity<=sellForm.get('sellQuantity')?.value" class="btn btn-primary float-end">Sell</button></span>
                         </form>
                     </ng-template>
                 </li>
