@@ -5,6 +5,8 @@ import { ClientPortfolio } from 'src/app/shared/models/client-portfolio';
 import { PortfolioPageComponent } from './portfolio-page.component';
 import { PortfolioService } from 'src/app/shared/services/portfolio.service';
 import { By } from '@angular/platform-browser';
+import { HttpResponse } from '@angular/common/http';
+import { UserService } from 'src/app/shared/services/user.service';
 
 describe('PortfolioPageComponent', () => {
   let component: PortfolioPageComponent;
@@ -21,10 +23,19 @@ describe('PortfolioPageComponent', () => {
     let portfolioService: any = jasmine.createSpyObj('PortfolioService', [
       'getPortfolio',
     ]);
-    portfolioService.getPortfolio.and.returnValue(of(testcp));
+    let userService: any = jasmine.createSpyObj('UserService', [
+      'addUser',
+    ]);
+    portfolioService.getPortfolio.and.callFake(
+      () => {
+        return of(new HttpResponse({ status: 200, body: testcp }));
+      });
     await TestBed.configureTestingModule({
       declarations: [PortfolioPageComponent],
-      providers: [{ provide: PortfolioService, useValue: portfolioService }],
+      providers: [
+        { provide: PortfolioService, useValue: portfolioService },
+        { provide: UserService, useValue: userService }
+      ],
     }).compileComponents();
   });
 

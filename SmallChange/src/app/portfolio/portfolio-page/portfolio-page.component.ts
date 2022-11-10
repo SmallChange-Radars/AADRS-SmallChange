@@ -33,11 +33,11 @@ export class PortfolioPageComponent implements OnInit {
 
   public token = '';
 
-  constructor(private userService: UserService,private portfolioService: PortfolioService, private cookieService: CookieService) { }
+  constructor(private userService: UserService, private portfolioService: PortfolioService, private cookieService: CookieService) { }
 
   ngOnInit(): void {
     this.getPortfolio();
-    this.getTotalPortfolio();
+    // this.getTotalPortfolio();
     // this.getPortfolioSummary();
 
     // this.getPortfolioTable();
@@ -64,17 +64,17 @@ export class PortfolioPageComponent implements OnInit {
     });
   }
 
-  getPortfolioSummary() {
-    this.portfolioService.getPortfolioSummary().subscribe(data => {
-      this.summary = data[0];
-      this.summaryGains = data[1];
-      console.log(this.summaryGains)
-    });
-  }
+  // getPortfolioSummary() {
+  //   this.portfolioService.getPortfolioSummary().subscribe(data => {
+  //     this.summary = data[0];
+  //     this.summaryGains = data[1];
+  //     // console.log(this.summaryGains)
+  //   });
+  // }
 
-  getTotalPortfolio() {
-    this.portfolioService.getTotalPortfolio().subscribe(data => this.totalPortfolio = data);
-  }
+  // getTotalPortfolio() {
+  //   this.portfolioService.getTotalPortfolio().subscribe(data => this.totalPortfolio = data);
+  // }
 
   // getSortedStocks() {
   //   this.portfolioService
