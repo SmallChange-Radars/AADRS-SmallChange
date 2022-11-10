@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
+import { Instrument } from 'src/app/shared/models/instrument';
 import { Trade } from 'src/app/shared/models/trade';
 import { TradeService } from 'src/app/shared/services/trade.service';
 
@@ -9,26 +10,39 @@ describe('TradeListComponent', () => {
   let component: TradeListComponent;
   let fixture: ComponentFixture<TradeListComponent>;
   let getStocksSpy: any;
+  let getSortedStocksSpy: any;
 
   beforeEach(async () => {
-    const testStocks: Trade[] = [
+    const testStocks: Instrument[] = [
       {
-        Symbol: 'Symbol1',
-        Name: 'Name1',
-        Sector: 'Sector1',
-        Price: [-1],
-        Market_Cap: 24888,
+        instrumentId: 'Symbol1',
+        instrumentDescription: 'Name1',
+        categoryId: 'Sector1',
+        askPrice: -1,
+        bidPrice: -1,
+        minQuantity: 500,
+        maxQuantity: 1000,
       },
       {
-        Symbol: 'Symbol2',
-        Name: 'Name2',
-        Sector: 'Sector2',
-        Price: [-1],
-        Market_Cap: 36789,
+        instrumentId: 'Symbol2',
+        instrumentDescription: 'Name2',
+        categoryId: 'Sector2',
+        askPrice: -1,
+        bidPrice: -1,
+        minQuantity: 500,
+        maxQuantity: 1000,
       },
     ];
-    let tradeService: any = jasmine.createSpyObj('TradeService', ['getStocks']);
+    let tradeService: any = jasmine.createSpyObj('TradeService', [
+      'getStocks',
+      'getSortedStocks',
+    ]);
     getStocksSpy = tradeService.getStocks.and.returnValue(of(testStocks));
+    getSortedStocksSpy = tradeService.getSortedStocks.and.returnValue(
+      of({
+        body: testStocks,
+      })
+    );
     await TestBed.configureTestingModule({
       declarations: [TradeListComponent],
       providers: [{ provide: TradeService, useValue: tradeService }],
@@ -46,10 +60,10 @@ describe('TradeListComponent', () => {
   });
 
   it('should retrieve stocks from the service', () => {
-    expect(component.stocks.length).toBeGreaterThan(0);
+    expect(getSortedStocksSpy).toHaveBeenCalled();
   });
 
   it('should display a table with more than one field', () => {
-    expect(getStocksSpy).toHaveBeenCalled();
+    expect(component.stocks.length).toBeGreaterThan(0);
   });
 });

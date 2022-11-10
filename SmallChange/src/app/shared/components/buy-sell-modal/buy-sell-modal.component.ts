@@ -31,12 +31,21 @@ export class BuySellModalComponent implements OnInit {
     responsive: true,
     scales: {
       xAxis: {
+        type: "category",
         grid: {
           display: false,
         },
+        ticks: {
+          display: true,
+          autoSkip: true,
+          maxTicksLimit: 10,
+          maxRotation: 0,
+          minRotation: 0
+        }
       },
-
       yAxis: {
+        display: true,
+        position: 'right',
         grid: {
           display: false,
         },
@@ -63,6 +72,8 @@ export class BuySellModalComponent implements OnInit {
   walletAmount: number = 0;
   calculatedPrice: number = 0;
 
+  display: number = 100;
+
   buyStocks() {
     let quantity: number = +this.buyForm.get('buyQuantity')?.value;
 
@@ -72,7 +83,8 @@ export class BuySellModalComponent implements OnInit {
       return;
     }
 
-    if (quantity >= this.modalContent.minQuantity && quantity <= this.modalContent.maxQuantity) {
+    console.log(quantity)
+    if (quantity < this.modalContent.minQuantity || quantity > this.modalContent.maxQuantity) {
       this._success.next(`Please enter a quantity between ${this.modalContent.minQuantity} and ${this.modalContent.maxQuantity}`);
       return;
     }
@@ -119,11 +131,7 @@ export class BuySellModalComponent implements OnInit {
   }
 
   graphColor(): string {
-    if (
-      // this.modalContent.Price[this.modalContent.Price.length - 1] >=
-      // this.modalContent.Price[0]
-      true
-    )
+    if (this.modalContent.askPrice < this.calculatedPrice)
       return '#00d09c';
     return '#eb5b3c';
   }
@@ -153,6 +161,10 @@ export class BuySellModalComponent implements OnInit {
     private modalService: ModalServiceService
   ) { }
 
+  getRandomArbitrary(min: number, max: number) {
+    return Math.random() * (max - min) + min;
+  }
+
   ngOnInit(): void {
     this._success.subscribe(message => this.errorMessage = message);
     this._success.pipe(debounceTime(5000)).subscribe(() => {
@@ -167,22 +179,32 @@ export class BuySellModalComponent implements OnInit {
     //   },
     // ];
     let Price: number[] = [];
-    for (let i = 0; i < 100; i++) Price[i] = this.modalContent.askPrice;
-    Price.forEach((value, index) => {
-      labels.push(index.toString(10));
-    });
+    Price[0] = this.modalContent.askPrice
+    for (let i = 1; i < this.display; i++) Price[i] = Price[i - 1] + Price[i - 1] * this.getRandomArbitrary(-0.0001, 0.0001);
+    // Price.forEach((value, index) => {
+    //   labels.push(index.toString(10));
+    // });
 
+    var date, array = [];
+    date = new Date();
+    while (date.getMinutes() % 30 !== 0) {
+      date.setMinutes(date.getMinutes() + 1);
+    }
+    for (var i = 0; i < this.display; i++) {
+      array.push(date.getHours() + ':' + date.getMinutes());
+      date.setMinutes(date.getMinutes() + 30);
+    }
+    this.calculatedPrice = Price[Price.length - 1];
     this.lineChartData = {
       datasets: [
         {
           data: Price,
           pointRadius: 0,
-          label: 'Price',
-          backgroundColor: 'rgba(148,159,177,0.2)',
-          borderColor: this.graphColor(),
+          backgroundColor: this.graphColor(),
+          borderColor: this.graphColor()
         },
       ],
-      labels: labels,
+      labels: array,
     };
 
     this.buyForm = this.formBuilder.group({
@@ -190,7 +212,9 @@ export class BuySellModalComponent implements OnInit {
         '',
         Validators.compose([
           Validators.required,
-          Validators.pattern('^[0-9]+'),
+          Validators.pattern('^[0-9]+'), 
+          Validators.min(this.modalContent.minQuantity),
+          Validators.max(this.modalContent.maxQuantity),
         ]),
       ],
     });

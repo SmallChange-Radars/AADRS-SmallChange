@@ -8,8 +8,13 @@ import { InvestmentPreferences } from 'src/app/shared/models/investment-preferen
   styleUrls: ['./preferences-form.component.scss'],
 })
 export class PreferencesFormComponent implements OnInit {
-  public investmentPreferences: InvestmentPreferences =
-    new InvestmentPreferences('', '', '', '', '');
+  investmentPreferences: InvestmentPreferences = new InvestmentPreferences(
+    '',
+    '',
+    '',
+    '',
+    ''
+  );
   rTolerances: any = [];
   iCategories: any = [];
   iLengths: any = [];

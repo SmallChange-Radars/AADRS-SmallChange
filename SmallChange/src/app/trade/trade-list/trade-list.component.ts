@@ -112,11 +112,8 @@ export class TradeListComponent implements OnInit {
   openModal(stock: Instrument) {
     const modalRef = this.modalService.open(BuySellModalComponent, {
       size: 'lg',
-      backdrop: 'static',
     });
-    modalRef.componentInstance.modalTitle = 'Modal Title';
     modalRef.componentInstance.modalContent = stock;
-    console.log(stock);
   }
 
   ngOnInit(): void {
