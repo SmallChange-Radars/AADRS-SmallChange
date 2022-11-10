@@ -34,7 +34,7 @@ export class ModalServiceService {
     const headers = new HttpHeaders()
       .set('Authorization', 'Bearer ' + this.user.getUser())
       .set('Content-Type', 'application/json');
-    return this.http.get('http://localhost:8080/client/wallet', {
+    return this.http.get(this.url+'/client/wallet', {
       headers: headers,
     }).pipe(catchError(this.handleError));
   }

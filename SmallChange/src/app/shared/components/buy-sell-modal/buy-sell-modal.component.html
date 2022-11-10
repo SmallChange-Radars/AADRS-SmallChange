@@ -58,13 +58,15 @@
                                 1.01 | currency
                                 : 'USD' : "symbol" :'1.2-2'}} </span>
                             <span placement="left" *ngIf="this.modalContent.minQuantity>this.maxQuantity"
-                                ngbTooltip="Please add more funds">
+                                ngbTooltip="Please add more funds" class="float-end">
+                                <button type="submit" class="btn btn-primary"
+                                        [disabled]="!buyForm.valid || (this.modalContent.minQuantity > this.maxQuantity ? this.maxQuantity : this.modalContent.minQuantity) > buyForm.get('buyQuantity')?.value||(this.modalContent.maxQuantity > this.maxQuantity ? this.maxQuantity : this.modalContent.maxQuantity) < buyForm.get('buyQuantity')?.value">Buy</button></span>
                                 <span placement="left" *ngIf="this.modalContent.minQuantity<=this.maxQuantity"
                                     ngbTooltip="Please enter a quantity between {{this.modalContent.minQuantity}} and {{(this.modalContent.maxQuantity>this.maxQuantity?this.maxQuantity:this.modalContent.maxQuantity) | number: '1.0-0'}}"
                                     [disableTooltip]="buyForm.valid && ((this.modalContent.maxQuantity > this.maxQuantity ? this.maxQuantity : this.modalContent.maxQuantity) >= buyForm.get('buyQuantity')?.value && (this.modalContent.minQuantity > this.maxQuantity ? this.maxQuantity : this.modalContent.minQuantity) <= buyForm.get('buyQuantity')?.value)"
                                     class="float-end">
                                     <button type="submit" class="btn btn-primary"
-                                        [disabled]="!buyForm.valid || (this.modalContent.minQuantity > this.maxQuantity ? this.maxQuantity : this.modalContent.minQuantity) > buyForm.get('buyQuantity')?.value||(this.modalContent.maxQuantity > this.maxQuantity ? this.maxQuantity : this.modalContent.maxQuantity) < buyForm.get('buyQuantity')?.value">Buy</button></span></span>
+                                        [disabled]="!buyForm.valid || (this.modalContent.minQuantity > this.maxQuantity ? this.maxQuantity : this.modalContent.minQuantity) > buyForm.get('buyQuantity')?.value||(this.modalContent.maxQuantity > this.maxQuantity ? this.maxQuantity : this.modalContent.maxQuantity) < buyForm.get('buyQuantity')?.value">Buy</button></span>
                         </form>
 
                     </ng-template>
