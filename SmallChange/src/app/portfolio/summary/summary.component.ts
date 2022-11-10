@@ -26,7 +26,6 @@ export class SummaryComponent implements OnInit {
   getPortfolioSummary() {
     this.service.getPortfolio().subscribe(data => {
       this.summaryValue = +data.headers.get("totalValue")!;
-      console.log(data.headers.get("totalValue"));
       this.summaryGains = +data.headers.get("totalGains")!;
     });
     this.modalService.getWalletAmount().subscribe((data) => {

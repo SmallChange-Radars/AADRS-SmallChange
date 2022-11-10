@@ -16,7 +16,13 @@ export class PortfolioGraphComponent implements OnInit {
   public doughnutChartLabels: string[] = [];
   public doughnutChartDatasets: ChartConfiguration<'doughnut'>['data']['datasets'] = [];
   public doughnutChartOptions: ChartConfiguration<'doughnut'>['options'] = {
-    responsive: false
+    responsive: true,
+    plugins: {
+      legend: {
+        display: true,
+        position: 'right'
+      }
+    }
   };
 
   constructor(private service: PortfolioService) { }
