@@ -21,11 +21,13 @@ export class PreferencesFormComponent implements OnInit {
   formInputs: any = [];
   formError: any = null;
   formFilled: boolean = false;
+  checkbox: boolean = false;
 
   submit() {
     let ret;
+    console.log(this.checkbox);
     this.service
-      .submitForm(this.investmentPreferences, this.formFilled)
+      .submitForm(this.investmentPreferences, this.formFilled, this.checkbox)
       .subscribe((data) => (ret = data));
     if (ret != 0) {
       this.formError = false;
