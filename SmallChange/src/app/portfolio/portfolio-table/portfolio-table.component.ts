@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { PortfolioService } from 'src/app/shared/services/portfolio.service';
+import { UserService } from 'src/app/shared/services/user.service';
 import { ClientPortfolio } from '../../shared/models/client-portfolio';
 import { NgbdSortableHeader, SortEvent } from './sortable.directive';
 
@@ -23,10 +24,16 @@ export class PortfolioTableComponent implements OnInit {
   searchText: string = '';
 
   getPortfolio() {
-    this.service.getPortfolio().subscribe(data => {
-      this.cp = data?.body!;
+    this.service.getPortfolio().subscribe({
+      next: data => {
+        this.cp = data?.body!;
 
-      // console.log(this.cp)
+        // console.log(this.cp)
+      },
+      error: (e) => {
+        console.log(e);
+        this.user.removeUser();
+      }
     });
   }
 
@@ -42,9 +49,15 @@ export class PortfolioTableComponent implements OnInit {
 
     this.service
       .getSortedStocks(this.page, this.pageSize, this.searchText, direction, column)
-      .subscribe((response) => {
-        this.cp = response?.body!;
-        this.collectionSize = +response.headers.get('X-Total-Count')!;
+      .subscribe({
+        next: (response) => {
+          this.cp = response?.body!;
+          this.collectionSize = +response.headers.get('X-Total-Count')!;
+        },
+        error: (e) => {
+          console.log(e);
+          this.user.removeUser();
+        }
       });
   }
 
@@ -60,14 +73,20 @@ export class PortfolioTableComponent implements OnInit {
   getSortedStocks() {
     this.service
       .getSortedStocks(this.page, this.pageSize, this.searchText, "", "")
-      .subscribe((response) => {
-        this.cp = response?.body!;
-        this.collectionSize = +response.headers.get('X-Total-Count')!;
-        console.log("hi");
+      .subscribe({
+        next: (response) => {
+          this.cp = response?.body!;
+          this.collectionSize = +response.headers.get('X-Total-Count')!;
+          console.log("hi");
+        },
+        error: (e) => {
+          console.log(e);
+          this.user.removeUser();
+        }
       });
   }
 
-  constructor(private service: PortfolioService) { }
+  constructor(private service: PortfolioService, private user: UserService) { }
 
 
   ngOnInit(): void {

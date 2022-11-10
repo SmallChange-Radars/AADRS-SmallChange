@@ -22,7 +22,7 @@ export class RegisterFormComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder,
               private service: RegisterUserService, 
-              private router: Router ) { }
+              private user: UserService ) { }
 
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
@@ -62,7 +62,9 @@ export class RegisterFormComponent implements OnInit {
     let client:Client = new Client('', registerFormValue.email, registerFormValue.dob, registerFormValue.country, registerFormValue.pincode, [this.identity],registerFormValue.password,'',20.00,'','ROLE_CLIENT');
     this.service.pushUser(client).subscribe({
       next: (data) => { console.log("Posted");alert("Registered Successfully! Please fill Account Details"); this.registerForm.reset();},
-      error: (e) => {this._success.next(e); }
+      error: (e) => {this._success.next(e); 
+        this.user.removeUser();
+        }
     });
       
       console.log(this.registerForm.value);

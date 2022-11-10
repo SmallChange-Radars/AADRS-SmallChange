@@ -99,6 +99,7 @@ export class BuySellModalComponent implements OnInit {
       },
       error: (e) => {
         console.log(e);
+        this.user.removeUser();
         this._success.next("Server couldnt Perform your trade. Please Try Again.");
       }
     });
@@ -126,6 +127,7 @@ export class BuySellModalComponent implements OnInit {
       },
       error: (e) => {
         console.log(e);
+        this.user.removeUser();
         this._success.next("Server couldnt Perform your trade. Please Try Again.");
       }
     });
@@ -138,28 +140,34 @@ export class BuySellModalComponent implements OnInit {
   }
 
   getPortfolioWallet() {
-    this.modalService.getWalletAmount().subscribe((walletResult) => {
-      let q = 0;
-      this.modalService.getPortfolio().subscribe((portfolio) => {
-        portfolio.every((p: any) => {
-          if (this.modalContent.instrumentId == p.instrumentId) {
-            q = p.quantity;
-            this.stockPresent = true;
-            return false
-          }
-          return true;
+    this.modalService.getWalletAmount().subscribe({
+      next: (walletResult) => {
+        let q = 0;
+        this.modalService.getPortfolio().subscribe((portfolio) => {
+          portfolio.every((p: any) => {
+            if (this.modalContent.instrumentId == p.instrumentId) {
+              q = p.quantity;
+              this.stockPresent = true;
+              return false
+            }
+            return true;
+          });
+          this.portfolioQuantity = q;
+          this.walletAmount = walletResult.wallet;
+          this.maxQuantity = this.walletAmount / (this.modalContent.askPrice * 1.01)
         });
-        this.portfolioQuantity = q;
-        this.walletAmount = walletResult.wallet;
-        this.maxQuantity = this.walletAmount / (this.modalContent.askPrice * 1.01)
-      });
+      }, error: (e) => {
+        console.log(e);
+        this.user.removeUser();
+      }
     });
   }
 
   constructor(
     public activeModal: NgbActiveModal,
     private formBuilder: FormBuilder,
-    private modalService: ModalServiceService
+    private modalService: ModalServiceService,
+    private user: UserService
   ) { }
 
   getRandomArbitrary(min: number, max: number) {

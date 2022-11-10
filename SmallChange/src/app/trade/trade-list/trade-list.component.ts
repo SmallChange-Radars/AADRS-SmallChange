@@ -93,15 +93,6 @@ export class TradeListComponent implements OnInit {
       });
   }
 
-  // getSearchStocks(searchText: any) {
-  //   this.service
-  //     .getSearchStocksSymbol(searchText)
-  //     .subscribe((data) => (this.stocks = data));
-  //   this.service
-  //     .getSearchStocksName(searchText)
-  //     .subscribe((data) => (this.stocks = this.stocks.concat(data)));
-  // }
-
   onChange(value: string) {
     this.getSortedStocks();
   }

@@ -57,11 +57,15 @@ export class PortfolioPageComponent implements OnInit {
   }
 
   getPortfolio() {
-    this.portfolioService.getPortfolio().subscribe(data => {
+    this.portfolioService.getPortfolio().subscribe({next:data => {
       this.cp = data?.body!;
       this.summary = +data.headers.get("totalValue")!;
       this.summaryGains = +data.headers.get("totalGains")!;
-    });
+    },
+    error: (e) => {
+      console.log(e);
+      this.userService.removeUser();
+    }});
   }
 
   // getPortfolioSummary() {
