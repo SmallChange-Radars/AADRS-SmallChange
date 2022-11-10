@@ -216,7 +216,6 @@ export class BuySellModalComponent implements OnInit {
         Validators.compose([
           Validators.required,
           Validators.pattern('^[0-9]+'),
-          Validators.min(this.modalContent.minQuantity),
         ]),
       ],
     });
@@ -228,7 +227,6 @@ export class BuySellModalComponent implements OnInit {
           Validators.required,
           Validators.pattern('^[0-9]+'),
           Validators.min(0),
-          Validators.max(this.portfolioQuantity),
         ]),
       ],
     });
